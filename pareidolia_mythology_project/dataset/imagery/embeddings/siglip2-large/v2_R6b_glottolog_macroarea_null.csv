@@ -1,0 +1,15 @@
+biome,biome_macroareas,n_imgs,n_motifs_in_biome,n_eligible_motifs,delta,p_glottolog_block,null_type
+"Tropical & Subtropical Grasslands, Savannas & Shrublands","Africa,Australia,North America,South America",5333,767,1584,0.0008340931963175535,0.015,block
+Tropical & Subtropical Moist Broadleaf Forests,"Africa,Australia,Eurasia,North America,Papunesia,South America",12376,1183,1921,0.0008015905041247606,0.0,block
+"Mediterranean Forests, Woodlands & Scrub","Africa,Eurasia,North America,South America",1789,743,1913,0.0005101317074149847,0.001,block
+Temperate Broadleaf & Mixed Forests,"Africa,Australia,Eurasia,North America,Papunesia,South America",5030,1362,1921,0.0005091846687719226,0.002,block
+Deserts & Xeric Shrublands,"Africa,Australia,Eurasia,North America,South America",3510,1067,1916,0.0004881584318354726,0.0,block
+Montane Grasslands & Shrublands,"Africa,Eurasia,Papunesia,South America",1402,597,1775,0.00047782587353140116,0.004,block
+Tropical & Subtropical Dry Broadleaf Forests,"Africa,Australia,Eurasia,North America,Papunesia,South America",2048,567,1921,0.00025083846412599087,0.031,block
+Mangroves,"Africa,Papunesia,South America",216,112,1389,0.00022198096849024296,0.338,block
+"Temperate Grasslands, Savannas & Shrublands","Africa,Australia,Eurasia,North America,South America",2940,1073,1916,2.0449282601475716e-05,0.466,block
+Tundra,"Eurasia,North America",1623,641,1775,-1.776730641722679e-05,0.754,block
+Boreal Forests/Taiga,"Eurasia,North America",2423,989,1775,-9.15704295039177e-05,0.823,block
+Tropical & Subtropical Coniferous Forests,"Eurasia,North America,Papunesia",1085,325,1811,-0.0003040739393327385,0.938,block
+Temperate Conifer Forests,"Eurasia,North America",3144,1010,1775,-0.0003779814578592777,0.991,block
+Flooded Grasslands & Savannas,"Africa,Eurasia,South America",538,326,1757,-0.0004194467328488827,0.712,block

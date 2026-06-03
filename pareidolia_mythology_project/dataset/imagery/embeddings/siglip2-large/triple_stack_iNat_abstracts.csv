@@ -1,0 +1,27 @@
+realm,biome,n_imgs,n_motifs_specific_in_b,n_motifs_specific_other,delta,p_one_sided
+Palearctic,Boreal Forests/Taiga,1406,110,246,0.0007964489050209522,0.013
+Palearctic,Deserts & Xeric Shrublands,1394,21,335,0.0011931718327105045,0.006
+Palearctic,"Mediterranean Forests, Woodlands & Scrub",1050,33,323,0.001265841769054532,0.0
+Palearctic,Montane Grasslands & Shrublands,942,5,351,0.0002881116233766079,0.385
+Palearctic,Temperate Broadleaf & Mixed Forests,3698,228,128,0.0006930134259164333,0.0
+Palearctic,"Temperate Grasslands, Savannas & Shrublands",939,22,334,0.0008286735974252224,0.033
+Palearctic,Tundra,679,43,313,-0.0003688214346766472,0.697
+Nearctic,Boreal Forests/Taiga,1119,58,287,1.8596183508634567e-05,0.489
+Nearctic,Deserts & Xeric Shrublands,1202,55,290,0.0011812916491180658,0.0
+Nearctic,"Mediterranean Forests, Woodlands & Scrub",632,5,340,-0.00010062195360660553,0.521
+Nearctic,Temperate Broadleaf & Mixed Forests,1174,52,293,0.00013762805610895157,0.331
+Nearctic,Temperate Conifer Forests,2624,154,191,-0.00013964250683784485,0.679
+Nearctic,"Temperate Grasslands, Savannas & Shrublands",1906,65,280,4.0477607399225235e-05,0.397
+Nearctic,Tundra,975,74,271,0.001635159831494093,0.0
+Neotropic,Montane Grasslands & Shrublands,271,11,428,0.0008275660220533609,0.081
+Neotropic,Tropical & Subtropical Coniferous Forests,640,25,414,-0.00021014991216361523,0.773
+Neotropic,Tropical & Subtropical Dry Broadleaf Forests,719,5,434,-0.0007391289109364152,0.9
+Neotropic,"Tropical & Subtropical Grasslands, Savannas & Shrublands",1537,156,283,0.0002430514432489872,0.086
+Neotropic,Tropical & Subtropical Moist Broadleaf Forests,6209,381,58,0.00017262028995901346,0.239
+Afrotropic,"Tropical & Subtropical Grasslands, Savannas & Shrublands",3726,233,12,0.0009242086671292782,0.015
+Afrotropic,Tropical & Subtropical Moist Broadleaf Forests,1755,79,166,0.00047461630310863256,0.005
+Indomalayan,Deserts & Xeric Shrublands,300,5,387,-9.760347893461585e-05,0.521
+Indomalayan,Tropical & Subtropical Dry Broadleaf Forests,936,60,332,3.7872232496738434e-06,0.486
+Indomalayan,Tropical & Subtropical Moist Broadleaf Forests,3324,376,16,0.0005435158964246511,0.033
+Australasia,Tropical & Subtropical Dry Broadleaf Forests,307,17,153,-0.00023402506485581398,0.71
+Australasia,Tropical & Subtropical Moist Broadleaf Forests,1002,164,6,-0.00018787808949127793,0.67

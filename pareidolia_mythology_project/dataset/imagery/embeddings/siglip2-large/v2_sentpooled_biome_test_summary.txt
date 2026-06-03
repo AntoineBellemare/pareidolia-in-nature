@@ -1,0 +1,6 @@
+SigLIP-2 sentence-pooled embedding biome test
+  motifs embedded: 2158
+  total sentences embedded: 50032
+  mean sentences per motif: 23.2
+  μΔ marginal: +0.244 ×10⁻³
+  significant biomes (p<.05): 8/14

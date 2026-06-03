@@ -1,0 +1,12 @@
+biome,n_imgs,n_motifs_in_biome_specific,n_motifs_other_specific,delta,p_one_sided
+"Mediterranean Forests, Woodlands & Scrub",1902,21,526,0.001832706097047776,0.008
+Tropical & Subtropical Moist Broadleaf Forests,14379,196,351,0.0016009421087801456,0.0
+Temperate Broadleaf & Mixed Forests,5309,154,393,0.0012974424330423062,0.0
+Deserts & Xeric Shrublands,3711,20,527,0.0008666744688525796,0.147
+Boreal Forests/Taiga,2702,78,469,0.000706071499735117,0.163
+Tundra,2001,43,504,0.0006406004540622234,0.303
+Tropical & Subtropical Coniferous Forests,1109,5,542,0.00026192646400624575,0.419
+"Temperate Grasslands, Savannas & Shrublands",3049,43,504,-0.00018628500401973724,0.645
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5633,82,465,-0.0002940468257293105,0.723
+Temperate Conifer Forests,3418,53,494,-0.00036011869087815285,0.692
+Montane Grasslands & Shrublands,1438,5,542,-0.0006582487840205431,0.627

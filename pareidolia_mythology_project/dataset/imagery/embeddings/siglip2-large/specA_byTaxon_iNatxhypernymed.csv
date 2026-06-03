@@ -1,0 +1,123 @@
+taxon_group,biome,n_imgs,n_motifs_in_biome_specific,n_motifs_other_specific,delta,p_one_sided
+all,Boreal Forests/Taiga,2702,78,469,0.0012214044108986855,0.04
+all,Deserts & Xeric Shrublands,3711,20,527,0.001398664026055485,0.036
+all,"Mediterranean Forests, Woodlands & Scrub",1902,21,526,0.0021489285863935947,0.006
+all,Montane Grasslands & Shrublands,1438,5,542,0.0011940546100959182,0.261
+all,Temperate Broadleaf & Mixed Forests,5309,154,393,0.001610155998605478,0.0
+all,Temperate Conifer Forests,3418,53,494,-7.026130333542824e-06,0.503
+all,"Temperate Grasslands, Savannas & Shrublands",3049,43,504,0.00037751742638647556,0.251
+all,Tropical & Subtropical Coniferous Forests,1109,5,542,0.0003068961959797889,0.419
+all,"Tropical & Subtropical Grasslands, Savannas & Shrublands",5633,82,465,0.0006641142535954714,0.121
+all,Tropical & Subtropical Moist Broadleaf Forests,14379,196,351,0.0017728384118527174,0.0
+all,Tundra,2001,43,504,-0.0009645763784646988,0.8
+Plantae,Boreal Forests/Taiga,1575,78,469,0.0002390025183558464,0.425
+Plantae,Deserts & Xeric Shrublands,1269,20,527,0.00386669032741338,0.062
+Plantae,"Mediterranean Forests, Woodlands & Scrub",835,21,526,0.00423132034484297,0.043
+Plantae,Montane Grasslands & Shrublands,531,5,542,-0.002316234866157174,0.687
+Plantae,Temperate Broadleaf & Mixed Forests,2155,154,393,0.0032278712606057525,0.003
+Plantae,Temperate Conifer Forests,1838,53,494,-9.679608047008514e-05,0.5
+Plantae,"Temperate Grasslands, Savannas & Shrublands",1186,43,504,-0.000725411344319582,0.656
+Plantae,Tropical & Subtropical Coniferous Forests,373,5,542,0.00020859780488535762,0.446
+Plantae,"Tropical & Subtropical Grasslands, Savannas & Shrublands",1073,82,465,0.0004618321545422077,0.355
+Plantae,Tropical & Subtropical Moist Broadleaf Forests,2781,196,351,0.0037670349120162427,0.0
+Plantae,Tundra,1262,43,504,-0.006346488371491432,1.0
+Fungi,Boreal Forests/Taiga,77,78,469,-0.0015873806551098824,0.857
+Fungi,Deserts & Xeric Shrublands,8,20,527,-0.001127979252487421,0.663
+Fungi,"Mediterranean Forests, Woodlands & Scrub",47,21,526,-0.0013244417496025562,0.665
+Fungi,Temperate Broadleaf & Mixed Forests,188,154,393,0.0014345929957926273,0.083
+Fungi,Temperate Conifer Forests,161,53,494,-0.0026587978936731815,0.922
+Fungi,"Temperate Grasslands, Savannas & Shrublands",36,43,504,-0.003773513250052929,0.988
+Fungi,Tropical & Subtropical Coniferous Forests,27,5,542,0.002310636395122856,0.32
+Fungi,"Tropical & Subtropical Grasslands, Savannas & Shrublands",23,82,465,0.003989046519563999,0.006
+Fungi,Tropical & Subtropical Moist Broadleaf Forests,95,196,351,0.006554086692631245,0.0
+Fungi,Tundra,62,43,504,-0.00530920852907002,0.998
+Animalia,Boreal Forests/Taiga,11,78,469,0.0022695838124491274,0.138
+Animalia,Deserts & Xeric Shrublands,20,20,527,-0.0015486929078178946,0.682
+Animalia,"Mediterranean Forests, Woodlands & Scrub",34,21,526,0.0006474758265540004,0.393
+Animalia,Temperate Broadleaf & Mixed Forests,32,154,393,-0.0015684552490711212,0.88
+Animalia,Temperate Conifer Forests,97,53,494,-0.0007079962770148995,0.608
+Animalia,"Temperate Grasslands, Savannas & Shrublands",10,43,504,-0.0021885274327360094,0.815
+Animalia,"Tropical & Subtropical Grasslands, Savannas & Shrublands",22,82,465,0.003005606064107269,0.059
+Animalia,Tropical & Subtropical Moist Broadleaf Forests,382,196,351,0.0038946198765188456,0.004
+Animalia,Tundra,20,43,504,0.0018701795488595963,0.256
+Mammalia,Boreal Forests/Taiga,116,78,469,0.0025424839404877275,0.07
+Mammalia,Deserts & Xeric Shrublands,183,20,527,-0.0002451909240335226,0.515
+Mammalia,"Mediterranean Forests, Woodlands & Scrub",52,21,526,0.0033324509859085083,0.143
+Mammalia,Montane Grasslands & Shrublands,114,5,542,-0.00632707733893767,0.809
+Mammalia,Temperate Broadleaf & Mixed Forests,111,154,393,0.0010603778064250946,0.202
+Mammalia,Temperate Conifer Forests,111,53,494,-0.0034642908722162247,0.951
+Mammalia,"Temperate Grasslands, Savannas & Shrublands",97,43,504,0.0016508682165294886,0.252
+Mammalia,Tropical & Subtropical Coniferous Forests,28,5,542,0.001039234921336174,0.396
+Mammalia,"Tropical & Subtropical Grasslands, Savannas & Shrublands",635,82,465,0.002728513441979885,0.064
+Mammalia,Tropical & Subtropical Moist Broadleaf Forests,620,196,351,0.0031968625262379646,0.003
+Mammalia,Tundra,126,43,504,0.0027713611780200154,0.126
+Aves,Boreal Forests/Taiga,472,78,469,0.004338476341217756,0.011
+Aves,Deserts & Xeric Shrublands,1316,20,527,0.00015596637967973948,0.447
+Aves,"Mediterranean Forests, Woodlands & Scrub",355,21,526,0.0010361275926698,0.358
+Aves,Montane Grasslands & Shrublands,491,5,542,0.01075376255903393,0.064
+Aves,Temperate Broadleaf & Mixed Forests,1044,154,393,0.0011007190987584181,0.199
+Aves,Temperate Conifer Forests,482,53,494,0.003842834150418639,0.02
+Aves,"Temperate Grasslands, Savannas & Shrublands",855,43,504,0.0023466204875148833,0.137
+Aves,Tropical & Subtropical Coniferous Forests,340,5,542,-0.001151988166384399,0.517
+Aves,"Tropical & Subtropical Grasslands, Savannas & Shrublands",2383,82,465,-0.0005712842103093863,0.642
+Aves,Tropical & Subtropical Moist Broadleaf Forests,3502,196,351,-0.0015817497042007744,0.894
+Aves,Tundra,409,43,504,0.014036217704415321,0.0
+Reptilia,Boreal Forests/Taiga,5,78,469,-0.0003791637718677521,0.576
+Reptilia,Deserts & Xeric Shrublands,266,20,527,0.000226498581469059,0.453
+Reptilia,"Mediterranean Forests, Woodlands & Scrub",78,21,526,-0.003152807999867946,0.839
+Reptilia,Montane Grasslands & Shrublands,24,5,542,-0.0029082063119858503,0.668
+Reptilia,Temperate Broadleaf & Mixed Forests,106,154,393,-0.0028082262724637985,0.986
+Reptilia,Temperate Conifer Forests,52,53,494,-0.003892598324455321,0.965
+Reptilia,"Temperate Grasslands, Savannas & Shrublands",100,43,504,0.0006337892264127731,0.398
+Reptilia,Tropical & Subtropical Coniferous Forests,44,5,542,0.0014835684560239315,0.383
+Reptilia,"Tropical & Subtropical Grasslands, Savannas & Shrublands",343,82,465,0.004426999017596245,0.008
+Reptilia,Tropical & Subtropical Moist Broadleaf Forests,957,196,351,0.005843435879796743,0.0
+Amphibia,Boreal Forests/Taiga,20,78,469,-6.10684510320425e-05,0.49
+Amphibia,Deserts & Xeric Shrublands,34,20,527,-0.004674932453781366,0.892
+Amphibia,"Mediterranean Forests, Woodlands & Scrub",27,21,526,-0.0026762965135276318,0.784
+Amphibia,Montane Grasslands & Shrublands,11,5,542,-0.0026132550556212664,0.615
+Amphibia,Temperate Broadleaf & Mixed Forests,87,154,393,-0.0028936073649674654,0.982
+Amphibia,Temperate Conifer Forests,59,53,494,-0.004748409090097994,0.991
+Amphibia,"Temperate Grasslands, Savannas & Shrublands",37,43,504,-0.0016465254593640566,0.755
+Amphibia,Tropical & Subtropical Coniferous Forests,11,5,542,-0.00313488463871181,0.696
+Amphibia,"Tropical & Subtropical Grasslands, Savannas & Shrublands",103,82,465,0.0029740070458501577,0.058
+Amphibia,Tropical & Subtropical Moist Broadleaf Forests,460,196,351,0.008144835010170937,0.0
+Amphibia,Tundra,6,43,504,-0.00029406044632196426,0.531
+Actinopterygii,Boreal Forests/Taiga,55,78,469,0.00839600176550448,0.0
+Actinopterygii,Deserts & Xeric Shrublands,71,20,527,-0.003942806273698807,0.824
+Actinopterygii,"Mediterranean Forests, Woodlands & Scrub",9,21,526,-0.000897732563316822,0.558
+Actinopterygii,Temperate Broadleaf & Mixed Forests,43,154,393,-0.002317383885383606,0.9
+Actinopterygii,Temperate Conifer Forests,27,53,494,-0.0008774506859481335,0.607
+Actinopterygii,"Temperate Grasslands, Savannas & Shrublands",28,43,504,-0.004212052561342716,0.915
+Actinopterygii,"Tropical & Subtropical Grasslands, Savannas & Shrublands",84,82,465,0.00347515766043216,0.052
+Actinopterygii,Tropical & Subtropical Moist Broadleaf Forests,1009,196,351,0.0015205005183815956,0.162
+Actinopterygii,Tundra,25,43,504,0.006617197883315384,0.022
+Insecta,Boreal Forests/Taiga,344,78,469,0.0006915698759257793,0.229
+Insecta,Deserts & Xeric Shrublands,464,20,527,0.0010288222692906857,0.262
+Insecta,"Mediterranean Forests, Woodlands & Scrub",376,21,526,0.0005941691342741251,0.322
+Insecta,Montane Grasslands & Shrublands,254,5,542,-0.005726422765292227,0.943
+Insecta,Temperate Broadleaf & Mixed Forests,1382,154,393,0.0005745440721511841,0.232
+Insecta,Temperate Conifer Forests,484,53,494,-0.00024222402134910226,0.595
+Insecta,"Temperate Grasslands, Savannas & Shrublands",633,43,504,0.00011060107499361038,0.46
+Insecta,Tropical & Subtropical Coniferous Forests,271,5,542,0.0019122990779578686,0.242
+Insecta,"Tropical & Subtropical Grasslands, Savannas & Shrublands",874,82,465,0.0004563697148114443,0.314
+Insecta,Tropical & Subtropical Moist Broadleaf Forests,3973,196,351,0.0010458698961883783,0.085
+Insecta,Tundra,81,43,504,0.0010893645230680704,0.209
+Arachnida,Boreal Forests/Taiga,14,78,469,-0.0024107969366014004,0.937
+Arachnida,Deserts & Xeric Shrublands,55,20,527,0.0023136219242587686,0.221
+Arachnida,"Mediterranean Forests, Woodlands & Scrub",39,21,526,0.0008703574421815574,0.39
+Arachnida,Temperate Broadleaf & Mixed Forests,100,154,393,0.0002617760910652578,0.404
+Arachnida,Temperate Conifer Forests,23,53,494,-0.0015753460829728283,0.767
+Arachnida,"Temperate Grasslands, Savannas & Shrublands",48,43,504,0.0021686709951609373,0.151
+Arachnida,Tropical & Subtropical Coniferous Forests,11,5,542,0.0028608060674741864,0.313
+Arachnida,"Tropical & Subtropical Grasslands, Savannas & Shrublands",68,82,465,0.0023126222658902407,0.07
+Arachnida,Tropical & Subtropical Moist Broadleaf Forests,345,196,351,0.0023059980012476444,0.025
+Mollusca,Boreal Forests/Taiga,10,78,469,0.0021965638734400272,0.128
+Mollusca,Deserts & Xeric Shrublands,25,20,527,-0.0025104080559685826,0.779
+Mollusca,"Mediterranean Forests, Woodlands & Scrub",49,21,526,0.0025176529306918383,0.176
+Mollusca,Temperate Broadleaf & Mixed Forests,52,154,393,-0.0011815889738500118,0.86
+Mollusca,Temperate Conifer Forests,70,53,494,-0.002150649575924035,0.866
+Mollusca,"Temperate Grasslands, Savannas & Shrublands",19,43,504,-0.0029474147595465183,0.936
+Mollusca,"Tropical & Subtropical Grasslands, Savannas & Shrublands",23,82,465,0.0016513272130396217,0.177
+Mollusca,Tropical & Subtropical Moist Broadleaf Forests,250,196,351,0.0024322221652255394,0.035
+Mollusca,Tundra,9,43,504,0.00358238210901618,0.076

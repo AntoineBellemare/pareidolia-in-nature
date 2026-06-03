@@ -1,0 +1,665 @@
+# What myths the embedding model is seeing — per significant biome
+
+For each biome that scored positive in the headline test, this lists
+the **top motifs by specificity** (≈ fraction-in-biome / fraction-elsewhere),
+filtered to motifs appearing in ≥3 traditions of that biome.
+
+Each entry is *one of the rows the SigLIP text encoder ingested* (name + description).
+
+---
+
+## Tropical & Subtropical Moist Broadleaf Forests  ·  n_imgs=14,379  ·  Δ=+0.0013  ·  p=0.000 — **significant (p<.05)**
+
+Traditions in this biome: **282**.  Top 25 most biome-specific motifs:
+
+- **Snakes and containers**  `e18` · in 12/282 (4.3%) vs elsewhere 0.0% · spec=426.5×
+  - *People learn how to decorate ceramics or baskets (usually learn decorated patterns) thanks to a water creature*
+  - example traditions: Karina, Galibi, Katawishi,Manao etc., Kaxuyana, Mawe
+- **Two animals from one cut in two**  `j22d` · in 11/282 (3.9%) vs elsewhere 0.0% · spec=391.1×
+  - *Two halves of one animal cut in two turn into two new animals or into foreigners*
+  - example traditions: Bribri,Cabecar, Cofan, Letuama,Ufaina,Yahuna, Mai Huna (Coto)
+- **Ever fresher dung on a path**  `j68` · in 6/282 (2.1%) vs elsewhere 0.0% · spec=213.8×
+  - *Persons who during a long time pursue an animal get to see ever fresher dung on a path and ultimately overtake their game (usually the dung every time answers how old it is)*
+  - example traditions: Kamaiura, Kayabi, Napo,Kanelo, Shipibo-Conibo
+- **Buried in sand**  `c34a` · in 6/282 (2.1%) vs elsewhere 0.0% · spec=213.8×
+  - *A supernatural person comes to people who fish. They bury him on the beach or throw him into river or marsh. Somebody saves him. He or his father sends the flood*
+  - example traditions: Candoshi, Chayahuita, Omagua, Cocama, Shipibo-Conibo
+- **The imprisoned feline**  `c15` · in 6/282 (2.1%) vs elsewhere 0.0% · spec=213.8×
+  - *Monstrous puma or jaguar is imprisoned in a cave or tree trunk*
+  - example traditions: Kogi, Lacandon, Machiguenga, Napo,Kanelo
+- **Woman kills jaguar**  `l1d` · in 6/282 (2.1%) vs elsewhere 0.0% · spec=213.8×
+  - *A were-jaguar kills most of the people but is killed itself thanks to a woman who remained alive*
+  - example traditions: Aguaruna, Carijona, Machiguenga, Shipaya
+- **Penis in a pot**  `j12a` · in 5/282 (1.8%) vs elsewhere 0.0% · spec=178.3×
+  - *A girl or two sisters get to old woman who suggests them to marry her son. It is a worm or alive penis preserved by its mother in a pot. The girl (the sister) rejects it, runs away*
+  - example traditions: Aguaruna, Barasana,Taibano,Makuna, Napo,Kanelo, Shuar,Achuar,Huambiza
+- **Vultures and incomplete body**  `l12` · in 5/282 (1.8%) vs elsewhere 0.0% · spec=178.3×
+  - *Vultures bring to the sky a being who has lost part of its body members or is reduced to the head or skull*
+  - example traditions: Pemon, Shipaya, Ticuna, Wayampi, Emerillon
+- **The marriage of the owl and the Moon**  `b74b` · in 5/282 (1.8%) vs elsewhere 0.0% · spec=178.3×
+  - *The (proposed) marriage of the owl and the Moon broke up or has never been realized*
+  - example traditions: Bugi, Macassar, Iban,Bidayu,Sakarram, Murut,Dusun,Tombonuvo,Bajau, Muslim Malay
+- **Origin of menses: sacred objects lost**  `f26` · in 5/282 (1.8%) vs elsewhere 0.0% · spec=178.3×
+  - *The transition of sacred sound instruments (bull-roarers, big trumpets, etc.) from women to men is connected with beginning of menses among the women*
+  - example traditions: Barasana,Taibano,Makuna, Desana,Siriano,Tatuyo,Bara, Letuama,Ufaina,Yahuna, Trans NG East Lowlands South
+- **Woman asks for assistance**  `l3a` · in 5/282 (1.8%) vs elsewhere 0.0% · spec=178.3×
+  - *A woman remains alone and calls for somebody who could help her with her housework. A demon comes, kills the woman or her child*
+  - example traditions: Aguaruna, Amuesha, Chayahuita, Napo,Kanelo
+- **Water flows from broken bone**  `b7d` · in 5/282 (1.8%) vs elsewhere 0.0% · spec=178.3×
+  - *Water flows from a broken bone (of a bird) producing a flood*
+  - example traditions: Andoque, Bora, Carijona, Cashinahua,Mayoruna
+- **A siren and a tapir**  `f75` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *A hunter watches tapir who calls a water woman from the river or lake and copulates with her. Hunter does the same, becomes the woman's lover*
+  - example traditions: Cashinahua,Mayoruna, Shipibo-Conibo, Shuar,Achuar,Huambiza, Yagua
+- **Chasing a gourd-vessel by mistake**  `l7b` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *Instead of chasing a person, a bush spirit, a monster or a dangerous animal follows by mistake a gourd vessel that floats downriver*
+  - example traditions: Cofan, Colorado (Tsachila), Napo,Kanelo, Yagua
+- **One who remained on earth turns into owl**  `b118` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *Person who was unable to ascend to the sky or had returned from the sky to the earth turned into the owl*
+  - example traditions: Iban,Bidayu,Sakarram, Mindanao, Murut,Dusun,Tombonuvo,Bajau, Palawan
+- **Reeds from bird’s bones**  `k11b` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *Bones of a giant bird turn into reeds or bamboo from which arrows or blowpipes are made*
+  - example traditions: Barasana,Taibano,Makuna, Makiritare, Pemon, Yanomamo
+- **Deer in monster’s belly**  `k8f` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *A swallowed up person finds alive deer in the belly of the monster*
+  - example traditions: Cofan, Siona,Coreguaje, Ticuna, Yagua
+- **Serpent pushes sky up**  `b77c` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *Serpent-like creature pushes the sky far away from the earth*
+  - example traditions: Gilbert,Nauru,Banaba, Moseten,Chimane, Tacana, Tuvalu (Ellice)
+- **The Sun-bird**  `a26` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *A bird incorporates the Sun or the day light. It can be caught, let free, killed*
+  - example traditions: Piaroa, Sanema, Yabarana, Yanomamo
+- **Tree is a person**  `g12` · in 4/282 (1.4%) vs elsewhere 0.0% · spec=142.8×
+  - *A giant tree (often with water inside it or with different cultivated plants on its branches) grows out of the human body or is transformed person*
+  - example traditions: Baniwa, Bare, Piapoco, Bribri,Cabecar, Guayabero, Witoto,Ocaina
+- **Carrying a thorny pole**  `m199g2` · in 3/282 (1.1%) vs elsewhere 0.0% · spec=107.4×
+  - *A man and a tiger carry meat on a pole. The man tricks the tiger to take the thorny end of the pole and the tiger suffers from pain*
+  - example traditions: Kachin, Katu, Bru, Khmu, Puoc
+- **Moon's blood drops to earth**  `e28` · in 3/282 (1.1%) vs elsewhere 0.0% · spec=107.4×
+  - *People shoot into the Moon person, his blood drops to earth*
+  - example traditions: Asurini,Paracana., Shipaya, Yanomamo
+- **Lads and tapir**  `b22a` · in 3/282 (1.1%) vs elsewhere 0.0% · spec=107.4×
+  - *Boys climb a tree to eat fruits. Tapir asks them to give some fruits to him, they refuse to do so. Tapir tries to kill the boys*
+  - example traditions: Bora, Kayabi, Shipibo-Conibo
+- **The hanging tree**  `g10` · in 27/282 (9.6%) vs elsewhere 0.3% · spec=31.3×
+  - *A tree which trunk is cut through do not fall because it is hold from above*
+  - example traditions: Andoque, Baniwa, Bare, Piapoco, Barasana,Taibano,Makuna, Choco
+- **Gourd vessel put on the surface of water**  `f37` · in 13/282 (4.6%) vs elsewhere 0.1% · spec=29.3×
+  - *Person knocks the gourd vessel that floats above the water to call water monster or serpent. Usually a woman calls this way her monstrous paramour*
+  - example traditions: Andoque, Baniwa, Bare, Piapoco, Barasana,Taibano,Makuna, Carijona
+
+---
+
+## Tropical & Subtropical Dry Broadleaf Forests  ·  n_imgs=2,304  ·  Δ=+0.0006  ·  p=0.000 — **significant (p<.05)**
+
+Traditions in this biome: **46**.  Top 25 most biome-specific motifs:
+
+- **That one is like her father, another is like her brother but this one is her husband**  `e31a2` · in 4/46 (8.7%) vs elsewhere 0.8% · spec=11.2×
+  - *Only one of several men can marry a girl. The girl herself or somebody else explains that somebody among suiters is like a father to her, somebody else is like her brother and only one of the men suits the role of the girl’s husband*
+  - example traditions: Marathi, Rajasthani, Sinhalese, Tamil
+- **You are Deo but I am Mahadeo**  `l128` · in 3/46 (6.5%) vs elsewhere 0.7% · spec=9.8×
+  - *When a demonic person or a predator animal gives his name, the hero or a herbivorous animal invents such a name for himself that suggests his superiority over his opponent*
+  - example traditions: Marathi, Sinhalese, Tamil
+- **The blind got his sight, the lame got his legs**  `l44b` · in 3/46 (6.5%) vs elsewhere 0.8% · spec=8.4×
+  - *A blind man and a lame man live together and help each other. When they got mortally scared or became to fight with each other, their eyes and legs were cured*
+  - example traditions: Malagasy, Marathi, Tamil
+- **Brings tree that was fallen on him**  `k29c` · in 3/46 (6.5%) vs elsewhere 0.8% · spec=8.4×
+  - *To kill a strong man, others fell a tree and hope that the man will be crashed when it falls on him, or they tie him to a tree. The man remains unharmed and brings the tree home*
+  - example traditions: Burmese,Intha,Arakan, Thai (Thailand), Tjam,Ede,Jarai
+- **Opossum steals fire**  `d4d` · in 3/46 (6.5%) vs elsewhere 0.8% · spec=8.4×
+  - *Opossum steals fire for people*
+  - example traditions: Cora, Huichol, Mixtec,Trique
+- **Measuring of the world**  `b80` · in 3/46 (6.5%) vs elsewhere 1.0% · spec=6.6×
+  - *The process of world creation includes the measuring of its size*
+  - example traditions: Huichol, Konds (Khonds), Mixtec,Trique
+- **Horse exchanges features with cow**  `b40b` · in 3/46 (6.5%) vs elsewhere 1.0% · spec=6.6×
+  - *The horse exchanges some parts of his body with the cow, usually gives her horns and/or obtains teeth*
+  - example traditions: Burmese,Intha,Arakan, Sinhalese, Thai (Thailand)
+- **The tiger who is afraid of Twilight**  `m167a` · in 5/46 (10.9%) vs elsewhere 1.8% · spec=6.2×
+  - *A strong predator (usually a tiger) overhears a person saying that he fears something worse than a tiger The word is unknown to the tiger (twilight, etc). Thinking it must be a terrible thing he hides and then runs away*
+  - example traditions: Burmese,Intha,Arakan, Marathi, Santali,Turi, Sinhalese
+- **Broken figure of the first man**  `h43a` · in 4/46 (8.7%) vs elsewhere 1.4% · spec=6.1×
+  - *After making human body, creator goes away for a time. In his absence another person makes attempt to break human figure that was not yet alive*
+  - example traditions: Bhil, Barela-Bhilala, Gondi, Korku, Santali,Turi
+- **Ursa major is a bed**  `i127` · in 4/46 (8.7%) vs elsewhere 1.4% · spec=6.1×
+  - *Ursa major is a bed, a bedstead*
+  - example traditions: Balahi, Gondi, Marathi, Santali,Turi
+- **Swallowed by boa**  `k56a8` · in 4/46 (8.7%) vs elsewhere 1.5% · spec=5.6×
+  - *A girl marries an animal or brings an animal to her home, the animal turns into a handsome man (or a boy marries an animal who turns into a girl). Her sister or friend tries to do the same but perishes or suffers a reverse (or another boy marries an animal)*
+  - example traditions: Burmese,Intha,Arakan, Sinhalese, Stieng,Chrau,Sre, Tjam,Ede,Jarai
+- **Origin of menses: sexual act**  `f23` · in 4/46 (8.7%) vs elsewhere 1.5% · spec=5.6×
+  - *Women menstruate because they bled in primeval time after the first defloration*
+  - example traditions: Huave, Juang, Konds (Khonds), Mixtec,Trique
+- **Pig ancestor**  `e39` · in 3/46 (6.5%) vs elsewhere 1.2% · spec=5.4×
+  - *A pig is an ancestor of a particular group of people*
+  - example traditions: Bunak, Roti, Timor,Leti,Lomblen
+- **Corpses that became to speak**  `m196a` · in 3/46 (6.5%) vs elsewhere 1.3% · spec=4.9×
+  - *Making a wager because of a trivial thing, spouses (or only one of them) lie without movement and are taken for dead. People bury them but at the last moment they become to speak, people run in panic*
+  - example traditions: Gondi, Sinhalese, Tamil
+- **Trapped in the animal hide**  `m192` · in 3/46 (6.5%) vs elsewhere 1.3% · spec=4.9×
+  - *An animal or person who crawled into a fresh carcass or put on a fresh animal skin cannot free himself when the carcass or the skin becomes dry. He gets free when the skin becomes soft again or somebody tears it open*
+  - example traditions: Gondi, Marathi, Sinhalese
+- **A primeval swamp**  `b3` · in 3/46 (6.5%) vs elsewhere 1.4% · spec=4.6×
+  - *Initially the earth is a swamp, water and dry land are not separated from each other*
+  - example traditions: Fataluku, Flores, Juang
+- **The outcast queens and the ogress queen**  `k27zz` · in 4/46 (8.7%) vs elsewhere 2.0% · spec=4.4×
+  - *A married man marries another woman who is a transformed ogress/witch. Thanks to her intrigues other wives (the first wife) are blinded and/or confined in an underground hole. A son of one of them overcomes the ogress, returns sight to his mother and her sisters*
+  - example traditions: Gondi, Lao, Sinhalese, Thai (Thailand)
+- **The earth eats the dead**  `b2b` · in 4/46 (8.7%) vs elsewhere 2.0% · spec=4.4×
+  - *The earth devours bodies of the people when they die and are buried*
+  - example traditions: Cora, Kanjobal,Chuj,Mocho, Mixtec,Trique, Yaqui,Mayo,Sinaloa
+- **Purusha**  `b43` · in 6/46 (13.0%) vs elsewhere 3.1% · spec=4.2×
+  - *Parts of the body of the primeval person or creature are transformed into different elements of the landscape and parts of the universe*
+  - example traditions: Chamorro, Gondi, Juang, Konds (Khonds)
+- **Hero presents the received princesses to his companions**  `k66b` · in 3/46 (6.5%) vs elsewhere 1.5% · spec=4.2×
+  - *Travelling from one place to another, hero lets his companions live there (usually presents to each one a princess that he received for his deeds) and continues his journey. When he gets into trouble, companions rescue him*
+  - example traditions: Konds (Khonds), Sinhalese, Tjam,Ede,Jarai
+- **The Sun and Moon from eyes of a being**  `a46` · in 4/46 (8.7%) vs elsewhere 2.1% · spec=4.2×
+  - *The Sun and Moon (Rig-Veda: the Sun only) appear from eyes of a person or creature*
+  - example traditions: Chamorro, Juang, Mixtec,Trique, Tjam,Ede,Jarai
+- **Hello, house!**  `m151` · in 5/46 (10.9%) vs elsewhere 2.6% · spec=4.1×
+  - *Dangerous animal pretends to be an inanimate object, dead or absent. The potential victim sais aloud that the real dead (object, place) has to act in a particular way or to say particular words. The animal does accordingly betraying himself.*
+  - example traditions: Burmese,Intha,Arakan, Malagasy, Marathi, Santali,Turi
+- **Creation from cuticle**  `e4` · in 5/46 (10.9%) vs elsewhere 2.7% · spec=4.0×
+  - *Supernatural person rubs his or her skin, creates the entire earth, human or other beings of dirt and cuticle*
+  - example traditions: Balahi, Bhil, Barela-Bhilala, Cora, Dhoba,Ahir,Halba,Lohar,etc.
+- **The lecherous holy man and the maiden in the box**  `k116b` · in 4/46 (8.7%) vs elsewhere 2.2% · spec=4.0×
+  - *A holy man (trusted adviser) falls in love with a beautiful girl and makes her father believe that she should be placed in a box and cast into the river; or the girl is stolen and the box abandoned in the field. The man plans to open the box in his room. Another person finds the box and replaces the girl with a dog or other dangerous animal who kills or injures the deceiver*
+  - example traditions: Bhil, Barela-Bhilala, Marathi, Sinhalese, Tamil
+- **Ursa major is a boat**  `i124` · in 3/46 (6.5%) vs elsewhere 1.6% · spec=3.9×
+  - *Ursa major is a boat*
+  - example traditions: Malagasy, Stieng,Chrau,Sre, Timor,Leti,Lomblen
+
+---
+
+## Temperate Broadleaf & Mixed Forests  ·  n_imgs=5,309  ·  Δ=+0.0006  ·  p=0.000 — **significant (p<.05)**
+
+Traditions in this biome: **109**.  Top 25 most biome-specific motifs:
+
+- **Alcor is a rider**  `b87c` · in 14/109 (12.8%) vs elsewhere 0.0% · spec=1285.4×
+  - *Alcor (a weak star near Mizar, the second star of the Big Dipper’s handle) is a rider, a driver*
+  - example traditions: Ancient Italy, Bretagne, Bulgarians, Czech
+- **Venus is the Wolf star**  `i82f` · in 9/109 (8.3%) vs elsewhere 0.0% · spec=826.7×
+  - *(Evening) Venus is associated with a predator animal, usually with a she-wolf*
+  - example traditions: Byelorussians, Czech, Dutch, Flemish, Frisians, Kashubians
+- **Wolf measured by tailor**  `m134b` · in 9/109 (8.3%) vs elsewhere 0.0% · spec=826.7×
+  - *When a predator is going to eat a man, the latter asks permission first to measure him and beats with his (feigned) measuring tool*
+  - example traditions: Bashkir, Chuvash, Estonians, Latvians
+- **To bring musical instrument**  `k27q1` · in 7/109 (6.4%) vs elsewhere 0.0% · spec=643.2×
+  - *Hero is sent to get musical instrument, usually a (self-playing) psaltery*
+  - example traditions: Byelorussians, Chuvash, Mari, Mordvins
+- **Blood or fat drops to earth**  `b42a` · in 6/109 (5.5%) vs elsewhere 0.0% · spec=551.5×
+  - *Hunters pursue a bear across the sky, kill it in August – October. Its blood or fat drops to earth as a dew or painting leaves of the trees in red*
+  - example traditions: Abenaki,Penobscot, Cherokee, Five Nations Iroquois, Fox,Sauk,Kikapoo
+- **To the forest to pick up berries**  `k80a3` · in 5/109 (4.6%) vs elsewhere 0.0% · spec=459.7×
+  - *Person who would bring more berries from the forest will be rewarded. The antagonists appropriates berries picked up by the hero and usually kills him or her*
+  - example traditions: Estonians, Mari, Mordvins, Russians
+- **The Pleiades and a cuckoo**  `i100c` · in 4/109 (3.7%) vs elsewhere 0.0% · spec=368.0×
+  - *God transformed man into a cuckoo, his wife and children into the Pleiades*
+  - example traditions: Czech, Danes, Germans, Laks
+- **Lured from river-bottom**  `l108f` · in 4/109 (3.7%) vs elsewhere 0.0% · spec=368.0×
+  - *A person (a girl, a small boy) gets into the water and remains there. Antagonist lures him out imitating his father's or sibling's voice*
+  - example traditions: Bashkir, Chuvash, Mordvins, Setu
+- **Bottoms of women and knees of men**  `b113` · in 4/109 (3.7%) vs elsewhere 0.0% · spec=368.0×
+  - *Because of certain events of the time of creation, the women’s bottom and the men’s knees (or vice versa) are cold*
+  - example traditions: Bulgarians, Ireland, Macedonians, Uyghur
+- **Heaven repaired with ice**  `c39a` · in 4/109 (3.7%) vs elsewhere 0.0% · spec=368.0×
+  - *A crack in the sky or a fissure in the earth was repared with ice. Because of this the northern (northwester, northeatsren) wind is cold*
+  - example traditions: Ancient China, Henan Chinese, Jiangsu and Zhejang Chinese, Liaoning and Jilin Chinese
+- **Person turns into snow**  `b108` · in 3/109 (2.8%) vs elsewhere 0.0% · spec=276.2×
+  - *Anthropomorphic person broken into small particles turns into the snow that shines under the sun*
+  - example traditions: Lezgians,Kiurin; Archin, Livonians, Tabasaran; Aghul
+- **Why the sky is blue**  `c41` · in 3/109 (2.8%) vs elsewhere 0.0% · spec=276.2×
+  - *In the beginning the sky has no particular colour. When certain person covers it with a blue cloth or makes something else, the sky acquires its present colour*
+  - example traditions: Henan Chinese, Liaoning and Jilin Chinese, Sichuan Chinese
+- **To wash a black one**  `l108g` · in 3/109 (2.8%) vs elsewhere 0.0% · spec=276.2×
+  - *Person is or becomes black and has to sit in the water till becomes white. An antagonist carries him or her away*
+  - example traditions: Lithuanians, Mordvins, Setu
+- **Down turns into snow**  `i86a` · in 13/109 (11.9%) vs elsewhere 0.1% · spec=93.4×
+  - *Snow is created from bird's down when certain bird in the sky shakes itself or certain person shakes his or her clothes made of bird down*
+  - example traditions: Abenaki,Penobscot, Bretagne, Czech, Dutch, Flemish, Frisians
+- **Girl and demon in a strange house**  `k56a4a` · in 13/109 (11.9%) vs elsewhere 0.1% · spec=93.4×
+  - *At night girl remains alone in a strange house (mill, bath-house, etc.). When demon comes, she asks him to bring her ever new pieces of attire, jewelry, etc. till it dawns and the demon disappears*
+  - example traditions: Bashkir, Bulgarians, Byelorussians, Croatians
+- **Son the hedgehog**  `k76d` · in 10/109 (9.2%) vs elsewhere 0.1% · spec=71.9×
+  - *An (adoptive) son is a hedgehog. He marries a princess, turns into handsome man.*
+  - example traditions: Croatians, Czech, Dutch, Flemish, Frisians, Estonians
+- **Still picks up what was let lose**  `h24d` · in 10/109 (9.2%) vs elsewhere 0.1% · spec=71.9×
+  - *Animal person who let lose the content of a container entrusted to him or her (darkness, insects, reptiles, etc.) still tries to pick up what was let lose (etiology of behavior of certain animal species)*
+  - example traditions: Bulgarians, Byelorussians, Czech, Estonians
+- **Orion is a shoulder-yoke**  `i95b` · in 10/109 (9.2%) vs elsewhere 0.1% · spec=71.9×
+  - *Orion is a shoulder-yoke*
+  - example traditions: Bashkir, Bulgarians, Byelorussians, Chuvash
+- **Humans knew the time of their death**  `h7e` · in 10/109 (9.2%) vs elsewhere 0.1% · spec=71.9×
+  - *In the year before they were to die, people neglected their responsibilities (they repair fences with temporary materials). Therefore, God decided that they should not know in advance when they will die*
+  - example traditions: Basque, Byelorussians, Estonians, French
+- **A harnessed wolf**  `b87b` · in 9/109 (8.3%) vs elsewhere 0.1% · spec=64.7×
+  - *Big Dipper is a cart with a harnessed wolf or bear. Usually it is explained that the handle of the Big Dipper is not straight because a wolf or a bear (identified with Alcor or with the last star of the handle, η) attacked an ox that was dragging a cart and was harnessed instead of it*
+  - example traditions: Bulgarians, Byelorussians, Chuvash, Estonians
+- **The transformed hero kills his rival**  `k147a` · in 9/109 (8.3%) vs elsewhere 0.1% · spec=64.7×
+  - *Hero’s rival together with the hero’s untrue wife or another woman tries to kill him when he turns into different creatures of objects. When the hero turns into a duck (fish, bird), the rival puts the magic weapon on the ground and rushes to catch the duck (bird, its.). The hero acquires his normal guise, takes the weapon and kills his rival*
+  - example traditions: Bashkir, Bretagne, Bulgarians, Georgians
+- **Milky Way is a belt**  `i61a` · in 9/109 (8.3%) vs elsewhere 0.1% · spec=64.7×
+  - *Milky Way is the belt of the sky*
+  - example traditions: Ancient Italy, Bulgarians, Byelorussians, Latvians
+- **Babies thrown across a hedge**  `h33a` · in 8/109 (7.3%) vs elsewhere 0.1% · spec=57.5×
+  - *A woman did not allow God to throw her baby across a hedge, roof, etc. Because of this babies lost or never got ability to walk from the very birth*
+  - example traditions: Bulgarians, Byelorussians, Chuvash, Latvians
+- **The chicken army**  `m39a5a1` · in 8/109 (7.3%) vs elsewhere 0.1% · spec=57.5×
+  - *Husband (mother) understands that his stupid wife (her son) can report about certain deeds of the family members and inflict a severe punishment. The fool is put into a hole (barrel, etc.), covered with a skin and the domestic fowl is let to pick up the grain above it. The fool takes the knocking for the attack of the birds, the rain of stones, etc. See motif m39a5a*
+  - example traditions: Bosnia Muslims, Bulgarians, Chuvash, Georgians
+- **Rainbow swallows fish**  `i41b1` · in 7/109 (6.4%) vs elsewhere 0.1% · spec=50.3×
+  - *Rainbow drinks and together with water swallows fish, people, etc. Sometimes this fish falls on earth from the sky*
+  - example traditions: Bretagne, Croatians, French, Russians
+
+---
+
+## Deserts & Xeric Shrublands  ·  n_imgs=3,711  ·  Δ=+0.0005  ·  p=0.000 — **significant (p<.05)**
+
+Traditions in this biome: **80**.  Top 25 most biome-specific motifs:
+
+- **Coyote first betrays and then saves his brother**  `k71` · in 10/80 (12.5%) vs elsewhere 0.2% · spec=52.6×
+  - *Coyote's brother is victorious against numerous enemies as far as Coyote does not break some taboo. Enemies kill the brother. Coyote gets his remains, escapes, revives him*
+  - example traditions: Chemehuevi, Kawaiisu, Northern Paiute, Pima
+- **Bird carries man to an island**  `k10d` · in 8/80 (10.0%) vs elsewhere 0.2% · spec=42.1×
+  - *A flying monster carries a man to a far away island. There he gets to kill the monster. To return, he uses a boat, a bridge or a rope made of parts of the monster's body*
+  - example traditions: Chemehuevi, Eastern Shohone, Kawaiisu, Northern Paiute
+- **News from the tumbleweed**  `k27u2` · in 4/80 (5.0%) vs elsewhere 0.1% · spec=40.4×
+  - *Powerful person asks the hero to get know where the tumbleweed goes or what are its news*
+  - example traditions: Kalmyk, Kara Kalpak, Kazakh, Turkmen
+- **Bat helps to descend from a rock**  `i117a` · in 7/80 (8.8%) vs elsewhere 0.2% · spec=36.8×
+  - *Bat(-woman) helps the hero to descend from a high rock*
+  - example traditions: Navajo, Northern Paiute, Southern Paiute, Ute
+- **Tip of a branch**  `l71` · in 9/80 (11.2%) vs elsewhere 0.3% · spec=32.0×
+  - *Person has killed an animal. A trickster attempts to appropriate all the meat. The person gets to carry the meat to the top of a tree and helps the trickster (or trickster's child) to get there too to share their meal. After eating, the trickster wishes to defecate or (rare) to drink. The person points to the tip of a thin branch as a right place for doing it. The trickster climbs there, falls and dies*
+  - example traditions: Chemehuevi, Navajo, Northern Paiute, Southern Paiute
+- **To choose life or death**  `h24e` · in 6/80 (7.5%) vs elsewhere 0.2% · spec=31.6×
+  - *People are suggested to choose one of two objects, associated with life and death. They choose the object with death*
+  - example traditions: Aztec, Chemehuevi, Northern Paiute, Southern Paiute
+- **Fly obtains fire**  `d4q` · in 5/80 (6.2%) vs elsewhere 0.2% · spec=26.3×
+  - *Fly(-woman) obtains fire by "washing" her hands like a fire-drill twirler*
+  - example traditions: Cocopa, Seri, Serrano, Walapai,Havasupai,Yavapai
+- **Ring of defenders around chief**  `h17` · in 6/80 (7.5%) vs elsewhere 0.3% · spec=21.4×
+  - *Ancestors surround their (dead) chief trying to defend him or his corpse. A trickster gets to go through the ring, kills the chief or steals and devours his heart*
+  - example traditions: Cocopa, Luiseno, Juaneno, Pima, Serrano
+- **Pacification of things**  `b28b` · in 9/80 (11.2%) vs elsewhere 0.6% · spec=19.4×
+  - *Hero comes to a country where inhabitants are afraid of objects or plants who attack them. He easily overcomes these objects and transforms them in what they are now*
+  - example traditions: Chemehuevi, Navajo, Northern Paiute, Panamint
+- **Wrapped in guts**  `k10c` · in 5/80 (6.2%) vs elsewhere 0.3% · spec=17.8×
+  - *Hero (or twins) hangs on his body a bag with animal bowels full of blood. Breaking them with its claws, the bird thinks that its victim is killed and brings the man to its nest. He kills the adult bird, kills or transforms its nestlings*
+  - example traditions: Eastern Keres, Navajo, Walapai,Havasupai,Yavapai, Western Apache
+- **In the palace by day, on the sky by night**  `k101c` · in 3/80 (3.8%) vs elsewhere 0.2% · spec=15.8×
+  - *A girl agrees to marry a man only if she would be allowed to spend days with him but return for the night to her parents. The husband gets to know that at night she joins company of sky maidens (and usually ascends to the sky to dance). He follows her. After all she remains with her husband on earth*
+  - example traditions: Punjabi, Sindhi, Telugu, Chenchu
+- **A man and a girl made to meet for a night**  `k27z2a` · in 3/80 (3.8%) vs elsewhere 0.2% · spec=15.8×
+  - *Supernatural beings carry a man to a girl or vice versa or carry the man who was far away to his wife. They spend a night together and then separated again and find each other. After troubles and sufferings*
+  - example traditions: Arabs: Palestine,Syria,Lebanon, Persians, Punjabi
+- **Dead woman pursues her husband**  `h12a` · in 3/80 (3.8%) vs elsewhere 0.2% · spec=15.8×
+  - *Wife dies, husband comes after her or he kills his untrue wife. The dead wife turns into monster and pursues him*
+  - example traditions: Hopi, Navajo, Tiwa,Tewa,Towa
+- **Embraced nobody bsides this beggar**  `k15` · in 4/80 (5.0%) vs elsewhere 0.3% · spec=14.2×
+  - *A woman swears that she never embraced anybody besides (her husband and) the beggar who is among the people. The people do not know that her lover assumed the beggar’s image*
+  - example traditions: Arabs: Iraq, Baluch, Kannada; Kuruba, Mongols (Khalkha)
+- **The castrated youth becomes a man again**  `f70c` · in 7/80 (8.8%) vs elsewhere 0.7% · spec=12.6×
+  - *A young man falls victim of an intrigue and is mutilated (usually castrated). His members are restored by magic, he marries happily*
+  - example traditions: Ancient Egypt, Arabs (literary tradition), Arabs: Iraq, Arabs: Palestine,Syria,Lebanon
+- **A drop of blood**  `l80` · in 6/80 (7.5%) vs elsewhere 0.7% · spec=10.8×
+  - *A demonic person or animal is killed but revives or can revive if a small piece of its flesh or blood goes out of control*
+  - example traditions: Kawaiisu, Navajo, Southern Paiute, Tiwa,Tewa,Towa
+- **Sense of smell**  `h22` · in 5/80 (6.2%) vs elsewhere 0.6% · spec=10.8×
+  - *Big game animals obtain sense of smell and/or become to escape from hunters after a person makes them olfactory organs or lets them feel strong odor*
+  - example traditions: Northern Paiute, Ute, Walapai,Havasupai,Yavapai, Western Apache
+- **Basin of honey and basin of oil**  `k33f` · in 5/80 (6.2%) vs elsewhere 0.6% · spec=10.8×
+  - *Person promises to fill one basin (fountain, dry river-bed, etc.) with honey and another with oil (milk, etc.) if his wish would be granted. He fulfills the promise either really or formally (honey etc. from broken containers is spilled on earth)*
+  - example traditions: Arabs: Iraq, Arabs: Palestine,Syria,Lebanon, Gulf: Kuwait,Bahrain,Qatar,Oman, Mehri,Jibbali,Harsusi
+- **Like another Moon**  `n24` · in 4/80 (5.0%) vs elsewhere 0.5% · spec=10.8×
+  - *Light is seen that looks like the second Moon or the second Sun. It’s source is a beautiful woman*
+  - example traditions: Baluch, Bukhara Arabs, Kara Kalpak, Kazakh
+- **The shortened stick**  `m197d` · in 4/80 (5.0%) vs elsewhere 0.5% · spec=10.8×
+  - *A judge gives sticks to all the suspects in a court case and tells them that the guilty one’s stick will grow during the night. The guilty man cuts a bit off his stick and thus is discovered*
+  - example traditions: Pashto, Persians, Punjabi, Telugu, Chenchu
+- **Obscene invitation**  `f69` · in 3/80 (3.8%) vs elsewhere 0.3% · spec=10.7×
+  - *A woman's husband or male relative asks her (grand)children to invite her to make love with him. The invitation is expressed in an allegoric form. She understands, comes to him*
+  - example traditions: Northern Paiute, Southern Paiute, Western Shoshoni,Gosiute
+- **Split hood of cow**  `b47a` · in 3/80 (3.8%) vs elsewhere 0.3% · spec=10.7×
+  - *Cow steps on the stars of the Pleiades which were dangerous being and lived on earth. Some of these stars slipped through its split hoof*
+  - example traditions: Kazakh, Mongols (Khalkha), Oirat
+- **The Belt of Orion is the game, other star is the hunter**  `b42h` · in 17/80 (21.2%) vs elsewhere 2.2% · spec=9.8×
+  - *The Belt of Orion is the animal or three animals, other star (of the Orion or outside of this constellation) is the hunter*
+  - example traditions: Bushmen, Chemehuevi, Cocopa, Kalmyk
+- **Children with pretty spots**  `m103` · in 6/80 (7.5%) vs elsewhere 0.8% · spec=9.3×
+  - *Person asks another how her or his children got their pretty colors. Another answers that she or he put them into the fire. roasted, etc. The first person believes, kills his or her children*
+  - example traditions: Eastern Keres, Hopi, Luiseno, Juaneno, Navajo
+- **Plant or trail saves from fire**  `m58` · in 6/80 (7.5%) vs elsewhere 0.8% · spec=9.3×
+  - *World is ablaze, fire pursues a person. Some objects or elements do not resist the heat and cannot hide him. The last named gives protection. Earth becomes cool, person continues his travel*
+  - example traditions: Chemehuevi, Northern Paiute, Panamint, Southern Paiute
+
+---
+
+## Tropical & Subtropical Grasslands, Savannas & Shrublands  ·  n_imgs=5,633  ·  Δ=+0.0005  ·  p=0.003 — **significant (p<.05)**
+
+Traditions in this biome: **119**.  Top 25 most biome-specific motifs:
+
+- **Hare in rotten hide**  `m62d` · in 6/119 (5.0%) vs elsewhere 0.0% · spec=505.2×
+  - *Trickster puts on a rotten hide of an animal and, being unrecognized, pretends to be victim of hare’s magic. Animals are frightened and decide not to pay the hare back for his tricks*
+  - example traditions: Fula (Pular), Hausa, Manden,Bamana,Malinke,Diula, Manjak,Balant,Papel,Felupe,Diola
+- **A tree that opens its trunk**  `k10i` · in 6/119 (5.0%) vs elsewhere 0.0% · spec=505.2×
+  - *A tree opens its trunk to provide a refuge for a hero pursued by the monstrous bird. When the bird follows the hero the tree crushes it squeezing its trunk again*
+  - example traditions: Ayoreo, Chamacoco, Chorote, Makka
+- **Wonderful son and rat-children**  `k105` · in 6/119 (5.0%) vs elsewhere 0.0% · spec=505.2×
+  - *A despised wife gives birth to wonderful human children, other wives give birth to animals*
+  - example traditions: Hausa, Serer, Shona, Tiv,Jukun,Mbete,Wute,Ekoi
+- **Vulva is or though to be wound**  `f73a` · in 5/119 (4.2%) vs elsewhere 0.0% · spec=421.2×
+  - *Vulva is a unhealed wound on the body of the primeval women or the primval people had no sex mistaking vulva for a wound*
+  - example traditions: Dan,Guro,Mano,Sapa,Ngere, Gogo,Zaramo,Kaguru, Ngonde,Safwa.Mkulwe,Kinga, Northern Gur (Oti-Volta)
+- **One field and two workers**  `m62e` · in 4/119 (3.4%) vs elsewhere 0.0% · spec=337.1×
+  - *A weak person makes a separate agreement with two strong ones to cultivate a field. The strong ones do not know about each other, and ultimately the weak one takes all the harvest himself.*
+  - example traditions: Dan,Guro,Mano,Sapa,Ngere, Fula (Pular), Hausa, Songhai
+- **Star’s husband suffers from cold**  `k19d` · in 4/119 (3.4%) vs elsewhere 0.0% · spec=337.1×
+  - *When a man who has married a star gets to the sky, he suffers severe cold and dies either of cold or after touching a forbidden fire*
+  - example traditions: Makka, Mataco, Mocovi, Toba
+- **Burned men bring plants**  `g19` · in 3/119 (2.5%) vs elsewhere 0.0% · spec=253.1×
+  - *After a conflict in primeval community, a group of men or youths (Paresi: a boy and a girl) burned themselves in a bonfire (or leap over it, etc.). As a result, people acquire cultivated plants, especially corn*
+  - example traditions: Bororo, Nivakle, Paresi
+- **The burned Moon**  `c2b` · in 5/119 (4.2%) vs elsewhere 0.1% · spec=32.6×
+  - *The Sun and Moon get into conflagration. The Sun survives, the Moon is burned*
+  - example traditions: Apinaye, Bororo, Kraho, Ramkokamekra,Apaniekra
+- **Sky hunters pursue a rhea**  `b42e` · in 5/119 (4.2%) vs elsewhere 0.1% · spec=32.6×
+  - *In the cosmic hunt tale the game pursued by the hunters is a rhea bird (Rhea americana)*
+  - example traditions: Chorote, Mataco, Mocovi, Toba
+- **Leg hangs in the sky**  `k13d` · in 4/119 (3.4%) vs elsewhere 0.1% · spec=26.1×
+  - *A group of boys gets to the sky. The leg of the last one is cut or torn off*
+  - example traditions: Caduveo, Chamacoco, Mataco, Sicuani
+- **Ogres who come to a feast devour the host**  `l42h` · in 4/119 (3.4%) vs elsewhere 0.1% · spec=26.1×
+  - *An ogre brings the hero to his house to feast on him together with other ogres. When the guests get to know that the hero has escaped, they devour the host*
+  - example traditions: Kalenjin,Nande,Arusha, Masai, Tsonga,Soli,Sala,Lenje, Xhosa
+- **To bring tears and skins**  `m56b` · in 7/119 (5.9%) vs elsewhere 0.2% · spec=23.7×
+  - *A weak person's demand will be granted if he brings a skin (paw, tears, etc.) of animals stronger than he. He fulfills the task using tricks (but usually does not receive the promised reward)*
+  - example traditions: Dan,Guro,Mano,Sapa,Ngere, Kanuri, Manden,Bamana,Malinke,Diula, Northern Gur (Oti-Volta)
+- **Trickster is a ground squirrel**  `m29nn` · in 6/119 (5.0%) vs elsewhere 0.2% · spec=20.3×
+  - *In episodes related to deception, absurd, obscene or anti-social behavior the protagonist is a ground squirrel (Xerux sp.)*
+  - example traditions: Biu-Mandara, Fula (Pular), Hausa, Mbum,Mundang
+- **The stuck up eyes**  `m8c` · in 6/119 (5.0%) vs elsewhere 0.2% · spec=20.3×
+  - *Birds peck through a layer of clay, wax, pitch etc. with which person’s eyes or anus are stuck up*
+  - example traditions: Chorote, Lengua, Sanapana, Makka, Mataco
+- **Destruction of the world tree**  `b21` · in 6/119 (5.0%) vs elsewhere 0.2% · spec=20.3×
+  - *People ascend the tree to hunt, fish, or gather food in the sky. The tree is destroyed, people fall to earth or remain in the upper world*
+  - example traditions: Arnham Land, Chamacoco, Makka, Mataco
+- **Every next assistant kills previous one**  `m62f` · in 6/119 (5.0%) vs elsewhere 0.2% · spec=20.3×
+  - *Person invites in succession others to help him in his work. Every next one is stronger than the one who came before and eats him up, the last two perish when they begin to fight*
+  - example traditions: Biu-Mandara, Hausa, Kanuri, Krache; Ga
+- **Rhea and Milky Way**  `i67` · in 6/119 (5.0%) vs elsewhere 0.2% · spec=20.3×
+  - *Milky Way is a giant rhea*
+  - example traditions: Apinaye, Mataco, Mocovi, Ramkokamekra,Apaniekra
+- **To measure a snake**  `m56c` · in 3/119 (2.5%) vs elsewhere 0.1% · spec=19.6×
+  - *Person promises to bring a snake. The snake agrees to let him measure it. He ties the snake to a measuring stick or during the measuring finds a vulnerable place on the snake’s body*
+  - example traditions: Manjak,Balant,Papel,Felupe,Diola, Northern Gur (Oti-Volta), Tenda, Biafada, Nalu
+- **Ogress devours testicles**  `l76` · in 3/119 (2.5%) vs elsewhere 0.1% · spec=19.6×
+  - *An ogress attacks her male victim devouring or pulling off his testicles*
+  - example traditions: Chorote, Makka, Nivakle
+- **The cannibal gourd**  `l109` · in 16/119 (13.4%) vs elsewhere 0.7% · spec=18.6×
+  - *A gourd proves to be a cannibal or grows from remains of a monster*
+  - example traditions: Dan,Guro,Mano,Sapa,Ngere, Fipa,Bende,Iramba, Gogo,Zaramo,Kaguru, Hausa
+- **Eater of parrots**  `l20a` · in 8/119 (6.7%) vs elsewhere 0.4% · spec=18.3×
+  - *A man climbs a tree, throws down bird nestlings to a woman. She eats them raw and then kills or tries to kill the man*
+  - example traditions: Chamacoco, Chorote, Lengua, Sanapana, Makka
+- **Fire pit for the people**  `c17` · in 8/119 (6.7%) vs elsewhere 0.4% · spec=18.3×
+  - *The men of primeval community destroy most of the people and/or themselves in a fire pit or on the bonfire*
+  - example traditions: Bakairi, Bororo, Chamacoco, Chorote
+- **Person lets his leg or head to be cut off**  `m102` · in 15/119 (12.6%) vs elsewhere 0.7% · spec=17.4×
+  - *A bird stands with one leg tucked under it, putting its head under its wing; turtle draws its head and limbs under its shell. Person decides that the bird has one leg, no head, turtle has neither head nor limbs, asks to cut him his head and limbs off*
+  - example traditions: Bemba,Kaonde,Lamba, Chagga, Digo, Ganda,Nyoro,Haya, Kalenjin,Nande,Arusha
+- **Star-person gives plants**  `g12b` · in 10/119 (8.4%) vs elsewhere 0.5% · spec=17.3×
+  - *Star-person is a giver of cultivated plants*
+  - example traditions: Apinaye, Caduveo, Chorote, Karaja
+- **The hunter’s secret**  `l121a` · in 5/119 (4.2%) vs elsewhere 0.2% · spec=17.0×
+  - *A hunter can transform himself into different objects. His demonic wife tries to identify them and kill the hunter*
+  - example traditions: Dan,Guro,Mano,Sapa,Ngere, Fon, Hausa, Manden,Bamana,Malinke,Diula
+
+---
+
+## Montane Grasslands & Shrublands  ·  n_imgs=1,438  ·  Δ=+0.0004  ·  p=0.002 — **significant (p<.05)**
+
+Traditions in this biome: **31**.  Top 25 most biome-specific motifs:
+
+- **Transformation of lazy boys**  `b63` · in 4/31 (12.9%) vs elsewhere 0.0% · spec=1291.3×
+  - *Young people, usually siblings, tell other person, usually their mother, that they have been doing agricultural work though it is not the case. When the deceit is discovered, they turn into atmospheric phenomena*
+  - example traditions: Aimara, Highland Ecuador, Kechua: South Peru, Bolivia, Pasco,Junin,Huancavelica dep.
+- **The released birds**  `m139` · in 4/31 (12.9%) vs elsewhere 0.1% · spec=109.6×
+  - *Fox catches birds, puts them into a bag and goes away for a moment. Another animal-person opens the bag and puts thorns instead of the birds*
+  - example traditions: Aimara, Highland Ecuador, Kechua: South Peru, Bolivia, Pasco,Junin,Huancavelica dep.
+- **Thunderous feline**  `i5b` · in 4/31 (12.9%) vs elsewhere 0.2% · spec=57.2×
+  - *Flying feline produces rains and thunderstorms*
+  - example traditions: Aimara, Ayacucho dep., Kechua: South Peru, Bolivia, Pasco,Junin,Huancavelica dep.
+- **False servant licks soles**  `m60a2` · in 6/31 (19.4%) vs elsewhere 0.6% · spec=29.5×
+  - *A servant has to lick soles or a wound of his master or mistress. The hero comes disguised as the servant and instead of licking the soles rubs them (rubs the wound) with a cut off animal tongue*
+  - example traditions: Dungan, Monguor,Shirongol, Shughni,Rushani,Khufi,Bartangi, Tibetans: Amdo
+- **Cold enduring competition**  `m35` · in 4/31 (12.9%) vs elsewhere 0.4% · spec=29.2×
+  - *Two animal persons compete to see who could withstand cold all the night. At dawn one is dead*
+  - example traditions: Aimara, Chipaya, Kechua: South Peru, Bolivia, Pasco,Junin,Huancavelica dep.
+- **Traveler’s possessions divided**  `m194` · in 3/31 (9.7%) vs elsewhere 0.3% · spec=29.0×
+  - *Several animals get objects possessed by a person. Dividing their booty, one animal takes all the food for himself giving the others objects that can be used only by people. Animals that received them suffer or die*
+  - example traditions: Salars, Tibetans (U-Tsang), Tibetans: Amdo
+- **Parrot cuts the sky rope**  `j48` · in 5/31 (16.1%) vs elsewhere 0.6% · spec=24.6×
+  - *Person ascends to the sky or descends from the sky to earth by a rope. A parrot cuts the rope, the person falls to earth*
+  - example traditions: Aimara, Chipaya, Kechua: South Peru, Bolivia, Northern Peru: Sierra
+- **Herdsman explains how to ferry**  `m60a1` · in 5/31 (16.1%) vs elsewhere 0.6% · spec=24.6×
+  - *To come unnoticed to his adversaries, the hero takes the guise of a servant (usually a herdsman) and before that gets know from the real herdsman how to act and to speak with his masters (usually what should be said to ferry the cattle across a river)*
+  - example traditions: Monguor,Shirongol, Shughni,Rushani,Khufi,Bartangi, Tibetans: Amdo, Wahki,Ishkashimi,Munji
+- **Holes in the birds' beaks**  `m99a1` · in 3/31 (9.7%) vs elsewhere 0.4% · spec=21.9×
+  - *Person is going to make holes in the beaks of birds (to thread them)*
+  - example traditions: Darkhad, Mongols (Inner Mongolia), Tibetans (U-Tsang)
+- **Head is thirsty**  `l5d` · in 4/31 (12.9%) vs elsewhere 0.6% · spec=19.6×
+  - *Rolling head suffers thirst*
+  - example traditions: Aimara, Kechua: South Peru, Bolivia, Northern Peru: Sierra, Pasco,Junin,Huancavelica dep.
+- **Hare-woman or hare-children as heros**  `j52b` · in 6/31 (19.4%) vs elsewhere 1.1% · spec=17.8×
+  - *A girl, a young woman, or children who are associated with a hare or rabbit a heroes of the story*
+  - example traditions: Altai-Kiji, Telengit, Dungan, Lavrung,Jiarong,Qiang, Salars
+- **Fleas make person move**  `e23` · in 3/31 (9.7%) vs elsewhere 0.6% · spec=14.7×
+  - *A handful of fleas or lice is thrown into people or into particular person. It was the only way to make him, her or them move and live*
+  - example traditions: Aimara, Northern Peru: Sierra, Pasco,Junin,Huancavelica dep.
+- **Moth tries to steal fire from people**  `d4aa` · in 3/31 (9.7%) vs elsewhere 0.6% · spec=14.7×
+  - *Moths try to steal fire which the people posess*
+  - example traditions: Darkhad, Mongols (Inner Mongolia), Tofa
+- **Mother is eaten up, children escape**  `j18a` · in 5/31 (16.1%) vs elsewhere 1.3% · spec=12.4×
+  - *An ogress devours a woman, gets into her house. Her daughters (daughter and son, one daughter) run away, climb a tree or a rope that hangs from the sky. Ogress pursues them and perishes*
+  - example traditions: Dongxiang, Monguor,Shirongol, Salars, Tibetans (U-Tsang)
+- **Muddled message: how many meals a day**  `h36g` · in 4/31 (12.9%) vs elsewhere 1.1% · spec=11.9×
+  - *God sends his messenger to tell people that they should eat only rarely (once in three days or the like). The messenger tells them that they should eat often (three times a day)*
+  - example traditions: Kechua: South Peru, Bolivia, Mongols (Inner Mongolia), Northern Peru: Sierra, Pasco,Junin,Huancavelica dep.
+- **Construction of watercause: a tragic love**  `k58` · in 3/31 (9.7%) vs elsewhere 0.9% · spec=11.1×
+  - *Person builds a watercourse as a condition of marriage. Usually the woman breaks her promise to marry the winner and she or her bridegroom die*
+  - example traditions: Kechua: South Peru, Bolivia, Pasco,Junin,Huancavelica dep., Wahki,Ishkashimi,Munji
+- **Shooter hides underground**  `a37a` · in 3/31 (9.7%) vs elsewhere 1.0% · spec=9.9×
+  - *Small animal (marmot, rabbit, mole, toad, frog) or person who turns into this animal tried to hit the Sun with arrows and since then has been hiding from the Sun in underground holes or in the water*
+  - example traditions: Altai-Kiji, Telengit, Darkhad, Mongols (Inner Mongolia)
+- **Eating his own eyes**  `m125` · in 4/31 (12.9%) vs elsewhere 1.4% · spec=9.1×
+  - *Person lies to another that he is eating his eyes. The companion agrees to be blinded. The first person extracts one of companion’s eye but gives him to eat something delicious instead. The companion believes that his eyes are good to eat and agrees to be deprived of another eye too*
+  - example traditions: Lavrung,Jiarong,Qiang, Monguor,Shirongol, Salars, Tibetans (U-Tsang)
+- **Children with pretty spots**  `m103` · in 3/31 (9.7%) vs elsewhere 1.1% · spec=8.9×
+  - *Person asks another how her or his children got their pretty colors. Another answers that she or he put them into the fire. roasted, etc. The first person believes, kills his or her children*
+  - example traditions: Chipaya, Kechua: South Peru, Bolivia, Pasco,Junin,Huancavelica dep.
+- **The most delicious dish**  `k35b` · in 4/31 (12.9%) vs elsewhere 1.5% · spec=8.5×
+  - *Hero gives his rivals the food provided by him by order of the king but the king finds this food poisonous, useless or tasteless while the food presented by the hero is excellent even if it looks not so good*
+  - example traditions: Altai-Kiji, Telengit, Shughni,Rushani,Khufi,Bartangi, Wahki,Ishkashimi,Munji, Yazguliami
+- **Puppy as a reward**  `e9e` · in 4/31 (12.9%) vs elsewhere 1.5% · spec=8.5×
+  - *Youth gets to supernatural beings, rejects any treasure, asks for a puppy, a dog's skin, a fruit, etc. When he returns home, the puppy (skin, etc.) turn into magic wife*
+  - example traditions: Altai-Kiji, Telengit, Dungan, Mongols (Inner Mongolia), Tibetans: Amdo
+- **An agreement to marry the would be born children**  `k27z5` · in 4/31 (12.9%) vs elsewhere 1.7% · spec=7.4×
+  - *Two men agree to marry their future children if a girl and a boy will be born. The girl’s parents evade the given obligation. The boy grows up and finds his bride*
+  - example traditions: Dungan, Monguor,Shirongol, Salars, Yazguliami
+- **The stolen colts**  `k148` · in 3/31 (9.7%) vs elsewhere 1.3% · spec=7.4×
+  - *Every night or every year a mare gives birth to a colt but every time it is stolen*
+  - example traditions: Altai-Kiji, Telengit, Mongols (Inner Mongolia), Shughni,Rushani,Khufi,Bartangi
+- **Wife never laughs (king is killed after putting on a poor man's clothes)**  `k116a` · in 3/31 (9.7%) vs elsewhere 1.3% · spec=7.4×
+  - *A king takes or is going to take a poor man’s wife. She tricks him to put on her husband’s clothes and his men (or dogs) kill him taking for the poor man (fool)*
+  - example traditions: Altai-Kiji, Telengit, Mongols (Inner Mongolia), Salars
+- **Water body at the base of a tree**  `i91` · in 3/31 (9.7%) vs elsewhere 1.3% · spec=7.4×
+  - *There is a source or body of water at the base of a tree which connects layers of the universe and/or has gigantic dimensions and considered to be the main tree of the world*
+  - example traditions: Altai-Kiji, Telengit, Avesta; Pekhlevi texts, Kafirs
+
+---
+
+## Mediterranean Forests, Woodlands & Scrub  ·  n_imgs=1,902  ·  Δ=+0.0004  ·  p=0.000 — **significant (p<.05)**
+
+Traditions in this biome: **34**.  Top 25 most biome-specific motifs:
+
+- **Becomes young after being flayed**  `k56a5a` · in 6/34 (17.6%) vs elsewhere 0.2% · spec=78.0×
+  - *Old or ugly woman wants to be flayed alive to become a beauty. Cf. motif H4*
+  - example traditions: Greeks (modern), Italians (continental), Portuguese, Sardinia, Corsica
+- **The stolen jewelry and the final uniting**  `k27z2e` · in 5/34 (14.7%) vs elsewhere 0.2% · spec=65.0×
+  - *During the first meeting(s) between the prince and the princess one of them (sometimes adopting an unusual guise) takes objects (decorations) in possession of another. Either the girl of the boy falls ill. Thanks to the new meeting the sick ones become healthy again, the disappeared objects are recognized and the couple married*
+  - example traditions: Algeria Arabs, Catalonia, Morocco Arabs, Portuguese
+- **Bone in the meat (prince grown in isolation)**  `k155` · in 7/34 (20.6%) vs elsewhere 0.4% · spec=46.5×
+  - *A man (usually a king) isolates his son or daughter in a closed room, servants bring the boy (girl) meat without bones. Once he or she finds a bone in the meat, uses it to make an opening in the wall and gets to see the world outside*
+  - example traditions: Algeria Arabs, Greeks (modern), Italians (continental), Kabyle
+- **The robber gets into the sleeping room**  `k162` · in 6/34 (17.6%) vs elsewhere 0.4% · spec=39.9×
+  - *The antagonist (robber, wizard) penetrates into the house of a girl or young woman hiding in a state (in cupboard, etc.) and/or putting her husband (guards) to sleep using a medicine. At the last moment he is killed*
+  - example traditions: Cyprus Greeks, Greeks (modern), Italians (continental), Maltese
+- **Stars and kids**  `i100d` · in 3/34 (8.8%) vs elsewhere 0.2% · spec=39.0×
+  - *The Pleiades or stars in general are associated with kids or lambs*
+  - example traditions: Catalonia, Portuguese, Spanish
+- **Transformed into animals disenchanted**  `j62b` · in 3/34 (8.8%) vs elsewhere 0.2% · spec=39.0×
+  - *Person transforms into animals those who come to him or her. Thanks to hero victims are disenchanted*
+  - example traditions: Ancient Greece, Italians (continental), Portuguese
+- **Demon with a golden spoon**  `l81a3` · in 4/34 (11.8%) vs elsewhere 0.3% · spec=35.2×
+  - *A girl meets a demon who is disgusting and terrible. When the demon gets to see her again, he (or she) asks her what had she told about him (what had she seen). The girl answers that the demon was beautiful (clad in gold, etc.). Usually at the last meetings the girl tells the demon truth. He is enraged and the men who hide nearby kill him*
+  - example traditions: Algeria Arabs, Kabyle, Morocco Arabs, Tunisia Arabs
+- **The thought-horse and the wind horse**  `k85a` · in 4/34 (11.8%) vs elsewhere 0.3% · spec=35.2×
+  - *When assessing the swiftness of a horse, the speed of thought (lightning) and the speed of wind are compared*
+  - example traditions: Kabyle, Portuguese, Sardinia, Corsica, Spanish
+- **The hair of buried person turns into grass**  `k80a4` · in 5/34 (14.7%) vs elsewhere 0.4% · spec=33.2×
+  - *Person is buried (usually alive) or descends underground. Her or his hair grows as a grass or a bush*
+  - example traditions: Aragon, Catalonia, Italians (continental), Portuguese
+- **Sister replaced by an ugly girl, brother accused of deception**  `k32j` · in 7/34 (20.6%) vs elsewhere 0.6% · spec=31.2×
+  - *From a young man king gets to know that his sister is extraordinary beautiful. On the way to the king the beautiful girl is replaced by the ugly one. The king is angry and usually throws the young man in prison*
+  - example traditions: Catalonia, Greeks (modern), Italians (continental), Kabyle
+- **Young wife is mute until her husband pronounces particular words**  `m38b1` · in 9/34 (26.5%) vs elsewhere 0.9% · spec=30.2×
+  - *After the wedding a wife does not speak with her husband until he says particular words related to her origin (the name of her adoptive father, her own name that reveals her superhuman nature, and the like)*
+  - example traditions: Algeria Arabs, Catalonia, Italians (continental), Kabyle
+- **Not to light a candle**  `k107b` · in 9/34 (26.5%) vs elsewhere 1.0% · spec=26.9×
+  - *One of the spouses visits another only in the night time and prohibits to light a candle. When the other does it and gets to see his husband’s (her wife’s) face, the other disappears*
+  - example traditions: Ancient Greece, Greeks (modern), Italians (continental), Kabyle
+- **Old woman becomes a young beauty**  `k56a5` · in 8/34 (23.5%) vs elsewhere 1.0% · spec=23.9×
+  - *An old or ugly woman is transformed into a young beauty or becomes rich. Usually another old woman tries to imitate her but dies or suffers a reverse*
+  - example traditions: Algeria Arabs, Catalonia, Greeks (modern), Italians (continental)
+- **Peoples from sticks**  `e37` · in 6/34 (17.6%) vs elsewhere 0.8% · spec=23.0×
+  - *Creator takes many small sticks, transforms them into people of both sexes and all ages*
+  - example traditions: Lake Miwok, Pomo, Salinan, Wappo
+- **Night that unwinds her yarn**  `b33f` · in 4/34 (11.8%) vs elsewhere 0.5% · spec=21.4×
+  - *Thanks to activity of a person (usually the old woman who winds or unwinds yarn, threads, etc.), the night and the day alternate with each other*
+  - example traditions: Greeks (modern), Portuguese, Spanish, Tunisia Arabs
+- **Water which is not from the earth and not from the sky**  `m114k` · in 4/34 (11.8%) vs elsewhere 0.5% · spec=21.4×
+  - *A liquid which usually should not be used for drinking or cooking once is used for these purposes. A person who is told that this liquid is neither from the earth must guess what is the source of this liquid*
+  - example traditions: Aragon, Greeks (modern), Portuguese, Spanish
+- **The planted treasure**  `k134` · in 10/34 (29.4%) vs elsewhere 1.4% · spec=20.8×
+  - *To accuse a guest of theft, a host plants a treasure into his guest’s bag*
+  - example traditions: Ancient Greece, Catalonia, Greeks (modern), Italians (continental)
+- **The offended March**  `b33a1` · in 10/34 (29.4%) vs elsewhere 1.4% · spec=20.8×
+  - *Person or animal, bird teases, offends March or other month and are punished*
+  - example traditions: Albanians, Catalonia, Greeks (modern), Italians (continental)
+- **The borrowed days**  `b33c` · in 11/34 (32.4%) vs elsewhere 1.6% · spec=19.8×
+  - *When the winter ends and the spring begins certain month (usually March) borrows several days from a neighbor month to produce a short period of a cold weather*
+  - example traditions: Albanians, Berber (Morocco,SW Algeria), Catalonia, Greeks (modern)
+- **Pregnancy from the snake eggs**  `k82a` · in 5/34 (14.7%) vs elsewhere 0.8% · spec=19.2×
+  - *An ill-disposed elder woman makes a young woman or girl to swallow snake eggs (a snake, something else). Her stomach becomes to swell and the man believes that the victim has become pregnant because of her dissoluteness (rare: to make snakes, worms, etc. to kill her from inside)*
+  - example traditions: Algeria Arabs, Greeks (modern), Kabyle, Morocco Arabs
+- **Milky Way is the way of St, Jacob**  `i59b2` · in 7/34 (20.6%) vs elsewhere 1.1% · spec=18.9×
+  - *Milky Way is the way of St. Jacob (the way to Santiago de Compostela, etc.)*
+  - example traditions: Aragon, Catalonia, Italians (continental), Portuguese
+- **The tell-tale calf’s head**  `k80c1` · in 7/34 (20.6%) vs elsewhere 1.1% · spec=18.9×
+  - *A person who committed murder or made an offence carries home or brings to a king what he thinks is the food to be cooked and eaten (melon, grapes, calf’s head, etc.). This object turns into cut off human head. The person is imprisoned (and executed)*
+  - example traditions: Berber (Morocco,SW Algeria), Catalonia, Greeks (modern), Kabyle
+- **Blowing the house in**  `m134a` · in 8/34 (23.5%) vs elsewhere 1.3% · spec=18.0×
+  - *Predator animal/ogre blows and destroys a fragile house but cannot destroy a strong one. Usually two or three weak personages build three houses only one of which is strong enough.*
+  - example traditions: Algeria Arabs, Catalonia, Greeks (modern), Italians (continental)
+- **Conversation with the Frost**  `k56a5b` · in 4/34 (11.8%) vs elsewhere 0.6% · spec=17.9×
+  - *A man or (more often) a woman speaks friendly with persons who are embodiments of seasons or months (praises the corresponding weather) and is rewarded by them. Another man or woman scolds them and is punished*
+  - example traditions: Greeks (modern), Italians (continental), Maltese, Spanish
+- **Birds destroy trace**  `l42g2` · in 4/34 (11.8%) vs elsewhere 0.6% · spec=17.9×
+  - *Walking person creates a trace behind him or her throwing seeds, stones, etc. or the trace is produced because blood drops behind the person. Birds destroy the trace*
+  - example traditions: Catalonia, Kabyle, Morocco Arabs, Portuguese
+
+---
+
+## Temperate Grasslands, Savannas & Shrublands  ·  n_imgs=3,049  ·  Δ=+0.0004  ·  p=0.000 — **significant (p<.05)**
+
+Traditions in this biome: **59**.  Top 25 most biome-specific motifs:
+
+- **Woman pursues a porcupine and gets to the sky**  `k25b` · in 7/59 (11.9%) vs elsewhere 0.0% · spec=1187.4×
+  - *Pursuing a porcupine, woman climbs a tree and gets to the upper world*
+  - example traditions: Arapaho, Arikara, Crow, Gros Ventre
+- **Long serpent**  `l91` · in 7/59 (11.9%) vs elsewhere 0.0% · spec=1187.4×
+  - *Two or four boys go to war or are on their way home. A long serpent-like creature blocks the passage, they cannot find a path around it and burn it through. One eats its roasted meat and turns into serpent himself or dies*
+  - example traditions: Arikara, Assiniboine, Blackfoot, Crow
+- **Fugitives turn into stars**  `l1c` · in 11/59 (18.6%) vs elsewhere 0.1% · spec=153.9×
+  - *Those fleeing from the monstrous bear rise to the sky and turn into stars*
+  - example traditions: Arapaho, Arikara, Assiniboine, Blackfoot
+- **Blood-clot defends his stepfather**  `k68` · in 10/59 (16.9%) vs elsewhere 0.1% · spec=139.9×
+  - *An old man abused by another (often his son-in-law) brings home a clot of blood, from which a child is born. The blood-clot boy avenges the old man*
+  - example traditions: Arapaho, Blackfoot, Gros Ventre, Iowa
+- **To serve food on the abdomen**  `j19a` · in 7/59 (11.9%) vs elsewhere 0.1% · spec=97.9×
+  - *A guest demands that a woman would serve him food on her abdomen*
+  - example traditions: Alabama,Koasati, Arapaho, Assiniboine, Blackfoot
+- **Way across waters**  `e6a` · in 5/59 (8.5%) vs elsewhere 0.1% · spec=70.0×
+  - *To reach their present country, people had to pass (frozen) water body. Part of the migrants remain on the opposite side or is drowned*
+  - example traditions: Alabama,Koasati, Arikara, Blackfoot, Cheyenne
+- **Trickster gone with a wind**  `m67` · in 9/59 (15.3%) vs elsewhere 0.2% · spec=65.7×
+  - *Imprudent trickster produces wind that carries him away*
+  - example traditions: Assiniboine, Blackfoot, Crow, Gros Ventre
+- **Chopped penis turns into plants**  `g30` · in 4/59 (6.8%) vs elsewhere 0.1% · spec=56.0×
+  - *A cut off long penis turns into many edible plants or fifferent trees*
+  - example traditions: Iowa, Omaha, Ponka, Pawnee, Winnebago
+- **Belly burned through**  `j19b` · in 4/59 (6.8%) vs elsewhere 0.1% · spec=56.0×
+  - *An evil spirit kills a woman burning her belly through*
+  - example traditions: Alabama,Koasati, Assiniboine, Crow, Hidatsa
+- **Dog unfastens children**  `k43c` · in 7/59 (11.9%) vs elsewhere 0.2% · spec=51.1×
+  - *Abandoned children are tied to a tree. Helpful dog or other animal unfastens them*
+  - example traditions: Arapaho, Blackfoot, Cheyenne, Gros Ventre
+- **Birds decorate hero’s attire**  `k48a` · in 8/59 (13.6%) vs elsewhere 0.3% · spec=39.5×
+  - *Alive birds and beasts decorate hero's costume and headgear. Imposter steals hero's attire, takes his place but the birds and beasts are mute or cry differently*
+  - example traditions: Alabama,Koasati, Cheyenne, Iowa, Kiowa
+- **The talking penis**  `f93` · in 5/59 (8.5%) vs elsewhere 0.2% · spec=36.5×
+  - *A man's member speaks and can be silenced only by his mother-in-law*
+  - example traditions: Assiniboine, Crow, Kiowa-Apache, Pawnee
+- **An escape to the sky**  `l1c1` · in 9/59 (15.3%) vs elsewhere 0.4% · spec=33.6×
+  - *To escape from a demonic person, a group of men who are relations of a girl ascend to the sky and remain there*
+  - example traditions: Arikara, Assiniboine, Blackfoot, Cheyenne
+- **Birds carries hero to its place, hero kills the monster**  `k38b2` · in 4/59 (6.8%) vs elsewhere 0.2% · spec=29.2×
+  - *Bird carries a man to its place where he kills a monster who regularly devoured the nestlings*
+  - example traditions: Arikara, Assiniboine, Crow, Hidatsa
+- **Goatsucker breaks Rock**  `l33f` · in 7/59 (11.9%) vs elsewhere 0.4% · spec=26.1×
+  - *Rolling rock pursues person. The person cries for help, and goatsucker breaks Rock to pieces*
+  - example traditions: Arapaho, Arikara, Assiniboine, Blackfoot
+- **Red eyes**  `m53c` · in 10/59 (16.9%) vs elsewhere 0.7% · spec=25.0×
+  - *Trickster suggests water fowl to dance around him with their eyes shut, kills them one by one. He warns that eyes of a bird who would open them become red. In some versions, the bird who opened its eyes got them really red*
+  - example traditions: Assiniboine, Cheyenne, Crow, Iowa
+- **Trickster turns into buffalo**  `m48` · in 8/59 (13.6%) vs elsewhere 0.6% · spec=24.0×
+  - *Trickster asks an animal to transform him but breaks condition of transformation and acquires his original guise. Usually he asks a big horned animal (buffalo, elk) to turn him into buffalo (elk) too. Animal charges, trickster is scared. Next time he remains on the place, turns into buffalo but trying to transform the same way another person, turns back into his own self*
+  - example traditions: Blackfoot, Cheyenne, Mandan, Omaha, Ponka
+- **Bear-woman and her sister**  `l1b` · in 12/59 (20.3%) vs elsewhere 0.9% · spec=22.6×
+  - *A young woman turns into monstrous bear. She kills most of the people besides her younger sister (Ojibwa: younger sister of her former husband). Their brothers return from a hunt, kill the bear or she dies pursuing them*
+  - example traditions: Arapaho, Arikara, Assiniboine, Blackfoot
+- **The double woman**  `j22c` · in 3/59 (5.1%) vs elsewhere 0.2% · spec=21.9×
+  - *A demonic creature has a form of two women half merged like Siamese twins*
+  - example traditions: Santee, Teton, Winnebago
+- **Wicked guest: woman breaks taboo**  `j20` · in 7/59 (11.9%) vs elsewhere 0.6% · spec=21.0×
+  - *When husband o brother leaves home to hunt, an evil spirit comes to his wife or sister and kills or injures her being able to do it because she has broken taboo to open the door, to look at the guest or to answer him or her*
+  - example traditions: Arapaho, Assiniboine, Blackfoot, Gros Ventre
+- **Hero defeats monstrous rock**  `l33d` · in 4/59 (6.8%) vs elsewhere 0.3% · spec=19.8×
+  - *Rolling rock kills people, hero destroys it*
+  - example traditions: Jicarilla Apache, Pawnee, Tehuelche, Teton
+- **Imagined guests**  `m96` · in 4/59 (6.8%) vs elsewhere 0.3% · spec=19.8×
+  - *Person does not want to share his meal with his close relatives and pretending to have many guests, eats food alone*
+  - example traditions: Iowa, Omaha, Ponka, Pawnee, Winnebago
+- **Who killed a rabbit?**  `j39` · in 9/59 (15.3%) vs elsewhere 0.8% · spec=19.4×
+  - *Antagonist makes a girl or a woman his or her slave. The slave's brothers or sons secretly come to her, kill for her some small game. Woman tries to pursue the antagonist that she herself killed the game*
+  - example traditions: Arapaho, Arikara, Assiniboine, Blackfoot
+- **To hit a bird with an arrow (stone)**  `k27v` · in 5/59 (8.5%) vs elsewhere 0.4% · spec=18.6×
+  - *Person must kill a bird with an arrow or a stone*
+  - example traditions: Blackfoot, Iowa, Kiowa, Kiowa-Apache
+- **Rock punishes trickster**  `m86` · in 11/59 (18.6%) vs elsewhere 1.0% · spec=18.4×
+  - *Rock chases or otherwise punishes person who has offended it (usually deceived it or has taken objects that belong to Rock)*
+  - example traditions: Arapaho, Arikara, Assiniboine, Blackfoot
+
+---

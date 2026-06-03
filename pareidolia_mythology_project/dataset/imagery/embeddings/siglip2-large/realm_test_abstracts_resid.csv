@@ -1,0 +1,9 @@
+realm,n_imgs,n_motifs_in_realm,delta,p_one_sided,label
+Oceania,1250,293,0.0015218054177239537,0.0,iNat × abstracts
+Palearctic,11343,1940,0.0015146492514759302,0.0,iNat × abstracts
+Neotropic,10266,1018,0.001183577231131494,0.0,iNat × abstracts
+Australasia,2426,620,0.000901653547771275,0.0,iNat × abstracts
+N/A,21,173,0.0003747472073882818,0.037,iNat × abstracts
+Afrotropic,6637,938,0.0002983437152579427,0.0,iNat × abstracts
+Indomalayan,5449,1285,0.00027541277813725173,0.0,iNat × abstracts
+Nearctic,10384,1231,1.736404374241829e-05,0.405,iNat × abstracts

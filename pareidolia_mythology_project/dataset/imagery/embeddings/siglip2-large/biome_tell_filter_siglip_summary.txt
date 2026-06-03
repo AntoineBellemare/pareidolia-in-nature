@@ -1,0 +1,17 @@
+LLM-era biome-tell filter (SigLIP text-only predictability)
+  Embedding model    : SigLIP-2-large (same as headline test)
+  Motifs evaluated   : 2158
+  No biome assignment: 0 (excluded)
+  Null distribution  : 1000 scrambled-label permutations
+  Threshold (z_95)   : 2.828
+  Threshold (z_99)   : 6.100
+  Kept (z <= z_95)   : 1921 (89.0%)
+  Dropped (tell)     : 237 (11.0%)
+
+Comparison to lexical v8 filter:
+  v8 lexical kept : 1578 / 2564 (61.5%)
+
+On the 2158-motif pass2 LLM-clean corpus:
+  v8 lexical keeps  : 1330
+  siglip keeps      : 1921
+  both agree (keep) : 1261

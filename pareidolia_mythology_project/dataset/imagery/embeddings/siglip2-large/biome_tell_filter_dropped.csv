@@ -1,0 +1,981 @@
+motif_id,n_ru_hits,n_en_hits,ru_hits,en_hits,name_en
+a1,1,0,саванна,,The old sun
+a12,1,0,пустыня,,Eclipses: a monster’s attack
+a13a,3,0,тундре | тундру | тундры,,Raven hides the Sun
+a13a1,3,0,тундре | тундру | тундры,,Raven obtains the Sun
+a16,1,0,мангрового,,Dangers along the Sun’s way
+a21,4,0,пустынным | тундре | тундру | тундры,,Luminaries thrown up into the sky
+a23,2,0,прерии | саванна,,Elections of the Sun to be
+a23a,2,0,степи | степь,,Who will see the Sun first?
+a24,1,0,степной,,The first sunrise
+a24a,1,0,степной,,The first day or night: transformed into spirits
+a27,1,0,саванна,,Crowns of the Sun and Moon
+a29,1,0,тайги,,The Sun and a demon compete for the hero
+a29a,1,0,тайги,,Torn in half by two wives
+a2a,3,0,пустыню | степи | тайгу,,Several suns burn the earth
+a2b,1,0,тайгу,,Extra suns and moons annihilated
+a2b1,1,0,степи,,The last sun
+a2c,1,0,пустыню,,Extra suns are children of the present one
+a3,5,0,пустыню | степные | степь | тундре | тундровые,,Male sun and female moon
+a32b,1,0,прерии,,The Moon toad
+a32d,3,0,тайге | тундре | яранги,,Man in the Moon
+a32f,1,0,тайге,,Water-carrier in the Moon
+a37,2,0,степи | тайгу,,The Sun is attacked
+a37a,1,0,степи,,Shooter hides underground
+a37b,1,0,степи,,Shooter’s thumb cut off
+a38,1,0,степные,,The Sun caught in snare
+a38b,1,0,степные,,Mouse gnaws snare open
+a4,5,0,мерзлоты | пустыни | степью | тайги | тундровые,,Female sun
+a44,2,0,тайге | тайгу,,Moon the protector
+a47,1,0,саванна,,"Three horseman (the Sun, the Moon and the night)"
+a5,1,0,саванны,,The sun and the moon are males
+a8a,1,0,степи,,"The Sun, the Moon and the star: released by the hero"
+b101,1,0,степные,,Slashes on birch bark
+b108,0,1,,snow,Person turns into snow
+b109,1,0,тайге,,Person turns into bear
+b110,3,0,пустынным | степи | степь,,"If by back, the ravines, if by head the red flowers"
+b110a,0,1,,snow,Falling person turns into snow and wind
+b113,1,0,ледник,,Bottoms of women and knees of men
+b114,1,0,саванне,,Old person turns into anteater
+b116,1,0,степи,,The first book eaten up
+b116a,1,0,степи,,Knowledge preserved in the stomach
+b116b,1,0,степи,,Sacred book gets wet
+b13a,1,0,саванну,,Stream follows person
+b15,1,0,мерзлота,,River from woman’s body
+b16c,1,0,степные,,Salt-grinding mill
+b18,1,0,саванне,,Day in container
+b26,1,0,тундру,,Man joins wild animals
+b28,3,0,прерии | саванна | саванне,,Travelling transformer
+b28d,1,0,прерии,,Unrecognized Transformer
+b28d1,1,0,прерии,,"Man transformed into deer, his knives into antlers"
+b28e,1,0,прерии,,The Moon organizes the world
+b2a,7,0,ледников | пустыни | саваннах | степные | степь | тундре | тундровые,,The female earth
+b2d,2,0,ледников | степь,,Marriage of the sky and the earth
+b2e,1,0,пустыни,,The male earth
+b3,0,1,,swamp,A primeval swamp
+b32,1,0,саванну,,Women turn into fish
+b33,2,0,пустыне | степи,,Mother of wind
+b33e,0,1,,freeze,If February were like January
+b33f,1,0,степи,,Night that unwinds her yarn
+b36,1,0,саванн,,"Color, voice, form: one divided between many"
+b36a,1,0,тундровые,,Bathing in blood
+b36b,1,0,саванн,,Birds obtain their voices
+b36c,1,0,степные,,Fat animals
+b37,1,0,степные,,Color of birds
+b38c,1,0,тундровые,,Tail base of the loon
+b3a,5,0,пустынная | пустыня | степные | тундровый | тундры,,Primeval waters
+b3b,3,0,саваннах | саванны | степные,,Earth grows big
+b3e,3,0,пустыни | саваннах | степные,,Earth falls on waters
+b42,3,0,пустыни | тайги | тундре,,Cosmic hunt
+b42b,3,0,тайги | тундре | тундровые,,Sky hunters pursue an ungulate
+b42f,2,0,тундра | тундре,,Ursa major is an ungulate
+b42h,1,0,пустыни,,"The Belt of Orion is the game, other star is the hunter"
+b42h1,1,0,пустыни,,Hunter's arrow hit the animal
+b42k,1,0,тундровые,,Cosmic hunt and the Pleiades
+b42l,1,0,тундре,,"Animal is the dipper, hunters are the handle"
+b42m1,1,0,тундре,,"Yurak, Selkup and Tungus"
+b42mn,1,0,тайги,,One hunter chases the sky elk
+b42n,1,0,саванны,,Orion is one person
+b42p,1,0,арктический,,Ursa major is a bear
+b45,5,0,ледник | тундра | тундре | тундру | тундры,,Marriage of winter and summer
+b48,1,0,степь,,Predators become herbivorous
+b48a,2,0,тайге | тундру,,Other creatures’ flesh
+b50,3,0,степи | степь | тундровых,,Bloodsuckser’s lie
+b55,1,0,саванну,,Leaves are fish
+b57,1,0,степные,,Blood reddens world
+b57a,1,0,степные,,Red sunset contains a message
+b58,1,0,саванну,,Wild turkey’s red neck
+b5a,1,0,тундровый,,Two creators: a dialogue
+b5b,1,0,саванна,,The universal mother
+b60,1,0,тайгу,,Offended children abandon parents
+b64,1,0,тайге,,The bony fish
+b64a,1,0,тайге,,Small bones: war between fish and birds
+b64d,2,0,тайге | тундровые,,Bones are arrows
+b68,1,0,тайге,,The giant grouse
+b70,2,0,тайге | тундровые,,Ears of hare
+b71,2,0,арктика | степные,,Aurora borealis
+b72,2,0,тундре | тундровые,,The thirsty cuckoo
+b72a,1,0,тайгу,,"Mother, child and swans"
+b72b,1,0,тайгу,,A girl flies away as a bird
+b74,1,0,тайге,,The red-eyed wood-grouse
+b74a,1,0,ярангу,,Red rags on eyelids
+b75a,2,0,прерии | тайге,,Sounds of the time of creation: a woman's voice (echo)
+b77,3,0,ледников | пустынь | саваннах,,Primeval sky close to earth
+b77a,1,0,саваннах,,Giant pushed the sky up
+b78,0,1,,snow,Shaking bed makes snowfall
+b79,1,0,ледники,,Cosmic egg
+b7b,1,0,пустыня,,Waters from broken pot
+b82,5,0,пустыне | пустыня | степные | степь | тундровые,,The white raven
+b83,1,0,степь,,Bag too heavy to be lifted up
+b87,2,0,тундра | тундре,,Alcor
+b87a,1,0,тундре,,Alcor is a dog
+b9,1,0,саванна,,Water in the tree trunk
+b97,1,0,степные,,Grateful person makes the bird pretty
+b99,1,0,саванне,,Turned into nest of insects
+c1,1,0,саванны,,Reversal of cosmic levels
+c12b,2,0,пустыне | тайги,,People descend from a dog
+c14,1,0,ледников,,Monsters destroy people
+c16,3,0,степь | тайги | тайгу,,Processed objects turn into animals
+c18,4,0,пустыню | тундре | тундру | тундры,,Dance for the hidden Sun
+c19,8,0,мерзлоты | пустыню | саванне | степи | степные | тундре | тундру | тундры,,Acquisition of the sun
+c2,1,0,саванна,,Deluge and conflagration combined
+c23,1,0,пустынный,,Tree eclipses sky-light
+c27,1,2,тундре,frozen | ice,A horn in the ice
+c2a,2,0,саванна | саванну,,Conflagration of the woodpecker
+c2b,1,0,саванну,,The burned Moon
+c30a,1,0,пустыне,,A pound of flesh
+c31,1,0,степи,,The wise hedgehog (cosmology)
+c31a,1,0,степи,,Sun and Moon promised to Devil
+c34a,0,2,,marsh | sand,Buried in sand
+c35,1,0,пустыню,,Cosmic marriage cancelled
+c35a,1,0,степи,,Wise adviser punished
+c38,1,0,тундру,,People will come soon
+c39,1,1,степи,ice,The repaired sky
+c39a,0,1,,ice,Heaven repaired with ice
+c5a,3,0,пустыне | пустыня | степные,,Bird-scouts
+c5b,1,0,степные,,Animal-scouts
+c6,4,0,степные | тундровые | тундровый | тундры,,The diver
+c6b,1,0,степные,,The diver is muskrat or beaver
+c6c,3,0,тундровые | тундровый | тундры,,The diver is a bird
+c6c1,2,0,тундровый | тундры,,Birds: successful and unsuccessful divers
+c6d,4,0,степные | тундровые | тундровый | тундры,,Earth from the lower world (>the earth-diver)
+c6i,1,0,тундровый,,Dirt stuck to body turns into the earth
+c8,3,0,ледников | саваннах | тайге,,The primeval couple of siblings
+c8a,1,1,ледников,bamboo,Grinding stones match
+d1,1,0,тундровые,,Female spirit of fire
+d10,1,0,саванна,,Fire sticks are two persons
+d12,1,0,саванну,,Food baked in the sun
+d13d,1,0,тайге,,To make hidden woman laugh
+d13f,2,0,саванна | саванну,,Laughter and fire
+d13g,1,0,тундровые,,Meet seen on teeth
+d13h,1,0,арктика,,The dead should not laugh
+d13i,2,0,тайгу | тундровые,,Broken tooth
+d13i1,1,0,тундровые,,"Showing his teeth, person betrays himself"
+d1b,2,0,тундровые | тундру,,Male spirit of fire
+d4a,3,0,пустыню | саванна | саванну,,Theft of fire
+d4f,1,0,саванну,,Beaver or fish let themselves to be roasted
+d4o,2,0,пустыню | саванна,,Fire stealer pretends to be wet and cold
+d4p,0,1,,tropical,Parrot or parakeet obtains fire
+d5,1,0,саванна,,Woman as the owner of the fire
+d5a,1,0,саванна,,Fire in woman’s genitals
+d7,1,0,саванну,,Fire and toad
+e11,6,0,пустыни | степи | тундровые | яранге | яранги | ярангу,,The burned skin
+e15,0,1,,canoe,Ducks and canoes
+e15a,0,1,,canoe,Breast bone as a canoe model
+e15b,0,1,,canoe,Birds sew canoe covering
+e16,0,1,,canoe,Paddles edgewise
+e1b,2,0,арктика | тундре,,Person of unfit materials
+e1c,1,0,тундре,,Person of excrements
+e2,2,0,пустыни | саванне,,People made for a test
+e30,1,0,ярангу,,The make-believe spouse of wood
+e30a,1,0,ярангу,,Make-believe spouse replaced with alive person
+e31a,3,0,пустыне | пустыни | степи,,Creators and rescuers of a girl
+e31a1,3,0,пустыне | пустыни | степи,,Three men construct a woman which becomes alive: to whom does she belong?
+e31c,2,0,пустыне | пустыня,,Rescuers of an abducted girl
+e32,1,0,степь,,People born from trees
+e35,1,0,саванна,,Webbed fingers
+e36,1,0,тундровый,,Hard covering of the body
+e39,1,0,тайге,,Pig ancestor
+e5a,4,0,джунглях | пустыню | саванна | степь,,Mankind ascends from the underworld
+e6,1,0,саванна,,Because of a woman worlds become isolated
+e6a,0,1,,frozen,Way across waters
+e8a,0,1,,palm,Women from coconuts
+e9,12,0,пустыне | пустыню | степи | степной | степные | степь | тайге | тайги | тундровые | яранге | яранги | ярангу,,The mysterious housekeeper
+e9a,1,0,тайгу,,Fox-wife
+e9c,1,0,тундре,,"Elephant-, buffalo-, elk-wife"
+e9d,4,0,тайги | яранге | яранги | ярангу,,Dog-wife
+e9e,4,0,степи | тайги | яранги | ярангу,,Puppy as a reward
+e9h,3,0,пустыни | пустыню | степной,,Dove-wife
+e9i,2,0,пустыне | степи,,Swan-wife
+e9j,1,0,степь,,Monkey-wife
+e9k,1,0,саванна,,Spouse is honey (bee)
+f12,1,0,саванну,,Man kills his wife with her lover’s penis
+f13,1,0,саванны,,Red penis of primates
+f17,2,0,саванна | тундровый,,Misplaced genitalia
+f18a,1,0,степные,,Long penis after prohibited sex
+f2,3,0,ледника | пустыне | пустыню,,Pregnant limb
+f20,2,0,саванна | саваннах,,A strong embrace
+f28a1,2,0,мангры | саванну,,Jumping penis
+f3,2,0,пустыне | пустыню,,The man gives birth after eating his wife’s pregnency medicine
+f30,1,0,тропические,,Snake paramour
+f30a,3,0,тундре | яранге | ярангу,,Worm-baby
+f33,1,0,саванне,,Water creature paramour
+f34,2,0,саванну | степные,,Land animal paramour
+f35,2,0,саванну | степные,,Paramour mutilated
+f38,2,0,пустыни | пустыня,,Women and sacred knowledge
+f39,1,0,пустыня,,The time of women
+f40a,1,0,саванну,,Husband of the first women
+f40b,1,0,степи,,A man in a village of women
+f43,1,0,пустыне,,First women disappear
+f45,2,0,пустыне | пустынь,,The amazons
+f45a,2,0,пустыне | пустынь,,Conception from wind
+f5,1,0,степи,,Brides for first men
+f53,2,0,айсбергом | арктике,,Ugly husband
+f58,3,0,степи | степные | тундру,,Trickster and women
+f5b,1,1,степь,snow,Artificial bride
+f6,1,0,джунглях,,Gouged our vagina
+f62,2,0,пустыню | степи,,Incognito at the dancing party
+f63,1,0,степь,,Trickster poses as woman and marries man
+f64,1,0,степные,,The lecherous parent
+f64b,3,0,тайге | тундре | ярангу,,Incestuous woman
+f65,2,0,айсберга | тундровые,,The false burial
+f65a,3,0,айсберга | степные | тундре,,Death feigned to meet paramour
+f65b,1,0,тундровые,,Death feigned to eat burial food
+f65c,2,0,степные | тундровые,,The feigned burial: boy exposes deceit
+f66,3,0,тайге | тундре | ярангу,,The false house
+f68,1,0,степные,,Death feigned: woman dresses up as a man
+f70,3,0,пустыне | пустыни | степной,,Potiphar's wife: false accusation of sexual abuse
+f70a,2,0,пустыне | степной,,Disordered clothes as evidence against innocent man
+f70b,4,0,пустыне | пустыни | степной | степные,,Revenge of a rejected woman
+f70c,1,0,пустыне,,The castrated youth becomes a man again
+f70d,1,0,пустыню,,A disgraced informer
+f70e,1,0,степи,,A girl turns into a man
+f70e1,2,0,пустыне | степи,,Daughter instead of son
+f70e2,1,0,степи,,Father tests his daughters or sons
+f71,4,0,пустыне | пустынное | степи | степь,,Susan and the old men (the innocent slandered maiden)
+f74,2,0,степи | степные,,Naked person shams dead
+f79,1,0,саванна,,Animal wives
+f81,1,0,тундровые,,Bride in a river
+f83,1,0,степные,,News precede man
+f86,3,0,саванне | степь | яранге,,Signal for paramour to come out
+f88,1,0,джунглях,,Odor of women
+f90,6,0,тайге | тайги | тайгу | тундре | тундру | ярангу,,A tragic incest
+f91,3,0,айсбергу | яранге | ярангу,,A worm-breeder
+f97,1,0,тундровый,,The prohibited fruit: origin of sex
+f98,1,0,степи,,God and a cow
+f9a,1,0,тундровые,,Vagina dentata
+f9b,1,0,саванна,,Piranha in vagina
+f9c,1,0,степные,,Snake in vagina
+f9d,1,0,арктика,,Scorpions in vagina
+f9f,3,0,пустыне | пустыни | пустыню,,Asmodeus
+f9f1,3,0,пустыне | пустыни | пустыню,,Snake inside woman
+f9g,1,0,пустыне,,Brunhilde
+g1,1,0,пампас,,A kidnapped child
+g15,1,0,саванна,,Plant maidens
+g21,0,2,,coconut | palm,Coconut palm from a human head
+g23,5,0,пустыни | пустынным | тайге | тайгой | тундру,,Alive being turns into many objects
+g23a,1,0,пампас,,Alive being turns into plants
+g28,1,0,саванну,,The fish tree
+g29,2,0,тайге | тундру,,Demon made of artifacts
+g5,2,0,саванны | степную,,Food tree
+g6,2,0,пустыни | пустынный,,Primeval tree
+g7,2,0,саванны | степную,,Blunt axes
+g8a,0,1,,canoe,Cutting tree to make a canoe
+g8b,1,0,степи,,Cutting tree to get a person
+h12,5,0,мангры | прерии | прерию | пустыне | пустыню,,Orpheus: visit to the land of the dead
+h15,1,0,прерию,,Whisper and yawning
+h16,1,0,тундрам,,Rivers of tears and blood
+h18,5,0,степи | степь | тайге | тайгу | тундру,,Hoarded game released
+h18b,1,0,саванну,,Cattle returns into water
+h19,1,0,степь,,Raven tries to starve people
+h1a,1,0,прерия,,The originator of death the first sufferer
+h20,2,0,саванну | тундру,,Fish disperse in the world
+h21a,1,0,саванну,,Not to kill a big fish
+h22a,1,0,тайгу,,Animals disperse after being touched by people
+h24,2,0,прерию | пустыне,,Container opened too early
+h24b,1,0,саванна,,Souls disappear from the opened container
+h24c,1,0,саванны,,Death in container
+h24e,1,0,пустыне,,To choose life or death
+h27,1,0,степь,,Mosquitoes let lose
+h27a,1,0,степь,,A hole in the ground
+h28,3,0,степи | степь | тайгу,,Plagues from the body of a person or creature
+h31,1,0,саванне,,Origin of death: man and celestial bodies
+h34a,1,0,прерия,,Controversy over conditions of life
+h34b,1,0,прерия,,Rivers flow in both directions
+h34e,0,1,,snow,The edible snow
+h34f,1,0,тропическая,,Walking baskets
+h36,1,0,саванне,,The muddled message
+h36a,1,0,саванне,,Origin of death from the falsified message
+h36c,1,0,саванне,,Death and the lizard
+h37,1,0,степные,,Magic device lost by a failure
+h37a,1,0,степные,,Jump over brushwood kindles fire
+h4,1,0,саваннах,,The shed skin
+h40,1,0,степь,,Dog is the guard of man
+h41,2,0,степь | тайге,,Death and the dog
+h42,1,0,степь,,Creator goes away for a while
+h43a,1,0,пустыни,,Broken figure of the first man
+h43aa,1,0,степь,,Figure of the first man smeared with filth
+h45,1,0,степь,,The abused bread
+h46,1,0,степь,,The dog’s part
+h46a,1,0,степь,,The dog and the spike
+h48,2,0,саванну | степь,,Daughters of evil spirit
+h49,2,0,пустыни | степи,,Pet defends master’s child
+h49c,3,0,пустыне | пустыни | степи,,Faithful falcon killed
+h49d,1,0,пустыне,,The poisoned fruit
+h5,1,0,саваннах,,People and snakes
+h52,1,0,степь,,The search of immortality
+h54,6,0,айсбергом | леднике | пустыню | степи | тайги | тайгу,,The eyelids of Viy
+h55,2,0,пустынной | степь,,Sinners in other world
+h6a,1,0,степного,,People and plants
+h6b,1,0,степи,,The life-medicine spilled on plants
+h6c,2,0,степи | степь,,The immortal raven
+h7,4,0,саваннах | степи | степь | тундре,,The personified Death
+h7e,1,0,степь,,Humans knew the time of their death
+h9,1,0,степного,,Strong and weak
+i1,4,0,ледника | степные | тундровых | тундрой,,The thunderbirds
+i11,1,0,ледники,,Cosmic turtle or toad
+i114,1,0,степной,,The earthquake: is anybody alive?
+i115a,1,0,пустыня,,Orion and the Pleiades as a man and a woman
+i117,1,0,саванне,,Spider ferries from one world to another
+i12,2,0,пустыни | тайги,,The world axis
+i121,1,0,арктический,,Twin constellations
+i134,1,0,средиземноморье,,Long neck on the Milky Way
+i13a,2,0,пустыни | степные,,The horned serpent
+i13d,1,0,пустыне,,Hibernating with snakes
+i14,1,0,пустынь,,No-anus people
+i15,1,0,степь,,No-mouth people
+i2,1,0,степные,,Lightning from eyes
+i22,4,0,айсберга | прерии | пустыне | пустынь,,Symplegades (obstacle opens and closes)
+i22b,1,0,степь,,Birds fly to the outer world
+i25,5,0,пустыне | пустыню | степь | яранге | яранги,,The bribed guards
+i25a,2,0,пустыне | степь,,Bones to cows
+i27,1,0,степях,,Chthonic canine
+i27c,1,0,тайге,,The four-eyed dog
+i28,2,0,степь | тайги,,Animals in the underworld
+i3,2,0,саванну | степи,,Weapon of Thunder
+i34,1,0,саванна,,The dangerous tree
+i35a1,1,0,пустыня,,Challenge to Thunder-god
+i35b,1,0,мерзлоты,,The bronze sky
+i38,2,0,пустыне | тайге,,The dog-heads
+i38a,1,0,пустыне,,The dog-husbands
+i39,1,0,степи,,Rainbow road or bridge
+i4,2,0,пустыни | тундровые,,Thunder rides in the sky
+i41,1,0,степной,,Rainbow serpent
+i43a,1,0,саванны,,The celestial monster
+i43b,1,0,саванны,,Milky Way is a serpent or fish
+i46,1,0,степные,,Rainbow belt
+i47a,1,0,средиземноморский,,Rainbow is fox’s wedding
+i4a,1,0,степи,,Thunder in trouble: falls to earth
+i5,1,0,степи,,Thunder is an animal
+i50,2,0,ледника | степи,,Animal with more than four legs
+i50a,1,0,степи,,Torn off legs of the helpful animal
+i50b,1,0,ледника,,Horse with three legs
+i51a,1,0,пустыне,,Bull the earth-holder
+i51b,1,0,пустыню,,The earth is an animal
+i52,1,0,ледников,,Fish the earth-holder
+i55,1,0,тундровые,,Stars are openings
+i55b,1,0,тайги,,The sun deer
+i59b4,0,1,,snow,Milky Way is snow or rime
+i6,2,0,пустыни | степь,,Weather birds
+i7,1,0,пустынь,,The cloud serpent
+i72,1,0,степные,,Stars are people
+i76a,1,0,степи,,Snake turns into dragon
+i81,1,0,пустынь,,Waters rush down into the underworld
+i82a,2,0,саванна | тундровые,,Venus is male
+i82b,1,0,тундровые,,Venus is female
+i82d,1,0,тундровые,,Morning and Evening stars are a man and a woman
+i83,1,0,саванна,,The sky of birds
+i84,1,1,тайге,snow,Milky Way is a snow-shoes track
+i84a,0,2,,frozen | snow,Son of God frozen to death
+i85b,1,0,пустыни,,Polaris is a man
+i86a,0,1,,snow,Down turns into snow
+i87,2,0,степь | степью,,Skull as a cave
+i87a,2,0,степи | тайга,,Series of creatures ever greater in size
+i87a2,1,0,степи,,What is Two?
+i87aa,2,0,степи | тайга,,The big bull
+i87ac,1,0,тайга,,Bone in the eye
+i87b,1,0,степью,,The quest for a strong adversary
+i88,2,0,пустынь | саванне,,Animal with many tails
+i89,1,0,пустыне,,The lost caravan
+i8g,2,0,джунглях | тундровые,,Atlas
+i8i,4,0,ледник | ледником | пустыня | саваннах,,Original earth unstable
+i9,1,0,степные,,Colors of the cardinal directions
+j12,2,0,степной | степные,,Travelling girl comes across suitors
+j15,2,0,саванну | саванны,,Woman gets to dangerous creatures
+j17,2,0,яранги | ярангу,,Frogs in hair
+j20,1,0,степные,,Wicked guest: woman breaks taboo
+j22e,1,0,степь,,Placenta person
+j23,1,0,саванну,,A late son kills monsters
+j25,1,0,степь,,Babies escape and return
+j25a,2,0,пустыне | пустыню,,Son of the grave
+j26,5,0,пустыне | пустыни | пустыню | степи | степная,,Babies come out of the water
+j27,3,0,степи | степь | тайга,,Lodge-boy and Thrown-away
+j27b,1,0,степь,,The water father
+j28b,2,0,степь | тайги,,A hot scone
+j30,1,0,тундра,,Parents’ remains
+j31,1,0,степь,,Father’s weapon
+j32,1,0,леднике,,Brothers spy for night chief
+j32b,1,0,степи,,Night was made long
+j37,3,0,саванны | яранге | ярангу,,Antagonist carried away by bird
+j4,6,0,прерии | пустыни | саванна | саванне | степь | тайги,,Death of the father avenged
+j40,2,0,прерии | степь,,Enemy from the sky
+j41,1,0,степные,,Foxes jeer at the abandoned person
+j42,4,0,пустыню | степь | тайгу | тундру,,Waters split apart
+j45,1,0,степные,,The stretched out leg (crane bridge)
+j46,3,0,пустыни | пустыня | степные,,Enemy drowns
+j47,1,0,пустыне,,Pursuer falls from height
+j50b,1,0,степь,,Father more dead than alive
+j52b,2,0,степь | тайгу,,Hare-woman or hare-children as heros
+j54,1,0,тундровые,,One of two female companions kills another
+j54b,1,0,степь,,Kills own mother to rescue his half-brother
+j55,1,0,саванна,,Unrecognized hero comes across enemies
+j58,2,0,саванне | тайгу,,The arrow ladder
+j59,3,0,степи | степь | тайгу,,Following arrow gets to the sky
+j59a,2,0,степные | тайги,,Flight after the arrow
+j62,6,0,пустыне | пустыни | пустыню | пустыня | степи | степь,,People turned into stones
+j66,4,0,пустыне | пустыни | тундровые | тундру,,Gnawed through bow-strings
+k100,1,0,пустыню,,A faithful servant
+k100a,3,0,пустыне | пустыню | степь,,Tobias
+k100b,3,0,пустыне | пустыни | пустыню,,A grateful dead
+k100c,3,0,пустыне | пустыни | пустыню,,Girl’s bridegrooms are bitten by a snake
+k100f,2,0,ледника | пустыню,,Youth lets the fish go
+k100f1,1,0,леднике,,The wild man
+k100g,1,0,степи,,Person sacrifices his child to cure his friend
+k101b,1,0,леднике,,Three nights of suffering
+k102,5,0,пустыне | пустыню | степь | тайге | тайгу,,Demonic paramour of mother or sister
+k102a,2,0,пустыне | пустыню,,Father was right
+k102a1,2,0,пустыне | пустыню,,The false grave as evidence of the death
+k102a2,4,0,пустыне | степные | степь | тайге,,Mother conspires to kill her son
+k103,1,0,степь,,Helpful cow
+k103a,3,0,пустыню | степи | степь,,Tree raises its branches
+k106,2,0,степи | степь,,Thrown to cows
+k107,2,0,пустыне | пустыню,,Lost husband found
+k107a,2,0,пустыне | степи,,Iron shoes to be worn out
+k107b,1,0,пустыню,,Not to light a candle
+k107c,1,0,пустыне,,Knives on the windowsill (the prince as bird)
+k108,2,0,пустыни | пустынь,,A revived wife betrays her husband
+k10a,1,0,саванне,,Battle with a bird: a shelter
+k10g,1,0,степи,,Nestlings carries a man down to the earth
+k110,1,0,пустыне,,Reflection of golden sword
+k113,2,0,степи | степь,,The animal bride
+k113a,2,0,пустыня | степь,,To take wife where arrow falls
+k114,2,0,пустыне | степь,,Brothers leave home after their sister is born
+k115,1,0,степного,,The man saved by a spider web
+k116,1,0,пустыню,,Choice of companion
+k116a,2,0,степи | тайга,,Wife never laughs (king is killed after putting on a poor man's clothes)
+k116b,2,0,степи | тайга,,The lecherous holy man and the maiden in the box
+k117a,3,0,пустыне | пустыни | степи,,To make a mute woman speak
+k118,4,0,пустыне | пустыню | степи | степь,,The prohibited room
+k119,3,0,пустыне | степь | тайгу,,Puss in boots
+k119a,1,0,пустыне,,Ungrateful master
+k11a,1,0,саванне,,Feathers turn into birds
+k11b,0,1,,bamboo,Reeds from bird’s bones
+k12,9,0,ледником | пустыне | пустыню | саванна | степи | степь | тайга | тайги | ярангу,,Woman lost and returned
+k120,2,0,пустыню | степи,,The averted incest (daughter and father)
+k120a,3,0,пустыне | степи | степь,,The averted incest (sister and brother)
+k120a2,1,0,степи,,Not my mother but my mother-in-law
+k120a4,1,0,тайгу,,To fill a vessel with tears
+k121,3,0,пустыня | степи | степь,,Wanderer at a crossroad
+k122,1,0,степи,,Queen of other world comes to identify the hero
+k123,4,0,леднике | пустыне | степи | степь,,Old woman’s curse
+k123a,3,0,пустыне | степи | степь,,A broken vessel
+k125,2,0,тайге | тайгу,,House utensil betrays its master
+k129,3,0,пустыню | степи | степь,,The disenchanted beauty
+k129a,1,0,пустыню,,Half alive lady in the burial chamber
+k12a,1,0,степь,,A strained bow
+k130,1,0,пустыню,,Am I the most beautiful?
+k130a,3,0,пустыню | степи | степь,,Girl in the house of several brothers
+k131,5,0,пустыне | пустыню | саванну | степи | степь,,Men fight over magic objects
+k132,1,0,степи,,Invincible chicken
+k134,3,0,пустыне | пустынный | пустыню,,The planted treasure
+k135,2,0,пустыне | степи,,Seven with one stroke
+k136a,1,0,пустыне,,Hair picked up from the river
+k136b,2,0,пустыне | пустыню,,Rubies from a river
+k136c,2,0,пустыне | пустыню,,Killed and revived periodically
+k137,1,0,степь,,Sister tricks women to come and revive her brother
+k139,2,0,пустыню | степи,,Pheasant gets burnt
+k13a,1,0,саванны,,Person with cut off leg ascends to the sky
+k14,2,0,пустыне | степь,,Precious advices
+k144,3,0,пустыне | пустыни | средиземноморье,,The predestined death because of an animal
+k146,3,0,пустыне | пустыню | степь,,Life-medicine brought by the hero is used to revive him
+k148,1,0,степи,,The stolen colts
+k14a,1,0,пустыне,,Thrown into the oven himself
+k14c,1,0,пустыне,,Man mistakes his son for his wife’s lover
+k150,1,0,пустыню,,Horse eats coals
+k152,1,0,степи,,The evil woman thrown into the well
+k154,2,0,пустыне | степи,,A skull with an inscription
+k154a,2,0,пустыне | степи,,Men in the harem
+k155,1,0,пустыне,,Bone in the meat (prince grown in isolation)
+k156,1,0,пустыне,,Will flowers wither undeer the pillow?
+k157,4,0,пустыне | пустыни | степи | степь,,Robbers killed one by one
+k157a,2,0,пустыне | пустыню,,Vanished husband learned of by keeping inn
+k158,1,0,пустыни,,Who is the woman on a portrait?
+k159,2,0,пустыню | степь,,Peas poured under the feet
+k15b,2,0,степной | степь,,Substituted barrel of water
+k15c,0,1,,ice,Substituted clothes
+k161,1,0,степь,,The liberated dragon
+k163,1,0,пустыню,,Aladdin and his lamp
+k165,1,0,леднике,,The youth who wanted to learn what fear is
+k17,1,0,пустыне,,Ornitomorphic suitor
+k18,3,0,пустынный | степи | степные,,Infant picks out his unknown father
+k18d,1,0,степи,,A lazy boy and a fish
+k19b,1,0,прерии,,Star-husband
+k1c,1,1,яранге,canoe,One who comes to look at adversary’s bones dies himself
+k1e,1,0,яранге,,Marooned on an islet
+k1f,3,0,пустыня | степные | степь,,Conflict because of a woman
+k2,1,0,пустыню,,The destroyed ladder
+k21,3,0,прерии | яранге | ярангу,,Woman descends from the sky by rope
+k23,2,0,степи | ярангу,,Battle with birds
+k24,6,0,джунгли | пустыне | пустыни | пустыню | степи | тундровые,,Stolen clothes of supernatural woman
+k24a,1,0,ярангу,,Supernatural male hides clothes of human girl
+k24b,1,0,пустыне,,To dance in her magic clothes
+k25,17,0,айсбергом | джунгли | пустыне | пустыню | саванна | саванне | степи | степные | степь | тайге | тайги | тайгу | тундре | тундровые | яранге | яранги | ярангу,,Woman from sky-world marries mortal man
+k25a1,4,0,джунгли | степи | тайге | тундровые,,Magic wife finds her clothes
+k25d,1,0,прерии,,Prohibited bulb in the sky
+k26,5,0,прерии | тундре | тундру | яранге | ярангу,,A hole in the firmament
+k27a,1,3,леднике,frosty | ice | snow,Ordeal: survive cold
+k27c,1,0,саванне,,Ordeal: knives and thorns
+k27d,1,0,саванне,,Ordeal: chamber with dangerous beings
+k27e,2,0,саванне | степь,,Eating or drinking contest
+k27f,4,0,пустыне | пустыню | саванну | степи,,A task: to get a woman
+k27f1,2,0,пустыне | степь,,To build a bridge
+k27g,2,0,саванну | степи,,Ordeal: to bathe in a boiling liquid
+k27hh,3,0,джунгли | степи | степь,,To sort grain
+k27l1,0,2,,frozen | ice,To be frowen in ice
+k27ll,0,1,,ice,Water covered with ice
+k27n,5,0,джунгли | мерзлоты | степи | степные | тундровые,,Tasks of the in-laws
+k27n1,6,0,джунгли | мерзлоты | пустыню | степи | яранги | ярангу,,Task-giver is a king or a chief
+k27n3b,1,0,тундровые,,"Task-giver lives in the sky but is not the Sun, Moon or Thunder"
+k27nn,4,0,джунгли | леднике | пустыню | степи,,Envious minister
+k27p,1,0,степные,,Antagonist mourns loss of his helpers
+k27p1,1,0,степи,,Antagonist in animal guise
+k27q,5,0,пустыни | пустыню | степи | степь | тайге,,Milk of the wild beast
+k27q1,1,0,пустыню,,To bring musical instrument
+k27s,5,0,пустыне | степи | степь | тундровые | ярангу,,Contest: a race
+k27ss,1,0,степь,,To win a race with an (old) woman
+k27u,3,0,ледника | пустыню | степи,,Hide-and-seek
+k27u2,1,0,степи,,News from the tumbleweed
+k27v1,1,0,тайги,,To hit a needle
+k27v3,1,0,степь,,To shoot an arrow though the ring
+k27x3,4,0,джунгли | степи | яранги | ярангу,,The man persecuted because of his beautiful bride
+k27x4,2,0,леднике | степь,,Climb a tree with a full glass in hand
+k27z,1,0,степи,,Game of chance for life and death
+k27z1,2,0,пустыню | степной,,"Bird, horse and princess"
+k27z3,1,0,степи,,Cat with a lamp
+k27z4,1,0,степи,,The trained animal of the gambler
+k27z7,3,0,пустыне | пустыню | степь,,To get know what is the rose of the heart
+k27z9,1,0,пустыне,,Why the fish laughed
+k27zz,1,0,пустыня,,The outcast queens and the ogress queen
+k27zz1,1,0,пустыня,,Only the youngest queen's child survives
+k27zz2,1,0,пустыня,,"All queens are blind, one is half-blind"
+k27zz3,1,0,степи,,The wife who should not be beaten
+k28,9,0,пустыне | пустынным | пустыню | саванну | степи | степь | тундре | яранге | ярангу,,Father or uncle is rival and enemy
+k29a,5,0,джунглях | пустыне | пустыню | степи | тундровые,,Survives in a fire
+k29d,1,0,степи,,The drunk elephants
+k2a,2,0,степной | степь,,Hero marooned in the underworld
+k30,2,0,тундровые | ярангу,,Flying enemy abducts woman
+k30a,1,0,саванна,,The chief’s wife and vultures
+k32,12,0,айсбергом | пустыне | пустыню | саванну | степи | степь | тайге | тайгой | тундре | тундровые | яранга | ярангу,,The false wife
+k32a,6,0,пустыне | степи | степь | тундре | тундровые | ярангу,,Travelling man leaves his wife or daughter for a short time
+k32b,2,0,пустыне | пустыню,,Mother-in-law substitutes her daughter
+k32b1,1,0,ярангу,,Mother substitutes her daughter
+k32d,2,0,степи | степь,,"Sister sent to feed geese, servant taken for the sister"
+k32e,1,0,степь,,"Ones of gold, of silver, of wood"
+k32g,7,0,пустыне | пустыню | степи | степь | тайгу | тундре | тундру,,Punishment: torn apart by horses
+k32g1,5,0,пустыне | степи | степная | степь | тайгу,,Forty horses or forty knives?
+k32j,1,0,пустыню,,"Sister replaced by an ugly girl, brother accused of deception"
+k33,3,0,пустыне | степи | степь,,Drowned woman remains alive
+k33a,3,0,пустыне | степи | степь,,Younger brother transformed into animal
+k33a1,2,0,степи | степь,,Children born in a well
+k33b,1,0,степь,,Friends abandon a pretty girl
+k33c,3,0,пустыне | степи | степь,,Girl from a fruit
+k33d,3,0,пустыне | пустыню | степи,,Peau d'asne
+k33d1,2,0,пустыне | пустыню,,The princess in the chest
+k33f,4,0,пустыне | пустыни | пустыню | степь,,Basin of honey and basin of oil
+k33g,4,0,пустыне | пустыню | степи | степь,,Fruits of two kinds
+k33h,3,0,пустыне | степи | степь,,"The cat, the dog and the magic object"
+k34,2,0,саванна | степь,,Fatal swing
+k35,3,0,леднике | степной | степные,,False husband
+k35a,5,0,пустыне | пустыню | пустыня | степи | степь,,Hero brands his rivals
+k35a1,2,0,пустыню | степи,,Not to pick up a feather of fire-bird
+k35a3,1,0,леднике,,The master becomes the servant
+k35b,1,0,пустыню,,The most delicious dish
+k35c,3,0,пустыне | пустыню | степь,,Ogre in a well
+k35c1,3,0,пустыне | пустыню | степь,,The best is one whom you love
+k36,3,0,пустыне | пустыню | степь,,Bewitched into animal
+k37,8,0,джунгли | пустыне | пустыню | саванну | степи | степные | степь | тайгу,,Recognition-test
+k37a,1,0,степь,,To recognize a man
+k38,9,0,пустыне | пустыни | пустыня | степи | степная | степной | степь | тайге | тайгой,,Hero helps nestlings
+k38b,6,0,пустыне | пустыни | пустыня | степи | степная | степь,,Snake threatens nestlings
+k38b3,1,0,пустыню,,Hero takes care of nestlings
+k38c,5,0,пустыне | пустыню | степи | степная | степь,,Bird carries hero to his destination
+k38d,3,0,ледника | пустыне | степи,,Monster blocks waters
+k38e,3,0,мерзлоты | пустыню | степи,,"Of copper, of silver, of gold"
+k38f,3,0,пустыне | пустыня | степи,,The dragon-slayer
+k39,3,0,пустыня | степь | тундру,,Man feeds his own flesh to a creature who helps him
+k40,1,0,пустыне,,"One laughs, another weeps"
+k41,1,0,степные,,Thunder against a serpent
+k44,3,0,тундре | тундру | ярангу,,False parent
+k44b,1,0,степь,,"Returning after long absence, person throws food to his mother"
+k47a,2,0,ледник | степь,,A woman and a dog
+k47b,2,0,степь | тайге,,Dog turns into handsome man
+k47c,1,0,саваннах,,Origin of dogs
+k48,3,0,пустыне | пустынной | пустыню,,Singing bird of the hero
+k49,1,0,степь,,Dead mother returns to nurse her baby
+k50,1,0,прерии,,False wife beheads enemy
+k51,1,0,тундре,,The deceived wife
+k52,1,0,ледником,,Rescue from the sea bottom
+k52c,3,0,тундру | яранге | яранги,,The flood in a dwelling
+k54,2,0,тундра | тундре,,Two giants
+k56,4,0,пустыню | саванне | саванну | тундру,,Kind and unkind girls
+k56a,5,0,тундра | тундре | тундру | тундры | яранги,,"The unworthy girl fails, the worthy one succeeds"
+k56a3,1,0,тундра,,Not to fix laces on clothes and shoes
+k56a5b,0,1,,frost,Conversation with the Frost
+k56a7,0,1,,snow,Strawberries under the snow
+k56a8,1,0,тундру,,Swallowed by boa
+k56a8a,2,0,тундру | яранга,,Kind girl returns with a handsome man
+k56a9,2,0,пустыне | степи,,Helpful mouse rings a bell
+k56aa,1,0,яранги,,Dog tests his bride
+k56b,8,0,пустыне | саванну | тайге | тундра | тундре | тундру | яранге | ярангу,,"The worthy man is rewarded, the unworthy punished"
+k57,2,0,пустыню | степи,,Cinderella
+k58,1,0,степь,,Construction of watercause: a tragic love
+k59,1,1,ярангу,canoe,Box for Osiris
+k60a,3,0,пустыне | степь | тайге,,How strong are these bonds?
+k60b,2,0,пустыне | пустыня,,Invitation to coffin
+k60c,2,0,пустыне | пустыню,,"Touchy with king, patient with stableman"
+k62a,4,0,тайга | тайгу | тундровая | тундровые,,Quarrel of mouse and bird
+k65,1,0,тундру,,Genii loci
+k66,6,1,леднике | пустыню | пустыня | степи | степь | тундру,frost,Extraordinary companions
+k66a,1,0,пустыне,,The land and water ship
+k66b,2,0,леднике | пустыне,,Hero presents the received princesses to his companions
+k67,2,0,степи | степные,,Burned moccasins
+k67a,1,0,степи,,A drowned wife
+k67c,1,0,степи,,Skin ribbon ripped off from the back
+k70,2,0,тайге | тайгу,,Two sisters-in-law: the girl and the frog
+k71,1,0,степной,,Coyote first betrays and then saves his brother
+k72,6,0,пустыне | пустыню | степи | степная | степь | тайгу,,Three maidens
+k73,7,0,пустыне | пустыни | пустыню | степи | степная | степь | тайгу,,Children of the youngest wife
+k73a,3,0,пустыни | пустыню | степи,,Baby child substituted with pup
+k73b,1,0,степь,,Innocent woman punished
+k73c,2,0,пустыню | степи,,A girl in a bird's nest
+k74,5,0,пустыне | степи | степной | тайге | тундру,,"Hero, his companions and a dwarf"
+k74a,5,0,степи | тундра | тундру | яранги | ярангу,,Demon claims food and is wounded
+k75,7,0,пустыне | пустыни | пустыню | пустыня | степи | степные | степь,,Bridegroom of the youngest daughter (The loathsome bridegroom)
+k75a,6,0,пустыне | пустынный | пустыню | пустыня | степи | степь,,Thrown apple hits the chosen one
+k76,2,0,пустыне | пустыни,,A strange son
+k76b,1,0,пустыне,,Son the snake.
+k77b,1,0,степь,,The animals in night quarters (Bremen town musicians)
+k77b1,1,0,степь,,The wolf flees from the wolf-head
+k78,2,0,саванну | степи,,Extracted from finger
+k79,2,0,степи | степь,,Snake serves an example of resuscitation
+k80,6,0,пустыне | пустыню | степи | степь | тайге | тайгой,,Repeated reincarnation
+k80a,4,0,пустыне | пустыню | степи | степь,,A bird or an object tell about a murder
+k80a1,2,0,пустыне | степь,,Bird tells about a murder
+k80a2,3,0,пустыню | степи | степь,,Pipe tells about a murder
+k80c,2,0,пустынной | степи,,The cranes of Ibycus
+k80d,3,0,пустыне | пустыни | пустыню,,The stuck in pin
+k81,1,0,пустыню,,The handless girl
+k82,4,0,пустыне | пустыню | степи | степь,,Evil sister-in-law
+k82a,2,0,пустыне | пустыню,,Pregnancy from the snake eggs
+k83,3,0,пустыне | пустыня | степи,,The sons on a quest for a wonderful remedy for their father
+k84,2,0,пустыне | тундру,,Sisters married to animals
+k88,2,0,пустыне | степи,,The two travellers (Truth and Falsehood)
+k88a,3,0,пустыне | пустынным | пустыню,,The blinded bride
+k88b,4,0,пустыне | пустынным | пустыню | степи,,Food exchanged for eyes
+k89,1,0,тайгу,,A girl and a witch: presents of kinsfolk
+k89b,1,0,тайгу,,Brother abandoned in a tree
+k89d,1,0,тайгу,,Girl hides turning into a needle
+k8a,9,0,пустыне | пустыня | степей | степи | степные | степь | тайге | тайги | тайгой,,Jonah: swallowed by monster
+k8aa,1,0,пустыню,,Jonah: swallowed by bird
+k8c,1,0,степи,,Jonah: swallowed by terrestrial animal
+k8c1,1,0,степи,,First swallowed by herbivorous animal and then by wolf
+k8d,3,0,ледник | степи | степные,,Jonah: swallowed by anthropomorphic being
+k8e,1,0,степные,,Gets inside via anus
+k90,1,0,степи,,The black and the red ones
+k92,2,0,пустыне | пустыню,,King Lear
+k92a,3,0,пустыне | пустыню | степь,,The princess responsible for her own fortune
+k92b,1,0,пустыне,,Love like salt
+k93b2,3,0,пустыне | пустыню | степь,,Conception from eaten apple
+k93b3,1,0,пустыне,,"Boys, colts and puppies are born the same day"
+k93b4,1,0,степь,,"Woman, mare, and bitch birth give birth to human boys"
+k94,4,0,пустыне | пустыню | степи | степь,,Bird of luck (eaten up head)
+k95,3,0,пустыне | пустыню | степь,,The twining branches (united in death)
+k96,4,0,леднике | пустыне | саванну | степи,,Fifty sons
+k98,2,0,пустыни | пустыню,,(Animal) helper turns into household
+k99a,1,0,джунгли,,The father will humble himself before the son
+k99b,1,0,степь,,Eloping with the wrong man
+l100,3,0,пустыни | степи | тайгу,,Transformation flight
+l100a,1,0,степь,,A pursuer throws ahead the transformed fugitive
+l100d,1,0,степи,,The entrapped suitors
+l101,2,0,яранге | яранги,,Pieces of clothes thrown to pursuer
+l103,2,0,саванне | саванны,,Obstacle flight (Atalanta type)
+l104,2,0,пустыне | степь,,Fugitive and pursuer change guises
+l106a,1,0,пустыню,,Stomach cut open
+l107,1,0,тайги,,The ear-sleepers
+l108,4,0,саванне | саванну | саванны | тайге,,The wolf and the kids
+l108b,3,0,саванне | саванну | саванны,,The thin voice
+l108c,1,0,тайге,,The white hand
+l10a,2,0,степи | степной,,Demon comes to hunter’s camp-fire
+l110,5,0,пустыни | саванне | саванну | степи | степь,,The devourer
+l113,1,0,яранги,,The ogre bridegroom
+l114,3,0,саванне | саванну | саванны,,The youngest one saves siblings from demon
+l114a,3,0,пустыне | саванну | саванны,,A child who stays awake
+l114c,2,0,саванне | саванну,,To exchange clothes with ogre's daughters
+l116a,2,0,пустыне | степь,,Doe with golden horns
+l120,3,0,пустыне | пустыню | степи,,Snake-women turn into apple-trees
+l120a,3,0,пустыне | пустыню | степи,,Tongue of dragoness and the smith's pincers
+l121,1,0,саванну,,Demonic woman marries hunter to kill him
+l121a,1,0,саванну,,The hunter’s secret
+l122a,2,0,ледника | степи,,Stitching up cracks in the earth
+l125,3,0,пустыне | степи | степь,,Demonic wife recognized
+l127,1,0,саванну,,Dancing ears
+l128,1,0,степь,,You are Deo but I am Mahadeo
+l14,1,0,тундре,,Reared up serpent
+l15a,1,0,пустыне,,Vulnerable limb
+l15b,1,0,степные,,To kill with a reed
+l15c,1,0,степях,,Hero lies and remains unharmed
+l15d,8,0,прерии | пустыне | пустыню | пустыня | степи | степь | тайги | тайгу,,The external soul
+l15e,1,0,пустыне,,Hero’s life in his sword
+l15f,1,0,пустыню,,"Heroine’s life in her necklace, ATU 412"
+l15h,4,0,пустыне | пустыню | пустыня | степи,,The external soul: three or more objects one inside the other
+l15i,1,0,пустыне,,Life in hairs
+l17,1,0,тундровые,,Face on breast
+l17a,1,0,ледника,,Eyes on the back of the head
+l18,1,0,тундровые,,Multi-headed bird
+l19b,5,0,пустыне | пустынь | пустыню | степная | тайге,,Multi-headed being
+l1e,1,0,саванны,,Person creates monstrous birds
+l23,2,0,степи | степь,,Proteus
+l23a,1,0,степь,,Transformation into the fire
+l25,2,0,прерии | пустыне,,Demonic girl sucks brains
+l27,1,0,тайге,,Girl eaten up
+l32,1,0,саванне,,Gluttonous stone
+l33a,1,0,степные,,Rock pursues stealer
+l34,1,0,тундре,,Burning hair
+l37a,2,0,мерзлоты | пустыня,,To get know causes of problems
+l37b,3,0,пустыне | пустыню | степи,,Secrets accidentally overheard
+l38,4,0,тундра | тундре | тундровые | тундру,,Demon’s trap
+l38a,3,0,тундра | тундре | тундру,,A sticky trap
+l39,2,0,пустыню | степи,,Person hides in a tree but descends
+l4,1,0,пустыню,,The unmasked murderer
+l40,5,0,пустыне | пустыня | степи | степь | яранге,,Reflection and shadow
+l40b,2,0,пустыню | степи,,Absurd actions to lure person out
+l41,1,0,тундре,,Hero escapes on the way
+l42,2,0,тундре | тундру,,Hero carried to ogre’s home
+l42b,2,0,пустыню | тайгу,,Credulous children of ogre
+l42d,0,2,,frozen | ice,Ogre’s tongue frozen to ice
+l42g,1,0,пустыне,,Hansel and Gretel
+l42g1,2,0,пустыне | пустыни,,"Chops are heard, woodcutter is gone"
+l42g2,1,0,пустыне,,Birds destroy trace
+l42j,4,0,тундру | яранга | яранге | яранги,,Tree bends down (mice in the ogre’s bag)
+l44a,5,0,тундра | тундре | тундру | яранги | ярангу,,Give me your liver
+l52,1,0,тайги,,Hero escapes from top of a tree
+l55,2,0,тундре | тундры,,Monster killed with hot liquid
+l57,2,0,ледник | леднике,,Person gets his body part back
+l57a,3,0,пустыне | пустыню | пустыня,,Hero’s companion gets his body part back
+l5c,1,0,степные,,Rolling head pursues people
+l5e,1,0,степные,,Wife’s headless body pursues her husband
+l5f,2,0,тайге | тундру,,Helpful skull
+l6,3,0,саванна | саванну | степные,,Demon clings to person
+l61,1,0,саванну,,Endocannibal
+l65,2,0,тайги | тайгу,,Demonic baby
+l65a,4,0,пустыне | пустынной | степи | тайги,,The cannibal sister
+l65b,6,0,пустынной | саванне | степи | тайгу | яранге | яранги,,Dogs save their master
+l65c,3,0,тундровые | тундру | яранги,,Cannibal elder sister
+l65d,1,0,яранги,,Younger sister of cannibal woman
+l72,7,0,пустыне | пустыня | саванну | степи | степные | тундровые | тундру,,The obstacle flight
+l72a,4,0,пустыне | степи | тундровые | тундру,,Comb becomes a thicket
+l72b,1,0,степи,,Whetstone becomes a mountain
+l72c,1,1,пустыне,ice,Obstacle flight: the thrown mirror
+l72g,1,0,пустыня,,Obstacle flight: the thrown salt
+l73,4,0,пустыне | тундре | тундровые | тундру,,Ogre tries to drink a river dry and bursts
+l81,3,0,пустыне | степи | степная,,Demon’s fire
+l81a,1,0,степная,,Cat brings a misfortune
+l81a2,1,0,степи,,Demon comes to drink blood of a girl
+l81b,1,0,степи,,Hero's cut off legs
+l85,9,0,пустыню | таежный | тайге | тайги | тундре | тундровый | тундровых | яранге | ярангу,,One-sided people
+l85a,1,0,пустыню,,One-sided child
+l86,2,0,степные | тундре,,Woman pursues her children
+l90,3,0,пустыне | пустыню | степей,,Mouth from the earth to the sky
+l92,1,0,степная,,Animal shams being helpful
+l93a,5,0,пустыню | тундру | яранга | яранге | яранги,,Helpful fox
+l93b,2,0,пустыня | степь,,Helpful rabbit
+l94,6,0,пустыне | пустыню | пустыня | степь | тайга | тайгу,,Child promised to demon
+l94a,2,0,степь | тайгу,,Caught by a beard
+l96,2,0,пустыне | степь,,Sold in animal’s guise and comes back
+l96a,2,0,пустыне | степь,,"Oh, dear!"
+l96b,2,0,пустыня | степь,,The yogi boiled in his own pot of oil
+l98,1,0,степь,,Cannibal owl
+l99,1,0,степные,,Bring me a spit to roast you!
+l9d,1,0,степи,,Sharp hands
+l9e,3,0,пустынной | степи | степь,,Copper nose
+m10,1,0,саванна,,A girl and a honey
+m101,2,0,тундра | тундровые,,"Some are afraid of men, and some of partridges"
+m104,1,0,саванну,,Make believe killing of kinsfolk
+m106,1,0,степи,,Meaningful name
+m106b,1,0,степи,,“Last year” in a demon’s house
+m108,3,0,тундре | тундровые | тундру,,Trickster carries away people's property
+m108a,2,0,степная | степной,,Trickster as an adopted child
+m109,1,1,пустыню,ice,The tail-fisher
+m109a,0,2,,frozen | ice,To sit on the ice waiting for food
+m111,0,1,,banana,Monkey on the banana tree
+m112,2,0,пустыня | степь,,Animals dig a well
+m113,1,0,пустыня,,Water is taboo for a certains bird
+m114,3,1,пустыню | степи | степь,sand,Rope of sand
+m114a,1,0,степи,,Clothes of stone
+m114b,2,0,степи | степь,,Not clothed and not naked
+m114b1,1,0,степь,,"What is the fattest, sweetest, swiftest?"
+m114c,1,0,степи,,To protect from rain by his own body
+m114e,1,0,степной,,To tether a horse to the summer
+m114g,1,0,пустыню,,"The camel is high, the goat has a long beard"
+m114i,2,0,степной | степь,,"Asked about their relatives, girl or boy answers with wit"
+m116,3,0,пустыне | пустыню | тайга,,Wisdom of hidden old man saves kingdom
+m116a,2,0,пустыне | пустыню,,Ungrateful son reproved by naive actions of own son
+m118,1,0,пустыню,,Source of values is destroyed imprudently
+m118a,1,0,пустыню,,Forty thieves and jars with oil
+m118b,1,0,пустыню,,Repository inside a cow
+m123,1,0,арктика,,Raven marries goose
+m123b,0,1,,canoe,Trickster tied to a boat
+m123c,1,0,арктика,,Unlucky flight with migratory birds
+m13,1,0,степные,,God grants requests to his visitors
+m134,1,0,степь,,A tower of wolves
+m135,1,0,степной,,Wolf and two rams
+m135a,2,0,степи | степной,,Wolf regrets for being so stupid
+m136,1,0,степи,,Sickle as an unknown beast
+m13a,1,0,степные,,Transformed into stone
+m140,2,0,пустыню | тайгу,,The theft of fish
+m147a,1,0,степи,,Foxes will meet at the bazaar
+m148,1,0,пустыню,,Agrees to be eaten up
+m152,2,0,пустыне | пустыню,,Why only one wolf?
+m152a,1,0,пустыне,,Animal tied to another for safety
+m153,3,0,степи | степной | тайга,,Letter on the hoof
+m153b,2,0,степи | степь,,Wolf rides a horse
+m156,4,0,саванны | степи | степного | степь,,The ungrateful one returned to captivity
+m157,3,0,пустыни | степи | степь,,Impossible giving birth
+m157a1,2,0,степи | степь,,Father is giving birth
+m157a2,1,0,степь,,Bull or cart give birth
+m157a3,2,0,степи | степь,,To milk a bull
+m157a4,1,0,степь,,To fish on a hill
+m157b,1,0,степь,,To take the one thing she holds dearest
+m160,1,0,саванну,,Unkind words are more painful than wound
+m161,2,0,степи | тайга,,A dog in the bag
+m162,1,0,пустыню,,Eats his own innards
+m167,1,0,степь,,A tiger taken for a bull
+m171b,2,0,тундре | тундру,,Shoulder-blade with no meat
+m174,1,0,пустыню,,Eats from behind
+m178,1,0,пустыню,,The lying goat
+m179,0,1,,ice,A house of bark and a house of ice
+m179a,2,0,пустыню | степного,,The owner driven out of his house
+m181a,1,0,пустыне,,Fire at the sunset
+m19,1,0,прерия,,The bait-person
+m192,1,0,пустыню,,Trapped in the animal hide
+m195,1,0,степи,,Two horses: which is older?
+m195a,1,0,степи,,Which end of a stick is a butt?
+m197,1,0,леднике,,The effectiveness of fire
+m198,3,0,степи | степной | тайга,,Wise brothers (the king is bastard)
+m198a,2,0,степи | тайга,,Wise brothers (the strayed camel)
+m198a1,3,0,пустыне | степи | степной,,"The eldest: it is round, the middle: it is hard, the youngest: it is a nut!"
+m199,1,0,пустыню,,Squeezing the (supposed) stone
+m199a,1,0,пустыню,,Extracting brain from the earth
+m199c1,1,0,пустыню,,Throwing contest
+m199i,2,0,степь | тайге,,Screaming or whistling context
+m21,4,0,пустыня | саванну | саванны | тундру,,A protector hides fugitives
+m22,1,0,степные,,Helpful stock
+m23,1,0,степные,,Mock plea
+m24,1,0,степные,,Turtle’s war party
+m29a,1,0,тундровые,,Trickster-raven
+m29b,2,0,степи | тундровые,,"Trickster-fox, jackal or coyote"
+m29b2,1,0,тундровые,,The bear is a failure/enemy
+m29c,1,0,степные,,Trickster-skunk
+m29g,1,0,тундровые,,Trickster-hare or rabbit
+m29j,1,0,степные,,Trickster is a water bird
+m29k,1,0,степные,,"Trickster is a turtle, a toad or a frog"
+m30,2,0,степи | степные,,Trickster falls down
+m30c,1,0,степи,,Flying person falls down after breaking taboo
+m30d,1,0,степи,,The tortoise lets itself be carried by birds
+m31,3,0,тундру | яранга | яранге,,Trickster thrown into the water
+m32a,1,0,степные,,Eating pieces of flesh that fall out
+m36,0,1,,ice,Dismantles himself to crawl through an opening
+m38,3,0,саванну | тундре | тундру,,Stupid imitation (all versions)
+m38a,1,0,саванну,,The bungling host
+m38b2,1,0,степи,,Three daughters-in-law at the king's banquet
+m39a,3,0,степь | тайгу | тундровые,,Fool takes off boots from animals’ legs
+m39a4a,2,0,пустыню | степь,,Selling a cow to a lizard (Money inside the statue)
+m39a4b,1,0,пустыню,,Frogs the spinners
+m39a5a,1,0,пустыню,,The sausage rain
+m39a6,1,0,пустыню,,Misunderstood instructions: to cut a road
+m39a6a,2,0,степи | степь,,Clever daughter-in-law of the imprisoned khan
+m39a6d,3,0,пустыня | степи | степь,,A coded message
+m39a6f,1,0,степи,,To sell a sheep and to bring the sheep and the money
+m39a6h,1,0,степи,,Plucking geese
+m39b,1,1,тундровые,canoe,Fool attacks his own dwelling
+m39b1,0,1,,canoe,Paddling in both directions
+m39i,1,0,пустыне,,The treasure of the hanging man
+m4,1,0,степные,,A wrong step
+m40,1,0,степи,,The distorted instructions
+m42,4,0,саванну | степные | яранга | яранге,,Eyes: lost and found
+m42a,2,0,яранга | яранге,,Eyes of berries
+m43,1,0,степи,,Doll as a decoy
+m45a,2,0,тайге | тундровые,,Old man and animals
+m46a,1,0,тундровые,,The picked up baby
+m49,13,0,ледник | леднике | прерии | пустыне | пустыню | степи | степные | тайге | тундра | тундре | тундру | яранги | ярангу,,Man in a skin of another
+m49a,7,0,ледник | леднике | степные | тундра | тундру | яранги | ярангу,,The substituted medicine-woman
+m5,1,0,саванну,,Provoked insult
+m53,1,0,степные,,Hoodwinked dancers
+m53b,1,0,степные,,Bag with songs
+m53c,1,0,степные,,Red eyes
+m54,1,0,степь,,Runway awakes in the same house
+m57a,7,0,пустыне | пустыни | пустыню | степи | степные | степь | тундре,,Beads discharged from body
+m57c,2,0,пустыню | средиземноморье,,Ass defecates gold
+m57d,1,0,пустыню,,"Beat, cudgel!"
+m57d4,0,1,,frost,Frost grants a wish
+m5a,0,1,,canoe,Rat in the water
+m60,5,0,тундра | тундре | тундру | яранги | ярангу,,Sham doctor: finished off enemy
+m60a,1,0,степные,,Unrecognized hero comes to one whom he wounded
+m60a1,1,0,пустыню,,Herdsman explains how to ferry
+m60a2,2,0,пустыню | степи,,False servant licks soles
+m60b,4,0,тундра | тундровые | яранга | яранге,,False doctor: a finished off victim
+m62b,2,0,степная | степной,,Trying to hit the hero hit each other
+m62d,1,0,степь,,Hare in rotten hide
+m65,1,0,степные,,"Trickster jammed, meat stolen"
+m65a,1,0,степные,,Squeaking tree
+m65b,1,0,степные,,The lost quarry
+m66,2,0,степной | степные,,Itch after artichoke eating
+m68,1,0,степные,,Breaking wind scares game
+m69,1,0,степные,,Getting fast in an animal skull
+m74a,2,0,тайгу | тундровые,,Strange names of the babies
+m74aa,1,0,степь,,Theft of food by playing godfather
+m74ab,2,0,тайгу | тундровые,,Fox in a boat
+m75a,1,0,степные,,Revenge for falling from the sky
+m75b,2,0,пустыне | степи,,Hero inside carcass
+m75b1,1,0,пустыне,,Marco the Rich
+m75b1a,1,0,тайге,,The predestined wife
+m75b2,1,0,степным,,Bird tries to avert predetermined marriage
+m75c,1,0,пустыне,,Treasure on mountain top
+m77,3,0,пустыне | пустыню | степи,,A soiled bed
+m78,2,0,пустыни | степи,,Thumbling
+m78a,1,0,пустыни,,Tail-boy
+m79,2,0,степной | степные,,Dancing with reeds
+m7a,3,0,тундру | яранга | яранге,,Left in the water
+m7b,2,0,яранга | яранге,,Fox asks passers-by to help him
+m80,1,0,степные,,Quail scares trickster
+m81,2,0,саванна | саванну,,Blind persons
+m82,3,0,ледник | ледника | степные,,Animal person ties rattles to its tail
+m84a,2,0,тайге | тайгу,,Goat resuscitated
+m84c,1,1,тайгу,desert,Guest of bush spirits
+m85,3,0,степь | тайги | тундровая,,The fox bluffs
+m86,1,0,степные,,Rock punishes trickster
+m8a,1,0,саванна,,Birds peck a rock to release prisoners
+m90,1,0,пустыни,,Snake gives a correct answer of what material the object is made
+m90a,2,0,пустыни | пустыню,,To marry a man who would give a correct answer
+m90a1,1,0,пустыни,,The louse skin
+m91,4,0,степи | степь | тундра | тундровые,,The killed corpse
+m91a,4,0,пустыню | тайгу | тундра | тундровые,,Simulated killing (a bag with blood)
+m91b,2,0,пустыню | степь,,The sold ashes
+m91b1,1,0,пустыне,,The sold skin
+m91c1,3,0,пустыне | пустыню | тундра,,Herd from the river bottom
+m91c2,6,0,пустыне | пустыню | саванны | степь | тундра | тундровые,,Put into bag
+m91d,2,0,тундра | тундровые,,The drowned shaman
+m93,3,0,степные | яранга | яранге,,Body part as a guard
+m93a,1,0,степные,,Guard punished
+m94,2,0,тундра | тундру,,Sliding downhill
+m94a,1,0,тундра,,Wolf in a basket
+m97,1,0,степные,,Blind directed by trees
+m98,2,0,пустыни | пустынь,,Who are more numerous?
+n1,5,0,пустынной | степи | таежные | тайга | тайги,,Initial formula: when Altai was but a small tussock
+n10,4,0,степи | тундровые | тундры | ярангу,,The transparent body
+n10b,1,0,степи,,The transparent neck
+n10c,2,0,тундры | ярангу,,Inner organs are seen through the body
+n11,1,1,степи,snow,As snow and blood
+n13,1,0,степь,,Girl is the scissors
+n14,1,0,степной,,Storyteller on the wedding
+n16,0,1,,ice,The ice horse
+n2,1,0,степного,,Initial formula: when a goat was a colonel
+n20,2,0,пустыне | степь,,They attained their desires
+n24,2,0,степь | тайгу,,Like another Moon
+n26,2,1,степи | степного,ice,When wheat grew on the ice
+n29,1,0,тундровые,,Before the water starts to boil
+n30,1,0,пустыне,,Crying while looking in one direction and laughing while looking in another
+n4,1,0,степи,,Ribs with no intervals
+n5,5,0,степи | степь | тайги | тайгу | тундра,,"They recognize winter by rime, summer by rain"
+n8,1,0,степь,,Storyteller instead of a cannonball
+n9,1,1,степь,snow,Who is coming?

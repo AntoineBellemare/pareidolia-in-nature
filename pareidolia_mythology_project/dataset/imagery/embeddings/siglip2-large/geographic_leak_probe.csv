@@ -1,0 +1,3957 @@
+motif_id,term,n_mentions,category,biome_hint
+a1,маниока,1,artefact,Trop. Moist — manioc
+a12,альпы,1,mountain,Mediterranean
+a12,азии,1,continent,?
+a12,лук,4,artefact,"generic, ambiguous (also = onion)"
+a12,стрела,6,artefact,generic
+a12,сибирский,1,region,Tundra/Boreal
+a12,южный,2,direction,Southern
+a12,северный,1,direction,Northern
+a12a,альпы,1,mountain,Mediterranean
+a12a,лук,2,artefact,"generic, ambiguous (also = onion)"
+a12a,стрела,1,artefact,generic
+a12b,лук,1,artefact,"generic, ambiguous (also = onion)"
+a12b,южный,1,direction,Southern
+a12b,стрела,2,artefact,generic
+a12c,нила,1,river,Desert/Trop. Savanna
+a12c,азии,1,continent,?
+a12c,лук,1,artefact,"generic, ambiguous (also = onion)"
+a12d,лук,1,artefact,"generic, ambiguous (also = onion)"
+a12d,стрела,1,artefact,generic
+a12e,стрела,2,artefact,generic
+a13a,камчатки,1,region,Boreal/Tundra
+a13a,азии,1,continent,?
+a13a1,аляски,1,region,Tundra/Boreal
+a13a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+a14,азии,1,continent,?
+a14,лук,1,artefact,"generic, ambiguous (also = onion)"
+a14,северный,1,direction,Northern
+a14,аляски,1,region,Tundra/Boreal
+a16,лук,3,artefact,"generic, ambiguous (also = onion)"
+a16,стрела,2,artefact,generic
+a17,лук,2,artefact,"generic, ambiguous (also = onion)"
+a17,гарпун,1,artefact,Arctic/coastal — harpoon
+a18,гималаев,1,mountain,Mountain
+a18,ямс,1,artefact,Trop. Moist — yam
+a18,гарпун,1,artefact,Arctic/coastal — harpoon
+a20,аляски,1,region,Tundra/Boreal
+a20,северный,1,direction,Northern
+a20,маис,1,artefact,Trop./Temp. — maize
+a20,маниока,2,artefact,Trop. Moist — manioc
+a20,лук,2,artefact,"generic, ambiguous (also = onion)"
+a21,австралии,1,region,Desert/Savanna (Aus)
+a21,бумеранг,3,artefact,Australia — boomerang
+a21,северное,1,direction,Northern
+a21,лук,2,artefact,"generic, ambiguous (also = onion)"
+a21,стрела,1,artefact,generic
+a22,ямс,1,artefact,Trop. Moist — yam
+a22,северная,1,direction,Northern
+a22c,северная,1,direction,Northern
+a23,лук,1,artefact,"generic, ambiguous (also = onion)"
+a23,стрела,2,artefact,generic
+a23a,карелия,1,region,Boreal
+a23b,карелия,1,region,Boreal
+a24,северная,1,direction,Northern
+a24,северного,1,direction,Northern
+a27,стрела,2,artefact,generic
+a29a,стрела,1,artefact,generic
+a2a,ямса,1,artefact,Trop. Moist
+a2a,гималаев,1,mountain,Mountain
+a2a,лук,20,artefact,"generic, ambiguous (also = onion)"
+a2a,стрела,12,artefact,generic
+a2a,северного,1,direction,Northern
+a2a,северный,3,direction,Northern
+a2a,южный,1,direction,Southern
+a2a,амур,1,river,Boreal
+a2b,лук,14,artefact,"generic, ambiguous (also = onion)"
+a2b,стрела,8,artefact,generic
+a2b,северного,1,direction,Northern
+a2b1,ямса,1,artefact,Trop. Moist
+a2b1,лук,11,artefact,"generic, ambiguous (also = onion)"
+a2b1,стрела,6,artefact,generic
+a2c,лук,1,artefact,"generic, ambiguous (also = onion)"
+a2d,северное,1,direction,Northern
+a2d,маниока,1,artefact,Trop. Moist — manioc
+a2d,ямс,1,artefact,Trop. Moist — yam
+a3,северного,1,direction,Northern
+a3,конго,1,region/river,Trop. Moist
+a3,ямс,3,artefact,Trop. Moist — yam
+a3,полинезии,2,region,Trop. Moist (Pacific)
+a3,лук,5,artefact,"generic, ambiguous (also = onion)"
+a3,полярная,2,climate,Arctic
+a3,нарты,2,artefact,Tundra/Boreal — sledge pl
+a3,северный,1,direction,Northern
+a3,стрела,1,artefact,generic
+a3,северная,1,direction,Northern
+a3,амазонка,1,river,Trop. Moist
+a3,северное,1,direction,Northern
+a3,маниока,1,artefact,Trop. Moist — manioc
+a3,южный,1,direction,Southern
+a31,аляски,1,region,Tundra/Boreal
+a31,лук,3,artefact,"generic, ambiguous (also = onion)"
+a31,амазонии,1,region,Trop. Moist
+a31,стрела,1,artefact,generic
+a31,маниока,2,artefact,Trop. Moist — manioc
+a31,ямс,1,artefact,Trop. Moist — yam
+a31a,нарте,1,artefact,Tundra/Boreal
+a31a,нарты,1,artefact,Tundra/Boreal — sledge pl
+a31a,аляски,1,region,Tundra/Boreal
+a32a,стрела,5,artefact,generic
+a32a,северного,1,direction,Northern
+a32a,сахара,1,region,Desert
+a32b,сахара,1,region,Desert
+a32b,лук,2,artefact,"generic, ambiguous (also = onion)"
+a32b,гарпун,1,artefact,Arctic/coastal — harpoon
+a32b,южный,3,direction,Southern
+a32c,южный,1,direction,Southern
+a32d,северный,2,direction,Northern
+a32d,южный,5,direction,Southern
+a32d,северная,1,direction,Northern
+a32d,сахара,1,region,Desert
+a32d,стрела,5,artefact,generic
+a32d,северного,2,direction,Northern
+a32d,нарта,1,artefact,Tundra/Boreal — sledge
+a32d,аляски,1,region,Tundra/Boreal
+a32d,лук,2,artefact,"generic, ambiguous (also = onion)"
+a32dd,южный,1,direction,Southern
+a32e,южный,4,direction,Southern
+a32e,северного,2,direction,Northern
+a32e,стрела,2,artefact,generic
+a32e,аляски,1,region,Tundra/Boreal
+a32f,южный,3,direction,Southern
+a32f,гарпун,1,artefact,Arctic/coastal — harpoon
+a32f,лук,1,artefact,"generic, ambiguous (also = onion)"
+a32h,южный,1,direction,Southern
+a32h,северного,1,direction,Northern
+a32h,стрела,2,artefact,generic
+a35,азии,1,continent,?
+a35,ямс,1,artefact,Trop. Moist — yam
+a35,стрела,2,artefact,generic
+a35,гарпун,1,artefact,Arctic/coastal — harpoon
+a35,лук,1,artefact,"generic, ambiguous (also = onion)"
+a35,амазонии,1,region,Trop. Moist
+a35c,стрела,1,artefact,generic
+a36,австралия,1,region,Desert/Savanna (Aus)
+a36,ямс,1,artefact,Trop. Moist — yam
+a36,стрела,3,artefact,generic
+a37,лук,14,artefact,"generic, ambiguous (also = onion)"
+a37,гималаев,1,mountain,Mountain
+a37,стрела,11,artefact,generic
+a37,северного,3,direction,Northern
+a37,амур,1,river,Boreal
+a37,северный,1,direction,Northern
+a37a,лук,3,artefact,"generic, ambiguous (also = onion)"
+a37a,стрела,5,artefact,generic
+a37b,стрела,4,artefact,generic
+a38,стрела,2,artefact,generic
+a38,лук,1,artefact,"generic, ambiguous (also = onion)"
+a38,северный,1,direction,Northern
+a38a,стрела,1,artefact,generic
+a38a,лук,1,artefact,"generic, ambiguous (also = onion)"
+a38b,стрела,2,artefact,generic
+a38b,лук,1,artefact,"generic, ambiguous (also = onion)"
+a38b,северный,1,direction,Northern
+a38c,лук,2,artefact,"generic, ambiguous (also = onion)"
+a38d,лук,2,artefact,"generic, ambiguous (also = onion)"
+a38d,северный,1,direction,Northern
+a39,лук,1,artefact,"generic, ambiguous (also = onion)"
+a4,северного,1,direction,Northern
+a4,африки,1,region,Trop. Savanna/Moist
+a4,азии,3,continent,?
+a4,ямс,1,artefact,Trop. Moist — yam
+a4,ямса,1,artefact,Trop. Moist
+a4,лук,3,artefact,"generic, ambiguous (also = onion)"
+a4,полярная,2,climate,Arctic
+a4,южный,1,direction,Southern
+a40,маниока,1,artefact,Trop. Moist — manioc
+a41,австралии,1,region,Desert/Savanna (Aus)
+a42,нарте,1,artefact,Tundra/Boreal
+a42,лук,6,artefact,"generic, ambiguous (also = onion)"
+a42,стрела,1,artefact,generic
+a43,стрела,1,artefact,generic
+a43a,стрела,1,artefact,generic
+a45,южный,2,direction,Southern
+a45,северного,1,direction,Northern
+a46,северное,1,direction,Northern
+a46,южное,1,direction,Southern
+a47,австралии,1,region,Desert/Savanna (Aus)
+a47,южный,1,direction,Southern
+a4a,лук,1,artefact,"generic, ambiguous (also = onion)"
+a5,ямс,1,artefact,Trop. Moist — yam
+a5,ямса,1,artefact,Trop. Moist
+a5,лук,9,artefact,"generic, ambiguous (also = onion)"
+a5,северный,1,direction,Northern
+a5,экватора,1,climate,Equatorial
+a5,сахара,1,region,Desert
+a5,северного,1,direction,Northern
+a5,стрела,4,artefact,generic
+a5,гарпун,1,artefact,Arctic/coastal — harpoon
+a5,южный,2,direction,Southern
+a5,маниока,2,artefact,Trop. Moist — manioc
+a6,северного,1,direction,Northern
+a6,конго,2,region/river,Trop. Moist
+a6,лук,5,artefact,"generic, ambiguous (also = onion)"
+a6,полярная,1,climate,Arctic
+a7,аляски,1,region,Tundra/Boreal
+a7,северный,1,direction,Northern
+a7a,аляски,1,region,Tundra/Boreal
+a7a,лук,1,artefact,"generic, ambiguous (also = onion)"
+b1,енисей,1,river,Boreal
+b1,северного,1,direction,Northern
+b1,лук,1,artefact,"generic, ambiguous (also = onion)"
+b1,стрела,1,artefact,generic
+b10,стрела,1,artefact,generic
+b10,индонезии,1,region,Trop. Moist
+b10,лук,2,artefact,"generic, ambiguous (also = onion)"
+b10,гарпун,1,artefact,Arctic/coastal — harpoon
+b100,маниока,1,artefact,Trop. Moist — manioc
+b107,лук,1,artefact,"generic, ambiguous (also = onion)"
+b110,лук,1,artefact,"generic, ambiguous (also = onion)"
+b110,северная,1,direction,Northern
+b110,стрела,1,artefact,generic
+b110,якутии,1,region,Boreal/Tundra
+b113,северный,2,direction,Northern
+b113,южный,3,direction,Southern
+b115,северный,1,direction,Northern
+b115,сибирский,1,region,Tundra/Boreal
+b116,кавказ,1,mountain,Mediterranean/Mountain
+b116,алтая,1,mountain,Mountain/Steppe
+b116,алтай,1,mountain,Mountain/Steppe
+b116,якутии,1,region,Boreal/Tundra
+b116b,алтая,1,mountain,Mountain/Steppe
+b11a,лук,1,artefact,"generic, ambiguous (also = onion)"
+b13a,стрела,2,artefact,generic
+b13a,южный,1,direction,Southern
+b14,маниока,2,artefact,Trop. Moist — manioc
+b16a,стрела,1,artefact,generic
+b17,лук,1,artefact,"generic, ambiguous (also = onion)"
+b17,ямс,1,artefact,Trop. Moist — yam
+b17,маниока,2,artefact,Trop. Moist — manioc
+b17,стрела,1,artefact,generic
+b18,аляски,1,region,Tundra/Boreal
+b19,лук,1,artefact,"generic, ambiguous (also = onion)"
+b19,стрела,1,artefact,generic
+b19,ямса,1,artefact,Trop. Moist
+b19,маниока,1,artefact,Trop. Moist — manioc
+b1a,южный,1,direction,Southern
+b23,стрела,1,artefact,generic
+b26,аляски,1,region,Tundra/Boreal
+b26,лук,1,artefact,"generic, ambiguous (also = onion)"
+b27,аляски,1,region,Tundra/Boreal
+b27,ямс,1,artefact,Trop. Moist — yam
+b27,маниока,1,artefact,Trop. Moist — manioc
+b28,сибирские,1,region,Tundra/Boreal
+b28,аляски,1,region,Tundra/Boreal
+b28,лук,2,artefact,"generic, ambiguous (also = onion)"
+b28,южный,1,direction,Southern
+b28,северного,2,direction,Northern
+b28,маниока,4,artefact,Trop. Moist — manioc
+b28,маис,1,artefact,Trop./Temp. — maize
+b28a,маниока,1,artefact,Trop. Moist — manioc
+b28b,северного,2,direction,Northern
+b28d,лук,1,artefact,"generic, ambiguous (also = onion)"
+b28d,северного,2,direction,Northern
+b28d1,лук,1,artefact,"generic, ambiguous (also = onion)"
+b28e,лук,1,artefact,"generic, ambiguous (also = onion)"
+b29,ямс,1,artefact,Trop. Moist — yam
+b29,аляски,1,region,Tundra/Boreal
+b2a,азии,1,continent,?
+b2a,индонезии,1,region,Trop. Moist
+b2a,стрела,4,artefact,generic
+b2a,лук,3,artefact,"generic, ambiguous (also = onion)"
+b2a,маис,2,artefact,Trop./Temp. — maize
+b2a,северный,1,direction,Northern
+b2a,южный,1,direction,Southern
+b2a,маниока,1,artefact,Trop. Moist — manioc
+b2a,ямс,2,artefact,Trop. Moist — yam
+b2d,ямс,1,artefact,Trop. Moist — yam
+b2d,стрела,4,artefact,generic
+b2d,лук,2,artefact,"generic, ambiguous (also = onion)"
+b2e,стрела,1,artefact,generic
+b3,ямс,1,artefact,Trop. Moist — yam
+b30a,ямс,2,artefact,Trop. Moist — yam
+b30a,гарпун,1,artefact,Arctic/coastal — harpoon
+b31,аляски,1,region,Tundra/Boreal
+b31,ямс,1,artefact,Trop. Moist — yam
+b32,стрела,1,artefact,generic
+b33,северный,2,direction,Northern
+b33a,северный,1,direction,Northern
+b33a,нарты,1,artefact,Tundra/Boreal — sledge pl
+b33a1,северный,1,direction,Northern
+b33c,северный,1,direction,Northern
+b33d,северный,1,direction,Northern
+b33f,лук,1,artefact,"generic, ambiguous (also = onion)"
+b36,океании,1,region,Trop. Moist (Pacific)
+b36,стрела,1,artefact,generic
+b36,маниока,2,artefact,Trop. Moist — manioc
+b36,маис,1,artefact,Trop./Temp. — maize
+b36a,азии,1,continent,?
+b36a,аляски,1,region,Tundra/Boreal
+b37,стрела,1,artefact,generic
+b38,азии,1,continent,?
+b38,аляски,1,region,Tundra/Boreal
+b38b,азии,1,continent,?
+b38c,аляски,1,region,Tundra/Boreal
+b38c,гренландии,1,region,Tundra
+b39,северная,1,direction,Northern
+b3a,лук,6,artefact,"generic, ambiguous (also = onion)"
+b3a,северный,2,direction,Northern
+b3a,южный,2,direction,Southern
+b3a,ямса,1,artefact,Trop. Moist
+b3a,микронезии,1,region,Trop. Moist (Pacific)
+b3a,полинезии,1,region,Trop. Moist (Pacific)
+b3a,гималаи,2,mountain,Mountain
+b3a,гималаев,2,mountain,Mountain
+b3a,кавказа,3,mountain,Mediterranean/Mountain
+b3a,полярная,1,climate,Arctic
+b3a,алтай,1,mountain,Mountain/Steppe
+b3a,стрела,3,artefact,generic
+b3a,нарты,1,artefact,Tundra/Boreal — sledge pl
+b3a,якутии,1,region,Boreal/Tundra
+b3a,амур,1,river,Boreal
+b3a,аляски,1,region,Tundra/Boreal
+b3a,гарпун,3,artefact,Arctic/coastal — harpoon
+b3a,аляска,1,region,Tundra/Boreal
+b3b,стрела,1,artefact,generic
+b3b,лук,2,artefact,"generic, ambiguous (also = onion)"
+b3b,аляски,1,region,Tundra/Boreal
+b3b,гарпун,1,artefact,Arctic/coastal — harpoon
+b3b,маниока,1,artefact,Trop. Moist — manioc
+b3d,ямс,1,artefact,Trop. Moist — yam
+b3e,ямс,1,artefact,Trop. Moist — yam
+b3e,ямса,1,artefact,Trop. Moist
+b3e,южный,1,direction,Southern
+b3e,северный,1,direction,Northern
+b3e,якутии,1,region,Boreal/Tundra
+b3e,амур,1,river,Boreal
+b4,микронезии,1,region,Trop. Moist (Pacific)
+b4,гарпуна,2,artefact,Arctic/coastal
+b4,гарпун,4,artefact,Arctic/coastal — harpoon
+b4,аляски,1,region,Tundra/Boreal
+b40a,северного,1,direction,Northern
+b41,ямс,1,artefact,Trop. Moist — yam
+b41,ямса,1,artefact,Trop. Moist
+b41,лук,1,artefact,"generic, ambiguous (also = onion)"
+b41a,ямс,1,artefact,Trop. Moist — yam
+b41a,ямса,1,artefact,Trop. Moist
+b42,стрела,37,artefact,generic
+b42,лук,9,artefact,"generic, ambiguous (also = onion)"
+b42,ямса,1,artefact,Trop. Moist
+b42,ямс,1,artefact,Trop. Moist — yam
+b42,северная,2,direction,Northern
+b42,полярная,5,climate,Arctic
+b42,енисея,2,river,Boreal
+b42,амура,1,river,Boreal
+b42,северного,1,direction,Northern
+b42,аляски,1,region,Tundra/Boreal
+b42,нарте,2,artefact,Tundra/Boreal
+b42,гренландии,2,region,Tundra
+b42,южный,3,direction,Southern
+b42b,стрела,5,artefact,generic
+b42b,северная,1,direction,Northern
+b42b,лук,5,artefact,"generic, ambiguous (also = onion)"
+b42b,енисея,1,river,Boreal
+b42b,полярная,2,climate,Arctic
+b42c,полярная,1,climate,Arctic
+b42c,аляски,1,region,Tundra/Boreal
+b42e,южный,1,direction,Southern
+b42f,полярная,5,climate,Arctic
+b42f,сибири,1,region,Tundra/Boreal
+b42f,северный,4,direction,Northern
+b42f,аляски,2,region,Tundra/Boreal
+b42f,гренландии,1,region,Tundra
+b42h,стрела,31,artefact,generic
+b42h,полярная,1,climate,Arctic
+b42h,енисея,1,river,Boreal
+b42h1,стрела,29,artefact,generic
+b42h1,полярная,1,climate,Arctic
+b42i,лук,3,artefact,"generic, ambiguous (also = onion)"
+b42i,северного,1,direction,Northern
+b42k,лук,2,artefact,"generic, ambiguous (also = onion)"
+b42k,ямса,1,artefact,Trop. Moist
+b42k,ямс,1,artefact,Trop. Moist — yam
+b42k,стрела,1,artefact,generic
+b42k,аляски,1,region,Tundra/Boreal
+b42k,нарте,2,artefact,Tundra/Boreal
+b42k,гренландия,1,region,Tundra
+b42l,полярная,2,climate,Arctic
+b42m,стрела,1,artefact,generic
+b42m,енисея,1,river,Boreal
+b42m,лук,1,artefact,"generic, ambiguous (also = onion)"
+b42m1,стрела,1,artefact,generic
+b42m1,полярная,2,climate,Arctic
+b42m2,стрела,1,artefact,generic
+b42m2,енисея,1,river,Boreal
+b42mn,лук,5,artefact,"generic, ambiguous (also = onion)"
+b42mn,стрела,3,artefact,generic
+b42n,лук,6,artefact,"generic, ambiguous (also = onion)"
+b42n,ямса,1,artefact,Trop. Moist
+b42n,ямс,1,artefact,Trop. Moist — yam
+b42n,австралия,1,region,Desert/Savanna (Aus)
+b42n,стрела,3,artefact,generic
+b42n,северного,1,direction,Northern
+b42o,стрела,4,artefact,generic
+b42o1,стрела,2,artefact,generic
+b42p,полярная,1,climate,Arctic
+b42q,северный,1,direction,Northern
+b42s,стрела,5,artefact,generic
+b42t,полярная,3,climate,Arctic
+b42t,южный,1,direction,Southern
+b42t,сибири,1,region,Tundra/Boreal
+b42t,аляски,2,region,Tundra/Boreal
+b42t,северный,2,direction,Northern
+b42t,гренландии,1,region,Tundra
+b43,лук,5,artefact,"generic, ambiguous (also = onion)"
+b43,северный,2,direction,Northern
+b43,северное,1,direction,Northern
+b43,южное,2,direction,Southern
+b43,нарты,2,artefact,Tundra/Boreal — sledge pl
+b43,южный,1,direction,Southern
+b43,анды,2,mountain,Mountain
+b44a,южный,1,direction,Southern
+b44a,лук,2,artefact,"generic, ambiguous (also = onion)"
+b44c,аляски,1,region,Tundra/Boreal
+b44c,маниока,1,artefact,Trop. Moist — manioc
+b44e,аляски,1,region,Tundra/Boreal
+b44e,маниока,1,artefact,Trop. Moist — manioc
+b45,северный,9,direction,Northern
+b45,северного,6,direction,Northern
+b45,южный,5,direction,Southern
+b45b,северный,1,direction,Northern
+b45b,южный,1,direction,Southern
+b46,полярная,8,climate,Arctic
+b46,нарты,2,artefact,Tundra/Boreal — sledge pl
+b46,стрела,4,artefact,generic
+b46a1,полярная,3,climate,Arctic
+b46c,полярная,7,climate,Arctic
+b46c,нарты,1,artefact,Tundra/Boreal — sledge pl
+b46c,стрела,4,artefact,generic
+b46d,полярная,1,climate,Arctic
+b46d,стрела,2,artefact,generic
+b47,австралии,1,region,Desert/Savanna (Aus)
+b48,северного,1,direction,Northern
+b48,аляски,1,region,Tundra/Boreal
+b48,лук,1,artefact,"generic, ambiguous (also = onion)"
+b48a,карелии,1,region,Boreal
+b48a,северного,1,direction,Northern
+b48a,алтая,1,mountain,Mountain/Steppe
+b48a,сибири,1,region,Tundra/Boreal
+b48b,стрела,3,artefact,generic
+b48c,нарты,2,artefact,Tundra/Boreal — sledge pl
+b49,ямс,4,artefact,Trop. Moist — yam
+b49,лук,1,artefact,"generic, ambiguous (also = onion)"
+b49,маниока,2,artefact,Trop. Moist — manioc
+b49a,ямс,4,artefact,Trop. Moist — yam
+b52a,лук,1,artefact,"generic, ambiguous (also = onion)"
+b52b,якутии,1,region,Boreal/Tundra
+b54,аляски,1,region,Tundra/Boreal
+b54,гарпун,1,artefact,Arctic/coastal — harpoon
+b54,гарпуном,1,artefact,Arctic/coastal
+b54,маниока,1,artefact,Trop. Moist — manioc
+b57,северное,1,direction,Northern
+b57,аляски,1,region,Tundra/Boreal
+b57,стрела,1,artefact,generic
+b57,лук,1,artefact,"generic, ambiguous (also = onion)"
+b57a,аляски,1,region,Tundra/Boreal
+b57a,стрела,1,artefact,generic
+b58,лук,2,artefact,"generic, ambiguous (also = onion)"
+b5a,северный,1,direction,Northern
+b5a,южный,1,direction,Southern
+b5a,северного,1,direction,Northern
+b5a,северное,1,direction,Northern
+b5b,лук,2,artefact,"generic, ambiguous (also = onion)"
+b5b,северный,1,direction,Northern
+b5b,южный,1,direction,Southern
+b5b,северного,1,direction,Northern
+b5b,северное,1,direction,Northern
+b5c,северного,1,direction,Northern
+b5c,лук,1,artefact,"generic, ambiguous (also = onion)"
+b5c,стрела,1,artefact,generic
+b64,стрела,5,artefact,generic
+b64,лук,2,artefact,"generic, ambiguous (also = onion)"
+b64,азии,1,continent,?
+b64,якутии,1,region,Boreal/Tundra
+b64,аляски,1,region,Tundra/Boreal
+b64a,стрела,1,artefact,generic
+b64a,лук,1,artefact,"generic, ambiguous (also = onion)"
+b64a,якутии,1,region,Boreal/Tundra
+b64b,стрела,1,artefact,generic
+b64b,азии,1,continent,?
+b64b,якутии,1,region,Boreal/Tundra
+b64b,аляски,1,region,Tundra/Boreal
+b64c,стрела,3,artefact,generic
+b64c,лук,1,artefact,"generic, ambiguous (also = onion)"
+b64d,стрела,8,artefact,generic
+b64d,нарты,1,artefact,Tundra/Boreal — sledge pl
+b64d,лук,2,artefact,"generic, ambiguous (also = onion)"
+b64d,азии,1,continent,?
+b64d,якутии,1,region,Boreal/Tundra
+b64d,аляски,1,region,Tundra/Boreal
+b68,северного,1,direction,Northern
+b68,карелии,1,region,Boreal
+b68,алтая,1,mountain,Mountain/Steppe
+b68a,кавказа,1,mountain,Mediterranean/Mountain
+b68a,алтай,1,mountain,Mountain/Steppe
+b68a,северная,1,direction,Northern
+b69,якутия,1,region,Boreal/Tundra
+b69,стрела,1,artefact,generic
+b69,южный,1,direction,Southern
+b69,северный,1,direction,Northern
+b69a,алтай,1,mountain,Mountain/Steppe
+b70,якутии,1,region,Boreal/Tundra
+b71,северное,28,direction,Northern
+b71,аляски,1,region,Tundra/Boreal
+b71,северного,2,direction,Northern
+b72,лук,2,artefact,"generic, ambiguous (also = onion)"
+b75a,южный,1,direction,Southern
+b75a,лук,1,artefact,"generic, ambiguous (also = onion)"
+b75b,лук,1,artefact,"generic, ambiguous (also = onion)"
+b76,гарпун,2,artefact,Arctic/coastal — harpoon
+b77,ямса,1,artefact,Trop. Moist
+b77,ямс,3,artefact,Trop. Moist — yam
+b77,южный,2,direction,Southern
+b77,северное,1,direction,Northern
+b77,южное,2,direction,Southern
+b77,лук,3,artefact,"generic, ambiguous (also = onion)"
+b77,стрела,2,artefact,generic
+b77,северный,1,direction,Northern
+b77,северная,1,direction,Northern
+b77,гарпун,1,artefact,Arctic/coastal — harpoon
+b77b,ямса,1,artefact,Trop. Moist
+b77b,ямс,3,artefact,Trop. Moist — yam
+b77b1,ямса,1,artefact,Trop. Moist
+b77b1,ямс,3,artefact,Trop. Moist — yam
+b78,альпы,1,mountain,Mediterranean
+b78,южный,2,direction,Southern
+b79,южный,1,direction,Southern
+b79,северный,1,direction,Northern
+b79a1,амур,1,river,Boreal
+b7b,южное,1,direction,Southern
+b7b,австралии,2,region,Desert/Savanna (Aus)
+b7b,стрела,1,artefact,generic
+b7b,южный,1,direction,Southern
+b7b,маниока,1,artefact,Trop. Moist — manioc
+b7d,маниока,4,artefact,Trop. Moist — manioc
+b7d,маис,1,artefact,Trop./Temp. — maize
+b8,лук,1,artefact,"generic, ambiguous (also = onion)"
+b8,гарпун,1,artefact,Arctic/coastal — harpoon
+b8,южный,1,direction,Southern
+b80,лук,1,artefact,"generic, ambiguous (also = onion)"
+b81,лук,10,artefact,"generic, ambiguous (also = onion)"
+b81,сибири,2,region,Tundra/Boreal
+b81,якутии,1,region,Boreal/Tundra
+b82,аляски,2,region,Tundra/Boreal
+b82,лук,1,artefact,"generic, ambiguous (also = onion)"
+b82,гренландии,1,region,Tundra
+b82,ямс,1,artefact,Trop. Moist — yam
+b82,ямса,1,artefact,Trop. Moist
+b83,лук,4,artefact,"generic, ambiguous (also = onion)"
+b84,лук,2,artefact,"generic, ambiguous (also = onion)"
+b85,южный,12,direction,Southern
+b85,северный,3,direction,Northern
+b85a,северный,1,direction,Northern
+b85a,южный,3,direction,Southern
+b85b,стрела,1,artefact,generic
+b85b,лук,1,artefact,"generic, ambiguous (also = onion)"
+b85b,северный,1,direction,Northern
+b86,африке,1,region,Trop. Savanna/Moist
+b86,замбези,1,river,Trop. Savanna
+b86,нарты,2,artefact,Tundra/Boreal — sledge pl
+b87,северная,3,direction,Northern
+b87,полярная,3,climate,Arctic
+b87,азии,1,continent,?
+b87,северный,1,direction,Northern
+b87,стрела,7,artefact,generic
+b87,лук,1,artefact,"generic, ambiguous (also = onion)"
+b87a,полярная,2,climate,Arctic
+b87a,амура,1,river,Boreal
+b9,южный,1,direction,Southern
+b9,северный,1,direction,Northern
+b9,гарпуном,1,artefact,Arctic/coastal
+b9,стрела,1,artefact,generic
+b90,лук,1,artefact,"generic, ambiguous (also = onion)"
+b91,лук,1,artefact,"generic, ambiguous (also = onion)"
+b91,южный,4,direction,Southern
+b92,южный,2,direction,Southern
+b93a,южный,1,direction,Southern
+b97,аляски,1,region,Tundra/Boreal
+b97,лук,1,artefact,"generic, ambiguous (also = onion)"
+b97a,аляски,1,region,Tundra/Boreal
+b97a,лук,1,artefact,"generic, ambiguous (also = onion)"
+b99,маниока,2,artefact,Trop. Moist — manioc
+b99,ямс,1,artefact,Trop. Moist — yam
+c1,маниока,3,artefact,Trop. Moist — manioc
+c1,стрела,1,artefact,generic
+c10a,лук,1,artefact,"generic, ambiguous (also = onion)"
+c12b,лук,1,artefact,"generic, ambiguous (also = onion)"
+c12b,стрела,4,artefact,generic
+c12b,аляска,1,region,Tundra/Boreal
+c12b,гарпун,1,artefact,Arctic/coastal — harpoon
+c13,маниока,4,artefact,Trop. Moist — manioc
+c13,северное,1,direction,Northern
+c13,стрела,1,artefact,generic
+c14,маниока,1,artefact,Trop. Moist — manioc
+c16,нарта,4,artefact,Tundra/Boreal — sledge
+c19,пирогу,1,artefact,Trop.
+c19,лук,4,artefact,"generic, ambiguous (also = onion)"
+c19,нарта,2,artefact,Tundra/Boreal — sledge
+c19,нарты,2,artefact,Tundra/Boreal — sledge pl
+c19,стрела,1,artefact,generic
+c19,камчатки,1,region,Boreal/Tundra
+c19,аляски,2,region,Tundra/Boreal
+c19,маниока,1,artefact,Trop. Moist — manioc
+c19,южный,1,direction,Southern
+c19a,нарты,1,artefact,Tundra/Boreal — sledge pl
+c19a,аляски,1,region,Tundra/Boreal
+c19a,лук,1,artefact,"generic, ambiguous (also = onion)"
+c2,лук,6,artefact,"generic, ambiguous (also = onion)"
+c2,северный,3,direction,Northern
+c2,стрела,3,artefact,generic
+c2,южный,2,direction,Southern
+c2,северного,1,direction,Northern
+c2,маис,1,artefact,Trop./Temp. — maize
+c2,маниока,4,artefact,Trop. Moist — manioc
+c2,гарпун,1,artefact,Arctic/coastal — harpoon
+c25b,северного,1,direction,Northern
+c25b,стрела,2,artefact,generic
+c25c,полярная,4,climate,Arctic
+c25c,енисея,1,river,Boreal
+c25c,стрела,1,artefact,generic
+c26,пироги,1,artefact,Trop.
+c27,нарты,2,artefact,Tundra/Boreal — sledge pl
+c3,сибирское,1,region,Tundra/Boreal
+c3,сибирский,1,region,Tundra/Boreal
+c31,нарта,1,artefact,Tundra/Boreal — sledge
+c31,нарты,1,artefact,Tundra/Boreal — sledge pl
+c33,кавказ,2,mountain,Mediterranean/Mountain
+c33b,нарты,1,artefact,Tundra/Boreal — sledge pl
+c35,кавказ,1,mountain,Mediterranean/Mountain
+c37,маниока,1,artefact,Trop. Moist — manioc
+c38,нарте,1,artefact,Tundra/Boreal
+c38,нарта,2,artefact,Tundra/Boreal — sledge
+c38,северного,1,direction,Northern
+c38,лук,3,artefact,"generic, ambiguous (also = onion)"
+c38,южный,1,direction,Southern
+c38,северный,1,direction,Northern
+c4,ямс,5,artefact,Trop. Moist — yam
+c4,ямса,1,artefact,Trop. Moist
+c4,маниока,4,artefact,Trop. Moist — manioc
+c40,южное,1,direction,Southern
+c5a,гималаи,1,mountain,Mountain
+c5a,амур,1,river,Boreal
+c5a,северная,1,direction,Northern
+c6,лук,2,artefact,"generic, ambiguous (also = onion)"
+c6,нарте,1,artefact,Tundra/Boreal
+c6,нарты,1,artefact,Tundra/Boreal — sledge pl
+c6,амур,1,river,Boreal
+c6,аляска,1,region,Tundra/Boreal
+c6c,лук,2,artefact,"generic, ambiguous (also = onion)"
+c6c,нарте,1,artefact,Tundra/Boreal
+c6c,нарты,1,artefact,Tundra/Boreal — sledge pl
+c6c,амур,1,river,Boreal
+c6c1,нарты,1,artefact,Tundra/Boreal — sledge pl
+c6c1,лук,1,artefact,"generic, ambiguous (also = onion)"
+c6d,лук,1,artefact,"generic, ambiguous (also = onion)"
+c6d,нарте,1,artefact,Tundra/Boreal
+c6d,нарты,1,artefact,Tundra/Boreal — sledge pl
+c6d,амур,1,river,Boreal
+c7,гималаи,1,mountain,Mountain
+c7,гималаев,2,mountain,Mountain
+c7,маниока,3,artefact,Trop. Moist — manioc
+c8,ямс,3,artefact,Trop. Moist — yam
+c8,ямса,1,artefact,Trop. Moist
+c8,лук,2,artefact,"generic, ambiguous (also = onion)"
+c8,южный,1,direction,Southern
+c8,северный,1,direction,Northern
+c8a,лук,2,artefact,"generic, ambiguous (also = onion)"
+c8a,стрела,1,artefact,generic
+c8a1,южный,1,direction,Southern
+c8a1,северный,1,direction,Northern
+d1,енисей,1,river,Boreal
+d1,сахара,1,region,Desert
+d1,гарпун,1,artefact,Arctic/coastal — harpoon
+d10,лук,1,artefact,"generic, ambiguous (also = onion)"
+d11,ямс,4,artefact,Trop. Moist — yam
+d11,маниока,3,artefact,Trop. Moist — manioc
+d12,ямс,7,artefact,Trop. Moist — yam
+d12,стрела,1,artefact,generic
+d12,маниока,5,artefact,Trop. Moist — manioc
+d12,ямса,1,artefact,Trop. Moist
+d12,лук,6,artefact,"generic, ambiguous (also = onion)"
+d13c,маниока,1,artefact,Trop. Moist — manioc
+d13d,ямс,1,artefact,Trop. Moist — yam
+d13d,маниока,1,artefact,Trop. Moist — manioc
+d13e,южный,1,direction,Southern
+d13g,якутии,1,region,Boreal/Tundra
+d13hh,ямс,1,artefact,Trop. Moist — yam
+d13hh,маниока,2,artefact,Trop. Moist — manioc
+d13i,нарты,2,artefact,Tundra/Boreal — sledge pl
+d13i,нарте,2,artefact,Tundra/Boreal
+d13i,стрела,1,artefact,generic
+d13i1,якутия,1,region,Boreal/Tundra
+d13i1,якутии,1,region,Boreal/Tundra
+d1a,гарпун,1,artefact,Arctic/coastal — harpoon
+d1a1,сахара,1,region,Desert
+d1b,лук,2,artefact,"generic, ambiguous (also = onion)"
+d1b,якутии,2,region,Boreal/Tundra
+d1b,стрела,1,artefact,generic
+d2,маниока,1,artefact,Trop. Moist — manioc
+d2a,маниока,1,artefact,Trop. Moist — manioc
+d4a,ямса,2,artefact,Trop. Moist
+d4a,ямс,1,artefact,Trop. Moist — yam
+d4a,нарты,2,artefact,Tundra/Boreal — sledge pl
+d4a,стрела,4,artefact,generic
+d4a,аляски,1,region,Tundra/Boreal
+d4a,лук,13,artefact,"generic, ambiguous (also = onion)"
+d4a,северная,1,direction,Northern
+d4a,маниока,10,artefact,Trop. Moist — manioc
+d4a,маис,1,artefact,Trop./Temp. — maize
+d4b,кавказ,2,mountain,Mediterranean/Mountain
+d4c,стрела,3,artefact,generic
+d4c,лук,3,artefact,"generic, ambiguous (also = onion)"
+d4c1,лук,2,artefact,"generic, ambiguous (also = onion)"
+d4c1,стрела,2,artefact,generic
+d4d,северная,1,direction,Northern
+d4h,стрела,1,artefact,generic
+d4l,кавказ,2,mountain,Mediterranean/Mountain
+d4l,маниока,2,artefact,Trop. Moist — manioc
+d4l,ямс,1,artefact,Trop. Moist — yam
+d4o,северная,1,direction,Northern
+d4o,маниока,4,artefact,Trop. Moist — manioc
+d4p,маниока,1,artefact,Trop. Moist — manioc
+d4q,лук,1,artefact,"generic, ambiguous (also = onion)"
+d4q,стрела,1,artefact,generic
+d5,замбези,1,river,Trop. Savanna
+d5,ямса,3,artefact,Trop. Moist
+d5,стрела,1,artefact,generic
+d5,ямс,4,artefact,Trop. Moist — yam
+d5,маниока,2,artefact,Trop. Moist — manioc
+d5a,стрела,1,artefact,generic
+d5a,ямса,2,artefact,Trop. Moist
+d5a,ямс,1,artefact,Trop. Moist — yam
+d7,стрела,1,artefact,generic
+d7,маниока,2,artefact,Trop. Moist — manioc
+d7,лук,1,artefact,"generic, ambiguous (also = onion)"
+d8,лук,6,artefact,"generic, ambiguous (also = onion)"
+d9,ямса,1,artefact,Trop. Moist
+d9,аляски,1,region,Tundra/Boreal
+d9,маниока,2,artefact,Trop. Moist — manioc
+e10,гарпуном,1,artefact,Arctic/coastal
+e10,гарпун,1,artefact,Arctic/coastal — harpoon
+e11,стрела,24,artefact,generic
+e11,ямса,3,artefact,Trop. Moist
+e11,ямс,1,artefact,Trop. Moist — yam
+e11,лук,6,artefact,"generic, ambiguous (also = onion)"
+e11,карелия,1,region,Boreal
+e11,пироги,1,artefact,Trop.
+e11,гарпун,2,artefact,Arctic/coastal — harpoon
+e11,нарты,1,artefact,Tundra/Boreal — sledge pl
+e11,гарпуном,1,artefact,Arctic/coastal
+e11,северный,1,direction,Northern
+e11,маниока,2,artefact,Trop. Moist — manioc
+e12,стрела,3,artefact,generic
+e12,лук,2,artefact,"generic, ambiguous (also = onion)"
+e12,маниока,2,artefact,Trop. Moist — manioc
+e13a,южный,1,direction,Southern
+e14,лук,1,artefact,"generic, ambiguous (also = onion)"
+e14,ямс,1,artefact,Trop. Moist — yam
+e15,полярная,1,climate,Arctic
+e15,маниока,3,artefact,Trop. Moist — manioc
+e15,стрела,1,artefact,generic
+e15a,полярная,1,climate,Arctic
+e16,стрела,1,artefact,generic
+e17,лук,1,artefact,"generic, ambiguous (also = onion)"
+e17,маниока,2,artefact,Trop. Moist — manioc
+e18,лук,1,artefact,"generic, ambiguous (also = onion)"
+e18,маниока,2,artefact,Trop. Moist — manioc
+e1b,пирога,1,artefact,Trop. — pirogue
+e1b,чукотки,1,region,Tundra
+e1c,чукотки,1,region,Tundra
+e1d,стрела,1,artefact,generic
+e1d,маниока,2,artefact,Trop. Moist — manioc
+e21,маниока,1,artefact,Trop. Moist — manioc
+e25,лук,1,artefact,"generic, ambiguous (also = onion)"
+e26,маниока,1,artefact,Trop. Moist — manioc
+e26,стрела,1,artefact,generic
+e27,маниока,2,artefact,Trop. Moist — manioc
+e28,маниока,1,artefact,Trop. Moist — manioc
+e28,стрела,1,artefact,generic
+e29,лук,1,artefact,"generic, ambiguous (also = onion)"
+e30,гарпуном,1,artefact,Arctic/coastal
+e30a,гарпуном,1,artefact,Arctic/coastal
+e31a,стрела,2,artefact,generic
+e31a,лук,1,artefact,"generic, ambiguous (also = onion)"
+e31a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+e31a2,лук,1,artefact,"generic, ambiguous (also = onion)"
+e31c,карелия,1,region,Boreal
+e31c,стрела,2,artefact,generic
+e31c,лук,1,artefact,"generic, ambiguous (also = onion)"
+e32,лук,1,artefact,"generic, ambiguous (also = onion)"
+e32,северный,1,direction,Northern
+e32,лена,1,river,Boreal/Tundra
+e32,стрела,1,artefact,generic
+e33,северный,1,direction,Northern
+e35,лук,1,artefact,"generic, ambiguous (also = onion)"
+e37,лук,1,artefact,"generic, ambiguous (also = onion)"
+e37,северного,1,direction,Northern
+e38a,северный,1,direction,Northern
+e38b,северный,1,direction,Northern
+e38b,лук,2,artefact,"generic, ambiguous (also = onion)"
+e38b,стрела,1,artefact,generic
+e39,ямс,1,artefact,Trop. Moist — yam
+e39,лук,3,artefact,"generic, ambiguous (also = onion)"
+e4,лук,1,artefact,"generic, ambiguous (also = onion)"
+e5a,стрела,2,artefact,generic
+e5a,ямс,3,artefact,Trop. Moist — yam
+e5a,ямса,1,artefact,Trop. Moist
+e5a,аляски,1,region,Tundra/Boreal
+e5a,лук,5,artefact,"generic, ambiguous (also = onion)"
+e5a,маис,1,artefact,Trop./Temp. — maize
+e5a,маниока,1,artefact,Trop. Moist — manioc
+e5b,северный,1,direction,Northern
+e5b,стрела,1,artefact,generic
+e5c,ямс,2,artefact,Trop. Moist — yam
+e5c,лук,4,artefact,"generic, ambiguous (also = onion)"
+e5c,стрела,3,artefact,generic
+e5c,аляска,1,region,Tundra/Boreal
+e5c,маниока,2,artefact,Trop. Moist — manioc
+e5d,маниока,1,artefact,Trop. Moist — manioc
+e6,стрела,1,artefact,generic
+e6,ямс,1,artefact,Trop. Moist — yam
+e7,стрела,2,artefact,generic
+e8,ямс,1,artefact,Trop. Moist — yam
+e8,маниока,2,artefact,Trop. Moist — manioc
+e8,лук,2,artefact,"generic, ambiguous (also = onion)"
+e8a,стрела,2,artefact,generic
+e8a,лук,1,artefact,"generic, ambiguous (also = onion)"
+e9,пирога,3,artefact,Trop. — pirogue
+e9,лук,10,artefact,"generic, ambiguous (also = onion)"
+e9,ямса,3,artefact,Trop. Moist
+e9,ямс,1,artefact,Trop. Moist — yam
+e9,северный,1,direction,Northern
+e9,гарпуном,1,artefact,Arctic/coastal
+e9,стрела,17,artefact,generic
+e9,северная,1,direction,Northern
+e9,пироги,2,artefact,Trop.
+e9,гарпун,2,artefact,Arctic/coastal — harpoon
+e9,нарты,1,artefact,Tundra/Boreal — sledge pl
+e9,якутии,1,region,Boreal/Tundra
+e9,маниока,2,artefact,Trop. Moist — manioc
+e9a,аляски,1,region,Tundra/Boreal
+e9a,полярная,1,climate,Arctic
+e9aa,полярная,1,climate,Arctic
+e9b,северный,1,direction,Northern
+e9b,лук,2,artefact,"generic, ambiguous (also = onion)"
+e9c,северный,1,direction,Northern
+e9c,лук,2,artefact,"generic, ambiguous (also = onion)"
+e9c,маниока,1,artefact,Trop. Moist — manioc
+e9d,гарпун,2,artefact,Arctic/coastal — harpoon
+e9d,стрела,4,artefact,generic
+e9d,нарты,1,artefact,Tundra/Boreal — sledge pl
+e9d,якутии,1,region,Boreal/Tundra
+e9e,гарпуном,1,artefact,Arctic/coastal
+e9e,лук,1,artefact,"generic, ambiguous (also = onion)"
+e9e,стрела,5,artefact,generic
+e9e,гарпун,1,artefact,Arctic/coastal — harpoon
+e9f,маниока,1,artefact,Trop. Moist — manioc
+e9f,амазонка,1,river,Trop. Moist
+e9g,гарпуном,1,artefact,Arctic/coastal
+e9h,ямс,2,artefact,Trop. Moist — yam
+e9h,пироги,1,artefact,Trop.
+e9h,нарта,1,artefact,Tundra/Boreal — sledge
+e9h,нарты,2,artefact,Tundra/Boreal — sledge pl
+e9h,стрела,3,artefact,generic
+e9h,лук,5,artefact,"generic, ambiguous (also = onion)"
+e9i,лук,1,artefact,"generic, ambiguous (also = onion)"
+e9i,аляски,1,region,Tundra/Boreal
+e9j,стрела,3,artefact,generic
+e9j,маниока,1,artefact,Trop. Moist — manioc
+e9k,ямс,1,artefact,Trop. Moist — yam
+e9k,ямса,1,artefact,Trop. Moist
+f1,бумеранг,1,artefact,Australia — boomerang
+f1,ямс,1,artefact,Trop. Moist — yam
+f1,ямса,1,artefact,Trop. Moist
+f11,аляски,1,region,Tundra/Boreal
+f13,маниока,1,artefact,Trop. Moist — manioc
+f14,нарте,1,artefact,Tundra/Boreal
+f14,нарты,4,artefact,Tundra/Boreal — sledge pl
+f16,маниока,1,artefact,Trop. Moist — manioc
+f16,южный,1,direction,Southern
+f16,лук,1,artefact,"generic, ambiguous (also = onion)"
+f17,стрела,1,artefact,generic
+f17,ямс,1,artefact,Trop. Moist — yam
+f17,ямса,1,artefact,Trop. Moist
+f18a,австралия,2,region,Desert/Savanna (Aus)
+f18a,ямс,1,artefact,Trop. Moist — yam
+f18a,северный,1,direction,Northern
+f18a,аляски,1,region,Tundra/Boreal
+f18a,южный,2,direction,Southern
+f18b,аляски,1,region,Tundra/Boreal
+f18d,ямс,1,artefact,Trop. Moist — yam
+f2,лук,3,artefact,"generic, ambiguous (also = onion)"
+f2,нарта,1,artefact,Tundra/Boreal — sledge
+f2,стрела,3,artefact,generic
+f2,якутия,1,region,Boreal/Tundra
+f2,южный,1,direction,Southern
+f2,гарпун,1,artefact,Arctic/coastal — harpoon
+f2,гарпуном,1,artefact,Arctic/coastal
+f20,аляски,1,region,Tundra/Boreal
+f20,ямса,1,artefact,Trop. Moist
+f22,лук,1,artefact,"generic, ambiguous (also = onion)"
+f25,стрела,1,artefact,generic
+f27,стрела,1,artefact,generic
+f28a,маниока,2,artefact,Trop. Moist — manioc
+f28a,стрела,1,artefact,generic
+f28a,гарпуном,1,artefact,Arctic/coastal
+f28a,гарпун,1,artefact,Arctic/coastal — harpoon
+f29,маниока,3,artefact,Trop. Moist — manioc
+f29a,маниока,3,artefact,Trop. Moist — manioc
+f3,нила,1,river,Desert/Trop. Savanna
+f3,лук,1,artefact,"generic, ambiguous (also = onion)"
+f30,ямс,3,artefact,Trop. Moist — yam
+f30,стрела,1,artefact,generic
+f30,лук,5,artefact,"generic, ambiguous (also = onion)"
+f30,маниока,3,artefact,Trop. Moist — manioc
+f30a,аляски,1,region,Tundra/Boreal
+f30a,северный,1,direction,Northern
+f31,маниока,1,artefact,Trop. Moist — manioc
+f32,маниока,2,artefact,Trop. Moist — manioc
+f33,маниока,6,artefact,Trop. Moist — manioc
+f33,стрела,1,artefact,generic
+f33,гарпуном,1,artefact,Arctic/coastal
+f34,евразии,1,continent,?
+f34,полярный,1,climate,Arctic
+f34,маис,1,artefact,Trop./Temp. — maize
+f34,стрела,2,artefact,generic
+f35,лук,1,artefact,"generic, ambiguous (also = onion)"
+f35,южный,1,direction,Southern
+f35,маниока,2,artefact,Trop. Moist — manioc
+f35,стрела,1,artefact,generic
+f36,лук,4,artefact,"generic, ambiguous (also = onion)"
+f37,стрела,1,artefact,generic
+f37,маниока,2,artefact,Trop. Moist — manioc
+f38,северное,1,direction,Northern
+f38,лук,2,artefact,"generic, ambiguous (also = onion)"
+f38,ямса,3,artefact,Trop. Moist
+f38,амазонский,1,region,Trop. Moist
+f38,стрела,1,artefact,generic
+f38,гарпун,1,artefact,Arctic/coastal — harpoon
+f4,стрела,1,artefact,generic
+f40a,нарте,1,artefact,Tundra/Boreal
+f40a,нарта,1,artefact,Tundra/Boreal — sledge
+f40a,амазонка,1,river,Trop. Moist
+f40a,гарпун,1,artefact,Arctic/coastal — harpoon
+f40a,маниока,1,artefact,Trop. Moist — manioc
+f40a,стрела,1,artefact,generic
+f40b,ямс,1,artefact,Trop. Moist — yam
+f40b,северное,1,direction,Northern
+f40b,южный,1,direction,Southern
+f40b,гарпун,1,artefact,Arctic/coastal — harpoon
+f41,южный,1,direction,Southern
+f41,стрела,1,artefact,generic
+f41,гарпун,1,artefact,Arctic/coastal — harpoon
+f43,амазонке,1,river,Trop. Moist
+f43,маниока,1,artefact,Trop. Moist — manioc
+f43c,северное,1,direction,Northern
+f44,маниока,1,artefact,Trop. Moist — manioc
+f45,северное,1,direction,Northern
+f45,южный,1,direction,Southern
+f45,маис,2,artefact,Trop./Temp. — maize
+f45,маниока,1,artefact,Trop. Moist — manioc
+f45,амазонка,1,river,Trop. Moist
+f45,амазонке,1,river,Trop. Moist
+f45,гарпун,1,artefact,Arctic/coastal — harpoon
+f45,амазонии,1,region,Trop. Moist
+f45a,северного,1,direction,Northern
+f45a,южный,1,direction,Southern
+f47,южный,1,direction,Southern
+f47b,северного,1,direction,Northern
+f49,аляски,2,region,Tundra/Boreal
+f49,гарпуном,1,artefact,Arctic/coastal
+f49,гарпун,1,artefact,Arctic/coastal — harpoon
+f49,маниока,1,artefact,Trop. Moist — manioc
+f50,маниока,1,artefact,Trop. Moist — manioc
+f50,лук,2,artefact,"generic, ambiguous (also = onion)"
+f54,карелия,1,region,Boreal
+f56,стрела,2,artefact,generic
+f56,маниока,1,artefact,Trop. Moist — manioc
+f56a,стрела,1,artefact,generic
+f58,лук,1,artefact,"generic, ambiguous (also = onion)"
+f59,лук,2,artefact,"generic, ambiguous (also = onion)"
+f5b,нарты,1,artefact,Tundra/Boreal — sledge pl
+f5b,лук,1,artefact,"generic, ambiguous (also = onion)"
+f6,маниока,1,artefact,Trop. Moist — manioc
+f6,стрела,1,artefact,generic
+f60,южный,2,direction,Southern
+f61,лук,1,artefact,"generic, ambiguous (also = onion)"
+f61,стрела,1,artefact,generic
+f62,северный,2,direction,Northern
+f62,лук,2,artefact,"generic, ambiguous (also = onion)"
+f62,стрела,1,artefact,generic
+f62,карелия,3,region,Boreal
+f62,северная,1,direction,Northern
+f63,карелия,1,region,Boreal
+f63,лук,2,artefact,"generic, ambiguous (also = onion)"
+f64,аляски,1,region,Tundra/Boreal
+f64,гарпун,1,artefact,Arctic/coastal — harpoon
+f64,лук,1,artefact,"generic, ambiguous (also = onion)"
+f64,стрела,1,artefact,generic
+f65,аляски,2,region,Tundra/Boreal
+f65,гарпуном,1,artefact,Arctic/coastal
+f65,енисея,1,river,Boreal
+f65a,лук,3,artefact,"generic, ambiguous (also = onion)"
+f65a,аляски,1,region,Tundra/Boreal
+f65a,гарпуном,1,artefact,Arctic/coastal
+f65b,ямс,8,artefact,Trop. Moist — yam
+f65b,енисея,1,river,Boreal
+f65b,нарте,1,artefact,Tundra/Boreal
+f65b,нарты,1,artefact,Tundra/Boreal — sledge pl
+f65c,лук,1,artefact,"generic, ambiguous (also = onion)"
+f65d,енисея,1,river,Boreal
+f65d,нарте,1,artefact,Tundra/Boreal
+f65d,нарты,1,artefact,Tundra/Boreal — sledge pl
+f67,гарпун,2,artefact,Arctic/coastal — harpoon
+f7,северная,1,direction,Northern
+f7,гарпуном,1,artefact,Arctic/coastal
+f7,гарпун,6,artefact,Arctic/coastal — harpoon
+f7,гарпуна,1,artefact,Arctic/coastal
+f7,стрела,3,artefact,generic
+f7,ямс,3,artefact,Trop. Moist — yam
+f7,лук,1,artefact,"generic, ambiguous (also = onion)"
+f7,нарта,1,artefact,Tundra/Boreal — sledge
+f7,маниока,6,artefact,Trop. Moist — manioc
+f7,ямса,1,artefact,Trop. Moist
+f70,северного,1,direction,Northern
+f70,нарты,1,artefact,Tundra/Boreal — sledge pl
+f70,сахара,1,region,Desert
+f70,енисея,1,river,Boreal
+f70,лук,1,artefact,"generic, ambiguous (also = onion)"
+f70,стрела,1,artefact,generic
+f70a,лук,1,artefact,"generic, ambiguous (also = onion)"
+f70b,стрела,1,artefact,generic
+f70b,северного,1,direction,Northern
+f70b,нарты,1,artefact,Tundra/Boreal — sledge pl
+f70b,лук,1,artefact,"generic, ambiguous (also = onion)"
+f70e1,стрела,1,artefact,generic
+f70e1,алтай,1,mountain,Mountain/Steppe
+f70e2,северный,2,direction,Northern
+f70e2,лук,1,artefact,"generic, ambiguous (also = onion)"
+f79,ямс,2,artefact,Trop. Moist — yam
+f79,маниока,1,artefact,Trop. Moist — manioc
+f79,ямса,1,artefact,Trop. Moist
+f80,стрела,1,artefact,generic
+f80,ямс,1,artefact,Trop. Moist — yam
+f80,енисея,1,river,Boreal
+f80,лук,1,artefact,"generic, ambiguous (also = onion)"
+f80a,енисея,1,river,Boreal
+f80a,гарпун,1,artefact,Arctic/coastal — harpoon
+f80a,гарпуном,1,artefact,Arctic/coastal
+f80a,лук,1,artefact,"generic, ambiguous (also = onion)"
+f81,нарты,1,artefact,Tundra/Boreal — sledge pl
+f81,аляски,1,region,Tundra/Boreal
+f82,ямс,1,artefact,Trop. Moist — yam
+f83,карелия,1,region,Boreal
+f83,лук,1,artefact,"generic, ambiguous (also = onion)"
+f86,лук,1,artefact,"generic, ambiguous (also = onion)"
+f86,карелия,1,region,Boreal
+f86,стрела,2,artefact,generic
+f86,гарпун,1,artefact,Arctic/coastal — harpoon
+f86,маниока,4,artefact,Trop. Moist — manioc
+f86,гарпуном,1,artefact,Arctic/coastal
+f88,лук,1,artefact,"generic, ambiguous (also = onion)"
+f88,маниока,1,artefact,Trop. Moist — manioc
+f9,якутия,1,region,Boreal/Tundra
+f9,аляски,1,region,Tundra/Boreal
+f9,гарпун,4,artefact,Arctic/coastal — harpoon
+f90,лук,2,artefact,"generic, ambiguous (also = onion)"
+f90,стрела,2,artefact,generic
+f91,аляски,1,region,Tundra/Boreal
+f94,лук,3,artefact,"generic, ambiguous (also = onion)"
+f95,стрела,3,artefact,generic
+f95,ямс,1,artefact,Trop. Moist — yam
+f95,лук,1,artefact,"generic, ambiguous (also = onion)"
+f95,маниока,1,artefact,Trop. Moist — manioc
+f97,гималаи,1,mountain,Mountain
+f9a,аляски,1,region,Tundra/Boreal
+f9a,гарпуном,1,artefact,Arctic/coastal
+f9a,гарпун,1,artefact,Arctic/coastal — harpoon
+f9a,стрела,2,artefact,generic
+f9a,лук,2,artefact,"generic, ambiguous (also = onion)"
+f9a,южное,1,direction,Southern
+f9a1,якутия,1,region,Boreal/Tundra
+f9b,маниока,2,artefact,Trop. Moist — manioc
+f9b,ямс,2,artefact,Trop. Moist — yam
+f9b,ямса,1,artefact,Trop. Moist
+f9d,гарпун,1,artefact,Arctic/coastal — harpoon
+f9d,маниока,1,artefact,Trop. Moist — manioc
+f9g,карелия,1,region,Boreal
+f9g,нарта,2,artefact,Tundra/Boreal — sledge
+f9g,лук,2,artefact,"generic, ambiguous (also = onion)"
+g1,аляска,1,region,Tundra/Boreal
+g10,стрела,1,artefact,generic
+g10,ямс,2,artefact,Trop. Moist — yam
+g10,маниока,4,artefact,Trop. Moist — manioc
+g12,маниока,3,artefact,Trop. Moist — manioc
+g12b,ямс,9,artefact,Trop. Moist — yam
+g12b,маниока,2,artefact,Trop. Moist — manioc
+g13,северное,1,direction,Northern
+g13,маниока,4,artefact,Trop. Moist — manioc
+g13,ямс,6,artefact,Trop. Moist — yam
+g13,лук,1,artefact,"generic, ambiguous (also = onion)"
+g13a,ямс,2,artefact,Trop. Moist — yam
+g13a,маниока,4,artefact,Trop. Moist — manioc
+g13a,стрела,1,artefact,generic
+g13b,маниока,1,artefact,Trop. Moist — manioc
+g15,ямс,2,artefact,Trop. Moist — yam
+g15,ямса,2,artefact,Trop. Moist
+g15,маис,6,artefact,Trop./Temp. — maize
+g15,маниока,3,artefact,Trop. Moist — manioc
+g16,маис,2,artefact,Trop./Temp. — maize
+g16,маниока,2,artefact,Trop. Moist — manioc
+g16,ямс,1,artefact,Trop. Moist — yam
+g17,ямс,7,artefact,Trop. Moist — yam
+g17,ямса,3,artefact,Trop. Moist
+g17,северного,1,direction,Northern
+g17,маниока,8,artefact,Trop. Moist — manioc
+g18,ямс,15,artefact,Trop. Moist — yam
+g18,лук,1,artefact,"generic, ambiguous (also = onion)"
+g18,маниока,5,artefact,Trop. Moist — manioc
+g20,ямс,10,artefact,Trop. Moist — yam
+g20,лук,3,artefact,"generic, ambiguous (also = onion)"
+g20,маниока,1,artefact,Trop. Moist — manioc
+g21,лук,1,artefact,"generic, ambiguous (also = onion)"
+g23,лук,10,artefact,"generic, ambiguous (also = onion)"
+g23,северный,3,direction,Northern
+g23,ямс,8,artefact,Trop. Moist — yam
+g23,северное,2,direction,Northern
+g23,южное,2,direction,Southern
+g23,стрела,6,artefact,generic
+g23,нарты,2,artefact,Tundra/Boreal — sledge pl
+g23,южный,2,direction,Southern
+g23,северного,1,direction,Northern
+g23,якутия,1,region,Boreal/Tundra
+g23,якутии,1,region,Boreal/Tundra
+g23,гарпун,1,artefact,Arctic/coastal — harpoon
+g23,северная,1,direction,Northern
+g23,маниока,3,artefact,Trop. Moist — manioc
+g23,анды,2,mountain,Mountain
+g23a,ямс,26,artefact,Trop. Moist — yam
+g23a,лук,3,artefact,"generic, ambiguous (also = onion)"
+g23a,лена,1,river,Boreal/Tundra
+g23a,маниока,7,artefact,Trop. Moist — manioc
+g23b,стрела,3,artefact,generic
+g23b,гарпун,1,artefact,Arctic/coastal — harpoon
+g23b,северная,1,direction,Northern
+g26,маниока,1,artefact,Trop. Moist — manioc
+g27,ямс,1,artefact,Trop. Moist — yam
+g27,маниока,1,artefact,Trop. Moist — manioc
+g29,лук,1,artefact,"generic, ambiguous (also = onion)"
+g29,стрела,2,artefact,generic
+g3,маис,2,artefact,Trop./Temp. — maize
+g31,пироги,1,artefact,Trop.
+g31,маис,1,artefact,Trop./Temp. — maize
+g31,маниока,1,artefact,Trop. Moist — manioc
+g31,южный,1,direction,Southern
+g4,ямс,1,artefact,Trop. Moist — yam
+g5,стрела,1,artefact,generic
+g5,ямс,15,artefact,Trop. Moist — yam
+g5,ямса,1,artefact,Trop. Moist
+g5,маниока,22,artefact,Trop. Moist — manioc
+g6,южный,1,direction,Southern
+g6,ямс,10,artefact,Trop. Moist — yam
+g6,лук,4,artefact,"generic, ambiguous (also = onion)"
+g6,лена,1,river,Boreal/Tundra
+g6,маниока,8,artefact,Trop. Moist — manioc
+g6,ямса,1,artefact,Trop. Moist
+g6a,алтай,1,mountain,Mountain/Steppe
+g7,маниока,3,artefact,Trop. Moist — manioc
+g7,ямс,1,artefact,Trop. Moist — yam
+g8b,ямса,1,artefact,Trop. Moist
+g8b,лук,1,artefact,"generic, ambiguous (also = onion)"
+g8b,ямс,1,artefact,Trop. Moist — yam
+g8c,стрела,1,artefact,generic
+g8c,ямс,3,artefact,Trop. Moist — yam
+g8c,маниока,2,artefact,Trop. Moist — manioc
+g8f,стрела,1,artefact,generic
+g8f,ямс,2,artefact,Trop. Moist — yam
+g8f,маниока,2,artefact,Trop. Moist — manioc
+h10,нил,1,river,Desert/Trop. Savanna
+h11,южный,2,direction,Southern
+h11,маниока,1,artefact,Trop. Moist — manioc
+h11,лук,1,artefact,"generic, ambiguous (also = onion)"
+h12,маниока,4,artefact,Trop. Moist — manioc
+h12,ямса,1,artefact,Trop. Moist
+h12,северный,1,direction,Northern
+h12,ямс,5,artefact,Trop. Moist — yam
+h12,стрела,3,artefact,generic
+h12,полярная,1,climate,Arctic
+h12,лук,1,artefact,"generic, ambiguous (also = onion)"
+h12b,северный,1,direction,Northern
+h13,стрела,2,artefact,generic
+h16,гарпун,2,artefact,Arctic/coastal — harpoon
+h17,лук,1,artefact,"generic, ambiguous (also = onion)"
+h17,стрела,1,artefact,generic
+h18,маниока,2,artefact,Trop. Moist — manioc
+h18b,южный,1,direction,Southern
+h20,ямс,1,artefact,Trop. Moist — yam
+h20,гарпун,1,artefact,Arctic/coastal — harpoon
+h20,стрела,1,artefact,generic
+h20a,ямс,2,artefact,Trop. Moist — yam
+h21,ямс,1,artefact,Trop. Moist — yam
+h21,гарпун,1,artefact,Arctic/coastal — harpoon
+h21,стрела,1,artefact,generic
+h21a,ямс,1,artefact,Trop. Moist — yam
+h21a,гарпун,1,artefact,Arctic/coastal — harpoon
+h21a,стрела,1,artefact,generic
+h24,ямса,2,artefact,Trop. Moist
+h24,ямс,3,artefact,Trop. Moist — yam
+h24,лук,1,artefact,"generic, ambiguous (also = onion)"
+h24,стрела,1,artefact,generic
+h24,пирога,1,artefact,Trop. — pirogue
+h24,пироги,3,artefact,Trop.
+h24,южный,1,direction,Southern
+h24,маниока,3,artefact,Trop. Moist — manioc
+h24a,северного,1,direction,Northern
+h24b,ямс,1,artefact,Trop. Moist — yam
+h24b,ямса,1,artefact,Trop. Moist
+h24f,стрела,1,artefact,generic
+h24f,маниока,1,artefact,Trop. Moist — manioc
+h25,конго,1,region/river,Trop. Moist
+h25,южный,2,direction,Southern
+h25,ямс,1,artefact,Trop. Moist — yam
+h25,ямса,1,artefact,Trop. Moist
+h26,южный,1,direction,Southern
+h27,ямс,4,artefact,Trop. Moist — yam
+h27,ямса,1,artefact,Trop. Moist
+h27,южный,1,direction,Southern
+h28,нарты,5,artefact,Tundra/Boreal — sledge pl
+h28,нарта,4,artefact,Tundra/Boreal — sledge
+h28,карелия,1,region,Boreal
+h28,лук,5,artefact,"generic, ambiguous (also = onion)"
+h28,стрела,3,artefact,generic
+h28,южный,2,direction,Southern
+h28,гарпун,1,artefact,Arctic/coastal — harpoon
+h28,ямс,1,artefact,Trop. Moist — yam
+h28,маниока,1,artefact,Trop. Moist — manioc
+h28a,карелия,1,region,Boreal
+h28a,лук,3,artefact,"generic, ambiguous (also = onion)"
+h28a,нарты,1,artefact,Tundra/Boreal — sledge pl
+h28a,южный,1,direction,Southern
+h29,стрела,2,artefact,generic
+h29,маниока,1,artefact,Trop. Moist — manioc
+h30,ямс,1,artefact,Trop. Moist — yam
+h30,маниока,2,artefact,Trop. Moist — manioc
+h31,конго,2,region/river,Trop. Moist
+h32a,ямса,2,artefact,Trop. Moist
+h32a,ямс,1,artefact,Trop. Moist — yam
+h32a,маниока,2,artefact,Trop. Moist — manioc
+h33,лук,1,artefact,"generic, ambiguous (also = onion)"
+h34a,ямса,2,artefact,Trop. Moist
+h34a,маниока,1,artefact,Trop. Moist — manioc
+h34b,амура,1,river,Boreal
+h34b,гарпун,1,artefact,Arctic/coastal — harpoon
+h34d1,ямс,1,artefact,Trop. Moist — yam
+h34e,сибирские,1,region,Tundra/Boreal
+h34e,аляски,1,region,Tundra/Boreal
+h34f,маниока,1,artefact,Trop. Moist — manioc
+h34g,нарты,1,artefact,Tundra/Boreal — sledge pl
+h36,ямса,1,artefact,Trop. Moist
+h36,южный,1,direction,Southern
+h36,гималаи,1,mountain,Mountain
+h36,лук,3,artefact,"generic, ambiguous (also = onion)"
+h36,стрела,1,artefact,generic
+h36,нарты,1,artefact,Tundra/Boreal — sledge pl
+h36a,ямса,1,artefact,Trop. Moist
+h36a,гималаи,1,mountain,Mountain
+h36a,нарты,1,artefact,Tundra/Boreal — sledge pl
+h36a,лук,1,artefact,"generic, ambiguous (also = onion)"
+h36b,южный,1,direction,Southern
+h36c,лук,1,artefact,"generic, ambiguous (also = onion)"
+h36f,лук,1,artefact,"generic, ambiguous (also = onion)"
+h36f,северный,1,direction,Northern
+h36ff,северный,1,direction,Northern
+h37,лук,7,artefact,"generic, ambiguous (also = onion)"
+h37,стрела,16,artefact,generic
+h37,маниока,2,artefact,Trop. Moist — manioc
+h37,амазонка,1,river,Trop. Moist
+h39,стрела,1,artefact,generic
+h39,маниока,2,artefact,Trop. Moist — manioc
+h4,стрела,1,artefact,generic
+h4,ямс,3,artefact,Trop. Moist — yam
+h4,ямса,1,artefact,Trop. Moist
+h4,лук,6,artefact,"generic, ambiguous (also = onion)"
+h40,сибирские,1,region,Tundra/Boreal
+h40,сибири,1,region,Tundra/Boreal
+h40,лук,1,artefact,"generic, ambiguous (also = onion)"
+h40,якутии,1,region,Boreal/Tundra
+h41,нарты,1,artefact,Tundra/Boreal — sledge pl
+h41,лук,1,artefact,"generic, ambiguous (also = onion)"
+h41,якутии,1,region,Boreal/Tundra
+h42,северный,1,direction,Northern
+h42,сибирские,1,region,Tundra/Boreal
+h42,северного,1,direction,Northern
+h42,северное,1,direction,Northern
+h42,якутии,1,region,Boreal/Tundra
+h43,северный,1,direction,Northern
+h43aa,сибирские,1,region,Tundra/Boreal
+h43aa,якутии,1,region,Boreal/Tundra
+h44,лук,3,artefact,"generic, ambiguous (also = onion)"
+h46,карелии,1,region,Boreal
+h46a,лук,1,artefact,"generic, ambiguous (also = onion)"
+h46a,стрела,1,artefact,generic
+h47,ямс,1,artefact,Trop. Moist — yam
+h48,алтая,1,mountain,Mountain/Steppe
+h49,азии,1,continent,?
+h49,лук,1,artefact,"generic, ambiguous (also = onion)"
+h49b,азии,1,continent,?
+h49c,лук,1,artefact,"generic, ambiguous (also = onion)"
+h5,ямс,3,artefact,Trop. Moist — yam
+h5,ямса,1,artefact,Trop. Moist
+h5,северный,2,direction,Northern
+h5,амазонка,1,river,Trop. Moist
+h50,гималаи,1,mountain,Mountain
+h50,лук,1,artefact,"generic, ambiguous (also = onion)"
+h50,енисея,1,river,Boreal
+h50,северное,1,direction,Northern
+h51,северный,1,direction,Northern
+h52,южный,1,direction,Southern
+h52,северный,2,direction,Northern
+h52,стрела,1,artefact,generic
+h53,стрела,1,artefact,generic
+h54,стрела,11,artefact,generic
+h54,лук,5,artefact,"generic, ambiguous (also = onion)"
+h54,сибирь,1,region,Tundra/Boreal
+h54,нарты,2,artefact,Tundra/Boreal — sledge pl
+h54,северного,1,direction,Northern
+h54,ямс,1,artefact,Trop. Moist — yam
+h54,маниока,2,artefact,Trop. Moist — manioc
+h55,стрела,4,artefact,generic
+h55,нила,1,river,Desert/Trop. Savanna
+h55,нил,1,river,Desert/Trop. Savanna
+h55,алтай,2,mountain,Mountain/Steppe
+h55a,стрела,2,artefact,generic
+h55a,алтай,1,mountain,Mountain/Steppe
+h56,ямс,4,artefact,Trop. Moist — yam
+h56,ямса,4,artefact,Trop. Moist
+h6a,ямс,1,artefact,Trop. Moist — yam
+h6a,ямса,1,artefact,Trop. Moist
+h6a,лук,3,artefact,"generic, ambiguous (also = onion)"
+h6a,северный,1,direction,Northern
+h6b,лук,3,artefact,"generic, ambiguous (also = onion)"
+h6b,северный,1,direction,Northern
+h6b,стрела,1,artefact,generic
+h6b,сибирский,1,region,Tundra/Boreal
+h6bb,лук,1,artefact,"generic, ambiguous (also = onion)"
+h6c,лук,2,artefact,"generic, ambiguous (also = onion)"
+h6c,северный,1,direction,Northern
+h6d,стрела,2,artefact,generic
+h6d,сахара,1,region,Desert
+h6d,лук,3,artefact,"generic, ambiguous (also = onion)"
+h7,маниока,2,artefact,Trop. Moist — manioc
+h7,азии,1,continent,?
+h7,южное,1,direction,Southern
+h7,южный,1,direction,Southern
+h7,лук,1,artefact,"generic, ambiguous (also = onion)"
+h7,северная,1,direction,Northern
+h7,нарта,3,artefact,Tundra/Boreal — sledge
+h8,лук,1,artefact,"generic, ambiguous (also = onion)"
+h9,мадагаскар,1,region,Trop. Moist/Savanna
+h9,ямс,3,artefact,Trop. Moist — yam
+h9,ямса,1,artefact,Trop. Moist
+h9,маниока,1,artefact,Trop. Moist — manioc
+i1,лук,3,artefact,"generic, ambiguous (also = onion)"
+i1,стрела,1,artefact,generic
+i1,гарпуна,1,artefact,Arctic/coastal
+i1,южный,1,direction,Southern
+i1,северная,1,direction,Northern
+i100,австралии,1,region,Desert/Savanna (Aus)
+i100,бумеранг,2,artefact,Australia — boomerang
+i100,австралия,2,region,Desert/Savanna (Aus)
+i100,северного,1,direction,Northern
+i101,северная,1,direction,Northern
+i101,лук,1,artefact,"generic, ambiguous (also = onion)"
+i103,лук,1,artefact,"generic, ambiguous (also = onion)"
+i103,северный,2,direction,Northern
+i104,лук,1,artefact,"generic, ambiguous (also = onion)"
+i104,северный,1,direction,Northern
+i104,южный,1,direction,Southern
+i104,гарпуном,1,artefact,Arctic/coastal
+i104,ямс,1,artefact,Trop. Moist — yam
+i106,северного,1,direction,Northern
+i106,стрела,2,artefact,generic
+i11,алтай,1,mountain,Mountain/Steppe
+i11,полярная,1,climate,Arctic
+i11,стрела,3,artefact,generic
+i111,америка,1,continent,?
+i112,гарпуном,1,artefact,Arctic/coastal
+i114,европы,1,continent,?
+i115a,австралии,1,region,Desert/Savanna (Aus)
+i115a,бумеранг,1,artefact,Australia — boomerang
+i115a,австралия,3,region,Desert/Savanna (Aus)
+i115a,гарпун,1,artefact,Arctic/coastal — harpoon
+i115a,лук,1,artefact,"generic, ambiguous (also = onion)"
+i115a,полярная,1,climate,Arctic
+i116,конго,1,region/river,Trop. Moist
+i12,северный,1,direction,Northern
+i12,южный,1,direction,Southern
+i12,стрела,4,artefact,generic
+i121,полярная,1,climate,Arctic
+i126,полярная,1,climate,Arctic
+i128,северный,5,direction,Northern
+i128,северного,1,direction,Northern
+i128,лук,1,artefact,"generic, ambiguous (also = onion)"
+i128,сибирь,1,region,Tundra/Boreal
+i128,нарты,1,artefact,Tundra/Boreal — sledge pl
+i134,средиземноморье,1,region,Mediterranean
+i134,южный,1,direction,Southern
+i13a,лук,4,artefact,"generic, ambiguous (also = onion)"
+i13a,стрела,1,artefact,generic
+i13a,северная,2,direction,Northern
+i13a,северного,1,direction,Northern
+i13a,маниока,1,artefact,Trop. Moist — manioc
+i13c,гималаи,1,mountain,Mountain
+i14,лук,3,artefact,"generic, ambiguous (also = onion)"
+i14,маис,2,artefact,Trop./Temp. — maize
+i14,гарпун,1,artefact,Arctic/coastal — harpoon
+i14,ямс,1,artefact,Trop. Moist — yam
+i14,маниока,1,artefact,Trop. Moist — manioc
+i16,лук,1,artefact,"generic, ambiguous (also = onion)"
+i17,аляски,1,region,Tundra/Boreal
+i19,ямс,1,artefact,Trop. Moist — yam
+i2,амазонке,1,river,Trop. Moist
+i20,нила,1,river,Desert/Trop. Savanna
+i20,стрела,1,artefact,generic
+i20,пирога,1,artefact,Trop. — pirogue
+i20,северный,1,direction,Northern
+i20,южный,1,direction,Southern
+i20,лук,1,artefact,"generic, ambiguous (also = onion)"
+i20a,стрела,1,artefact,generic
+i20b,енисея,1,river,Boreal
+i21,нила,1,river,Desert/Trop. Savanna
+i22,европы,1,continent,?
+i22,южный,3,direction,Southern
+i22,северный,3,direction,Northern
+i22,стрела,8,artefact,generic
+i22,лук,10,artefact,"generic, ambiguous (also = onion)"
+i22,нарты,1,artefact,Tundra/Boreal — sledge pl
+i22,алтая,2,mountain,Mountain/Steppe
+i22,полярная,1,climate,Arctic
+i22,аляски,1,region,Tundra/Boreal
+i22,гарпуном,1,artefact,Arctic/coastal
+i22,гарпун,2,artefact,Arctic/coastal — harpoon
+i22,маниока,2,artefact,Trop. Moist — manioc
+i22,ямс,2,artefact,Trop. Moist — yam
+i22a,алтая,1,mountain,Mountain/Steppe
+i22a,стрела,1,artefact,generic
+i22a,гарпун,1,artefact,Arctic/coastal — harpoon
+i22a,лук,1,artefact,"generic, ambiguous (also = onion)"
+i22b,южный,1,direction,Southern
+i22b,нарте,1,artefact,Tundra/Boreal
+i22b,северное,1,direction,Northern
+i23,южный,1,direction,Southern
+i23,аляски,1,region,Tundra/Boreal
+i24,стрела,2,artefact,generic
+i25,нарты,3,artefact,Tundra/Boreal — sledge pl
+i25,алтай,2,mountain,Mountain/Steppe
+i25,лук,1,artefact,"generic, ambiguous (also = onion)"
+i25a,лук,1,artefact,"generic, ambiguous (also = onion)"
+i26,лук,1,artefact,"generic, ambiguous (also = onion)"
+i27,гренландия,1,region,Tundra
+i27,лук,1,artefact,"generic, ambiguous (also = onion)"
+i27a,северный,1,direction,Northern
+i27c,якутии,1,region,Boreal/Tundra
+i29,южный,1,direction,Southern
+i3,лук,18,artefact,"generic, ambiguous (also = onion)"
+i3,ямс,1,artefact,Trop. Moist — yam
+i3,стрела,9,artefact,generic
+i3,нарта,1,artefact,Tundra/Boreal — sledge
+i3,нарты,1,artefact,Tundra/Boreal — sledge pl
+i3,северное,1,direction,Northern
+i3,северный,1,direction,Northern
+i30,северный,1,direction,Northern
+i32,австралии,1,region,Desert/Savanna (Aus)
+i32a,азии,1,continent,?
+i34,ямс,1,artefact,Trop. Moist — yam
+i35,аляски,1,region,Tundra/Boreal
+i35,северного,1,direction,Northern
+i35a2,австралии,1,region,Desert/Savanna (Aus)
+i35a2,австралия,1,region,Desert/Savanna (Aus)
+i36,лук,2,artefact,"generic, ambiguous (also = onion)"
+i36,аляски,1,region,Tundra/Boreal
+i39,лук,3,artefact,"generic, ambiguous (also = onion)"
+i39,стрела,4,artefact,generic
+i39,аляски,1,region,Tundra/Boreal
+i4,лук,1,artefact,"generic, ambiguous (also = onion)"
+i4,северный,2,direction,Northern
+i4,стрела,3,artefact,generic
+i40,лук,135,artefact,"generic, ambiguous (also = onion)"
+i40,ямс,1,artefact,Trop. Moist — yam
+i40,ямса,1,artefact,Trop. Moist
+i40,стрела,7,artefact,generic
+i40,северная,1,direction,Northern
+i41,лук,5,artefact,"generic, ambiguous (also = onion)"
+i41,нила,1,river,Desert/Trop. Savanna
+i41,австралии,1,region,Desert/Savanna (Aus)
+i41,южный,1,direction,Southern
+i41,северная,1,direction,Northern
+i41,амазонке,1,river,Trop. Moist
+i41a,лук,1,artefact,"generic, ambiguous (also = onion)"
+i41b1,северная,1,direction,Northern
+i42,лук,1,artefact,"generic, ambiguous (also = onion)"
+i42,полинезии,1,region,Trop. Moist (Pacific)
+i43a,южный,1,direction,Southern
+i43a,северное,1,direction,Northern
+i43a,южное,1,direction,Southern
+i43a,северная,1,direction,Northern
+i43a,амазонка,1,river,Trop. Moist
+i43a,лук,1,artefact,"generic, ambiguous (also = onion)"
+i43b,северное,1,direction,Northern
+i43b,южное,1,direction,Southern
+i43b,амазонка,1,river,Trop. Moist
+i43b,лук,1,artefact,"generic, ambiguous (also = onion)"
+i44,нила,2,river,Desert/Trop. Savanna
+i45b,индонезии,1,region,Trop. Moist
+i46,сахары,1,region,Desert
+i46,лук,3,artefact,"generic, ambiguous (also = onion)"
+i46,северный,2,direction,Northern
+i46a,лук,9,artefact,"generic, ambiguous (also = onion)"
+i46b,альпы,1,mountain,Mediterranean
+i46d,стрела,2,artefact,generic
+i47,якутии,1,region,Boreal/Tundra
+i47a,северного,1,direction,Northern
+i48,лук,1,artefact,"generic, ambiguous (also = onion)"
+i4a,ямс,3,artefact,Trop. Moist — yam
+i4a,южный,1,direction,Southern
+i5,южный,1,direction,Southern
+i50,стрела,3,artefact,generic
+i50,лук,2,artefact,"generic, ambiguous (also = onion)"
+i50,алтай,1,mountain,Mountain/Steppe
+i50,аляски,1,region,Tundra/Boreal
+i50a,южный,2,direction,Southern
+i50a,лук,4,artefact,"generic, ambiguous (also = onion)"
+i50a,алтай,1,mountain,Mountain/Steppe
+i50b,аляски,1,region,Tundra/Boreal
+i51a,южный,1,direction,Southern
+i51b,лук,1,artefact,"generic, ambiguous (also = onion)"
+i51b,северного,2,direction,Northern
+i51b,кавказа,1,mountain,Mediterranean/Mountain
+i51b,северный,1,direction,Northern
+i51b,южный,1,direction,Southern
+i51b,северное,1,direction,Northern
+i51b,америка,1,continent,?
+i51b,ямс,1,artefact,Trop. Moist — yam
+i51b,маниока,1,artefact,Trop. Moist — manioc
+i52,сибирские,1,region,Tundra/Boreal
+i54,гарпун,1,artefact,Arctic/coastal — harpoon
+i54,маниока,1,artefact,Trop. Moist — manioc
+i55,нарте,1,artefact,Tundra/Boreal
+i55,полярная,1,climate,Arctic
+i55a,аляски,1,region,Tundra/Boreal
+i55b,лук,1,artefact,"generic, ambiguous (also = onion)"
+i57,стрела,3,artefact,generic
+i59a,северный,1,direction,Northern
+i59b1,северная,1,direction,Northern
+i59b3,азии,1,continent,?
+i59b3,стрела,1,artefact,generic
+i5a,маниока,1,artefact,Trop. Moist — manioc
+i5a,ямса,1,artefact,Trop. Moist
+i6,алтай,1,mountain,Mountain/Steppe
+i6,стрела,1,artefact,generic
+i6,лук,6,artefact,"generic, ambiguous (also = onion)"
+i6,гарпун,1,artefact,Arctic/coastal — harpoon
+i62,нил,1,river,Desert/Trop. Savanna
+i62,австралии,1,region,Desert/Savanna (Aus)
+i62,полинезии,1,region,Trop. Moist (Pacific)
+i62,северный,2,direction,Northern
+i62,северного,1,direction,Northern
+i62,амура,1,river,Boreal
+i65,полярная,1,climate,Arctic
+i67,южный,1,direction,Southern
+i68,северное,1,direction,Northern
+i69,аляски,1,region,Tundra/Boreal
+i69,полярная,1,climate,Arctic
+i6a,гарпун,1,artefact,Arctic/coastal — harpoon
+i7,лук,1,artefact,"generic, ambiguous (also = onion)"
+i7,стрела,2,artefact,generic
+i7,северная,1,direction,Northern
+i7,амазонке,1,river,Trop. Moist
+i72,северного,2,direction,Northern
+i72,конго,2,region/river,Trop. Moist
+i72,ямс,1,artefact,Trop. Moist — yam
+i72,южный,1,direction,Southern
+i72,полярная,3,climate,Arctic
+i72,лук,2,artefact,"generic, ambiguous (also = onion)"
+i72,сахара,1,region,Desert
+i72,стрела,1,artefact,generic
+i72,северная,1,direction,Northern
+i73,нарты,1,artefact,Tundra/Boreal — sledge pl
+i74,нарты,1,artefact,Tundra/Boreal — sledge pl
+i75,нарты,1,artefact,Tundra/Boreal — sledge pl
+i75,северная,1,direction,Northern
+i75,лук,2,artefact,"generic, ambiguous (also = onion)"
+i75,северного,1,direction,Northern
+i75,маис,1,artefact,Trop./Temp. — maize
+i75,анд,1,mountain,Mountain
+i78,пироги,1,artefact,Trop.
+i78,северный,1,direction,Northern
+i78,южный,1,direction,Southern
+i78,алтай,2,mountain,Mountain/Steppe
+i78,северная,1,direction,Northern
+i80,стрела,1,artefact,generic
+i80,лук,1,artefact,"generic, ambiguous (also = onion)"
+i81,полярный,1,climate,Arctic
+i81,северный,1,direction,Northern
+i81,южный,1,direction,Southern
+i82a,бумеранг,1,artefact,Australia — boomerang
+i82a,северное,1,direction,Northern
+i82a,южный,3,direction,Southern
+i82a,полярная,3,climate,Arctic
+i82a,нарты,1,artefact,Tundra/Boreal — sledge pl
+i82a,лук,3,artefact,"generic, ambiguous (also = onion)"
+i82a,северная,1,direction,Northern
+i82a,стрела,1,artefact,generic
+i82a,маниока,2,artefact,Trop. Moist — manioc
+i82a,анды,1,mountain,Mountain
+i82a,ямс,2,artefact,Trop. Moist — yam
+i82b,бумеранг,1,artefact,Australia — boomerang
+i82b,южный,1,direction,Southern
+i82b,полинезии,1,region,Trop. Moist (Pacific)
+i82b,стрела,1,artefact,generic
+i82b,лук,1,artefact,"generic, ambiguous (also = onion)"
+i82b,полярная,1,climate,Arctic
+i82b,маниока,1,artefact,Trop. Moist — manioc
+i82b,ямс,1,artefact,Trop. Moist — yam
+i82c,бумеранг,1,artefact,Australia — boomerang
+i82c,маниока,1,artefact,Trop. Moist — manioc
+i82d,стрела,1,artefact,generic
+i82h,полярная,2,climate,Arctic
+i82h,стрела,1,artefact,generic
+i82i,стрела,1,artefact,generic
+i83,ямс,2,artefact,Trop. Moist — yam
+i83,ямса,1,artefact,Trop. Moist
+i83,полярная,1,climate,Arctic
+i83,маниока,1,artefact,Trop. Moist — manioc
+i84,северного,1,direction,Northern
+i84,енисея,1,river,Boreal
+i84,амура,1,river,Boreal
+i85,полярная,45,climate,Arctic
+i85,северного,1,direction,Northern
+i85,северный,5,direction,Northern
+i85a,полярная,10,climate,Arctic
+i85b,полярная,18,climate,Arctic
+i85b,стрела,3,artefact,generic
+i85b,северная,1,direction,Northern
+i85c,северный,1,direction,Northern
+i85c,северного,1,direction,Northern
+i86,енисея,1,river,Boreal
+i87,нарты,3,artefact,Tundra/Boreal — sledge pl
+i87,стрела,1,artefact,generic
+i87a,северное,1,direction,Northern
+i87a2,стрела,5,artefact,generic
+i87a2,европы,1,continent,?
+i87aa,карелии,1,region,Boreal
+i87b,стрела,5,artefact,generic
+i87b,нарты,1,artefact,Tundra/Boreal — sledge pl
+i87b,северное,1,direction,Northern
+i88,лук,1,artefact,"generic, ambiguous (also = onion)"
+i89,северный,1,direction,Northern
+i89,кавказ,1,mountain,Mediterranean/Mountain
+i89,азии,2,continent,?
+i89,полярная,1,climate,Arctic
+i8e,северный,1,direction,Northern
+i8e,южный,1,direction,Southern
+i8f,полярная,1,climate,Arctic
+i8g,лук,2,artefact,"generic, ambiguous (also = onion)"
+i8g,стрела,1,artefact,generic
+i8g,южное,1,direction,Southern
+i8g,полярная,1,climate,Arctic
+i8i,гималаи,1,mountain,Mountain
+i8i,кавказа,2,mountain,Mediterranean/Mountain
+i8i,северная,1,direction,Northern
+i8i,северный,2,direction,Northern
+i8i,южное,2,direction,Southern
+i9,южный,1,direction,Southern
+i9,северный,1,direction,Northern
+i9,евразии,1,continent,?
+i9,северная,1,direction,Northern
+i92,лук,1,artefact,"generic, ambiguous (also = onion)"
+i92,северная,1,direction,Northern
+i98a,лук,2,artefact,"generic, ambiguous (also = onion)"
+i98a,ямса,1,artefact,Trop. Moist
+i98a,ямс,1,artefact,Trop. Moist — yam
+i98a,северный,1,direction,Northern
+i98a,северная,1,direction,Northern
+i98b,сибирь,2,region,Tundra/Boreal
+i99,южный,2,direction,Southern
+j10,лук,1,artefact,"generic, ambiguous (also = onion)"
+j11,лук,1,artefact,"generic, ambiguous (also = onion)"
+j12,амазонии,1,region,Trop. Moist
+j12,стрела,2,artefact,generic
+j12,ямс,2,artefact,Trop. Moist — yam
+j12,лук,6,artefact,"generic, ambiguous (also = onion)"
+j12,маниока,1,artefact,Trop. Moist — manioc
+j12a,амазонии,1,region,Trop. Moist
+j13,лук,3,artefact,"generic, ambiguous (also = onion)"
+j13,лена,1,river,Boreal/Tundra
+j13,стрела,1,artefact,generic
+j15,пироги,3,artefact,Trop.
+j15,аляски,1,region,Tundra/Boreal
+j15,ямс,1,artefact,Trop. Moist — yam
+j15,лук,4,artefact,"generic, ambiguous (also = onion)"
+j15a,лук,1,artefact,"generic, ambiguous (also = onion)"
+j16,маниока,1,artefact,Trop. Moist — manioc
+j17,стрела,1,artefact,generic
+j17,лук,1,artefact,"generic, ambiguous (also = onion)"
+j17,аляски,1,region,Tundra/Boreal
+j17,ямс,1,artefact,Trop. Moist — yam
+j18,стрела,1,artefact,generic
+j18,лук,11,artefact,"generic, ambiguous (also = onion)"
+j19,лук,3,artefact,"generic, ambiguous (also = onion)"
+j19,стрела,4,artefact,generic
+j19a,стрела,5,artefact,generic
+j19a,лук,1,artefact,"generic, ambiguous (also = onion)"
+j19b,стрела,1,artefact,generic
+j22a,стрела,3,artefact,generic
+j22d,стрела,1,artefact,generic
+j22d,гарпуном,1,artefact,Arctic/coastal
+j22e,стрела,1,artefact,generic
+j23,нил,1,river,Desert/Trop. Savanna
+j23,лук,8,artefact,"generic, ambiguous (also = onion)"
+j23,ямс,1,artefact,Trop. Moist — yam
+j23,стрела,3,artefact,generic
+j23,северная,1,direction,Northern
+j23,гарпун,2,artefact,Arctic/coastal — harpoon
+j23,аляски,1,region,Tundra/Boreal
+j23,полярная,1,climate,Arctic
+j23,северного,1,direction,Northern
+j23a,лук,1,artefact,"generic, ambiguous (also = onion)"
+j23a,стрела,1,artefact,generic
+j24,южный,1,direction,Southern
+j25,лук,10,artefact,"generic, ambiguous (also = onion)"
+j25,стрела,6,artefact,generic
+j25,нарты,2,artefact,Tundra/Boreal — sledge pl
+j25,нарте,1,artefact,Tundra/Boreal
+j25,южный,1,direction,Southern
+j25,маниока,2,artefact,Trop. Moist — manioc
+j25a,ямс,1,artefact,Trop. Moist — yam
+j26,гималаи,1,mountain,Mountain
+j26,лук,8,artefact,"generic, ambiguous (also = onion)"
+j26,гарпун,1,artefact,Arctic/coastal — harpoon
+j26,пироги,1,artefact,Trop.
+j26,стрела,3,artefact,generic
+j26,енисей,1,river,Boreal
+j26,нарты,2,artefact,Tundra/Boreal — sledge pl
+j26,нарте,1,artefact,Tundra/Boreal
+j26,южный,1,direction,Southern
+j26,маниока,1,artefact,Trop. Moist — manioc
+j26a,нарты,1,artefact,Tundra/Boreal — sledge pl
+j26a,нарте,1,artefact,Tundra/Boreal
+j27,лук,6,artefact,"generic, ambiguous (also = onion)"
+j27,карелии,1,region,Boreal
+j27,нарты,2,artefact,Tundra/Boreal — sledge pl
+j27,нарте,1,artefact,Tundra/Boreal
+j27,стрела,5,artefact,generic
+j27a,стрела,1,artefact,generic
+j27b,стрела,7,artefact,generic
+j27b,лук,5,artefact,"generic, ambiguous (also = onion)"
+j27b,нарты,2,artefact,Tundra/Boreal — sledge pl
+j28b,нил,1,river,Desert/Trop. Savanna
+j28b,лук,5,artefact,"generic, ambiguous (also = onion)"
+j28b,стрела,3,artefact,generic
+j29,стрела,1,artefact,generic
+j3,лук,1,artefact,"generic, ambiguous (also = onion)"
+j30,лук,6,artefact,"generic, ambiguous (also = onion)"
+j30,нарта,2,artefact,Tundra/Boreal — sledge
+j30,нарте,1,artefact,Tundra/Boreal
+j30,гарпун,1,artefact,Arctic/coastal — harpoon
+j30,стрела,4,artefact,generic
+j30,южный,3,direction,Southern
+j31,лук,15,artefact,"generic, ambiguous (also = onion)"
+j31,стрела,9,artefact,generic
+j31,нарта,4,artefact,Tundra/Boreal — sledge
+j31,аляски,1,region,Tundra/Boreal
+j32,северного,1,direction,Northern
+j32,лук,6,artefact,"generic, ambiguous (also = onion)"
+j32,нарта,3,artefact,Tundra/Boreal — sledge
+j32,нарты,2,artefact,Tundra/Boreal — sledge pl
+j32,стрела,3,artefact,generic
+j32a,карелия,2,region,Boreal
+j32a,нарты,3,artefact,Tundra/Boreal — sledge pl
+j32a,стрела,2,artefact,generic
+j32a,лук,1,artefact,"generic, ambiguous (also = onion)"
+j33,лук,4,artefact,"generic, ambiguous (also = onion)"
+j33,маис,1,artefact,Trop./Temp. — maize
+j34,лук,6,artefact,"generic, ambiguous (also = onion)"
+j35,амазонка,1,river,Trop. Moist
+j37,аляски,1,region,Tundra/Boreal
+j37,стрела,1,artefact,generic
+j37,маниока,4,artefact,Trop. Moist — manioc
+j38,аляски,1,region,Tundra/Boreal
+j39,стрела,1,artefact,generic
+j4,гарпун,3,artefact,Arctic/coastal — harpoon
+j4,лук,19,artefact,"generic, ambiguous (also = onion)"
+j4,нарты,1,artefact,Tundra/Boreal — sledge pl
+j4,нарта,1,artefact,Tundra/Boreal — sledge
+j4,стрела,9,artefact,generic
+j4,аляски,2,region,Tundra/Boreal
+j4,северный,1,direction,Northern
+j4,южный,3,direction,Southern
+j4,гарпуном,1,artefact,Arctic/coastal
+j40,лук,5,artefact,"generic, ambiguous (also = onion)"
+j40,стрела,9,artefact,generic
+j40,южный,1,direction,Southern
+j40,северный,1,direction,Northern
+j40a,лук,5,artefact,"generic, ambiguous (also = onion)"
+j40a,стрела,4,artefact,generic
+j41,лук,2,artefact,"generic, ambiguous (also = onion)"
+j41c,нил,1,river,Desert/Trop. Savanna
+j41c,лук,1,artefact,"generic, ambiguous (also = onion)"
+j41c,нарты,2,artefact,Tundra/Boreal — sledge pl
+j41c,стрела,2,artefact,generic
+j42,замбези,1,river,Trop. Savanna
+j42,ямс,3,artefact,Trop. Moist — yam
+j42,стрела,6,artefact,generic
+j42,лук,2,artefact,"generic, ambiguous (also = onion)"
+j43,маниока,1,artefact,Trop. Moist — manioc
+j43,ямс,1,artefact,Trop. Moist — yam
+j44,аляски,1,region,Tundra/Boreal
+j44,южный,3,direction,Southern
+j44,лук,5,artefact,"generic, ambiguous (also = onion)"
+j44,стрела,1,artefact,generic
+j44,ямс,1,artefact,Trop. Moist — yam
+j44,маниока,2,artefact,Trop. Moist — manioc
+j45,нарты,1,artefact,Tundra/Boreal — sledge pl
+j45,гарпуном,2,artefact,Arctic/coastal
+j45,гарпун,1,artefact,Arctic/coastal — harpoon
+j45,лук,5,artefact,"generic, ambiguous (also = onion)"
+j45,стрела,1,artefact,generic
+j46,лук,4,artefact,"generic, ambiguous (also = onion)"
+j46,стрела,6,artefact,generic
+j46,нарты,2,artefact,Tundra/Boreal — sledge pl
+j46,нарте,2,artefact,Tundra/Boreal
+j46,аляски,1,region,Tundra/Boreal
+j46,северное,1,direction,Northern
+j46,ямс,1,artefact,Trop. Moist — yam
+j46,маниока,2,artefact,Trop. Moist — manioc
+j46,южный,1,direction,Southern
+j47,бумеранг,1,artefact,Australia — boomerang
+j47,ямс,1,artefact,Trop. Moist — yam
+j47,океании,1,region,Trop. Moist (Pacific)
+j47,маис,1,artefact,Trop./Temp. — maize
+j47,анды,1,mountain,Mountain
+j47,стрела,1,artefact,generic
+j47a,пироги,5,artefact,Trop.
+j47a,сахара,1,region,Desert
+j48,стрела,1,artefact,generic
+j49,маис,1,artefact,Trop./Temp. — maize
+j49,стрела,1,artefact,generic
+j5,стрела,3,artefact,generic
+j5,лук,3,artefact,"generic, ambiguous (also = onion)"
+j50,стрела,1,artefact,generic
+j50,лук,2,artefact,"generic, ambiguous (also = onion)"
+j50a,лук,1,artefact,"generic, ambiguous (also = onion)"
+j50b,стрела,4,artefact,generic
+j50b,лук,1,artefact,"generic, ambiguous (also = onion)"
+j51,гарпун,2,artefact,Arctic/coastal — harpoon
+j51,южный,2,direction,Southern
+j51,стрела,2,artefact,generic
+j51,нарта,2,artefact,Tundra/Boreal — sledge
+j51,лук,2,artefact,"generic, ambiguous (also = onion)"
+j51,маниока,1,artefact,Trop. Moist — manioc
+j51a,стрела,1,artefact,generic
+j51a1,стрела,1,artefact,generic
+j51b,маниока,1,artefact,Trop. Moist — manioc
+j52,стрела,2,artefact,generic
+j52,лук,2,artefact,"generic, ambiguous (also = onion)"
+j52,гарпун,3,artefact,Arctic/coastal — harpoon
+j52,гарпуном,1,artefact,Arctic/coastal
+j52,южный,2,direction,Southern
+j52a,стрела,3,artefact,generic
+j52b,стрела,9,artefact,generic
+j52b,лук,4,artefact,"generic, ambiguous (also = onion)"
+j52b,алтай,1,mountain,Mountain/Steppe
+j52b,нарте,2,artefact,Tundra/Boreal
+j52b,нарты,1,artefact,Tundra/Boreal — sledge pl
+j53,южный,2,direction,Southern
+j54,якутии,1,region,Boreal/Tundra
+j54,лук,1,artefact,"generic, ambiguous (also = onion)"
+j54,маниока,1,artefact,Trop. Moist — manioc
+j54a,алтай,1,mountain,Mountain/Steppe
+j54b,лук,2,artefact,"generic, ambiguous (also = onion)"
+j54b,стрела,1,artefact,generic
+j55,нарты,1,artefact,Tundra/Boreal — sledge pl
+j55,северного,2,direction,Northern
+j55,лук,1,artefact,"generic, ambiguous (also = onion)"
+j55,северный,1,direction,Northern
+j56,лук,6,artefact,"generic, ambiguous (also = onion)"
+j56,стрела,2,artefact,generic
+j56,ямс,1,artefact,Trop. Moist — yam
+j57,стрела,3,artefact,generic
+j57,лук,5,artefact,"generic, ambiguous (also = onion)"
+j58,ямса,2,artefact,Trop. Moist
+j58,ямс,1,artefact,Trop. Moist — yam
+j58,нарты,1,artefact,Tundra/Boreal — sledge pl
+j58,нарта,1,artefact,Tundra/Boreal — sledge
+j58,лук,13,artefact,"generic, ambiguous (also = onion)"
+j58,стрела,8,artefact,generic
+j58,маниока,1,artefact,Trop. Moist — manioc
+j58,южный,2,direction,Southern
+j59,стрела,8,artefact,generic
+j59a,нарте,1,artefact,Tundra/Boreal
+j59a,якутии,1,region,Boreal/Tundra
+j59a,лук,4,artefact,"generic, ambiguous (also = onion)"
+j59a,стрела,2,artefact,generic
+j59a,гарпун,1,artefact,Arctic/coastal — harpoon
+j59a,южный,1,direction,Southern
+j59b,лук,1,artefact,"generic, ambiguous (also = onion)"
+j59b,стрела,4,artefact,generic
+j6,маниока,4,artefact,Trop. Moist — manioc
+j6,лук,5,artefact,"generic, ambiguous (also = onion)"
+j6,ямс,1,artefact,Trop. Moist — yam
+j60,лук,3,artefact,"generic, ambiguous (also = onion)"
+j60,ямс,1,artefact,Trop. Moist — yam
+j61,аляски,1,region,Tundra/Boreal
+j61,стрела,1,artefact,generic
+j61,лук,1,artefact,"generic, ambiguous (also = onion)"
+j62,пироги,1,artefact,Trop.
+j63,нарта,2,artefact,Tundra/Boreal — sledge
+j63,лук,1,artefact,"generic, ambiguous (also = onion)"
+j64,ямса,2,artefact,Trop. Moist
+j64,ямс,4,artefact,Trop. Moist — yam
+j66,лук,15,artefact,"generic, ambiguous (also = onion)"
+j66,стрела,6,artefact,generic
+j66,алтай,2,mountain,Mountain/Steppe
+j66,нарте,2,artefact,Tundra/Boreal
+j66,нарты,1,artefact,Tundra/Boreal — sledge pl
+j66,маниока,1,artefact,Trop. Moist — manioc
+j67,лук,1,artefact,"generic, ambiguous (also = onion)"
+j67,стрела,1,artefact,generic
+j7,пирога,1,artefact,Trop. — pirogue
+j7,южный,2,direction,Southern
+j7,пироги,1,artefact,Trop.
+j7,лук,2,artefact,"generic, ambiguous (also = onion)"
+j7,карелия,1,region,Boreal
+j9,маниока,1,artefact,Trop. Moist — manioc
+j9,лук,4,artefact,"generic, ambiguous (also = onion)"
+j9,ямс,1,artefact,Trop. Moist — yam
+k100,пирога,1,artefact,Trop. — pirogue
+k100,северная,1,direction,Northern
+k100,лук,2,artefact,"generic, ambiguous (also = onion)"
+k100b,южный,1,direction,Southern
+k100c,стрела,1,artefact,generic
+k100d,южный,2,direction,Southern
+k100e,лук,2,artefact,"generic, ambiguous (also = onion)"
+k100f,лук,1,artefact,"generic, ambiguous (also = onion)"
+k100f1,северный,1,direction,Northern
+k100f1,карелия,1,region,Boreal
+k100f1,стрела,3,artefact,generic
+k100f1,северная,1,direction,Northern
+k100g,пирога,1,artefact,Trop. — pirogue
+k100g,северная,2,direction,Northern
+k100g,южный,1,direction,Southern
+k101a,африки,1,region,Trop. Savanna/Moist
+k101b,стрела,1,artefact,generic
+k101b,северный,2,direction,Northern
+k102,южный,1,direction,Southern
+k102,лук,6,artefact,"generic, ambiguous (also = onion)"
+k102,карелия,1,region,Boreal
+k102,пироги,1,artefact,Trop.
+k102,стрела,2,artefact,generic
+k102,нарты,1,artefact,Tundra/Boreal — sledge pl
+k102,полярная,1,climate,Arctic
+k102a2,пироги,1,artefact,Trop.
+k102a2,стрела,4,artefact,generic
+k102a2,нарты,1,artefact,Tundra/Boreal — sledge pl
+k102a2,лук,6,artefact,"generic, ambiguous (also = onion)"
+k102b,пироги,1,artefact,Trop.
+k103,пироги,2,artefact,Trop.
+k103,стрела,1,artefact,generic
+k103,ямса,1,artefact,Trop. Moist
+k103,ямс,1,artefact,Trop. Moist — yam
+k106,лук,4,artefact,"generic, ambiguous (also = onion)"
+k106,стрела,6,artefact,generic
+k107,северный,2,direction,Northern
+k107,южный,2,direction,Southern
+k107,лук,2,artefact,"generic, ambiguous (also = onion)"
+k107,сахара,2,region,Desert
+k107,северная,1,direction,Northern
+k107,полярный,1,climate,Arctic
+k107a,северного,1,direction,Northern
+k107a,стрела,1,artefact,generic
+k107b,северного,1,direction,Northern
+k107b,южный,2,direction,Southern
+k107b,амур,1,river,Boreal
+k107b,полярный,1,climate,Arctic
+k107b,северный,1,direction,Northern
+k107c,сибирь,1,region,Tundra/Boreal
+k107c,лук,2,artefact,"generic, ambiguous (also = onion)"
+k108,северный,1,direction,Northern
+k109,гарпун,1,artefact,Arctic/coastal — harpoon
+k10a,маниока,2,artefact,Trop. Moist — manioc
+k10c,лук,2,artefact,"generic, ambiguous (also = onion)"
+k10c,стрела,1,artefact,generic
+k10e,аляски,1,region,Tundra/Boreal
+k10f,лук,1,artefact,"generic, ambiguous (also = onion)"
+k10g,лук,1,artefact,"generic, ambiguous (also = onion)"
+k10h,ямс,1,artefact,Trop. Moist — yam
+k10i,стрела,1,artefact,generic
+k110,нарты,3,artefact,Tundra/Boreal — sledge pl
+k112,лук,1,artefact,"generic, ambiguous (also = onion)"
+k113,стрела,33,artefact,generic
+k113,карелия,1,region,Boreal
+k113,лук,1,artefact,"generic, ambiguous (also = onion)"
+k113a,стрела,39,artefact,generic
+k113a,лук,2,artefact,"generic, ambiguous (also = onion)"
+k113a,карелия,1,region,Boreal
+k114,лук,1,artefact,"generic, ambiguous (also = onion)"
+k117,карелия,2,region,Boreal
+k117,сибирь,1,region,Tundra/Boreal
+k117a,северная,1,direction,Northern
+k117a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k117a,кавказ,1,mountain,Mediterranean/Mountain
+k117b,карелия,1,region,Boreal
+k117c,стрела,1,artefact,generic
+k117c,лук,2,artefact,"generic, ambiguous (also = onion)"
+k118,южный,1,direction,Southern
+k118,лук,2,artefact,"generic, ambiguous (also = onion)"
+k118,пироги,2,artefact,Trop.
+k118,нила,1,river,Desert/Trop. Savanna
+k119,нарте,2,artefact,Tundra/Boreal
+k119,стрела,2,artefact,generic
+k119,нарты,1,artefact,Tundra/Boreal — sledge pl
+k119,аляски,1,region,Tundra/Boreal
+k119a,ямса,1,artefact,Trop. Moist
+k119a,ямс,1,artefact,Trop. Moist — yam
+k119a,нил,1,river,Desert/Trop. Savanna
+k11a,северного,1,direction,Northern
+k11a,лук,2,artefact,"generic, ambiguous (also = onion)"
+k12,северного,1,direction,Northern
+k12,пироги,1,artefact,Trop.
+k12,южный,1,direction,Southern
+k12,стрела,14,artefact,generic
+k12,лук,34,artefact,"generic, ambiguous (also = onion)"
+k12,нарта,6,artefact,Tundra/Boreal — sledge
+k12,сахара,1,region,Desert
+k12,алтай,1,mountain,Mountain/Steppe
+k12,нарте,1,artefact,Tundra/Boreal
+k12,гарпун,1,artefact,Arctic/coastal — harpoon
+k12,аляски,1,region,Tundra/Boreal
+k12,маниока,1,artefact,Trop. Moist — manioc
+k12,ямс,1,artefact,Trop. Moist — yam
+k12,ямса,1,artefact,Trop. Moist
+k120,карелия,1,region,Boreal
+k120a1,карелия,1,region,Boreal
+k120a3,северный,1,direction,Northern
+k120a3,сахара,2,region,Desert
+k120a4,замбези,1,river,Trop. Savanna
+k120a4,северный,1,direction,Northern
+k120a4,лук,2,artefact,"generic, ambiguous (also = onion)"
+k121,лук,4,artefact,"generic, ambiguous (also = onion)"
+k121,стрела,1,artefact,generic
+k121,нарта,2,artefact,Tundra/Boreal — sledge
+k123,нил,1,river,Desert/Trop. Savanna
+k123,стрела,2,artefact,generic
+k123,пирога,1,artefact,Trop. — pirogue
+k123,северная,1,direction,Northern
+k123,лук,1,artefact,"generic, ambiguous (also = onion)"
+k123a,нил,1,river,Desert/Trop. Savanna
+k123a,стрела,3,artefact,generic
+k123a,нарты,2,artefact,Tundra/Boreal — sledge pl
+k123a,северная,1,direction,Northern
+k124,нарта,4,artefact,Tundra/Boreal — sledge
+k125,лук,2,artefact,"generic, ambiguous (also = onion)"
+k125,нарте,1,artefact,Tundra/Boreal
+k125,нарты,2,artefact,Tundra/Boreal — sledge pl
+k125,нарта,1,artefact,Tundra/Boreal — sledge
+k126,гарпун,1,artefact,Arctic/coastal — harpoon
+k127,нил,1,river,Desert/Trop. Savanna
+k127,пирога,1,artefact,Trop. — pirogue
+k127,европы,1,continent,?
+k127a,пирога,1,artefact,Trop. — pirogue
+k128,пироги,1,artefact,Trop.
+k128,лук,1,artefact,"generic, ambiguous (also = onion)"
+k128,стрела,2,artefact,generic
+k128,нарта,4,artefact,Tundra/Boreal — sledge
+k128,лена,1,river,Boreal/Tundra
+k129,азии,1,continent,?
+k129,нарты,2,artefact,Tundra/Boreal — sledge pl
+k129,стрела,1,artefact,generic
+k129,пироги,1,artefact,Trop.
+k12a,лук,32,artefact,"generic, ambiguous (also = onion)"
+k12a,нарта,2,artefact,Tundra/Boreal — sledge
+k12a,стрела,1,artefact,generic
+k130,азии,1,continent,?
+k130,пироги,1,artefact,Trop.
+k130a,азии,1,continent,?
+k130a,пироги,1,artefact,Trop.
+k131,южный,2,direction,Southern
+k131,лук,5,artefact,"generic, ambiguous (also = onion)"
+k131,северный,3,direction,Northern
+k131,карелия,1,region,Boreal
+k131b,карелия,1,region,Boreal
+k132,пироги,4,artefact,Trop.
+k134,африки,1,region,Trop. Savanna/Moist
+k134,карелия,1,region,Boreal
+k135,северный,1,direction,Northern
+k135,нарты,5,artefact,Tundra/Boreal — sledge pl
+k135,лук,3,artefact,"generic, ambiguous (also = onion)"
+k135,стрела,1,artefact,generic
+k136a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k137,стрела,7,artefact,generic
+k137,лук,3,artefact,"generic, ambiguous (also = onion)"
+k139,лук,1,artefact,"generic, ambiguous (also = onion)"
+k13a,полярная,2,climate,Arctic
+k13a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k13a,гарпуном,3,artefact,Arctic/coastal
+k13a,маниока,1,artefact,Trop. Moist — manioc
+k13a,стрела,1,artefact,generic
+k13a,южный,1,direction,Southern
+k13b,стрела,1,artefact,generic
+k13b,гарпуном,1,artefact,Arctic/coastal
+k13d,южный,1,direction,Southern
+k14,карелия,1,region,Boreal
+k140,лук,1,artefact,"generic, ambiguous (also = onion)"
+k141,стрела,1,artefact,generic
+k141,нарта,1,artefact,Tundra/Boreal — sledge
+k141,нарты,1,artefact,Tundra/Boreal — sledge pl
+k141,лук,1,artefact,"generic, ambiguous (also = onion)"
+k143,северный,1,direction,Northern
+k143,южный,1,direction,Southern
+k144,средиземноморье,1,region,Mediterranean
+k146,лук,2,artefact,"generic, ambiguous (also = onion)"
+k147,нарты,1,artefact,Tundra/Boreal — sledge pl
+k148,нарта,1,artefact,Tundra/Boreal — sledge
+k148,лук,2,artefact,"generic, ambiguous (also = onion)"
+k148,алтай,1,mountain,Mountain/Steppe
+k149,северного,1,direction,Northern
+k14a,стрела,1,artefact,generic
+k14c,карелия,1,region,Boreal
+k150,карелия,1,region,Boreal
+k157,нарта,1,artefact,Tundra/Boreal — sledge
+k157,лук,2,artefact,"generic, ambiguous (also = onion)"
+k157,сахара,1,region,Desert
+k158,карелия,1,region,Boreal
+k159,лук,6,artefact,"generic, ambiguous (also = onion)"
+k159,алтай,1,mountain,Mountain/Steppe
+k15a,стрела,1,artefact,generic
+k15a,нарты,1,artefact,Tundra/Boreal — sledge pl
+k15a,лук,2,artefact,"generic, ambiguous (also = onion)"
+k15b,нарты,1,artefact,Tundra/Boreal — sledge pl
+k15b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k15b,северный,1,direction,Northern
+k16,аляски,1,region,Tundra/Boreal
+k16,лук,1,artefact,"generic, ambiguous (also = onion)"
+k16,южный,1,direction,Southern
+k16,ямс,1,artefact,Trop. Moist — yam
+k16,ямса,1,artefact,Trop. Moist
+k16,маниока,1,artefact,Trop. Moist — manioc
+k160,карелия,1,region,Boreal
+k161,пироги,1,artefact,Trop.
+k161,южный,2,direction,Southern
+k161,северный,1,direction,Northern
+k161,лук,1,artefact,"generic, ambiguous (also = onion)"
+k161,нарта,4,artefact,Tundra/Boreal — sledge
+k161,лена,1,river,Boreal/Tundra
+k162,сибири,2,region,Tundra/Boreal
+k165,северный,2,direction,Northern
+k17,сибирь,1,region,Tundra/Boreal
+k17,амур,1,river,Boreal
+k17,аляски,1,region,Tundra/Boreal
+k17,маис,1,artefact,Trop./Temp. — maize
+k17,стрела,1,artefact,generic
+k17,лук,1,artefact,"generic, ambiguous (also = onion)"
+k18,сибирская,1,region,Tundra/Boreal
+k18,стрела,2,artefact,generic
+k18,лук,15,artefact,"generic, ambiguous (also = onion)"
+k18a,лук,7,artefact,"generic, ambiguous (also = onion)"
+k18d,карелия,1,region,Boreal
+k18d,нарты,1,artefact,Tundra/Boreal — sledge pl
+k18d,южный,1,direction,Southern
+k18d,сибирская,1,region,Tundra/Boreal
+k19a,маниока,2,artefact,Trop. Moist — manioc
+k19a,ямс,8,artefact,Trop. Moist — yam
+k19b,лук,9,artefact,"generic, ambiguous (also = onion)"
+k19b,полярная,2,climate,Arctic
+k19b,южный,1,direction,Southern
+k19b,ямс,3,artefact,Trop. Moist — yam
+k19b,маниока,1,artefact,Trop. Moist — manioc
+k19c,ямс,7,artefact,Trop. Moist — yam
+k19c,маниока,1,artefact,Trop. Moist — manioc
+k19f,ямс,1,artefact,Trop. Moist — yam
+k1c,аляски,1,region,Tundra/Boreal
+k1d,гарпун,2,artefact,Arctic/coastal — harpoon
+k1d,лук,2,artefact,"generic, ambiguous (also = onion)"
+k1e,южный,1,direction,Southern
+k1e,карелия,1,region,Boreal
+k1e,гарпун,5,artefact,Arctic/coastal — harpoon
+k1e,лук,2,artefact,"generic, ambiguous (also = onion)"
+k1f,стрела,2,artefact,generic
+k1f,северный,1,direction,Northern
+k1f,аляски,1,region,Tundra/Boreal
+k1f,лук,2,artefact,"generic, ambiguous (also = onion)"
+k1h,стрела,1,artefact,generic
+k1h,южный,4,direction,Southern
+k1h,гарпун,1,artefact,Arctic/coastal — harpoon
+k1i,лук,3,artefact,"generic, ambiguous (also = onion)"
+k1j,стрела,1,artefact,generic
+k2,южный,1,direction,Southern
+k2,стрела,1,artefact,generic
+k2,лук,3,artefact,"generic, ambiguous (also = onion)"
+k2,аляски,1,region,Tundra/Boreal
+k20,лук,1,artefact,"generic, ambiguous (also = onion)"
+k21,лук,1,artefact,"generic, ambiguous (also = onion)"
+k21,полярная,2,climate,Arctic
+k22,нила,1,river,Desert/Trop. Savanna
+k22,нарты,2,artefact,Tundra/Boreal — sledge pl
+k22,лук,2,artefact,"generic, ambiguous (also = onion)"
+k22,гренландии,1,region,Tundra
+k22,северная,1,direction,Northern
+k22,южный,1,direction,Southern
+k22aa,лук,1,artefact,"generic, ambiguous (also = onion)"
+k22b,стрела,1,artefact,generic
+k22c,лук,2,artefact,"generic, ambiguous (also = onion)"
+k23a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k24,стрела,7,artefact,generic
+k24,ямса,3,artefact,Trop. Moist
+k24,ямс,2,artefact,Trop. Moist — yam
+k24,северный,3,direction,Northern
+k24,лук,9,artefact,"generic, ambiguous (also = onion)"
+k24,южный,2,direction,Southern
+k24,пирога,2,artefact,Trop. — pirogue
+k24,пироги,2,artefact,Trop.
+k24,кавказа,1,mountain,Mediterranean/Mountain
+k24,якутии,2,region,Boreal/Tundra
+k24,аляски,1,region,Tundra/Boreal
+k24,гарпун,1,artefact,Arctic/coastal — harpoon
+k24a,стрела,2,artefact,generic
+k24b,гималаев,1,mountain,Mountain
+k24b,стрела,1,artefact,generic
+k25,замбези,1,river,Trop. Savanna
+k25,северная,1,direction,Northern
+k25,гарпуном,2,artefact,Arctic/coastal
+k25,гарпун,11,artefact,Arctic/coastal — harpoon
+k25,гарпуна,1,artefact,Arctic/coastal
+k25,лук,25,artefact,"generic, ambiguous (also = onion)"
+k25,стрела,45,artefact,generic
+k25,ямс,16,artefact,Trop. Moist — yam
+k25,ямса,7,artefact,Trop. Moist
+k25,северный,4,direction,Northern
+k25,гималаев,1,mountain,Mountain
+k25,южный,2,direction,Southern
+k25,пирога,1,artefact,Trop. — pirogue
+k25,карелия,1,region,Boreal
+k25,нарта,2,artefact,Tundra/Boreal — sledge
+k25,нарты,2,artefact,Tundra/Boreal — sledge pl
+k25,якутии,3,region,Boreal/Tundra
+k25,амура,1,river,Boreal
+k25,нарте,1,artefact,Tundra/Boreal
+k25,полярная,1,climate,Arctic
+k25,маниока,7,artefact,Trop. Moist — manioc
+k25a1,ямса,2,artefact,Trop. Moist
+k25a1,ямс,2,artefact,Trop. Moist — yam
+k25a1,северный,3,direction,Northern
+k25a1,гималаев,1,mountain,Mountain
+k25a1,южный,2,direction,Southern
+k25a1,стрела,1,artefact,generic
+k25a1,нарте,1,artefact,Tundra/Boreal
+k25a2,пироги,2,artefact,Trop.
+k25a5,якутии,2,region,Boreal/Tundra
+k25a5,лук,1,artefact,"generic, ambiguous (also = onion)"
+k25a5,стрела,1,artefact,generic
+k25b,стрела,1,artefact,generic
+k25b,лук,4,artefact,"generic, ambiguous (also = onion)"
+k25c,лук,1,artefact,"generic, ambiguous (also = onion)"
+k25d,лук,8,artefact,"generic, ambiguous (also = onion)"
+k25d,полярная,2,climate,Arctic
+k26,стрела,3,artefact,generic
+k26,северная,1,direction,Northern
+k26,аляски,1,region,Tundra/Boreal
+k26,лук,4,artefact,"generic, ambiguous (also = onion)"
+k27c,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27d,лук,2,artefact,"generic, ambiguous (also = onion)"
+k27e,маниока,1,artefact,Trop. Moist — manioc
+k27e,стрела,2,artefact,generic
+k27e,лук,3,artefact,"generic, ambiguous (also = onion)"
+k27e,южный,2,direction,Southern
+k27e,пирога,1,artefact,Trop. — pirogue
+k27e,нарты,3,artefact,Tundra/Boreal — sledge pl
+k27f,стрела,3,artefact,generic
+k27f,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27f1,пирога,1,artefact,Trop. — pirogue
+k27g,америки,1,continent,?
+k27g,стрела,1,artefact,generic
+k27hh,стрела,4,artefact,generic
+k27hh,северный,1,direction,Northern
+k27hh,пироги,1,artefact,Trop.
+k27hh,карелия,1,region,Boreal
+k27hh,амура,1,river,Boreal
+k27k,аляски,1,region,Tundra/Boreal
+k27k,северного,2,direction,Northern
+k27l1,нарты,2,artefact,Tundra/Boreal — sledge pl
+k27l1,нарте,1,artefact,Tundra/Boreal
+k27l1,нарта,1,artefact,Tundra/Boreal — sledge
+k27n,замбези,1,river,Trop. Savanna
+k27n,лук,3,artefact,"generic, ambiguous (also = onion)"
+k27n,северный,1,direction,Northern
+k27n,амура,1,river,Boreal
+k27n,стрела,1,artefact,generic
+k27n1,лук,11,artefact,"generic, ambiguous (also = onion)"
+k27n1,гарпуном,1,artefact,Arctic/coastal
+k27n1,стрела,7,artefact,generic
+k27n1,аляски,1,region,Tundra/Boreal
+k27n3a,замбези,1,river,Trop. Savanna
+k27n3a,лук,2,artefact,"generic, ambiguous (also = onion)"
+k27n3b,северный,2,direction,Northern
+k27n3b,стрела,1,artefact,generic
+k27n3c,стрела,1,artefact,generic
+k27nn,америки,1,continent,?
+k27nn,стрела,2,artefact,generic
+k27nn,лук,3,artefact,"generic, ambiguous (also = onion)"
+k27o,якутии,1,region,Boreal/Tundra
+k27o,стрела,2,artefact,generic
+k27o,лук,2,artefact,"generic, ambiguous (also = onion)"
+k27p1,пироги,2,artefact,Trop.
+k27p1,лук,4,artefact,"generic, ambiguous (also = onion)"
+k27p1,гарпун,1,artefact,Arctic/coastal — harpoon
+k27q,лук,2,artefact,"generic, ambiguous (also = onion)"
+k27r,стрела,6,artefact,generic
+k27r,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27r,алтай,1,mountain,Mountain/Steppe
+k27r1,стрела,1,artefact,generic
+k27s,стрела,9,artefact,generic
+k27s,лук,5,artefact,"generic, ambiguous (also = onion)"
+k27s,северное,1,direction,Northern
+k27ss,стрела,14,artefact,generic
+k27ss,лук,5,artefact,"generic, ambiguous (also = onion)"
+k27t,северный,1,direction,Northern
+k27t,аляски,1,region,Tundra/Boreal
+k27t,северного,2,direction,Northern
+k27u,стрела,3,artefact,generic
+k27u,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27v,стрела,5,artefact,generic
+k27v1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27v1,стрела,7,artefact,generic
+k27v3,лук,6,artefact,"generic, ambiguous (also = onion)"
+k27v3,стрела,10,artefact,generic
+k27w,гарпуном,1,artefact,Arctic/coastal
+k27w,стрела,2,artefact,generic
+k27w,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27x,аляски,1,region,Tundra/Boreal
+k27x2,стрела,1,artefact,generic
+k27x3,стрела,11,artefact,generic
+k27x3,северный,1,direction,Northern
+k27x3,лук,4,artefact,"generic, ambiguous (also = onion)"
+k27x3,гарпуном,1,artefact,Arctic/coastal
+k27x3,якутии,1,region,Boreal/Tundra
+k27x4,стрела,1,artefact,generic
+k27y,лук,8,artefact,"generic, ambiguous (also = onion)"
+k27y,стрела,2,artefact,generic
+k27y1,гарпун,1,artefact,Arctic/coastal — harpoon
+k27y1,лук,2,artefact,"generic, ambiguous (also = onion)"
+k27y1,стрела,1,artefact,generic
+k27z,северный,2,direction,Northern
+k27z,стрела,1,artefact,generic
+k27z,северного,1,direction,Northern
+k27z,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27z1,альпы,1,mountain,Mediterranean
+k27z1,южный,1,direction,Southern
+k27z1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27z1,стрела,1,artefact,generic
+k27z2b,сахара,2,region,Desert
+k27z2b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27z5,лук,2,artefact,"generic, ambiguous (also = onion)"
+k27z7,нарта,2,artefact,Tundra/Boreal — sledge
+k27z7,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27z8,сибирь,1,region,Tundra/Boreal
+k27zz,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27zz,северная,1,direction,Northern
+k27zz1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k27zz2,лук,1,artefact,"generic, ambiguous (also = onion)"
+k28,европы,1,continent,?
+k28,северного,1,direction,Northern
+k28,лук,4,artefact,"generic, ambiguous (also = onion)"
+k28,стрела,6,artefact,generic
+k28,нила,1,river,Desert/Trop. Savanna
+k28,якутии,1,region,Boreal/Tundra
+k28,аляски,1,region,Tundra/Boreal
+k29a,пироги,2,artefact,Trop.
+k29a,пирога,1,artefact,Trop. — pirogue
+k29a,лук,7,artefact,"generic, ambiguous (also = onion)"
+k29a,стрела,7,artefact,generic
+k29a,северная,1,direction,Northern
+k29a,северное,2,direction,Northern
+k29a,северного,4,direction,Northern
+k29a,южное,1,direction,Southern
+k29a,гарпун,1,artefact,Arctic/coastal — harpoon
+k29a,аляски,1,region,Tundra/Boreal
+k29a,ямс,1,artefact,Trop. Moist — yam
+k29a,ямса,1,artefact,Trop. Moist
+k29b,ямс,5,artefact,Trop. Moist — yam
+k29d,нил,1,river,Desert/Trop. Savanna
+k29d,стрела,1,artefact,generic
+k2a,северного,1,direction,Northern
+k2a,стрела,5,artefact,generic
+k2a,лук,3,artefact,"generic, ambiguous (also = onion)"
+k2a,карелия,1,region,Boreal
+k2a,северный,1,direction,Northern
+k2a,сибирь,1,region,Tundra/Boreal
+k30,северный,1,direction,Northern
+k30,стрела,3,artefact,generic
+k30,нарте,1,artefact,Tundra/Boreal
+k30,аляски,1,region,Tundra/Boreal
+k30,маниока,1,artefact,Trop. Moist — manioc
+k30a,ямс,1,artefact,Trop. Moist — yam
+k30a,ямса,1,artefact,Trop. Moist
+k31,гарпун,2,artefact,Arctic/coastal — harpoon
+k31,лук,1,artefact,"generic, ambiguous (also = onion)"
+k32,аляски,2,region,Tundra/Boreal
+k32,лук,6,artefact,"generic, ambiguous (also = onion)"
+k32,замбези,1,river,Trop. Savanna
+k32,ямс,2,artefact,Trop. Moist — yam
+k32,карелия,1,region,Boreal
+k32,сибирь,1,region,Tundra/Boreal
+k32,стрела,6,artefact,generic
+k32,якутии,1,region,Boreal/Tundra
+k32,нарте,2,artefact,Tundra/Boreal
+k32,гарпуном,1,artefact,Arctic/coastal
+k32,ямса,1,artefact,Trop. Moist
+k32,маниока,2,artefact,Trop. Moist — manioc
+k32a,стрела,3,artefact,generic
+k32a,якутии,1,region,Boreal/Tundra
+k32a,нарте,2,artefact,Tundra/Boreal
+k32a,аляски,1,region,Tundra/Boreal
+k32b1,гарпуном,1,artefact,Arctic/coastal
+k32d,лук,2,artefact,"generic, ambiguous (also = onion)"
+k32d,стрела,1,artefact,generic
+k32d,сибирь,1,region,Tundra/Boreal
+k32e,стрела,2,artefact,generic
+k32f,ямс,1,artefact,Trop. Moist — yam
+k32g,африки,1,region,Trop. Savanna/Moist
+k32g,южный,2,direction,Southern
+k32g,стрела,4,artefact,generic
+k32g,лук,12,artefact,"generic, ambiguous (also = onion)"
+k32g,алтай,2,mountain,Mountain/Steppe
+k32g,алтая,1,mountain,Mountain/Steppe
+k32g,северная,1,direction,Northern
+k32g,нарты,1,artefact,Tundra/Boreal — sledge pl
+k32g,якутии,1,region,Boreal/Tundra
+k32g,нарте,1,artefact,Tundra/Boreal
+k32g1,лук,2,artefact,"generic, ambiguous (also = onion)"
+k32g1,алтай,2,mountain,Mountain/Steppe
+k32g1,алтая,1,mountain,Mountain/Steppe
+k32g1,стрела,2,artefact,generic
+k32g1,якутии,1,region,Boreal/Tundra
+k32i,северный,1,direction,Northern
+k32i,карелия,1,region,Boreal
+k33,лук,1,artefact,"generic, ambiguous (also = onion)"
+k33,ямс,2,artefact,Trop. Moist — yam
+k33,стрела,1,artefact,generic
+k33a,пироги,1,artefact,Trop.
+k33a1,ямс,2,artefact,Trop. Moist — yam
+k33b,маис,2,artefact,Trop./Temp. — maize
+k33b,маниока,1,artefact,Trop. Moist — manioc
+k33c,скандинавии,1,region,Boreal
+k33d,нила,1,river,Desert/Trop. Savanna
+k33d,пироги,1,artefact,Trop.
+k33d,южный,1,direction,Southern
+k33d1,карелия,1,region,Boreal
+k33e,лук,2,artefact,"generic, ambiguous (also = onion)"
+k33f,нила,1,river,Desert/Trop. Savanna
+k33g,карелия,1,region,Boreal
+k33h,нила,1,river,Desert/Trop. Savanna
+k33h,южный,2,direction,Southern
+k33h,лук,1,artefact,"generic, ambiguous (also = onion)"
+k34,ямс,2,artefact,Trop. Moist — yam
+k34,стрела,1,artefact,generic
+k35,лук,5,artefact,"generic, ambiguous (also = onion)"
+k35,стрела,4,artefact,generic
+k35,маис,1,artefact,Trop./Temp. — maize
+k35a,нил,1,river,Desert/Trop. Savanna
+k35a,нила,1,river,Desert/Trop. Savanna
+k35a,южный,1,direction,Southern
+k35a,стрела,5,artefact,generic
+k35a,карелия,2,region,Boreal
+k35a,нарта,4,artefact,Tundra/Boreal — sledge
+k35a,алтай,1,mountain,Mountain/Steppe
+k35a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k35a2,лук,2,artefact,"generic, ambiguous (also = onion)"
+k35a3,лук,2,artefact,"generic, ambiguous (also = onion)"
+k35a3,стрела,3,artefact,generic
+k35a4,южный,1,direction,Southern
+k35b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k35b,алтай,1,mountain,Mountain/Steppe
+k35b,стрела,1,artefact,generic
+k35c,лук,1,artefact,"generic, ambiguous (also = onion)"
+k36,амур,1,river,Boreal
+k36,стрела,3,artefact,generic
+k36,нарта,2,artefact,Tundra/Boreal — sledge
+k37,лук,2,artefact,"generic, ambiguous (also = onion)"
+k37,стрела,6,artefact,generic
+k37,южный,1,direction,Southern
+k37,гималаев,1,mountain,Mountain
+k37,пирога,2,artefact,Trop. — pirogue
+k37,северная,1,direction,Northern
+k37,пироги,2,artefact,Trop.
+k37a,северный,1,direction,Northern
+k37a,северная,1,direction,Northern
+k37d,ямса,1,artefact,Trop. Moist
+k37d,ямс,1,artefact,Trop. Moist — yam
+k37d,северный,1,direction,Northern
+k38,южный,3,direction,Southern
+k38,лук,6,artefact,"generic, ambiguous (also = onion)"
+k38,стрела,5,artefact,generic
+k38,нарта,2,artefact,Tundra/Boreal — sledge
+k38,азии,1,continent,?
+k38,карелия,1,region,Boreal
+k38,сибирь,1,region,Tundra/Boreal
+k38,алтай,1,mountain,Mountain/Steppe
+k38,нарты,1,artefact,Tundra/Boreal — sledge pl
+k38a,северного,1,direction,Northern
+k38b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k38b,сибирь,1,region,Tundra/Boreal
+k38b,стрела,1,artefact,generic
+k38b,маниока,1,artefact,Trop. Moist — manioc
+k38b2,лук,1,artefact,"generic, ambiguous (also = onion)"
+k38b3,лук,1,artefact,"generic, ambiguous (also = onion)"
+k38b3,стрела,1,artefact,generic
+k38b3,карелия,1,region,Boreal
+k38b3,нарты,1,artefact,Tundra/Boreal — sledge pl
+k38c,нарта,2,artefact,Tundra/Boreal — sledge
+k38c,азии,1,continent,?
+k38c,нарты,1,artefact,Tundra/Boreal — sledge pl
+k38d,нил,1,river,Desert/Trop. Savanna
+k38d,стрела,3,artefact,generic
+k38d,лук,4,artefact,"generic, ambiguous (also = onion)"
+k38d,сахара,1,region,Desert
+k38e,гималаев,1,mountain,Mountain
+k38e,стрела,1,artefact,generic
+k38e,пироги,1,artefact,Trop.
+k38e,южный,1,direction,Southern
+k38e1,южный,1,direction,Southern
+k38e2,стрела,1,artefact,generic
+k38f,лук,4,artefact,"generic, ambiguous (also = onion)"
+k38f,гарпун,1,artefact,Arctic/coastal — harpoon
+k38f,стрела,4,artefact,generic
+k38f,карелия,1,region,Boreal
+k38f,сахара,1,region,Desert
+k38f1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k38f1,стрела,1,artefact,generic
+k38f1,северный,1,direction,Northern
+k38f2,сахара,1,region,Desert
+k39,северного,1,direction,Northern
+k39,лук,4,artefact,"generic, ambiguous (also = onion)"
+k39,стрела,2,artefact,generic
+k4,стрела,1,artefact,generic
+k4,лук,2,artefact,"generic, ambiguous (also = onion)"
+k4,аляски,1,region,Tundra/Boreal
+k40,стрела,1,artefact,generic
+k40,лук,1,artefact,"generic, ambiguous (also = onion)"
+k40,алтай,1,mountain,Mountain/Steppe
+k40,амура,1,river,Boreal
+k41,стрела,1,artefact,generic
+k41,гарпуна,1,artefact,Arctic/coastal
+k41,гарпун,1,artefact,Arctic/coastal — harpoon
+k41,северная,1,direction,Northern
+k41,лук,1,artefact,"generic, ambiguous (also = onion)"
+k42,стрела,1,artefact,generic
+k42,лук,1,artefact,"generic, ambiguous (also = onion)"
+k43a,аляски,1,region,Tundra/Boreal
+k43b,гарпуном,1,artefact,Arctic/coastal
+k43b,гарпун,1,artefact,Arctic/coastal — harpoon
+k43c,полярный,1,climate,Arctic
+k44,северного,1,direction,Northern
+k44,нарты,1,artefact,Tundra/Boreal — sledge pl
+k44,лук,2,artefact,"generic, ambiguous (also = onion)"
+k44,нарте,1,artefact,Tundra/Boreal
+k44,стрела,2,artefact,generic
+k44,южный,1,direction,Southern
+k44,северный,1,direction,Northern
+k44b,стрела,1,artefact,generic
+k44b,северного,1,direction,Northern
+k44b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k45,стрела,1,artefact,generic
+k47a,северный,1,direction,Northern
+k47a,гарпуном,1,artefact,Arctic/coastal
+k47a,гарпун,1,artefact,Arctic/coastal — harpoon
+k47b,северная,1,direction,Northern
+k48,альпы,1,mountain,Mediterranean
+k48,южный,1,direction,Southern
+k48,стрела,2,artefact,generic
+k49,карелия,2,region,Boreal
+k5,южный,1,direction,Southern
+k5,стрела,1,artefact,generic
+k5,лук,1,artefact,"generic, ambiguous (also = onion)"
+k50,лук,1,artefact,"generic, ambiguous (also = onion)"
+k50,гарпун,1,artefact,Arctic/coastal — harpoon
+k51,лук,2,artefact,"generic, ambiguous (also = onion)"
+k51,аляски,1,region,Tundra/Boreal
+k51a,аляски,1,region,Tundra/Boreal
+k52b,гарпун,1,artefact,Arctic/coastal — harpoon
+k52c,гарпуна,1,artefact,Arctic/coastal
+k52c,гарпун,1,artefact,Arctic/coastal — harpoon
+k53,южный,1,direction,Southern
+k53,нарте,2,artefact,Tundra/Boreal
+k53,лук,2,artefact,"generic, ambiguous (also = onion)"
+k53,гарпун,2,artefact,Arctic/coastal — harpoon
+k53,северный,1,direction,Northern
+k54,аляски,1,region,Tundra/Boreal
+k54a,аляски,1,region,Tundra/Boreal
+k55,ямс,1,artefact,Trop. Moist — yam
+k56,ямс,4,artefact,Trop. Moist — yam
+k56,маниока,2,artefact,Trop. Moist — manioc
+k56,северный,4,direction,Northern
+k56,пироги,4,artefact,Trop.
+k56,карелия,2,region,Boreal
+k56,пирога,1,artefact,Trop. — pirogue
+k56,стрела,1,artefact,generic
+k56a2,ямс,1,artefact,Trop. Moist — yam
+k56a2a,ямс,1,artefact,Trop. Moist — yam
+k56a2b,пироги,1,artefact,Trop.
+k56a2b,северный,1,direction,Northern
+k56a4,карелия,1,region,Boreal
+k56a4,пироги,2,artefact,Trop.
+k56a4,северный,1,direction,Northern
+k56a4b,северный,1,direction,Northern
+k56a5,сахара,1,region,Desert
+k56a6,пироги,1,artefact,Trop.
+k56a6,пирога,1,artefact,Trop. — pirogue
+k56a6,северная,1,direction,Northern
+k56a6,карелия,1,region,Boreal
+k56a8,ямс,1,artefact,Trop. Moist — yam
+k56a8,стрела,1,artefact,generic
+k56a8a,стрела,1,artefact,generic
+k56a9,карелия,1,region,Boreal
+k56a9,пироги,3,artefact,Trop.
+k56a9,северный,1,direction,Northern
+k56b,ямс,3,artefact,Trop. Moist — yam
+k56b,ямса,2,artefact,Trop. Moist
+k56b,южный,2,direction,Southern
+k56b,нарты,2,artefact,Tundra/Boreal — sledge pl
+k56d,южный,1,direction,Southern
+k56d1,южный,1,direction,Southern
+k56e,пирога,1,artefact,Trop. — pirogue
+k56f,карелия,1,region,Boreal
+k56f1,карелия,1,region,Boreal
+k57,северный,2,direction,Northern
+k57,стрела,1,artefact,generic
+k57,карелия,3,region,Boreal
+k57,пироги,1,artefact,Trop.
+k57,северная,1,direction,Northern
+k57a,карелия,1,region,Boreal
+k57a,пироги,1,artefact,Trop.
+k58,скандинавии,1,region,Boreal
+k58,африки,1,region,Trop. Savanna/Moist
+k59,аляски,1,region,Tundra/Boreal
+k6,стрела,1,artefact,generic
+k6,амазонка,1,river,Trop. Moist
+k60a,ямса,1,artefact,Trop. Moist
+k60a,нарта,2,artefact,Tundra/Boreal — sledge
+k60a,лук,2,artefact,"generic, ambiguous (also = onion)"
+k60b,гарпун,2,artefact,Arctic/coastal — harpoon
+k60b,карелия,2,region,Boreal
+k60b,сибирь,1,region,Tundra/Boreal
+k60c,нарта,2,artefact,Tundra/Boreal — sledge
+k61a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k61a,стрела,1,artefact,generic
+k61b,ямс,2,artefact,Trop. Moist — yam
+k61b,ямса,1,artefact,Trop. Moist
+k61b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k61e,сахара,1,region,Desert
+k62a,карелия,1,region,Boreal
+k62a,пирога,1,artefact,Trop. — pirogue
+k62a,пироги,3,artefact,Trop.
+k63,лук,2,artefact,"generic, ambiguous (also = onion)"
+k63,нарты,3,artefact,Tundra/Boreal — sledge pl
+k63,нарте,1,artefact,Tundra/Boreal
+k64,альпы,2,mountain,Mediterranean
+k64,нарты,1,artefact,Tundra/Boreal — sledge pl
+k64,нарта,2,artefact,Tundra/Boreal — sledge
+k64a,альпы,2,mountain,Mediterranean
+k64a,нарты,2,artefact,Tundra/Boreal — sledge pl
+k65,сибирь,1,region,Tundra/Boreal
+k65,енисея,1,river,Boreal
+k65a,сибирь,1,region,Tundra/Boreal
+k65a,енисея,1,river,Boreal
+k65b,гималаи,2,mountain,Mountain
+k65b,лук,3,artefact,"generic, ambiguous (also = onion)"
+k65b,северная,1,direction,Northern
+k65c,северного,1,direction,Northern
+k65c,северная,1,direction,Northern
+k65f,пирога,1,artefact,Trop. — pirogue
+k66,лук,10,artefact,"generic, ambiguous (also = onion)"
+k66,пирога,2,artefact,Trop. — pirogue
+k66,южный,2,direction,Southern
+k66,карелия,2,region,Boreal
+k66,стрела,8,artefact,generic
+k66,полярная,3,climate,Arctic
+k66,северная,1,direction,Northern
+k66a,пироги,1,artefact,Trop.
+k66b,лук,4,artefact,"generic, ambiguous (also = onion)"
+k66b,стрела,2,artefact,generic
+k66b,алтай,1,mountain,Mountain/Steppe
+k66b,сахара,1,region,Desert
+k67,стрела,1,artefact,generic
+k67b,пироги,1,artefact,Trop.
+k67c,карелия,1,region,Boreal
+k67c,алтай,1,mountain,Mountain/Steppe
+k67d,лук,1,artefact,"generic, ambiguous (also = onion)"
+k68,лук,1,artefact,"generic, ambiguous (also = onion)"
+k70,нарте,1,artefact,Tundra/Boreal
+k70,нарты,2,artefact,Tundra/Boreal — sledge pl
+k70,нарта,1,artefact,Tundra/Boreal — sledge
+k70,лук,1,artefact,"generic, ambiguous (also = onion)"
+k71,лук,1,artefact,"generic, ambiguous (also = onion)"
+k72,лук,2,artefact,"generic, ambiguous (also = onion)"
+k72,пироги,1,artefact,Trop.
+k72,карелии,1,region,Boreal
+k73,северного,1,direction,Northern
+k73,пирога,1,artefact,Trop. — pirogue
+k73,южный,1,direction,Southern
+k73,лук,10,artefact,"generic, ambiguous (also = onion)"
+k73,карелии,1,region,Boreal
+k73,стрела,8,artefact,generic
+k73,нарты,1,artefact,Tundra/Boreal — sledge pl
+k73,нарте,1,artefact,Tundra/Boreal
+k73a,пирога,1,artefact,Trop. — pirogue
+k73a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k73b,пироги,1,artefact,Trop.
+k73c,нила,2,river,Desert/Trop. Savanna
+k74,стрела,3,artefact,generic
+k74,лук,11,artefact,"generic, ambiguous (also = onion)"
+k74,карелия,1,region,Boreal
+k74,сибирь,1,region,Tundra/Boreal
+k74a,стрела,1,artefact,generic
+k74a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k74a,гарпуном,3,artefact,Arctic/coastal
+k74a,гарпун,7,artefact,Arctic/coastal — harpoon
+k75,лук,8,artefact,"generic, ambiguous (also = onion)"
+k75,нил,1,river,Desert/Trop. Savanna
+k75,нила,1,river,Desert/Trop. Savanna
+k75,стрела,9,artefact,generic
+k75,ямс,4,artefact,Trop. Moist — yam
+k75,нарта,4,artefact,Tundra/Boreal — sledge
+k75,аляски,1,region,Tundra/Boreal
+k75,северный,1,direction,Northern
+k75,северного,1,direction,Northern
+k75,северное,1,direction,Northern
+k75,маис,2,artefact,Trop./Temp. — maize
+k75a,нил,1,river,Desert/Trop. Savanna
+k75a,нила,1,river,Desert/Trop. Savanna
+k75a,стрела,1,artefact,generic
+k76,лук,5,artefact,"generic, ambiguous (also = onion)"
+k76,ямс,1,artefact,Trop. Moist — yam
+k76,ямса,1,artefact,Trop. Moist
+k76b,лук,1,artefact,"generic, ambiguous (also = onion)"
+k76e,лук,1,artefact,"generic, ambiguous (also = onion)"
+k77a,индонезии,1,region,Trop. Moist
+k77a,южный,3,direction,Southern
+k77b,карелия,1,region,Boreal
+k78,стрела,3,artefact,generic
+k78,нарта,2,artefact,Tundra/Boreal — sledge
+k78,лук,1,artefact,"generic, ambiguous (also = onion)"
+k79,стрела,1,artefact,generic
+k79,лук,1,artefact,"generic, ambiguous (also = onion)"
+k79,енисей,1,river,Boreal
+k80,стрела,3,artefact,generic
+k80,лук,1,artefact,"generic, ambiguous (also = onion)"
+k80a,лук,2,artefact,"generic, ambiguous (also = onion)"
+k80a,стрела,3,artefact,generic
+k80a,северный,1,direction,Northern
+k80a,пирога,1,artefact,Trop. — pirogue
+k80a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+k80a1,стрела,1,artefact,generic
+k80a1,пирога,1,artefact,Trop. — pirogue
+k80a2,лук,1,artefact,"generic, ambiguous (also = onion)"
+k80a2,стрела,2,artefact,generic
+k80a2,северный,1,direction,Northern
+k80a3,северный,1,direction,Northern
+k80a4,стрела,1,artefact,generic
+k80b,пирога,1,artefact,Trop. — pirogue
+k80c,сибирь,1,region,Tundra/Boreal
+k80c1,нила,1,river,Desert/Trop. Savanna
+k80c2,лук,1,artefact,"generic, ambiguous (also = onion)"
+k80c2,пироги,1,artefact,Trop.
+k80d,азии,1,continent,?
+k80d,стрела,6,artefact,generic
+k80d,лук,3,artefact,"generic, ambiguous (also = onion)"
+k81,карелия,1,region,Boreal
+k81,лук,1,artefact,"generic, ambiguous (also = onion)"
+k82,лук,1,artefact,"generic, ambiguous (also = onion)"
+k82,нарты,1,artefact,Tundra/Boreal — sledge pl
+k82a,лук,1,artefact,"generic, ambiguous (also = onion)"
+k83,альпы,1,mountain,Mediterranean
+k83,южный,2,direction,Southern
+k83,лук,2,artefact,"generic, ambiguous (also = onion)"
+k83,стрела,2,artefact,generic
+k83,северная,1,direction,Northern
+k84,стрела,2,artefact,generic
+k84,нарта,2,artefact,Tundra/Boreal — sledge
+k84,нарты,1,artefact,Tundra/Boreal — sledge pl
+k84,пироги,1,artefact,Trop.
+k84,лена,1,river,Boreal/Tundra
+k85,пироги,1,artefact,Trop.
+k85,лук,1,artefact,"generic, ambiguous (also = onion)"
+k85,нарты,2,artefact,Tundra/Boreal — sledge pl
+k85,лена,1,river,Boreal/Tundra
+k85b,пироги,1,artefact,Trop.
+k85b,нарты,4,artefact,Tundra/Boreal — sledge pl
+k85b,стрела,1,artefact,generic
+k85c,нарты,1,artefact,Tundra/Boreal — sledge pl
+k85c,лена,1,river,Boreal/Tundra
+k86,северный,1,direction,Northern
+k87a,стрела,1,artefact,generic
+k89,северная,1,direction,Northern
+k89,нарта,3,artefact,Tundra/Boreal — sledge
+k89,нарты,7,artefact,Tundra/Boreal — sledge pl
+k89,стрела,1,artefact,generic
+k89,нарте,3,artefact,Tundra/Boreal
+k89a,нарты,2,artefact,Tundra/Boreal — sledge pl
+k89b,северная,1,direction,Northern
+k89b,нарта,3,artefact,Tundra/Boreal — sledge
+k89b,нарты,4,artefact,Tundra/Boreal — sledge pl
+k89b,стрела,3,artefact,generic
+k89b,нарте,1,artefact,Tundra/Boreal
+k89c,нарты,3,artefact,Tundra/Boreal — sledge pl
+k89c,нарте,1,artefact,Tundra/Boreal
+k8a,стрела,11,artefact,generic
+k8a,ямс,2,artefact,Trop. Moist — yam
+k8a,лук,6,artefact,"generic, ambiguous (also = onion)"
+k8a,гарпун,5,artefact,Arctic/coastal — harpoon
+k8a,аляски,1,region,Tundra/Boreal
+k8a,гарпуном,2,artefact,Arctic/coastal
+k8a,южный,1,direction,Southern
+k8a,маис,2,artefact,Trop./Temp. — maize
+k8a,маниока,3,artefact,Trop. Moist — manioc
+k8aa,лук,1,artefact,"generic, ambiguous (also = onion)"
+k8c,северный,1,direction,Northern
+k8c,стрела,1,artefact,generic
+k8c,гарпун,1,artefact,Arctic/coastal — harpoon
+k8c,аляски,1,region,Tundra/Boreal
+k8c,лук,2,artefact,"generic, ambiguous (also = onion)"
+k8c,южный,1,direction,Southern
+k8c,маниока,1,artefact,Trop. Moist — manioc
+k8c1,северный,1,direction,Northern
+k8c3,лук,1,artefact,"generic, ambiguous (also = onion)"
+k8d,лук,5,artefact,"generic, ambiguous (also = onion)"
+k8d,маниока,1,artefact,Trop. Moist — manioc
+k8e,африка,1,region,Trop. Savanna/Moist
+k9,енисея,1,river,Boreal
+k90,стрела,1,artefact,generic
+k90,гарпуном,1,artefact,Arctic/coastal
+k90a,стрела,1,artefact,generic
+k91,нарта,1,artefact,Tundra/Boreal — sledge
+k91,стрела,2,artefact,generic
+k91,лук,3,artefact,"generic, ambiguous (also = onion)"
+k92,лук,2,artefact,"generic, ambiguous (also = onion)"
+k92a,лук,3,artefact,"generic, ambiguous (also = onion)"
+k92a,северная,1,direction,Northern
+k92a,карелия,1,region,Boreal
+k93,лук,1,artefact,"generic, ambiguous (also = onion)"
+k93,пироги,1,artefact,Trop.
+k93,нарта,5,artefact,Tundra/Boreal — sledge
+k93,нарты,2,artefact,Tundra/Boreal — sledge pl
+k93,стрела,2,artefact,generic
+k93a,пироги,1,artefact,Trop.
+k93a,нарты,2,artefact,Tundra/Boreal — sledge pl
+k93a,стрела,2,artefact,generic
+k93a,нарта,4,artefact,Tundra/Boreal — sledge
+k93b1,пироги,1,artefact,Trop.
+k93b1,стрела,3,artefact,generic
+k93b1,карелия,1,region,Boreal
+k93b2,лук,1,artefact,"generic, ambiguous (also = onion)"
+k93b2,нарта,4,artefact,Tundra/Boreal — sledge
+k93b2,стрела,1,artefact,generic
+k93b2,алтай,1,mountain,Mountain/Steppe
+k93b3,пироги,1,artefact,Trop.
+k93b3,лук,1,artefact,"generic, ambiguous (also = onion)"
+k93b3,нарты,2,artefact,Tundra/Boreal — sledge pl
+k93b3,стрела,1,artefact,generic
+k93b3,алтай,1,mountain,Mountain/Steppe
+k93b4,карелия,1,region,Boreal
+k93b4,стрела,1,artefact,generic
+k94,лук,2,artefact,"generic, ambiguous (also = onion)"
+k94,сибирь,1,region,Tundra/Boreal
+k95,северный,1,direction,Northern
+k95,стрела,1,artefact,generic
+k96,лук,1,artefact,"generic, ambiguous (also = onion)"
+k97,пирога,1,artefact,Trop. — pirogue
+k97,пироги,2,artefact,Trop.
+k97,карелии,1,region,Boreal
+k98,ямс,1,artefact,Trop. Moist — yam
+k98,лук,2,artefact,"generic, ambiguous (also = onion)"
+k98,якутия,1,region,Boreal/Tundra
+k98,стрела,2,artefact,generic
+k99,карелия,1,region,Boreal
+k99,лук,6,artefact,"generic, ambiguous (also = onion)"
+k99,стрела,2,artefact,generic
+k99a,альпы,1,mountain,Mediterranean
+k99a,карелия,1,region,Boreal
+k99a1,лук,2,artefact,"generic, ambiguous (also = onion)"
+k99a1,стрела,1,artefact,generic
+k9a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l10,северный,1,direction,Northern
+l10,гарпун,1,artefact,Arctic/coastal — harpoon
+l100,северная,1,direction,Northern
+l100,пирога,2,artefact,Trop. — pirogue
+l100,пироги,3,artefact,Trop.
+l100b,северная,1,direction,Northern
+l100b,пирога,4,artefact,Trop. — pirogue
+l100b,стрела,1,artefact,generic
+l100b,пироги,3,artefact,Trop.
+l100b,северный,1,direction,Northern
+l100d,северный,1,direction,Northern
+l100d,гималаи,1,mountain,Mountain
+l100d,карелия,1,region,Boreal
+l100e,пироги,4,artefact,Trop.
+l100e,сибирь,1,region,Tundra/Boreal
+l100f1,пирога,1,artefact,Trop. — pirogue
+l101,аляски,1,region,Tundra/Boreal
+l101,полярный,1,climate,Arctic
+l102,аляски,1,region,Tundra/Boreal
+l103,ямс,1,artefact,Trop. Moist — yam
+l103,лук,3,artefact,"generic, ambiguous (also = onion)"
+l103,стрела,2,artefact,generic
+l103,аляски,2,region,Tundra/Boreal
+l103b,пироги,1,artefact,Trop.
+l104,лук,2,artefact,"generic, ambiguous (also = onion)"
+l104,северный,2,direction,Northern
+l104,стрела,2,artefact,generic
+l104,карелия,1,region,Boreal
+l104,пирога,1,artefact,Trop. — pirogue
+l104,пироги,1,artefact,Trop.
+l104,нарте,1,artefact,Tundra/Boreal
+l104,якутии,1,region,Boreal/Tundra
+l105,гарпун,15,artefact,Arctic/coastal — harpoon
+l105,стрела,6,artefact,generic
+l105,нарта,1,artefact,Tundra/Boreal — sledge
+l105,нарты,2,artefact,Tundra/Boreal — sledge pl
+l105,гарпуна,1,artefact,Arctic/coastal
+l105,лук,1,artefact,"generic, ambiguous (also = onion)"
+l106,лук,2,artefact,"generic, ambiguous (also = onion)"
+l106,гарпун,2,artefact,Arctic/coastal — harpoon
+l106,маниока,2,artefact,Trop. Moist — manioc
+l106,стрела,2,artefact,generic
+l106,нила,1,river,Desert/Trop. Savanna
+l106a,лук,2,artefact,"generic, ambiguous (also = onion)"
+l106a,стрела,2,artefact,generic
+l106a,нила,1,river,Desert/Trop. Savanna
+l106b,маниока,2,artefact,Trop. Moist — manioc
+l106b,карелия,1,region,Boreal
+l106b,северный,1,direction,Northern
+l107,северная,1,direction,Northern
+l107,лук,1,artefact,"generic, ambiguous (also = onion)"
+l107,стрела,2,artefact,generic
+l108,ямс,1,artefact,Trop. Moist — yam
+l108,лук,1,artefact,"generic, ambiguous (also = onion)"
+l108a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l109,лук,1,artefact,"generic, ambiguous (also = onion)"
+l10a,нарты,1,artefact,Tundra/Boreal — sledge pl
+l10a,гарпуном,1,artefact,Arctic/coastal
+l10a,гарпун,2,artefact,Arctic/coastal — harpoon
+l10a,стрела,1,artefact,generic
+l11,нарты,1,artefact,Tundra/Boreal — sledge pl
+l11,маниока,7,artefact,Trop. Moist — manioc
+l11,ямс,1,artefact,Trop. Moist — yam
+l11,полярная,1,climate,Arctic
+l11,северное,1,direction,Northern
+l110,лук,4,artefact,"generic, ambiguous (also = onion)"
+l110,нил,1,river,Desert/Trop. Savanna
+l110,австралии,1,region,Desert/Savanna (Aus)
+l110,океании,1,region,Trop. Moist (Pacific)
+l110,стрела,8,artefact,generic
+l110,гарпуном,1,artefact,Arctic/coastal
+l110c,пироги,1,artefact,Trop.
+l111,нарты,1,artefact,Tundra/Boreal — sledge pl
+l111,лук,1,artefact,"generic, ambiguous (also = onion)"
+l112,альпы,1,mountain,Mediterranean
+l112,лук,1,artefact,"generic, ambiguous (also = onion)"
+l113,ямса,1,artefact,Trop. Moist
+l114a,мадагаскар,1,region,Trop. Moist/Savanna
+l114a,мадагаскара,1,region,Trop. Moist/Savanna
+l114b,сахара,1,region,Desert
+l114b1,сахара,1,region,Desert
+l114c,карелия,1,region,Boreal
+l114c,пироги,3,artefact,Trop.
+l116a,стрела,4,artefact,generic
+l118,северный,1,direction,Northern
+l118,нарте,1,artefact,Tundra/Boreal
+l118,аляски,1,region,Tundra/Boreal
+l118,нарта,1,artefact,Tundra/Boreal — sledge
+l120,карелия,1,region,Boreal
+l120,стрела,3,artefact,generic
+l120a,стрела,1,artefact,generic
+l120a,карелия,1,region,Boreal
+l120a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l121,лук,1,artefact,"generic, ambiguous (also = onion)"
+l121a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l122,нарты,1,artefact,Tundra/Boreal — sledge pl
+l124,нарты,3,artefact,Tundra/Boreal — sledge pl
+l125,стрела,1,artefact,generic
+l126,пироги,2,artefact,Trop.
+l126,нарта,1,artefact,Tundra/Boreal — sledge
+l126,нарты,1,artefact,Tundra/Boreal — sledge pl
+l126,стрела,1,artefact,generic
+l126,лук,1,artefact,"generic, ambiguous (also = onion)"
+l127,ямс,1,artefact,Trop. Moist — yam
+l13,нил,1,river,Desert/Trop. Savanna
+l13,северный,1,direction,Northern
+l13,аляски,1,region,Tundra/Boreal
+l13,стрела,1,artefact,generic
+l13,маниока,1,artefact,Trop. Moist — manioc
+l14,нил,1,river,Desert/Trop. Savanna
+l14,аляски,1,region,Tundra/Boreal
+l15a,австралии,1,region,Desert/Savanna (Aus)
+l15a,нарты,10,artefact,Tundra/Boreal — sledge pl
+l15a,стрела,4,artefact,generic
+l15a,алтай,1,mountain,Mountain/Steppe
+l15a,аляски,1,region,Tundra/Boreal
+l15a,лук,3,artefact,"generic, ambiguous (also = onion)"
+l15a,полярный,1,climate,Arctic
+l15a1,австралии,1,region,Desert/Savanna (Aus)
+l15a1,алтай,1,mountain,Mountain/Steppe
+l15a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+l15a1,полярный,1,climate,Arctic
+l15a1,стрела,1,artefact,generic
+l15c,нарта,1,artefact,Tundra/Boreal — sledge
+l15c,стрела,1,artefact,generic
+l15d,южный,2,direction,Southern
+l15d,стрела,14,artefact,generic
+l15d,лук,17,artefact,"generic, ambiguous (also = onion)"
+l15d,нарты,4,artefact,Tundra/Boreal — sledge pl
+l15d,северное,1,direction,Northern
+l15d,сибирь,1,region,Tundra/Boreal
+l15d,лена,1,river,Boreal/Tundra
+l15e,алтай,2,mountain,Mountain/Steppe
+l15e,сахара,1,region,Desert
+l15e,сибирь,1,region,Tundra/Boreal
+l15e,стрела,2,artefact,generic
+l15e,лук,3,artefact,"generic, ambiguous (also = onion)"
+l15e1,нарты,3,artefact,Tundra/Boreal — sledge pl
+l15h,карелия,1,region,Boreal
+l15h,стрела,4,artefact,generic
+l15h,лена,1,river,Boreal/Tundra
+l15h,лук,1,artefact,"generic, ambiguous (also = onion)"
+l15i,лук,1,artefact,"generic, ambiguous (also = onion)"
+l17,лук,1,artefact,"generic, ambiguous (also = onion)"
+l17a,нарты,1,artefact,Tundra/Boreal — sledge pl
+l17a,стрела,1,artefact,generic
+l17a,северного,1,direction,Northern
+l17b,стрела,1,artefact,generic
+l18,стрела,1,artefact,generic
+l18,сибири,1,region,Tundra/Boreal
+l18,гарпуном,1,artefact,Arctic/coastal
+l18,маниока,2,artefact,Trop. Moist — manioc
+l19b,северного,1,direction,Northern
+l19b,лук,7,artefact,"generic, ambiguous (also = onion)"
+l19b,гарпун,1,artefact,Arctic/coastal — harpoon
+l19b,нарта,3,artefact,Tundra/Boreal — sledge
+l19b,северный,2,direction,Northern
+l19b,стрела,1,artefact,generic
+l19b,сибирские,1,region,Tundra/Boreal
+l1c1,нарты,2,artefact,Tundra/Boreal — sledge pl
+l1c1,нарта,1,artefact,Tundra/Boreal — sledge
+l1c2,лук,1,artefact,"generic, ambiguous (also = onion)"
+l1c2,нарты,2,artefact,Tundra/Boreal — sledge pl
+l1c2,нарта,1,artefact,Tundra/Boreal — sledge
+l1e,маниока,1,artefact,Trop. Moist — manioc
+l20,ямс,1,artefact,Trop. Moist — yam
+l21,стрела,1,artefact,generic
+l23,лук,2,artefact,"generic, ambiguous (also = onion)"
+l23,стрела,4,artefact,generic
+l23,карелия,1,region,Boreal
+l23b,стрела,2,artefact,generic
+l23b,лук,2,artefact,"generic, ambiguous (also = onion)"
+l23b,карелия,1,region,Boreal
+l24,гарпун,1,artefact,Arctic/coastal — harpoon
+l24,ямс,1,artefact,Trop. Moist — yam
+l26,стрела,1,artefact,generic
+l27,нарты,1,artefact,Tundra/Boreal — sledge pl
+l27,стрела,1,artefact,generic
+l27,лук,1,artefact,"generic, ambiguous (also = onion)"
+l28,ямс,1,artefact,Trop. Moist — yam
+l28,лук,1,artefact,"generic, ambiguous (also = onion)"
+l28,маниока,1,artefact,Trop. Moist — manioc
+l29,ямс,3,artefact,Trop. Moist — yam
+l3,маниока,2,artefact,Trop. Moist — manioc
+l3,стрела,1,artefact,generic
+l3,амазонка,1,river,Trop. Moist
+l3,ямс,1,artefact,Trop. Moist — yam
+l31,ямс,1,artefact,Trop. Moist — yam
+l32,лук,1,artefact,"generic, ambiguous (also = onion)"
+l32,южный,1,direction,Southern
+l33b,стрела,1,artefact,generic
+l34,лук,2,artefact,"generic, ambiguous (also = onion)"
+l37a,гималаи,1,mountain,Mountain
+l37a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l37b,сибирь,1,region,Tundra/Boreal
+l37b,северный,2,direction,Northern
+l37b,южный,1,direction,Southern
+l37b,лук,4,artefact,"generic, ambiguous (also = onion)"
+l37b,нарты,1,artefact,Tundra/Boreal — sledge pl
+l37c,сибирь,1,region,Tundra/Boreal
+l38,лук,4,artefact,"generic, ambiguous (also = onion)"
+l38,нарта,1,artefact,Tundra/Boreal — sledge
+l38,нарты,1,artefact,Tundra/Boreal — sledge pl
+l38,стрела,2,artefact,generic
+l38,камчатки,1,region,Boreal/Tundra
+l38,нарте,1,artefact,Tundra/Boreal
+l38,гарпун,2,artefact,Arctic/coastal — harpoon
+l38,ямс,1,artefact,Trop. Moist — yam
+l38,маниока,2,artefact,Trop. Moist — manioc
+l38a,лук,3,artefact,"generic, ambiguous (also = onion)"
+l38a,нарта,1,artefact,Tundra/Boreal — sledge
+l38a,нарты,1,artefact,Tundra/Boreal — sledge pl
+l38a,стрела,4,artefact,generic
+l38a,нарте,1,artefact,Tundra/Boreal
+l38a,гарпун,2,artefact,Arctic/coastal — harpoon
+l38a,южный,1,direction,Southern
+l39,стрела,1,artefact,generic
+l39c,альпы,1,mountain,Mediterranean
+l3a,маниока,1,artefact,Trop. Moist — manioc
+l3a,ямс,1,artefact,Trop. Moist — yam
+l4,пироги,3,artefact,Trop.
+l4,аляски,1,region,Tundra/Boreal
+l4,гарпун,1,artefact,Arctic/coastal — harpoon
+l4,гренландии,1,region,Tundra
+l40,океании,1,region,Trop. Moist (Pacific)
+l40,лук,3,artefact,"generic, ambiguous (also = onion)"
+l41,альпы,1,mountain,Mediterranean
+l41,северного,1,direction,Northern
+l41,нарта,1,artefact,Tundra/Boreal — sledge
+l41,нарты,1,artefact,Tundra/Boreal — sledge pl
+l41,стрела,1,artefact,generic
+l41,лук,7,artefact,"generic, ambiguous (also = onion)"
+l41,ямс,2,artefact,Trop. Moist — yam
+l41,маниока,1,artefact,Trop. Moist — manioc
+l41a,альпы,1,mountain,Mediterranean
+l41a,северная,1,direction,Northern
+l41a,стрела,1,artefact,generic
+l41a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l42,альпы,1,mountain,Mediterranean
+l42,карелия,1,region,Boreal
+l42,пироги,1,artefact,Trop.
+l42,сахара,1,region,Desert
+l42,лук,6,artefact,"generic, ambiguous (also = onion)"
+l42,северного,1,direction,Northern
+l42,стрела,2,artefact,generic
+l42,нарта,1,artefact,Tundra/Boreal — sledge
+l42,нарты,1,artefact,Tundra/Boreal — sledge pl
+l42,камчатки,1,region,Boreal/Tundra
+l42,гарпун,3,artefact,Arctic/coastal — harpoon
+l42,маниока,1,artefact,Trop. Moist — manioc
+l42a,гренландия,1,region,Tundra
+l42a,гарпун,1,artefact,Arctic/coastal — harpoon
+l42b,пироги,1,artefact,Trop.
+l42b,сахара,1,region,Desert
+l42b,стрела,3,artefact,generic
+l42b,лук,3,artefact,"generic, ambiguous (also = onion)"
+l42b,нарта,1,artefact,Tundra/Boreal — sledge
+l42b,нарты,1,artefact,Tundra/Boreal — sledge pl
+l42b,камчатки,1,region,Boreal/Tundra
+l42b,нарте,1,artefact,Tundra/Boreal
+l42c,камчатки,1,region,Boreal/Tundra
+l42c,лук,1,artefact,"generic, ambiguous (also = onion)"
+l42d,стрела,1,artefact,generic
+l42d,нарте,1,artefact,Tundra/Boreal
+l42e,северного,1,direction,Northern
+l42e,нарта,1,artefact,Tundra/Boreal — sledge
+l42e,нарты,1,artefact,Tundra/Boreal — sledge pl
+l42e,стрела,1,artefact,generic
+l42e,лук,1,artefact,"generic, ambiguous (also = onion)"
+l42f,стрела,1,artefact,generic
+l42f,лук,1,artefact,"generic, ambiguous (also = onion)"
+l42f,нарта,1,artefact,Tundra/Boreal — sledge
+l42f,нарты,1,artefact,Tundra/Boreal — sledge pl
+l42g,сахара,2,region,Desert
+l42g1,лук,1,artefact,"generic, ambiguous (also = onion)"
+l42g1,пироги,2,artefact,Trop.
+l42g2,сахара,2,region,Desert
+l42i,пирога,1,artefact,Trop. — pirogue
+l42i,пироги,1,artefact,Trop.
+l42i1,пироги,1,artefact,Trop.
+l43,сахара,1,region,Desert
+l43,аляски,1,region,Tundra/Boreal
+l44a,лук,3,artefact,"generic, ambiguous (also = onion)"
+l44a,гарпун,3,artefact,Arctic/coastal — harpoon
+l44a,гарпуном,2,artefact,Arctic/coastal
+l44a,стрела,2,artefact,generic
+l44a,ямс,1,artefact,Trop. Moist — yam
+l44a,маниока,1,artefact,Trop. Moist — manioc
+l44a,амазонка,1,river,Trop. Moist
+l45,конго,1,region/river,Trop. Moist
+l46,ямс,2,artefact,Trop. Moist — yam
+l46,аляски,1,region,Tundra/Boreal
+l46,северное,1,direction,Northern
+l46,стрела,2,artefact,generic
+l46,маниока,1,artefact,Trop. Moist — manioc
+l46,лук,1,artefact,"generic, ambiguous (also = onion)"
+l47,нарты,1,artefact,Tundra/Boreal — sledge pl
+l48,нарты,1,artefact,Tundra/Boreal — sledge pl
+l48,стрела,2,artefact,generic
+l48,лук,1,artefact,"generic, ambiguous (also = onion)"
+l48,южный,1,direction,Southern
+l50,лук,5,artefact,"generic, ambiguous (also = onion)"
+l52,ямса,1,artefact,Trop. Moist
+l52,стрела,1,artefact,generic
+l53,северного,1,direction,Northern
+l53,лук,3,artefact,"generic, ambiguous (also = onion)"
+l53,стрела,2,artefact,generic
+l53,маис,1,artefact,Trop./Temp. — maize
+l54,маниока,1,artefact,Trop. Moist — manioc
+l55,стрела,1,artefact,generic
+l55,маниока,1,artefact,Trop. Moist — manioc
+l56,скандинавии,1,region,Boreal
+l56,лук,2,artefact,"generic, ambiguous (also = onion)"
+l57,стрела,2,artefact,generic
+l57,гарпун,1,artefact,Arctic/coastal — harpoon
+l57a,лук,2,artefact,"generic, ambiguous (also = onion)"
+l57b,карелия,1,region,Boreal
+l59,лук,1,artefact,"generic, ambiguous (also = onion)"
+l59,стрела,1,artefact,generic
+l59,гренландии,1,region,Tundra
+l59a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l59a,стрела,1,artefact,generic
+l59a,гренландии,1,region,Tundra
+l5f,нарта,1,artefact,Tundra/Boreal — sledge
+l5f,нарты,1,artefact,Tundra/Boreal — sledge pl
+l5f,аляски,1,region,Tundra/Boreal
+l5g,нарты,1,artefact,Tundra/Boreal — sledge pl
+l5h,нарты,1,artefact,Tundra/Boreal — sledge pl
+l6,ямса,1,artefact,Trop. Moist
+l6,азии,1,continent,?
+l6,маниока,1,artefact,Trop. Moist — manioc
+l61,аляски,1,region,Tundra/Boreal
+l64,стрела,2,artefact,generic
+l65,якутия,1,region,Boreal/Tundra
+l65,стрела,1,artefact,generic
+l65,нарты,1,artefact,Tundra/Boreal — sledge pl
+l65,аляски,1,region,Tundra/Boreal
+l65a,лук,2,artefact,"generic, ambiguous (also = onion)"
+l65a,колымы,1,river,Tundra
+l65b,лук,6,artefact,"generic, ambiguous (also = onion)"
+l65b,якутия,1,region,Boreal/Tundra
+l65b,стрела,1,artefact,generic
+l65b,колымы,1,river,Tundra
+l65c,камчатки,1,region,Boreal/Tundra
+l65c,якутии,1,region,Boreal/Tundra
+l66,лук,8,artefact,"generic, ambiguous (also = onion)"
+l66,гарпун,1,artefact,Arctic/coastal — harpoon
+l66,стрела,1,artefact,generic
+l68,лук,1,artefact,"generic, ambiguous (also = onion)"
+l6a,азии,1,continent,?
+l7,нарте,1,artefact,Tundra/Boreal
+l7,ямс,1,artefact,Trop. Moist — yam
+l7,маниока,1,artefact,Trop. Moist — manioc
+l7,гарпун,1,artefact,Arctic/coastal — harpoon
+l70,ямса,1,artefact,Trop. Moist
+l70,лук,2,artefact,"generic, ambiguous (also = onion)"
+l70,северного,1,direction,Northern
+l70,нарте,1,artefact,Tundra/Boreal
+l70,южный,1,direction,Southern
+l70,стрела,1,artefact,generic
+l72,мадагаскара,1,region,Trop. Moist/Savanna
+l72,лук,13,artefact,"generic, ambiguous (also = onion)"
+l72,северная,1,direction,Northern
+l72,пирога,1,artefact,Trop. — pirogue
+l72,пироги,2,artefact,Trop.
+l72,стрела,9,artefact,generic
+l72,нарты,5,artefact,Tundra/Boreal — sledge pl
+l72,нарта,2,artefact,Tundra/Boreal — sledge
+l72,якутия,1,region,Boreal/Tundra
+l72,камчатки,1,region,Boreal/Tundra
+l72,аляски,1,region,Tundra/Boreal
+l72,северное,1,direction,Northern
+l72a,лук,4,artefact,"generic, ambiguous (also = onion)"
+l72a,пироги,1,artefact,Trop.
+l72a,стрела,5,artefact,generic
+l72a,нарты,4,artefact,Tundra/Boreal — sledge pl
+l72a,нарта,2,artefact,Tundra/Boreal — sledge
+l72a,камчатки,1,region,Boreal/Tundra
+l72b,пироги,1,artefact,Trop.
+l72b,лук,2,artefact,"generic, ambiguous (also = onion)"
+l72b,стрела,5,artefact,generic
+l72b,нарта,2,artefact,Tundra/Boreal — sledge
+l72b,нарты,2,artefact,Tundra/Boreal — sledge pl
+l72c,лук,1,artefact,"generic, ambiguous (also = onion)"
+l72f,лук,1,artefact,"generic, ambiguous (also = onion)"
+l72g,лук,1,artefact,"generic, ambiguous (also = onion)"
+l73,пирога,2,artefact,Trop. — pirogue
+l73,пироги,2,artefact,Trop.
+l73,стрела,1,artefact,generic
+l74a,стрела,2,artefact,generic
+l79,аляски,1,region,Tundra/Boreal
+l81,карелия,1,region,Boreal
+l81,стрела,1,artefact,generic
+l81,нарты,2,artefact,Tundra/Boreal — sledge pl
+l81,нарта,2,artefact,Tundra/Boreal — sledge
+l81,лук,2,artefact,"generic, ambiguous (also = onion)"
+l81a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l81a2,карелия,1,region,Boreal
+l81a2,стрела,1,artefact,generic
+l81a2,нарта,2,artefact,Tundra/Boreal — sledge
+l81a2,лук,2,artefact,"generic, ambiguous (also = onion)"
+l81b,стрела,3,artefact,generic
+l81b,нарта,2,artefact,Tundra/Boreal — sledge
+l81b,лук,4,artefact,"generic, ambiguous (also = onion)"
+l84,ямс,1,artefact,Trop. Moist — yam
+l84,маниока,1,artefact,Trop. Moist — manioc
+l84,стрела,1,artefact,generic
+l85,маис,2,artefact,Trop./Temp. — maize
+l85,мадагаскар,1,region,Trop. Moist/Savanna
+l85,мадагаскара,1,region,Trop. Moist/Savanna
+l85,лук,1,artefact,"generic, ambiguous (also = onion)"
+l85,северный,1,direction,Northern
+l85,южный,1,direction,Southern
+l85,стрела,5,artefact,generic
+l85,якутии,1,region,Boreal/Tundra
+l85,аляски,1,region,Tundra/Boreal
+l85,гренландии,1,region,Tundra
+l85,гарпун,1,artefact,Arctic/coastal — harpoon
+l85a,альпы,1,mountain,Mediterranean
+l85b,лук,2,artefact,"generic, ambiguous (also = onion)"
+l85b,стрела,1,artefact,generic
+l85b1,лук,1,artefact,"generic, ambiguous (also = onion)"
+l86,лук,1,artefact,"generic, ambiguous (also = onion)"
+l87,стрела,3,artefact,generic
+l87,лук,1,artefact,"generic, ambiguous (also = onion)"
+l88,ямс,1,artefact,Trop. Moist — yam
+l88,стрела,1,artefact,generic
+l88,лук,1,artefact,"generic, ambiguous (also = onion)"
+l90,гималаи,1,mountain,Mountain
+l90,стрела,1,artefact,generic
+l90,лук,1,artefact,"generic, ambiguous (also = onion)"
+l90,азии,1,continent,?
+l90,алтай,2,mountain,Mountain/Steppe
+l90,гарпун,1,artefact,Arctic/coastal — harpoon
+l90a,стрела,2,artefact,generic
+l90a,пироги,1,artefact,Trop.
+l92,лук,4,artefact,"generic, ambiguous (also = onion)"
+l92,северного,1,direction,Northern
+l93a,нил,2,river,Desert/Trop. Savanna
+l93a,северная,1,direction,Northern
+l93a,стрела,3,artefact,generic
+l93a,лук,4,artefact,"generic, ambiguous (also = onion)"
+l93a,северного,1,direction,Northern
+l93a,нарты,1,artefact,Tundra/Boreal — sledge pl
+l93a,аляски,1,region,Tundra/Boreal
+l93a,гарпуном,1,artefact,Arctic/coastal
+l93b,стрела,1,artefact,generic
+l93b,лук,1,artefact,"generic, ambiguous (also = onion)"
+l94,лук,8,artefact,"generic, ambiguous (also = onion)"
+l94,северный,2,direction,Northern
+l94,стрела,6,artefact,generic
+l94,пирога,2,artefact,Trop. — pirogue
+l94,пироги,3,artefact,Trop.
+l94,нарта,4,artefact,Tundra/Boreal — sledge
+l94a,северная,1,direction,Northern
+l94a,пирога,2,artefact,Trop. — pirogue
+l94a,стрела,3,artefact,generic
+l94a,пироги,1,artefact,Trop.
+l94a,лук,3,artefact,"generic, ambiguous (also = onion)"
+l95,южный,1,direction,Southern
+l95,лук,5,artefact,"generic, ambiguous (also = onion)"
+l96,северный,1,direction,Northern
+l96,карелия,1,region,Boreal
+l96b,стрела,3,artefact,generic
+l96b,нарта,4,artefact,Tundra/Boreal — sledge
+l97,стрела,1,artefact,generic
+l97,полярный,1,climate,Arctic
+l98,северный,1,direction,Northern
+l98,лук,3,artefact,"generic, ambiguous (also = onion)"
+l98,стрела,1,artefact,generic
+l98,маниока,1,artefact,Trop. Moist — manioc
+l9a,лук,1,artefact,"generic, ambiguous (also = onion)"
+l9b,северное,1,direction,Northern
+l9e,лук,1,artefact,"generic, ambiguous (also = onion)"
+l9e,алтая,1,mountain,Mountain/Steppe
+m10,ямс,1,artefact,Trop. Moist — yam
+m10,ямса,1,artefact,Trop. Moist
+m100,стрела,2,artefact,generic
+m100,нарты,1,artefact,Tundra/Boreal — sledge pl
+m100a,стрела,1,artefact,generic
+m101,нарте,1,artefact,Tundra/Boreal
+m101,стрела,1,artefact,generic
+m101,лук,1,artefact,"generic, ambiguous (also = onion)"
+m101a,альпы,1,mountain,Mediterranean
+m101a,карелия,1,region,Boreal
+m101b,альпы,1,mountain,Mediterranean
+m101b,карелия,1,region,Boreal
+m104,ямс,1,artefact,Trop. Moist — yam
+m104,лук,2,artefact,"generic, ambiguous (also = onion)"
+m104,австралия,1,region,Desert/Savanna (Aus)
+m104,ямса,1,artefact,Trop. Moist
+m104,австралии,1,region,Desert/Savanna (Aus)
+m105a,австралия,1,region,Desert/Savanna (Aus)
+m106,африке,1,region,Trop. Savanna/Moist
+m106,карелия,1,region,Boreal
+m106,нарты,1,artefact,Tundra/Boreal — sledge pl
+m106b,нарты,1,artefact,Tundra/Boreal — sledge pl
+m106e,карелия,1,region,Boreal
+m106f,карелия,1,region,Boreal
+m108,лук,1,artefact,"generic, ambiguous (also = onion)"
+m108a,сахара,1,region,Desert
+m109,стрела,6,artefact,generic
+m109,нарты,6,artefact,Tundra/Boreal — sledge pl
+m109,аляски,1,region,Tundra/Boreal
+m109a,сахара,1,region,Desert
+m111,меланезии,1,region,Trop. Moist (Pacific)
+m114,лук,1,artefact,"generic, ambiguous (also = onion)"
+m114,стрела,1,artefact,generic
+m114,пирога,1,artefact,Trop. — pirogue
+m114a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m114a,стрела,1,artefact,generic
+m114b,лук,4,artefact,"generic, ambiguous (also = onion)"
+m114b,карелия,1,region,Boreal
+m114d1,карелия,1,region,Boreal
+m114f,стрела,1,artefact,generic
+m114g,стрела,1,artefact,generic
+m114i,северный,1,direction,Northern
+m115,индонезии,1,region,Trop. Moist
+m116,нарты,3,artefact,Tundra/Boreal — sledge pl
+m116,лук,1,artefact,"generic, ambiguous (also = onion)"
+m116a,нарты,3,artefact,Tundra/Boreal — sledge pl
+m118,маниока,1,artefact,Trop. Moist — manioc
+m118,ямс,1,artefact,Trop. Moist — yam
+m118,ямса,1,artefact,Trop. Moist
+m118,нил,1,river,Desert/Trop. Savanna
+m118a,нил,1,river,Desert/Trop. Savanna
+m11c,стрела,4,artefact,generic
+m12,полярный,1,climate,Arctic
+m120,стрела,2,artefact,generic
+m120,пироги,1,artefact,Trop.
+m120,африканская,1,region,Trop. Savanna/Moist
+m120,евразии,1,continent,?
+m120,лук,1,artefact,"generic, ambiguous (also = onion)"
+m120a,пироги,1,artefact,Trop.
+m120b,африканская,1,region,Trop. Savanna/Moist
+m120b,евразии,1,continent,?
+m121,маниока,1,artefact,Trop. Moist — manioc
+m122,гарпуном,1,artefact,Arctic/coastal
+m122,гарпуна,1,artefact,Arctic/coastal
+m122,лук,1,artefact,"generic, ambiguous (also = onion)"
+m123,аляска,1,region,Tundra/Boreal
+m123b,аляски,1,region,Tundra/Boreal
+m123c,аляска,1,region,Tundra/Boreal
+m123d,северного,1,direction,Northern
+m124,лук,1,artefact,"generic, ambiguous (also = onion)"
+m124,сибирь,1,region,Tundra/Boreal
+m125,стрела,2,artefact,generic
+m127,лук,4,artefact,"generic, ambiguous (also = onion)"
+m127a,карелия,1,region,Boreal
+m127a,пироги,5,artefact,Trop.
+m127a,южный,1,direction,Southern
+m13,северное,1,direction,Northern
+m130a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m131,нарты,1,artefact,Tundra/Boreal — sledge pl
+m134,лук,2,artefact,"generic, ambiguous (also = onion)"
+m134c,лук,3,artefact,"generic, ambiguous (also = onion)"
+m135a,карелия,1,region,Boreal
+m136,лук,1,artefact,"generic, ambiguous (also = onion)"
+m136,нарты,3,artefact,Tundra/Boreal — sledge pl
+m136,карелия,1,region,Boreal
+m136a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m136b,карелия,1,region,Boreal
+m136c,пироги,1,artefact,Trop.
+m136d,нил,1,river,Desert/Trop. Savanna
+m136d,северный,1,direction,Northern
+m136d,карелия,2,region,Boreal
+m137,сибири,1,region,Tundra/Boreal
+m140,карелия,1,region,Boreal
+m140,нарты,7,artefact,Tundra/Boreal — sledge pl
+m140,стрела,7,artefact,generic
+m140,нарте,2,artefact,Tundra/Boreal
+m140,якутии,1,region,Boreal/Tundra
+m140a,якутия,1,region,Boreal/Tundra
+m140a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m141,карелия,1,region,Boreal
+m141,пироги,1,artefact,Trop.
+m142,нарты,1,artefact,Tundra/Boreal — sledge pl
+m142,стрела,5,artefact,generic
+m143,стрела,2,artefact,generic
+m143,южный,1,direction,Southern
+m144,северная,1,direction,Northern
+m144,ямс,4,artefact,Trop. Moist — yam
+m144a,ямс,4,artefact,Trop. Moist — yam
+m147b,северный,1,direction,Northern
+m148,лук,1,artefact,"generic, ambiguous (also = onion)"
+m149,нарты,1,artefact,Tundra/Boreal — sledge pl
+m149a,стрела,1,artefact,generic
+m149a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m150,сахара,1,region,Desert
+m150,нарте,1,artefact,Tundra/Boreal
+m150,стрела,1,artefact,generic
+m152,карелия,1,region,Boreal
+m152,нарта,1,artefact,Tundra/Boreal — sledge
+m152,нарты,1,artefact,Tundra/Boreal — sledge pl
+m152,пироги,1,artefact,Trop.
+m152a,нарта,1,artefact,Tundra/Boreal — sledge
+m152a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m152a,пироги,1,artefact,Trop.
+m152d,северного,1,direction,Northern
+m154,нила,1,river,Desert/Trop. Savanna
+m154,нил,1,river,Desert/Trop. Savanna
+m154,стрела,1,artefact,generic
+m154a,северный,1,direction,Northern
+m154a,нила,1,river,Desert/Trop. Savanna
+m154a,нил,1,river,Desert/Trop. Savanna
+m156,лук,1,artefact,"generic, ambiguous (also = onion)"
+m156,ямса,1,artefact,Trop. Moist
+m156,ямс,1,artefact,Trop. Moist — yam
+m156,африке,1,region,Trop. Savanna/Moist
+m156,нил,2,river,Desert/Trop. Savanna
+m157,лук,3,artefact,"generic, ambiguous (also = onion)"
+m157,карелия,1,region,Boreal
+m157,стрела,1,artefact,generic
+m157,пирога,1,artefact,Trop. — pirogue
+m157a1,стрела,1,artefact,generic
+m157a1,пирога,1,artefact,Trop. — pirogue
+m157a2,лук,1,artefact,"generic, ambiguous (also = onion)"
+m157a2,карелия,1,region,Boreal
+m157a3,стрела,1,artefact,generic
+m157a3,пирога,1,artefact,Trop. — pirogue
+m157a4,лук,3,artefact,"generic, ambiguous (also = onion)"
+m157a4,карелия,1,region,Boreal
+m157b,сибирские,1,region,Tundra/Boreal
+m157b,лук,3,artefact,"generic, ambiguous (also = onion)"
+m158,лук,14,artefact,"generic, ambiguous (also = onion)"
+m158,карелия,2,region,Boreal
+m158,пироги,1,artefact,Trop.
+m16,лук,6,artefact,"generic, ambiguous (also = onion)"
+m16,стрела,2,artefact,generic
+m16,гренландии,1,region,Tundra
+m162,пироги,1,artefact,Trop.
+m162a,стрела,2,artefact,generic
+m162a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m163,африке,1,region,Trop. Savanna/Moist
+m163,северный,1,direction,Northern
+m165,лук,2,artefact,"generic, ambiguous (also = onion)"
+m16a,аляски,2,region,Tundra/Boreal
+m17,лук,4,artefact,"generic, ambiguous (also = onion)"
+m17,нарте,1,artefact,Tundra/Boreal
+m17,якутии,1,region,Boreal/Tundra
+m17,аляски,1,region,Tundra/Boreal
+m17,стрела,1,artefact,generic
+m171,ямс,5,artefact,Trop. Moist — yam
+m171,лук,2,artefact,"generic, ambiguous (also = onion)"
+m171,сахара,1,region,Desert
+m171a,ямс,2,artefact,Trop. Moist — yam
+m171a,лук,2,artefact,"generic, ambiguous (also = onion)"
+m171a,сахара,1,region,Desert
+m171b,стрела,1,artefact,generic
+m171b,нарты,2,artefact,Tundra/Boreal — sledge pl
+m171b,лук,2,artefact,"generic, ambiguous (also = onion)"
+m173,нил,1,river,Desert/Trop. Savanna
+m174,лук,1,artefact,"generic, ambiguous (also = onion)"
+m178,карелия,1,region,Boreal
+m179,карелия,1,region,Boreal
+m179a,карелия,2,region,Boreal
+m179b,северный,1,direction,Northern
+m18,гарпуна,1,artefact,Arctic/coastal
+m18,гарпун,14,artefact,Arctic/coastal — harpoon
+m18,аляски,1,region,Tundra/Boreal
+m18,гарпуном,5,artefact,Arctic/coastal
+m18,лук,2,artefact,"generic, ambiguous (also = onion)"
+m18,стрела,1,artefact,generic
+m180,южный,1,direction,Southern
+m181,ямс,1,artefact,Trop. Moist — yam
+m181a,стрела,2,artefact,generic
+m181b,ямс,3,artefact,Trop. Moist — yam
+m181b,маниока,1,artefact,Trop. Moist — manioc
+m182,ямс,5,artefact,Trop. Moist — yam
+m182b,пироги,1,artefact,Trop.
+m183,лук,4,artefact,"generic, ambiguous (also = onion)"
+m183,микронезии,1,region,Trop. Moist (Pacific)
+m185,южный,1,direction,Southern
+m185a,южный,1,direction,Southern
+m185a,микронезии,1,region,Trop. Moist (Pacific)
+m18b,аляски,1,region,Tundra/Boreal
+m19,гарпун,1,artefact,Arctic/coastal — harpoon
+m190,аляски,1,region,Tundra/Boreal
+m190,северный,1,direction,Northern
+m191,карелия,2,region,Boreal
+m191,южный,1,direction,Southern
+m192a,лук,2,artefact,"generic, ambiguous (also = onion)"
+m195,стрела,1,artefact,generic
+m195,лук,1,artefact,"generic, ambiguous (also = onion)"
+m195a,лук,3,artefact,"generic, ambiguous (also = onion)"
+m196,карелия,1,region,Boreal
+m197a,северная,1,direction,Northern
+m197b,стрела,1,artefact,generic
+m198b,сахары,1,region,Desert
+m198b,пироги,1,artefact,Trop.
+m198b,стрела,1,artefact,generic
+m198b2,сахары,1,region,Desert
+m198b2,пироги,1,artefact,Trop.
+m199,нарта,1,artefact,Tundra/Boreal — sledge
+m199,нарты,1,artefact,Tundra/Boreal — sledge pl
+m199a,нарты,3,artefact,Tundra/Boreal — sledge pl
+m199a,пироги,1,artefact,Trop.
+m199c,карелия,1,region,Boreal
+m199d,северный,1,direction,Northern
+m199d,пироги,1,artefact,Trop.
+m199e,пироги,1,artefact,Trop.
+m199f,пироги,1,artefact,Trop.
+m199g2,стрела,2,artefact,generic
+m199h,лук,1,artefact,"generic, ambiguous (also = onion)"
+m199j,нарта,1,artefact,Tundra/Boreal — sledge
+m199j,нарты,1,artefact,Tundra/Boreal — sledge pl
+m199j,пироги,1,artefact,Trop.
+m21,ямса,2,artefact,Trop. Moist
+m21,стрела,5,artefact,generic
+m21,нарты,2,artefact,Tundra/Boreal — sledge pl
+m21,северное,1,direction,Northern
+m21,камчатки,1,region,Boreal/Tundra
+m21,лук,1,artefact,"generic, ambiguous (also = onion)"
+m21,анды,1,mountain,Mountain
+m21a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m22,ямса,1,artefact,Trop. Moist
+m22,стрела,1,artefact,generic
+m23,индонезии,1,region,Trop. Moist
+m23,стрела,2,artefact,generic
+m26,стрела,1,artefact,generic
+m26a,сибирь,1,region,Tundra/Boreal
+m26a,ямс,2,artefact,Trop. Moist — yam
+m27,лук,1,artefact,"generic, ambiguous (also = onion)"
+m27,стрела,4,artefact,generic
+m28,стрела,1,artefact,generic
+m28,лук,1,artefact,"generic, ambiguous (also = onion)"
+m29a,аляски,1,region,Tundra/Boreal
+m29b,камчатки,1,region,Boreal/Tundra
+m29b,аляски,1,region,Tundra/Boreal
+m29b1,пироги,1,artefact,Trop.
+m29gg,лук,7,artefact,"generic, ambiguous (also = onion)"
+m3,нил,1,river,Desert/Trop. Savanna
+m3,нарте,1,artefact,Tundra/Boreal
+m3,стрела,1,artefact,generic
+m3,камчатки,1,region,Boreal/Tundra
+m3,нарты,1,artefact,Tundra/Boreal — sledge pl
+m30,пироги,1,artefact,Trop.
+m30,аляски,1,region,Tundra/Boreal
+m30,аляска,1,region,Tundra/Boreal
+m30,стрела,2,artefact,generic
+m30,лук,2,artefact,"generic, ambiguous (also = onion)"
+m30b,лук,1,artefact,"generic, ambiguous (also = onion)"
+m30c,стрела,1,artefact,generic
+m34,гарпун,1,artefact,Arctic/coastal — harpoon
+m36,южный,3,direction,Southern
+m36,гарпун,1,artefact,Arctic/coastal — harpoon
+m38,карелия,1,region,Boreal
+m38,лук,1,artefact,"generic, ambiguous (also = onion)"
+m38,нарте,1,artefact,Tundra/Boreal
+m38,гарпун,1,artefact,Arctic/coastal — harpoon
+m38,стрела,4,artefact,generic
+m38a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m38a,нарте,1,artefact,Tundra/Boreal
+m38a,гарпун,1,artefact,Arctic/coastal — harpoon
+m38a,стрела,4,artefact,generic
+m38b2,стрела,10,artefact,generic
+m38b2,лук,1,artefact,"generic, ambiguous (also = onion)"
+m38c,карелия,2,region,Boreal
+m38d,южный,1,direction,Southern
+m38d2,южный,1,direction,Southern
+m39a,сахара,1,region,Desert
+m39a,якутии,1,region,Boreal/Tundra
+m39a3,северный,1,direction,Northern
+m39a3a,северный,1,direction,Northern
+m39a3a,сахара,1,region,Desert
+m39a5a,пироги,2,artefact,Trop.
+m39a5a,карелия,2,region,Boreal
+m39a6,стрела,1,artefact,generic
+m39a6a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m39a6b,северного,1,direction,Northern
+m39a6c,лук,1,artefact,"generic, ambiguous (also = onion)"
+m39a6d,лук,4,artefact,"generic, ambiguous (also = onion)"
+m39a6d,северного,1,direction,Northern
+m39a6d,стрела,1,artefact,generic
+m39a6d,якутии,1,region,Boreal/Tundra
+m39a6f,северного,1,direction,Northern
+m39a6f,сахара,1,region,Desert
+m39a6i,лук,3,artefact,"generic, ambiguous (also = onion)"
+m39b,стрела,1,artefact,generic
+m39b,лук,2,artefact,"generic, ambiguous (also = onion)"
+m39b,нарты,2,artefact,Tundra/Boreal — sledge pl
+m39f,карелия,1,region,Boreal
+m39h,пироги,1,artefact,Trop.
+m39h,лук,1,artefact,"generic, ambiguous (also = onion)"
+m39i,карелия,1,region,Boreal
+m3a,камчатки,1,region,Boreal/Tundra
+m3a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m4,южный,1,direction,Southern
+m4,стрела,1,artefact,generic
+m40,сахара,1,region,Desert
+m40,нарте,2,artefact,Tundra/Boreal
+m40,стрела,2,artefact,generic
+m40,лук,2,artefact,"generic, ambiguous (also = onion)"
+m41,лук,1,artefact,"generic, ambiguous (also = onion)"
+m41,стрела,1,artefact,generic
+m42,лук,2,artefact,"generic, ambiguous (also = onion)"
+m42,нарте,1,artefact,Tundra/Boreal
+m42,нарты,1,artefact,Tundra/Boreal — sledge pl
+m42,южный,4,direction,Southern
+m42,гарпун,1,artefact,Arctic/coastal — harpoon
+m42,маниока,1,artefact,Trop. Moist — manioc
+m42a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m42a,южный,3,direction,Southern
+m42a,гарпун,1,artefact,Arctic/coastal — harpoon
+m42c,стрела,1,artefact,generic
+m43,лук,1,artefact,"generic, ambiguous (also = onion)"
+m44c,ямс,1,artefact,Trop. Moist — yam
+m44c,лук,6,artefact,"generic, ambiguous (also = onion)"
+m44c,стрела,1,artefact,generic
+m44c,маниока,1,artefact,Trop. Moist — manioc
+m45,карелия,1,region,Boreal
+m45,северный,1,direction,Northern
+m45a,якутии,1,region,Boreal/Tundra
+m46a,гарпун,1,artefact,Arctic/coastal — harpoon
+m46b,лук,1,artefact,"generic, ambiguous (also = onion)"
+m46b,стрела,1,artefact,generic
+m46b,аляски,1,region,Tundra/Boreal
+m46c,аляски,1,region,Tundra/Boreal
+m46d,северное,1,direction,Northern
+m46d,лук,2,artefact,"generic, ambiguous (also = onion)"
+m46d,аляски,1,region,Tundra/Boreal
+m48,стрела,1,artefact,generic
+m49,нила,1,river,Desert/Trop. Savanna
+m49,лук,5,artefact,"generic, ambiguous (also = onion)"
+m49,нарты,3,artefact,Tundra/Boreal — sledge pl
+m49,стрела,4,artefact,generic
+m49,гарпун,11,artefact,Arctic/coastal — harpoon
+m49,гарпуном,3,artefact,Arctic/coastal
+m49a,гарпуном,3,artefact,Arctic/coastal
+m49a,лук,3,artefact,"generic, ambiguous (also = onion)"
+m49a,гарпун,9,artefact,Arctic/coastal — harpoon
+m49a,стрела,2,artefact,generic
+m5,нарты,2,artefact,Tundra/Boreal — sledge pl
+m5,амазонка,1,river,Trop. Moist
+m5,ямса,1,artefact,Trop. Moist
+m5,стрела,1,artefact,generic
+m50,бумеранг,1,artefact,Australia — boomerang
+m50,стрела,4,artefact,generic
+m50,лук,1,artefact,"generic, ambiguous (also = onion)"
+m51,лук,2,artefact,"generic, ambiguous (also = onion)"
+m51,южный,1,direction,Southern
+m52,лук,1,artefact,"generic, ambiguous (also = onion)"
+m52,южный,1,direction,Southern
+m53f,лук,2,artefact,"generic, ambiguous (also = onion)"
+m54,южный,2,direction,Southern
+m56b,ямса,1,artefact,Trop. Moist
+m56d,африке,1,region,Trop. Savanna/Moist
+m57a,ямс,1,artefact,Trop. Moist — yam
+m57a,стрела,2,artefact,generic
+m57a,сибирь,1,region,Tundra/Boreal
+m57a,азия,1,continent,?
+m57a,нарте,1,artefact,Tundra/Boreal
+m57a,северный,1,direction,Northern
+m57a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m57c,средиземноморье,1,region,Mediterranean
+m57c,карелия,1,region,Boreal
+m57c,северный,1,direction,Northern
+m57c,пироги,1,artefact,Trop.
+m57d,южный,1,direction,Southern
+m57d,карелия,1,region,Boreal
+m57d,северный,2,direction,Northern
+m57d2,карелия,1,region,Boreal
+m57d3,южный,1,direction,Southern
+m57d3,северный,3,direction,Northern
+m57d4,стрела,1,artefact,generic
+m58,лук,1,artefact,"generic, ambiguous (also = onion)"
+m58,стрела,1,artefact,generic
+m58,северного,2,direction,Northern
+m59,лук,1,artefact,"generic, ambiguous (also = onion)"
+m59,южный,1,direction,Southern
+m5a,ямс,1,artefact,Trop. Moist — yam
+m60,стрела,1,artefact,generic
+m60,лук,5,artefact,"generic, ambiguous (also = onion)"
+m60,карелия,1,region,Boreal
+m60,гарпуном,3,artefact,Arctic/coastal
+m60,гарпун,10,artefact,Arctic/coastal — harpoon
+m60a1,лук,3,artefact,"generic, ambiguous (also = onion)"
+m60a1,стрела,4,artefact,generic
+m60a1,нарте,1,artefact,Tundra/Boreal
+m60a2,лук,3,artefact,"generic, ambiguous (also = onion)"
+m60a2,стрела,3,artefact,generic
+m60b,лук,1,artefact,"generic, ambiguous (also = onion)"
+m61a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m61a,южный,2,direction,Southern
+m61a2,лук,1,artefact,"generic, ambiguous (also = onion)"
+m61a2,южный,2,direction,Southern
+m62b,стрела,2,artefact,generic
+m62b,нарты,2,artefact,Tundra/Boreal — sledge pl
+m62b,северное,1,direction,Northern
+m62f,ямс,1,artefact,Trop. Moist — yam
+m63,лук,3,artefact,"generic, ambiguous (also = onion)"
+m63,южный,1,direction,Southern
+m7,стрела,2,artefact,generic
+m7,лук,1,artefact,"generic, ambiguous (also = onion)"
+m7,маниока,1,artefact,Trop. Moist — manioc
+m7,гарпун,1,artefact,Arctic/coastal — harpoon
+m72,гарпун,1,artefact,Arctic/coastal — harpoon
+m73,стрела,1,artefact,generic
+m74a,карелия,1,region,Boreal
+m74a,стрела,2,artefact,generic
+m74a,лук,2,artefact,"generic, ambiguous (also = onion)"
+m74a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m74a,нарте,1,artefact,Tundra/Boreal
+m74aa,карелия,1,region,Boreal
+m74ab,стрела,2,artefact,generic
+m74ab,лук,2,artefact,"generic, ambiguous (also = onion)"
+m74ab,нарты,1,artefact,Tundra/Boreal — sledge pl
+m74ab,нарте,1,artefact,Tundra/Boreal
+m74b,карелия,1,region,Boreal
+m75b,нила,1,river,Desert/Trop. Savanna
+m75b1,северный,1,direction,Northern
+m75b2,нила,1,river,Desert/Trop. Savanna
+m75b2,нил,1,river,Desert/Trop. Savanna
+m75b3,азии,1,continent,?
+m75b3,европы,1,continent,?
+m77,аляски,1,region,Tundra/Boreal
+m78,альпы,1,mountain,Mediterranean
+m78,северный,1,direction,Northern
+m78,карелия,1,region,Boreal
+m78,пироги,1,artefact,Trop.
+m78a,якутии,1,region,Boreal/Tundra
+m7b,нарты,2,artefact,Tundra/Boreal — sledge pl
+m7b,стрела,5,artefact,generic
+m7b,аляски,1,region,Tundra/Boreal
+m8,южный,1,direction,Southern
+m8,ямс,6,artefact,Trop. Moist — yam
+m8,маниока,4,artefact,Trop. Moist — manioc
+m80,стрела,1,artefact,generic
+m80,лук,2,artefact,"generic, ambiguous (also = onion)"
+m81,ямса,2,artefact,Trop. Moist
+m81,ямс,2,artefact,Trop. Moist — yam
+m81,северное,1,direction,Northern
+m81,лук,1,artefact,"generic, ambiguous (also = onion)"
+m81b,стрела,7,artefact,generic
+m81b,северное,1,direction,Northern
+m81c,ямса,1,artefact,Trop. Moist
+m81c,ямс,2,artefact,Trop. Moist — yam
+m81c,северное,1,direction,Northern
+m81d,ямс,2,artefact,Trop. Moist — yam
+m81d,ямса,1,artefact,Trop. Moist
+m81e1,нарта,1,artefact,Tundra/Boreal — sledge
+m83,северного,1,direction,Northern
+m83,конго,1,region/river,Trop. Moist
+m83,южный,1,direction,Southern
+m83,азии,1,continent,?
+m83,лук,4,artefact,"generic, ambiguous (also = onion)"
+m83a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m83b,карелия,1,region,Boreal
+m84,южный,3,direction,Southern
+m84,лук,4,artefact,"generic, ambiguous (also = onion)"
+m84,нарта,2,artefact,Tundra/Boreal — sledge
+m84,кавказа,1,mountain,Mediterranean/Mountain
+m84,нарте,1,artefact,Tundra/Boreal
+m84,стрела,1,artefact,generic
+m84,гарпун,1,artefact,Arctic/coastal — harpoon
+m84a,южный,1,direction,Southern
+m84a,алтай,2,mountain,Mountain/Steppe
+m84a,лук,1,artefact,"generic, ambiguous (also = onion)"
+m84b,лук,3,artefact,"generic, ambiguous (also = onion)"
+m84b,гарпун,1,artefact,Arctic/coastal — harpoon
+m85,карелия,1,region,Boreal
+m85,южный,1,direction,Southern
+m85,пироги,1,artefact,Trop.
+m85,камчатки,1,region,Boreal/Tundra
+m85,якутия,1,region,Boreal/Tundra
+m89,стрела,1,artefact,generic
+m8a,южный,3,direction,Southern
+m8a,гарпун,1,artefact,Arctic/coastal — harpoon
+m8a,гарпуном,1,artefact,Arctic/coastal
+m9,стрела,1,artefact,generic
+m90,лук,2,artefact,"generic, ambiguous (also = onion)"
+m90a,лук,2,artefact,"generic, ambiguous (also = onion)"
+m90a1,лук,1,artefact,"generic, ambiguous (also = onion)"
+m90a1,карелия,1,region,Boreal
+m91,лук,1,artefact,"generic, ambiguous (also = onion)"
+m91,сахара,1,region,Desert
+m91,сибирь,1,region,Tundra/Boreal
+m91,пироги,1,artefact,Trop.
+m91,нарты,7,artefact,Tundra/Boreal — sledge pl
+m91,стрела,2,artefact,generic
+m91,нарта,2,artefact,Tundra/Boreal — sledge
+m91,нарте,3,artefact,Tundra/Boreal
+m91a,карелия,1,region,Boreal
+m91a,пироги,2,artefact,Trop.
+m91a,нарты,3,artefact,Tundra/Boreal — sledge pl
+m91a,нарта,1,artefact,Tundra/Boreal — sledge
+m91b,лук,1,artefact,"generic, ambiguous (also = onion)"
+m91b,сахара,1,region,Desert
+m91b,нарта,1,artefact,Tundra/Boreal — sledge
+m91b,нарте,2,artefact,Tundra/Boreal
+m91b1,пироги,3,artefact,Trop.
+m91b1,сибирь,1,region,Tundra/Boreal
+m91c1,пироги,3,artefact,Trop.
+m91c1,стрела,1,artefact,generic
+m91c1,лук,1,artefact,"generic, ambiguous (also = onion)"
+m91c1,сахара,1,region,Desert
+m91c1,нарты,2,artefact,Tundra/Boreal — sledge pl
+m91c1,нарта,2,artefact,Tundra/Boreal — sledge
+m91c1,нарте,1,artefact,Tundra/Boreal
+m91c2,маниока,1,artefact,Trop. Moist — manioc
+m91c2,ямс,1,artefact,Trop. Moist — yam
+m91c2,пироги,3,artefact,Trop.
+m91c2,лук,1,artefact,"generic, ambiguous (also = onion)"
+m91c2,карелия,1,region,Boreal
+m91c2,нарты,2,artefact,Tundra/Boreal — sledge pl
+m91c4,пироги,1,artefact,Trop.
+m91c4,стрела,1,artefact,generic
+m91d,пироги,1,artefact,Trop.
+m91d,нарты,7,artefact,Tundra/Boreal — sledge pl
+m91d,стрела,2,artefact,generic
+m91d,нарта,1,artefact,Tundra/Boreal — sledge
+m91d,северный,1,direction,Northern
+m94,нарты,2,artefact,Tundra/Boreal — sledge pl
+m94,стрела,1,artefact,generic
+m94,нарта,3,artefact,Tundra/Boreal — sledge
+m94,аляски,2,region,Tundra/Boreal
+m94a,нарты,1,artefact,Tundra/Boreal — sledge pl
+m94a,стрела,1,artefact,generic
+m94a,нарта,2,artefact,Tundra/Boreal — sledge
+m95,карелия,1,region,Boreal
+m95,пироги,8,artefact,Trop.
+m95,пирога,1,artefact,Trop. — pirogue
+m95,полярный,1,climate,Arctic
+m97,нарты,2,artefact,Tundra/Boreal — sledge pl
+m97,стрела,5,artefact,generic
+m97,лук,1,artefact,"generic, ambiguous (also = onion)"
+m98,алтая,1,mountain,Mountain/Steppe
+m99,нарты,2,artefact,Tundra/Boreal — sledge pl
+n1,алтая,1,mountain,Mountain/Steppe
+n1,алтай,1,mountain,Mountain/Steppe
+n10,карелия,3,region,Boreal
+n10,нарта,3,artefact,Tundra/Boreal — sledge
+n10,нарте,1,artefact,Tundra/Boreal
+n10,стрела,1,artefact,generic
+n10,камчатки,1,region,Boreal/Tundra
+n10a,карелии,1,region,Boreal
+n10a,стрела,1,artefact,generic
+n10a,камчатки,1,region,Boreal/Tundra
+n10b,нарта,3,artefact,Tundra/Boreal — sledge
+n10b,нарте,1,artefact,Tundra/Boreal
+n10b,камчатки,1,region,Boreal/Tundra
+n12,африки,2,region,Trop. Savanna/Moist
+n12,нарте,1,artefact,Tundra/Boreal
+n14,пироги,2,artefact,Trop.
+n14,алтай,1,mountain,Mountain/Steppe
+n15,карелия,1,region,Boreal
+n15,пироги,1,artefact,Trop.
+n18,пироги,1,artefact,Trop.
+n21,стрела,1,artefact,generic
+n22,пироги,1,artefact,Trop.
+n24,алтай,1,mountain,Mountain/Steppe
+n24,стрела,2,artefact,generic
+n29,стрела,3,artefact,generic
+n30,стрела,3,artefact,generic
+n30,лук,1,artefact,"generic, ambiguous (also = onion)"
+n30,алтай,4,mountain,Mountain/Steppe
+n30,лены,1,river,Boreal/Tundra
+n30,алтая,1,mountain,Mountain/Steppe
+n30,амура,1,river,Boreal
+n4,стрела,1,artefact,generic
+n5,стрела,1,artefact,generic
+n5,алтай,5,mountain,Mountain/Steppe
+n7,лук,1,artefact,"generic, ambiguous (also = onion)"
+n9,нарта,1,artefact,Tundra/Boreal — sledge
+n9,лук,1,artefact,"generic, ambiguous (also = onion)"
+n9,нарты,1,artefact,Tundra/Boreal — sledge pl

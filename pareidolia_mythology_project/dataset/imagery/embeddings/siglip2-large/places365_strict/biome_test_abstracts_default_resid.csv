@@ -1,0 +1,9 @@
+biome,n_imgs,n_motifs_in_biome,delta,p_one_sided
+Tropical & Subtropical Moist Broadleaf Forests,60,1685,0.001767961774021387,0.0
+"Mediterranean Forests, Woodlands & Scrub",60,1146,0.0015124415513128042,0.0
+Tundra,60,1017,0.00043208629358559847,0.0
+Deserts & Xeric Shrublands,60,1548,0.0004279716231394559,0.0
+Montane Grasslands & Shrublands,60,947,0.00034830253571271896,0.0
+"Temperate Grasslands, Savannas & Shrublands",60,1548,0.00031381711596623063,0.0
+Temperate Broadleaf & Mixed Forests,60,1903,-0.00016812725516501814,0.93
+Flooded Grasslands & Savannas,60,602,-0.0006963259074836969,1.0

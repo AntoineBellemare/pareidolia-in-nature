@@ -1,0 +1,142 @@
+# Reproducing the v3 paper
+
+This document lists every script in pipeline order, what it produces,
+and how to run it. All commands assume the project root as working
+directory.
+
+## Phase 1 — Data acquisition
+
+Run once. These scripts download and stage raw inputs.
+
+| Script | Purpose |
+|---|---|
+| `src/acquisition/scrape_berezkin.py` | Fetch Berezkin catalogue motif pages from `ruthenia.ru`, parse abstracts and citations, write to `dataset/mapping_v2/`. |
+| `src/acquisition/wwf_join.py` | Spatial join tradition and image coordinates to WWF Terrestrial Ecoregions (requires the WWF shapefile in `raw_downloads/Ecoregions2017/`). |
+| `src/acquisition/inat_bulk_sample.py` + `src/acquisition/inat_download_images.py` | Sample and download iNaturalist Open Data observations. |
+| `src/acquisition/inat_basic_filter.py` | Drop non-nature content via SigLIP-2 zero-shot scoring against negative prompts. |
+| `src/acquisition/inat_tag_image_biome.py` | Spatial-join iNat image coordinates to WWF biomes. |
+| `src/acquisition/pull_places365_biomes.py` | Download Places365 scenes matching the WWF biome categories, with the strict-landscape SigLIP-2 filter. |
+| `src/acquisition/yfcc_download_images.py` + `yfcc_filter_landscape.py` + `yfcc_tag_and_link.py` | YFCC100M Flickr landscape pipeline (used as an additional supplementary corpus). |
+
+## Phase 2 — Build canonical spine and unified image manifest
+
+| Script | Purpose |
+|---|---|
+| `src/pipeline/build_spine.py` | Build canonical `traditions.parquet`, `motifs.parquet`, and `tradition_motif.parquet` under `dataset/mapping_v2/`. |
+| `src/pipeline/build_unified_manifest.py` | Concatenate iNat, YFCC, and Places365 per-source image manifests into one unified manifest under `dataset/imagery/`. |
+
+## Phase 3 — Anonymisation and embedding
+
+The anonymisation pipeline runs as two LLM passes (Gemini 3.5 Flash)
+against the raw Russian Berezkin abstracts. The output, the LLM-clean
+English motif text, lives at
+`dataset/analysis/llm_rewrite_specA_gemini_pass2.csv`. The LLM-pass
+scripts themselves live in `_archive/llm_dev/` because they wrap an
+external API call and are not part of the offline reproducible
+pipeline; the cleaned text is included in the dataset.
+
+| Script | Purpose |
+|---|---|
+| `src/embedding/sentence_pooled_siglip.py` | Sentence-pool SigLIP-2-large text embeddings over each motif's LLM-clean abstract. Writes `motif_emb_llm_pass2_abstract_sentpooled.npy`. |
+| `src/embedding/embed_images.py` | Embed iNat / Places365 / YFCC images with SigLIP-2-large. Writes per-corpus `img_emb.npy`. |
+| `src/embedding/embed_openclip.py` | Embed the same LLM-clean text with OpenCLIP-LAION-2B / OpenCLIP-OpenAI / M-CLIP for the cross-model panel. |
+| `src/embedding/class_word_collapse.py` | Re-embed the LLM-clean text after collapsing every animal-kingdom class word to "animal" and every plant-kingdom class word to "plant". Used for the per-taxon collapse control. |
+
+## Phase 4 — Δ analysis
+
+| Script | Purpose |
+|---|---|
+| `src/analysis/recompute_all.py` | Master orchestrator: recompute headline residualised + stratified Δ on iNat and Places365, breadth gradient, per-taxon decomposition. Writes the v3 CSVs under `dataset/imagery/embeddings/siglip2-large/`. |
+| `src/analysis/per_taxon.py` | Per-(biome × iconic-taxon) Δ decomposition. Writes `v3_byTaxon_sentpool_iNat.csv`. |
+| `src/analysis/stratified_baselines.py` | Within-iconic-taxon stratified versions of the word-shuffle and encyclopedic-null baselines. |
+| `src/analysis/biome_tell.py` | High-tell vs low-tell median-split on biome-tell z-score; outputs `v3_biome_tell_split.csv` and `v3_glottolog_swap_null.csv`. |
+| `src/analysis/word_shuffle.py` | Bag-of-words sentence-pooled shuffle null. |
+| `src/analysis/crossmodel.py` | Compute stratified Δ on M-CLIP, OpenCLIP-LAION-2B, OpenCLIP-OpenAI for the cross-model panel. |
+| `src/analysis/realm_block_null.py` | Block-permutation null by WWF biogeographic realm. |
+| `src/analysis/glottolog_swap.py` | Within-Glottolog-macroarea biome-swap null (used in the main-text "Cultural-geographic autocorrelation" subsection). |
+
+## Phase 5 — Figure generation
+
+| Script | Output figure |
+|---|---|
+| `src/figures/make_v3_figures.py` | Master entry-point — builds fig 2 (two-corpus biome bars), fig 5 (earth map), fig 11 (breadth gradient), fig 9 (cross-model 4×4), fig_v2_controls (robustness atlas, now in supp), figS_biome_tell (supp biome-tell tests). |
+| `src/figures/taxon_combined.py` | fig_taxon_combined.png — three-panel taxon decomposition (preserved heatmap + collapsed heatmap + per-taxon double-violin). |
+| `src/figures/taxon_facets.py` | fig4_taxon_facets.png — per-taxon facet grid (supplementary). |
+| `src/figures/breadth_universals.py` | Standalone breadth-gradient figure helper (called by `make_v3_figures.py`). |
+| `src/figures/crossmodel_corr.py` | Cross-model correlation helper. |
+| `src/figures/species_composition.py` + `species_composition_specA.py` | Supplementary fig S5 (raw ecological composition per biome, Spec A view). |
+| `src/figures/bulletproof_table.py` | Generate supplementary tables. |
+
+## Phase 6 — Paper compilation
+
+```bash
+cd paper
+tectonic paper.tex
+```
+
+The PDF lands at `paper/paper.pdf`. Replace `tectonic` with any modern
+LaTeX engine (xelatex / lualatex / pdflatex with bibtex).
+
+## End-to-end minimum reproduction from cleaned text and embeddings
+
+If you have the cleaned motif text and SigLIP-2 image embeddings already
+(they ship with the dataset spine), the minimum pipeline to regenerate
+the paper is:
+
+```bash
+# Embeddings (sentence-pool the motif text)
+python src/embedding/sentence_pooled_siglip.py
+
+# Re-embedding for the class-word collapse control
+python src/embedding/class_word_collapse.py
+
+# All Δ analyses
+python src/analysis/recompute_all.py
+python src/analysis/per_taxon.py
+python src/analysis/stratified_baselines.py
+python src/analysis/biome_tell.py
+python src/analysis/glottolog_swap.py
+python src/analysis/word_shuffle.py
+python src/analysis/crossmodel.py
+
+# All figures
+python src/figures/make_v3_figures.py
+python src/figures/taxon_combined.py
+python src/figures/taxon_facets.py
+
+# Compile PDF
+cd paper && tectonic paper.tex
+```
+
+## Shared utilities at the project root
+
+`src/` scripts import four shared utility modules that live at the
+project root:
+
+- `motif_specificity_controls.py` — `biome_motif_membership_count()` and Spec A control helpers.
+- `make_phase2_figures.py` — colour palettes, `short_biome()`, significance star helpers.
+- `specA_paper_runs.py` — orchestration helpers for Spec A test variants.
+- `make_effect_maps_v2.py` — colormap utilities and confidence-weighting for earth maps.
+
+Each script in `src/` begins with a small `sys.path` bootstrap that
+inserts the project root onto the import path, so these utilities
+resolve unchanged.
+
+## Archive contents
+
+Anything in `_archive/` is not part of the v3 reproduction set but is
+kept locally for reference:
+
+- `legacy_scripts/` — superseded v1 / v2 / v4 / v5 / v6 / v8 hypernym
+  variants, older orchestrators, older figure generators, and the
+  pareidolia analysis that was removed from v3.
+- `audit/` — one-off audit batches and the residue-counting helpers.
+- `exploratory/` — `_check_*`, `_inspect_*`, `_investigate_*`,
+  `_probe_*`, `_sample_*` diagnostic scripts.
+- `llm_dev/` — LLM-development helpers (Gemini API wrappers, NLLB
+  translation experiments).
+- `working_logs/` — run logs and shell orchestration from earlier
+  iterations.
+- `mythology_art/` — recursive Commons crawler and Met / Smithsonian
+  pulls for the mythology-art follow-up corpus (under construction; not
+  used in v3 paper).

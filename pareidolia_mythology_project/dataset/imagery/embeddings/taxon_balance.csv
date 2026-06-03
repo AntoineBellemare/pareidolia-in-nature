@@ -1,0 +1,17 @@
+use_biome,Actinopterygii,Amphibia,Animalia,Arachnida,Aves,Chromista,Fungi,Insecta,Mammalia,Mollusca,Plantae,Protozoa,Reptilia,
+Boreal Forests/Taiga,55,20,11,14,472,0,77,344,116,10,1575,0,5,3
+Deserts & Xeric Shrublands,71,34,20,55,1316,0,8,464,183,25,1269,0,266,0
+Flooded Grasslands & Savannas,8,11,0,5,278,0,1,89,51,0,63,0,44,0
+Mangroves,14,5,8,1,111,0,2,45,7,5,28,0,24,0
+"Mediterranean Forests, Woodlands & Scrub",9,27,34,39,355,1,47,376,52,49,835,0,78,0
+Montane Grasslands & Shrublands,2,11,3,2,491,0,4,254,114,2,531,0,24,0
+N/A,0,0,0,0,7,0,0,2,0,0,11,0,1,0
+Temperate Broadleaf & Mixed Forests,43,87,32,100,1044,2,188,1382,111,52,2155,4,106,3
+Temperate Conifer Forests,27,59,97,23,482,9,161,484,111,70,1838,4,52,1
+"Temperate Grasslands, Savannas & Shrublands",28,37,10,48,855,0,36,633,97,19,1186,0,100,0
+Tropical & Subtropical Coniferous Forests,1,11,2,11,340,0,27,271,28,0,373,1,44,0
+Tropical & Subtropical Dry Broadleaf Forests,174,48,70,43,615,0,8,607,96,46,468,0,129,0
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",84,103,22,68,2383,0,23,874,635,23,1073,2,343,0
+Tropical & Subtropical Moist Broadleaf Forests,1009,460,382,345,3502,0,95,3973,620,250,2781,5,957,0
+Tundra,25,6,20,1,409,0,62,81,126,9,1262,0,0,0
+,45,0,13,0,6,0,0,1,0,10,47,0,2,0

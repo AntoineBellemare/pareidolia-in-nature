@@ -1,0 +1,61 @@
+biome,n_imgs,n_motifs_in_biome_specific,n_motifs_other_specific,delta,p_one_sided,class_group,n_motifs_in_subset,image_source
+"Mediterranean Forests, Woodlands & Scrub",1863,14,366,0.0027647457900457084,0.002,ALL,1330,iNat_basic
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5429,61,319,0.0026484576519578695,0.0,ALL,1330,iNat_basic
+Montane Grasslands & Shrublands,1402,5,375,0.0025507716927677393,0.047,ALL,1330,iNat_basic
+Temperate Broadleaf & Mixed Forests,5166,98,282,0.0014593401574529707,0.0,ALL,1330,iNat_basic
+Boreal Forests/Taiga,2587,42,338,0.0014027210418134928,0.056,ALL,1330,iNat_basic
+Tropical & Subtropical Moist Broadleaf Forests,13907,146,234,0.0012931935489177704,0.0,ALL,1330,iNat_basic
+Deserts & Xeric Shrublands,3611,14,366,0.0005561806028708816,0.264,ALL,1330,iNat_basic
+Tropical & Subtropical Coniferous Forests,1085,5,375,0.0002831850288202986,0.407,ALL,1330,iNat_basic
+"Temperate Grasslands, Savannas & Shrublands",2954,30,350,0.00010783062316477299,0.389,ALL,1330,iNat_basic
+Temperate Conifer Forests,3334,34,346,-0.00040896330028772354,0.688,ALL,1330,iNat_basic
+Tundra,1965,22,358,-0.0004669404588639736,0.62,ALL,1330,iNat_basic
+Boreal Forests/Taiga,2587,5,37,0.0034243743866682053,0.121,PAREIDOLIC,131,iNat_basic
+Tropical & Subtropical Moist Broadleaf Forests,13907,13,29,0.0021475638495758176,0.054,PAREIDOLIC,131,iNat_basic
+Temperate Broadleaf & Mixed Forests,5166,17,25,0.0007768922951072454,0.267,PAREIDOLIC,131,iNat_basic
+Boreal Forests/Taiga,2587,12,98,0.0031129767503443873,0.031,PURE_NARRATIVE,530,iNat_basic
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5429,15,95,0.0018521156162023544,0.061,PURE_NARRATIVE,530,iNat_basic
+Deserts & Xeric Shrublands,3611,5,105,0.0016069404082372785,0.135,PURE_NARRATIVE,530,iNat_basic
+Temperate Broadleaf & Mixed Forests,5166,45,65,0.0011582223232835531,0.029,PURE_NARRATIVE,530,iNat_basic
+"Mediterranean Forests, Woodlands & Scrub",1863,6,104,0.0010725362808443606,0.204,PURE_NARRATIVE,530,iNat_basic
+Tropical & Subtropical Moist Broadleaf Forests,13907,34,76,0.0010027759126387537,0.052,PURE_NARRATIVE,530,iNat_basic
+"Temperate Grasslands, Savannas & Shrublands",2954,15,95,-0.0004417484160512686,0.721,PURE_NARRATIVE,530,iNat_basic
+Temperate Conifer Forests,3334,6,104,-0.000750094186514616,0.66,PURE_NARRATIVE,530,iNat_basic
+"Mediterranean Forests, Woodlands & Scrub",1863,5,120,0.003428394160437165,0.009,ANTHROPOMORPHIC,401,iNat_basic
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5429,24,101,0.0024325489066541195,0.013,ANTHROPOMORPHIC,401,iNat_basic
+Tropical & Subtropical Moist Broadleaf Forests,13907,42,83,0.0016475330339744687,0.003,ANTHROPOMORPHIC,401,iNat_basic
+Temperate Conifer Forests,3334,18,107,0.0016234386712312698,0.084,ANTHROPOMORPHIC,401,iNat_basic
+Temperate Broadleaf & Mixed Forests,5166,20,105,0.0011769926641136408,0.071,ANTHROPOMORPHIC,401,iNat_basic
+"Temperate Grasslands, Savannas & Shrublands",2954,9,116,0.0009401837596669793,0.168,ANTHROPOMORPHIC,401,iNat_basic
+Boreal Forests/Taiga,2587,16,109,0.00030145328491926193,0.384,ANTHROPOMORPHIC,401,iNat_basic
+Tundra,1965,16,109,0.00022862153127789497,0.46,ANTHROPOMORPHIC,401,iNat_basic
+Deserts & Xeric Shrublands,3611,6,119,-0.0008080784464254975,0.719,ANTHROPOMORPHIC,401,iNat_basic
+Temperate Broadleaf & Mixed Forests,5166,12,69,0.0016582806129008532,0.065,METAMORPHOSIS,172,iNat_basic
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5429,15,66,0.0013078595511615276,0.17,METAMORPHOSIS,172,iNat_basic
+Tropical & Subtropical Moist Broadleaf Forests,13907,44,37,0.000846309179905802,0.136,METAMORPHOSIS,172,iNat_basic
+Temperate Conifer Forests,3334,8,73,-0.0004910239949822426,0.573,METAMORPHOSIS,172,iNat_basic
+Boreal Forests/Taiga,2587,6,75,-0.0015476951375603676,0.755,METAMORPHOSIS,172,iNat_basic
+Tropical & Subtropical Moist Broadleaf Forests,13907,13,9,0.002752793690888211,0.049,NATURE_SPIRIT,96,iNat_basic
+"Mediterranean Forests, Woodlands & Scrub",60,14,366,0.004145171958953142,0.018,ALL,1330,Places365
+Tundra,60,22,358,0.0037240716628730297,0.0,ALL,1330,Places365
+Tropical & Subtropical Moist Broadleaf Forests,60,146,234,0.003011176362633705,0.0,ALL,1330,Places365
+"Temperate Grasslands, Savannas & Shrublands",60,30,350,0.0003177712205797434,0.356,ALL,1330,Places365
+Deserts & Xeric Shrublands,60,14,366,-0.00041898805648088455,0.588,ALL,1330,Places365
+Montane Grasslands & Shrublands,60,5,375,-0.0004317467100918293,0.554,ALL,1330,Places365
+Temperate Broadleaf & Mixed Forests,60,98,282,-0.0005920329131186008,0.803,ALL,1330,Places365
+Tropical & Subtropical Moist Broadleaf Forests,60,13,29,0.0042283502407372,0.037,PAREIDOLIC,131,Places365
+Temperate Broadleaf & Mixed Forests,60,17,25,-0.0014159095007926226,0.815,PAREIDOLIC,131,Places365
+Deserts & Xeric Shrublands,60,5,105,0.0017484142445027828,0.231,PURE_NARRATIVE,530,Places365
+"Temperate Grasslands, Savannas & Shrublands",60,15,95,0.0008960894774645567,0.197,PURE_NARRATIVE,530,Places365
+Tropical & Subtropical Moist Broadleaf Forests,60,34,76,0.0005236640572547913,0.333,PURE_NARRATIVE,530,Places365
+Temperate Broadleaf & Mixed Forests,60,45,65,-9.9015305750072e-05,0.526,PURE_NARRATIVE,530,Places365
+"Mediterranean Forests, Woodlands & Scrub",60,6,104,-0.00024208612740039825,0.533,PURE_NARRATIVE,530,Places365
+Tropical & Subtropical Moist Broadleaf Forests,60,42,83,0.005700408015400171,0.0,ANTHROPOMORPHIC,401,Places365
+"Mediterranean Forests, Woodlands & Scrub",60,5,120,0.005302561447024345,0.031,ANTHROPOMORPHIC,401,Places365
+Tundra,60,16,109,0.002802516450174153,0.012,ANTHROPOMORPHIC,401,Places365
+"Temperate Grasslands, Savannas & Shrublands",60,9,116,0.00151575927156955,0.164,ANTHROPOMORPHIC,401,Places365
+Temperate Broadleaf & Mixed Forests,60,20,105,-0.001205267442855984,0.833,ANTHROPOMORPHIC,401,Places365
+Deserts & Xeric Shrublands,60,6,119,-0.0020186856854707003,0.793,ANTHROPOMORPHIC,401,Places365
+Tropical & Subtropical Moist Broadleaf Forests,60,44,37,0.0010469919070601463,0.287,METAMORPHOSIS,172,Places365
+Temperate Broadleaf & Mixed Forests,60,12,69,-0.0006944953929632902,0.629,METAMORPHOSIS,172,Places365
+Tropical & Subtropical Moist Broadleaf Forests,60,13,9,0.001438729465007782,0.352,NATURE_SPIRIT,96,Places365

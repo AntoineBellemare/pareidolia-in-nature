@@ -1,0 +1,31 @@
+subset,biome,n_imgs,n_in_biome,delta,p_one_sided
+WITH species,Boreal Forests/Taiga,279,1069,0.0025112051516771317,0.0
+WITH species,Deserts & Xeric Shrublands,637,1124,0.0010140822269022465,0.0
+WITH species,Flooded Grasslands & Savannas,484,433,-0.001100540568586439,1.0
+WITH species,Mangroves,88,158,7.042940706014633e-05,0.384
+WITH species,"Mediterranean Forests, Woodlands & Scrub",292,835,0.0014520608820021152,0.0
+WITH species,Montane Grasslands & Shrublands,413,723,0.0014883699695928954,0.0
+WITH species,N/A,37,133,0.0007863719947636127,0.03
+WITH species,Temperate Broadleaf & Mixed Forests,308,1383,0.002439165720716119,0.0
+WITH species,Temperate Conifer Forests,211,1063,0.00048721954226493835,0.0
+WITH species,"Temperate Grasslands, Savannas & Shrublands",403,1128,-0.00018140231259167194,0.89
+WITH species,Tropical & Subtropical Coniferous Forests,64,410,-0.00010589207522571087,0.712
+WITH species,Tropical & Subtropical Dry Broadleaf Forests,223,675,0.0007951385341584682,0.0
+WITH species,"Tropical & Subtropical Grasslands, Savannas & Shrublands",267,847,0.0011400082148611546,0.0
+WITH species,Tropical & Subtropical Moist Broadleaf Forests,2314,1232,0.0011107341852039099,0.0
+WITH species,Tundra,114,733,0.001624249736778438,0.0
+WITHOUT species,Boreal Forests/Taiga,279,379,0.0019191838800907135,0.0
+WITHOUT species,Deserts & Xeric Shrublands,637,424,0.0001626787707209587,0.265
+WITHOUT species,Flooded Grasslands & Savannas,484,169,0.00027151836548000574,0.265
+WITHOUT species,Mangroves,88,84,-0.0001387912780046463,0.679
+WITHOUT species,"Mediterranean Forests, Woodlands & Scrub",292,311,0.0004762401804327965,0.001
+WITHOUT species,Montane Grasslands & Shrublands,413,224,0.0010434810537844896,0.0
+WITHOUT species,N/A,37,40,-3.5117845982313156e-05,0.49
+WITHOUT species,Temperate Broadleaf & Mixed Forests,308,520,0.0015091134700924158,0.0
+WITHOUT species,Temperate Conifer Forests,211,393,-0.00026810914278030396,0.904
+WITHOUT species,"Temperate Grasslands, Savannas & Shrublands",403,420,-0.00012541795149445534,0.707
+WITHOUT species,Tropical & Subtropical Coniferous Forests,64,151,-9.55809373408556e-05,0.615
+WITHOUT species,Tropical & Subtropical Dry Broadleaf Forests,223,249,0.0002993275411427021,0.022
+WITHOUT species,"Tropical & Subtropical Grasslands, Savannas & Shrublands",267,301,0.001257502008229494,0.0
+WITHOUT species,Tropical & Subtropical Moist Broadleaf Forests,2314,453,0.000987317180261016,0.0
+WITHOUT species,Tundra,114,284,0.0014080837136134505,0.0

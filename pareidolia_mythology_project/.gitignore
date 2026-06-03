@@ -1,0 +1,94 @@
+# =============================================================================
+# Heavy data — not version-controlled
+# =============================================================================
+
+# Image binaries from external corpora (multi-GB)
+dataset/imagery/*/images/
+dataset/imagery/*/raw/
+
+# Image-side embedding arrays (multi-GB)
+dataset/imagery/embeddings/**/*.npy
+
+# Legacy motif metadata parquets (hypv2..v8, pre-LLM-clean era; multi-GB)
+dataset/imagery/embeddings/**/motif_meta_*.parquet
+
+# Pre-anonymisation backups (huge intermediate state)
+dataset/imagery/embeddings/**/*PREANON*
+
+# Working / intermediate figures
+dataset/imagery/figures/
+
+# Embedding logs
+dataset/imagery/*.log
+dataset/imagery/embeddings/**/*.log
+
+# Raw external corpora
+raw_downloads/berezkin_html/
+raw_downloads/Replication_Data_Folklore/
+raw_downloads/Ecoregions2017.zip
+raw_downloads/Replication_Data_Folklore.zip
+raw_downloads/Ecoregions2017/*.shp
+raw_downloads/Ecoregions2017/*.dbf
+raw_downloads/Ecoregions2017/*.shx
+raw_downloads/Ecoregions2017/*.prj
+raw_downloads/Ecoregions2017/*.cpg
+raw_downloads/Ecoregions2017/*.qpj
+raw_downloads/Ecoregions2017/*.qix
+raw_downloads/Ecoregions2017/*.sbn
+raw_downloads/Ecoregions2017/*.sbx
+
+# Large image manifests
+dataset/imagery/*/inspect.html
+dataset/imagery/manifest.parquet
+
+# Translation checkpoints (intermediate, large)
+dataset/mapping_v2/*_checkpoint.parquet
+dataset/analysis/*_checkpoint.csv
+
+# Legacy dataset folder (use mapping_v2)
+dataset/mapping/
+
+# =============================================================================
+# Local-only directories
+# =============================================================================
+
+# Archived legacy scripts and logs kept on disk but not in repo
+_archive/
+
+# Pre-reorganisation safety backup
+_backup_pre_reorg/
+
+# =============================================================================
+# Python build artefacts
+# =============================================================================
+
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# =============================================================================
+# Editor / OS
+# =============================================================================
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# Build artefacts
+# =============================================================================
+
+*.log
+paper/paper_v3.tex
+paper/paper_v3.pdf
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.synctex.gz
+paper/*.toc
+paper/*.out
