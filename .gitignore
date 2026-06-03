@@ -6,11 +6,20 @@
 dataset/imagery/*/images/
 dataset/imagery/*/raw/
 
-# Image-side embedding arrays (multi-GB)
+# Image-side embedding arrays — gitignore by default, then allow small v3 ones
 dataset/imagery/embeddings/**/*.npy
+# Exceptions: v3 motif text embeddings (small, load-bearing for reproduction)
+!dataset/imagery/embeddings/siglip2-large/motif_emb_llm_pass2_abstract_sentpooled.npy
+!dataset/imagery/embeddings/siglip2-large/motif_emb_llm_pass2_abstract_sentpool_shuffled.npy
+!dataset/imagery/embeddings/siglip2-large/motif_emb_llm_pass2_collapsed_sentpooled.npy
+# Exceptions: Places365 image embeddings (small, allows P365 panel reproduction)
+!dataset/imagery/embeddings/siglip2-large/places365_strict/img_emb.npy
 
 # Legacy motif metadata parquets (hypv2..v8, pre-LLM-clean era; multi-GB)
 dataset/imagery/embeddings/**/motif_meta_*.parquet
+# Exceptions: v3 motif metadata parquets (small, load-bearing for reproduction)
+!dataset/imagery/embeddings/siglip2-large/motif_meta_llm_pass2_sentpooled.parquet
+!dataset/imagery/embeddings/siglip2-large/motif_meta_llm_pass2_collapsed_sentpooled.parquet
 
 # Pre-anonymisation backups (huge intermediate state)
 dataset/imagery/embeddings/**/*PREANON*

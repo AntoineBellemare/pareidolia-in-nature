@@ -4,6 +4,61 @@ This document lists every script in pipeline order, what it produces,
 and how to run it. All commands assume the project root as working
 directory.
 
+## What's in the repo, what isn't
+
+The repo includes:
+
+- All code (33 scripts under `src/` plus 4 shared utility modules at root).
+- The Berezkin spine (traditions, motifs, tradition–motif parquets) and the raw Russian abstracts.
+- The LLM-clean English motif text used as input to the v3 embeddings.
+- The three v3 motif-text embeddings: sentence-pooled, word-shuffled (control), and class-word-collapsed.
+- The Places365 image embeddings + paths.
+- All v3 result CSVs (per-biome Δ, breadth, per-taxon, biome-tell, Glottolog swap, two-corpus).
+- The paper (LaTeX + bib + PDF + all figures + the methods diagram).
+
+The repo does NOT include (gitignored, too big or external):
+
+- **iNat image embeddings** (`dataset/imagery/embeddings/siglip2-large/inat_basic/img_emb.npy`, 182 MB) — exceeds GitHub's per-file limit. Regenerate by running `src/embedding/embed_images.py` after downloading iNat images, or contact authors for the file.
+- **iNat / YFCC / Places365 raw image binaries** — re-download from their original sources via the scripts in `src/acquisition/`.
+- **WWF Terrestrial Ecoregions 2017 shapefile** — re-download from [WWF](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world).
+- **Berezkin HTML cache** — already scraped into parquets; if you want to re-scrape, use `src/acquisition/scrape_berezkin.py`.
+
+## Three reproduction tiers
+
+### Tier 1 — Regenerate the PDF figures and paper (5 minutes, no GPU)
+
+Everything needed is already in the repo. Just run the figure scripts
+and compile the PDF:
+
+```bash
+python src/figures/make_v3_figures.py
+python src/figures/taxon_combined.py
+python src/figures/taxon_facets.py
+cd paper && tectonic paper.tex
+```
+
+### Tier 2 — Recompute all Δ analyses (15 minutes, no GPU)
+
+Uses the shipped motif embeddings + Places365 image embeddings. The iNat
+img_emb.npy is required and is not in the repo — see "What's in the
+repo" above. Once you have it:
+
+```bash
+python src/analysis/recompute_all.py
+python src/analysis/per_taxon.py
+python src/analysis/stratified_baselines.py
+python src/analysis/biome_tell.py
+python src/analysis/glottolog_swap.py
+python src/analysis/word_shuffle.py
+python src/analysis/crossmodel.py
+# ...then Tier 1 to regenerate the figures and PDF.
+```
+
+### Tier 3 — Full reproduction from raw inputs (several hours, GPU recommended)
+
+Requires raw iNat / Places365 image downloads, the WWF shapefile, and
+SigLIP-2 + OpenCLIP + M-CLIP embedding passes. Phase-by-phase below.
+
 ## Phase 1 — Data acquisition
 
 Run once. These scripts download and stage raw inputs.
