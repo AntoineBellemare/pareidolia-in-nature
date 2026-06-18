@@ -21,8 +21,17 @@ MIN_TRAD = 10
 
 def main():
     import geopandas as gpd
-    llm = pd.read_csv(EMB / "inat_basic/v3_biome_test_sentpool_resid.csv").set_index("biome")
+
+    def bh(p):
+        p = np.asarray(p, float); n = len(p); o = np.argsort(p); q = np.empty(n); prev = 1.0
+        for r in range(n - 1, -1, -1):
+            i = o[r]; prev = min(prev, p[i] * n / (r + 1)); q[i] = prev
+        return q
+
+    llm = pd.read_csv(EMB / "inat_basic/v3_biome_test_sentpool_resid.csv")
+    llm["q"] = bh(llm["p_strat"].values); llm = llm.set_index("biome")
     mat = pd.read_csv(LAD / "nolll_perbiome_inat.csv").set_index("biome")
+    mat["q"] = mat["q_matched"]
     trad = pd.read_parquet(MAP / "traditions.parquet")
     n_trad = trad.groupby("biome_wwf").size().to_dict()
     eco = gpd.read_file(ROOT / "raw_downloads/Ecoregions2017/Ecoregions2017.shp").to_crs("EPSG:4326")
@@ -36,17 +45,17 @@ def main():
     for ax in (axA, axB):
         ax.set_facecolor("#f4f6f8")
 
-    def render(ax, df, dcol, pcol, title):
-        shown = [b for b in df.index if n_trad.get(b, 0) >= MIN_TRAD
-                 and df.loc[b, dcol] > 0 and df.loc[b, pcol] < 0.05]
-        vmax = float(df.loc[shown, dcol].max()) * 1.05 if shown else 1.0
+    def render(ax, df, dcol, title):
+        sig = [b for b in df.index if df.loc[b, "q"] < 0.05 and df.loc[b, dcol] > 0]
+        mapped = [b for b in sig if n_trad.get(b, 0) >= MIN_TRAD]
+        vmax = float(df.loc[mapped, dcol].max()) * 1.05 if mapped else 1.0
         norm = mcolors.Normalize(0, vmax)
         for bname, grp in eco.groupby("BIOME_NAME"):
             if bname not in df.index or n_trad.get(bname, 0) < MIN_TRAD:
                 color = GREY
             elif df.loc[bname, dcol] < 0:
                 color = NEG
-            elif df.loc[bname, pcol] < 0.05:
+            elif df.loc[bname, "q"] < 0.05:
                 color = tuple(cmap(norm(df.loc[bname, dcol])))
             else:
                 color = GREY
@@ -57,10 +66,12 @@ def main():
         ax.set_xticks([]); ax.set_yticks([])
         for sp in ax.spines.values():
             sp.set_color("#ccc")
-        ax.set_title(f"{title}  ({len(shown)} biomes $p<.05$)", fontsize=11.5, pad=6)
+        extra = f"; {len(sig) - len(mapped)} more sig. but $<10$ traditions" if len(sig) > len(mapped) else ""
+        ax.set_title(f"{title}  ({len(mapped)} of {len(sig)} FDR-significant mapped{extra})",
+                     fontsize=10.8, pad=6)
 
-    render(axA, llm, "delta_strat", "p_strat", "A. Remove the names (LLM-strip, stratified)")
-    render(axB, mat, "delta_raw", "p_matched", "B. Hold the names constant (raw + matched null)")
+    render(axA, llm, "delta_strat", "A. Remove the names (LLM-strip, stratified)")
+    render(axB, mat, "delta_raw", "B. Hold the names constant (raw + matched null)")
 
     from matplotlib.patches import Patch
     fig.legend(handles=[Patch(facecolor="#fdae61", label="aligned (warmer = stronger, within panel)"),

@@ -18,6 +18,13 @@ OUT = ROOT / "paper/figures/fig2_nolll.png"
 from make_phase2_figures import short_biome, biome_color
 
 
+def bh(p):
+    p = np.asarray(p, float); n = len(p); o = np.argsort(p); q = np.empty(n); prev = 1.0
+    for r in range(n - 1, -1, -1):
+        i = o[r]; prev = min(prev, p[i] * n / (r + 1)); q[i] = prev
+    return q
+
+
 def load():
     li = pd.read_csv(EMB / "inat_basic/v3_biome_test_sentpool_resid.csv")
     li = li[["biome", "delta_strat", "p_strat"]].rename(
@@ -30,10 +37,11 @@ def load():
     mp = pd.read_csv(LAD / "nolll_perbiome_p365.csv")[
         ["biome", "delta_raw", "p_matched", "q_matched"]].rename(
         columns={"delta_raw": "delta", "p_matched": "p", "q_matched": "q"})
+    li["q"] = bh(li["p"].values); lp["q"] = bh(lp["p"].values)   # FDR on the LLM panels too
     return li, lp, mi, mp
 
 
-def panel(ax, df, order, title, has_fdr):
+def panel(ax, df, order, title):
     df = df.set_index("biome").reindex(order)
     y = np.arange(len(order))[::-1]
     vals = df["delta"].values * 1000
@@ -45,10 +53,11 @@ def panel(ax, df, order, title, has_fdr):
         if np.isnan(v):
             ax.text(0.01 * xmax, y[i], "n/a", va="center", fontsize=7, color="#aaa")
             continue
-        sig = df["p"].values[i] < 0.05
         mk = ""
-        if sig:
-            mk = "$\\bigstar$" if (has_fdr and df["q"].values[i] < 0.05) else "$\\star$"
+        if df["q"].values[i] < 0.05:
+            mk = "$\\bigstar$"            # survives FDR q<.05
+        elif df["p"].values[i] < 0.05:
+            mk = "$\\star$"               # nominal p<.05 only
         if mk:
             x = v + 0.02 * xmax if v >= 0 else v - 0.02 * xmax
             ax.text(x, y[i], mk, va="center", ha="left" if v >= 0 else "right",
@@ -56,8 +65,9 @@ def panel(ax, df, order, title, has_fdr):
     ax.axvline(0, color="#666", lw=0.6)
     ax.set_yticks(y); ax.set_yticklabels([short_biome(b) for b in order], fontsize=8)
     ax.set_xlim(min(0, np.nanmin(vals) * 1.2), xmax)
-    n = int((~np.isnan(vals)).sum()); ns = int((df["p"] < 0.05).sum())
-    ax.set_title(f"{title}  ·  {ns}/{n} at $p<.05$", fontsize=10.5,
+    n = int((~np.isnan(vals)).sum()); nq = int((df["q"] < 0.05).sum())
+    ns = int((df["p"] < 0.05).sum())
+    ax.set_title(f"{title}  ·  {nq} FDR / {ns} nominal of {n}", fontsize=10.5,
                  fontweight="bold", loc="left")
     ax.set_xlabel(r"$\Delta$ ($\times 10^{-3}$)", fontsize=8.5)
     for s in ax.spines.values():
@@ -71,15 +81,15 @@ def main():
 
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
     fig.patch.set_facecolor("white")
-    panel(axes[0, 0], li, order, "A  iNat · remove the names (LLM-strip, stratified)", False)
-    panel(axes[0, 1], mi, order, "B  iNat · hold the names constant (raw + matched null)", True)
-    panel(axes[1, 0], lp, order, "C  Places365 · remove the names (LLM-strip, marginal)", False)
-    panel(axes[1, 1], mp, order, "D  Places365 · hold the names constant (raw + matched null)", True)
+    panel(axes[0, 0], li, order, "A  iNat · remove the names (LLM-strip, stratified)")
+    panel(axes[0, 1], mi, order, "B  iNat · hold the names constant (raw + matched null)")
+    panel(axes[1, 0], lp, order, "C  Places365 · remove the names (LLM-strip, marginal)")
+    panel(axes[1, 1], mp, order, "D  Places365 · hold the names constant (raw + matched null)")
 
-    # convergence numbers
+    # convergence numbers (FDR q<.05)
     def agree(llm, mat):
-        a = llm.set_index("biome")["p"] < 0.05
-        b = mat.set_index("biome")["p"] < 0.05
+        a = llm.set_index("biome")["q"] < 0.05
+        b = mat.set_index("biome")["q"] < 0.05
         common = a.index.intersection(b.index)
         both = int((a[common] & b[common]).sum())
         m = pd.concat([llm.set_index("biome")["delta"], mat.set_index("biome")["delta"]],
@@ -89,9 +99,9 @@ def main():
     bi, ri = agree(li, mi); bp, rp = agree(lp, mp)
     fig.suptitle("Two roads to the same biomes: remove the names (left) and hold the names "
                  "constant (right) converge\n"
-                 f"iNat: {bi} biomes significant under both, $\\Delta$ rank $\\rho={ri:.2f}$   ·   "
+                 f"iNat: {bi} biomes significant (FDR) under both, $\\Delta$ rank $\\rho={ri:.2f}$   ·   "
                  f"Places365: {bp} under both, $\\rho={rp:.2f}$   "
-                 r"($\bigstar$ survives FDR $q<.05$, $\star$ nominal $p<.05$)",
+                 r"($\bigstar$ survives FDR $q<.05$, $\star$ nominal $p<.05$ only)",
                  fontsize=11.5, y=1.0)
     fig.tight_layout(rect=[0, 0, 1, 0.96])
     fig.savefig(OUT, dpi=170, facecolor="white", bbox_inches="tight")
