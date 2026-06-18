@@ -116,6 +116,7 @@ pipeline; the cleaned text is included in the dataset.
 | `src/analysis/myth_image_umap.py` | Unsupervised biome-recovery geometry: residualised myth×image cosine (2,158 × 46,481) → PCA-50 → UMAP. Writes `umap_pca50.npy`, `umap_xy.npy`, `umap_biome_retrievability.csv`, and `figS_myth_image_umap.png`. |
 | `src/analysis/myth_image_umap2.py` | Three-way characterisation (biome / cultural macro-area / content-taxon) of the same geometry via kNN + linear probe vs a shuffled null. Writes `umap_retrievability3.csv` and `figS_myth_umap_3way.png`. |
 | `src/analysis/n_confound_figure.py` | Sampling-size robustness check for the earth map: per-biome marginal vs stratified Δ against the number of traditions per biome. Writes `paper/figures/figS_n_confound.png`. |
+| `src/analysis/biome_recovery_taxon_control.py` | Species/taxon control for the unsupervised recovery: re-runs the own-biome retrieval and per-biome decodability on both the anonymised and the class-word-collapsed (animal/plant-only) embeddings. Biome recovery is essentially unchanged under the collapse (retrieval 0.64→0.63, decodability 0.66), so it is not the taxon channel. |
 
 ## Phase 5 — Figure generation
 

@@ -733,10 +733,17 @@ Second, a
 five-fold one-versus-rest logistic probe on the PCA-reduced
 affinity vectors decodes each biome above its label-shuffled null,
 at a mean balanced accuracy of $0.66$ against $0.50$
-(Figure~\ref{fig:fig-recovery}B). The biome signal is real and
-recoverable from the model's image affinities alone, but it is a
-thin overlay on a representation that is mostly about the plants
-and animals the myths name and the scenes they describe.
+(Figure~\ref{fig:fig-recovery}B). The affinity vectors are built
+from the anonymised text, in which species names are already class
+words, and both diagnostics are essentially unchanged when the text
+is collapsed further so that every animal class reads only
+``animal'' and every plant class only ``plant'' (retrieval
+percentile $0.63$, decodability $0.66$ against a $0.50$ null), so
+the recovered biome structure is not the species or taxon channel
+but the lexical-thematic content around it. The biome signal is
+real and recoverable from the model's image affinities alone, but
+it is a thin overlay on a geometry that is otherwise organised by
+the kinds of plants, animals, and scenes the myths describe.
 
 \begin{figure}[h!t]
 \centering
@@ -1394,7 +1401,11 @@ one-versus-rest $\ell_2$-regularised logistic probe on the
 PCA-reduced vectors, compared against the same probe trained on
 shuffled labels. The unsupervised UMAP layout and its
 content, macro-area, and biome adjusted Rand indices use the same
-PCA-reduced vectors.
+PCA-reduced vectors. As a text-side control against the taxon
+channel, both diagnostics are recomputed on the class-word-collapsed
+embeddings (every animal-kingdom class word mapped to ``animal'' and
+every plant-kingdom class word to ``plant''; see \emph{Controls
+against biome cues}).
 
 % =============================================================================
 \section*{Data and code availability}
