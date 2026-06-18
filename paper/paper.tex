@@ -760,8 +760,9 @@ against the chance diagonal (grey). Own biome reaches the $64$th
 percentile on average ($p<.001$, $2{,}000$ permutations).
 \textbf{(B)}~Per-biome decodability. Balanced accuracy of a
 five-fold one-versus-rest logistic probe on the PCA-50 affinity
-vectors (bars) against a label-shuffled null (ticks); every biome
-decodes above chance, at a mean of $0.66$ versus $0.50$.
+vectors (bars) against a $200$-shuffle label-permuted null (mean
+$\pm 2$ sd); all nine biomes decode above chance at
+Benjamini--Hochberg FDR $q<.05$, at a mean of $0.66$ versus $0.50$.
 Throughout, ``own biome'' is the biome contributing the most of a
 motif's traditions, and the affinity vectors are built without
 reference to it.}
@@ -1403,8 +1404,11 @@ the reported $p$-value come from $2{,}000$ permutations that
 reassign each motif's own biome at random. Second, per-biome
 decodability is the balanced accuracy of a five-fold
 one-versus-rest $\ell_2$-regularised logistic probe on the
-PCA-reduced vectors, compared against the same probe trained on
-shuffled labels. The unsupervised UMAP layout and its
+PCA-reduced vectors, compared against a null of $200$ such probes
+trained on permuted labels (each biome with an independent stream),
+with per-biome $p$-values smoothed as
+$(1+\#\{null\geq obs\})/(1+200)$ and Benjamini--Hochberg FDR
+correction across the nine biomes. The unsupervised UMAP layout and its
 content, macro-area, and biome adjusted Rand indices use the same
 PCA-reduced vectors. As a text-side control against the taxon
 channel, both diagnostics are recomputed on the class-word-collapsed

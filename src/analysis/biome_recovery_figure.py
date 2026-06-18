@@ -26,6 +26,13 @@ OUT = ROOT / "paper/figures"
 from make_phase2_figures import short_biome, biome_color
 
 
+def bh(pvals):
+    p = np.asarray(pvals, float); n = len(p); o = np.argsort(p); q = np.empty(n); prev = 1.0
+    for r in range(n - 1, -1, -1):
+        i = o[r]; prev = min(prev, p[i] * n / (r + 1)); q[i] = prev
+    return q
+
+
 def primary_biome(motif_ids):
     trad = pd.read_parquet(MAP / "traditions.parquet")
     tm = pd.read_parquet(MAP / "tradition_motif.parquet")
@@ -105,31 +112,36 @@ def main():
         rr = np.array([1 + int((Pk[m] > Pk[m, perm[m]]).sum()) for m in range(len(perm))])
         null_pct.append((1.0 - (rr - 1) / (K - 1)).mean())
     null_pct = np.array(null_pct)
-    p_pct = (null_pct >= mean_pct).mean()
+    p_pct = (1 + int((null_pct >= mean_pct).sum())) / (1 + len(null_pct))
 
-    # ---- per-biome decodability ----
+    # ---- per-biome decodability vs a proper label-shuffled null ----
     Xp = np.load(EMB / "umap_pca50.npy")
     from sklearn.linear_model import LogisticRegression
     from sklearn.model_selection import cross_val_predict
+    N_SHUF = 200
     Xh, ph = Xp[has], prim[has]
-    # per-biome one-vs-rest probe accuracy vs shuffled
-    rng = np.random.default_rng(0)
+
+    def bal_acc(pred, y):
+        return ((pred[y == 1] == 1).mean() + (pred[y == 0] == 0).mean()) / 2
+
     perbio = []
-    for b in order:
+    for bi, b in enumerate(order):
         yb = (ph == b).astype(int)
         if yb.sum() < 15:
             continue
-        pred = cross_val_predict(LogisticRegression(max_iter=300, class_weight="balanced"),
-                                  Xh, yb, cv=5)
-        # balanced accuracy
-        tpr = (pred[yb == 1] == 1).mean(); tnr = (pred[yb == 0] == 0).mean()
-        bal = (tpr + tnr) / 2
-        yp = rng.permutation(yb)
-        pp = cross_val_predict(LogisticRegression(max_iter=300, class_weight="balanced"),
-                                Xh, yp, cv=5)
-        tpr0 = (pp[yp == 1] == 1).mean(); tnr0 = (pp[yp == 0] == 0).mean()
-        bal0 = (tpr0 + tnr0) / 2
-        perbio.append((b, bal, bal0))
+        bal = bal_acc(cross_val_predict(
+            LogisticRegression(max_iter=300, class_weight="balanced"), Xh, yb, cv=5), yb)
+        gen = np.random.default_rng(900 + bi)
+        nd = np.empty(N_SHUF)
+        for s in range(N_SHUF):
+            yp = gen.permutation(yb)
+            nd[s] = bal_acc(cross_val_predict(
+                LogisticRegression(max_iter=200, class_weight="balanced"), Xh, yp, cv=5), yp)
+        p = (1 + int((nd >= bal).sum())) / (1 + N_SHUF)
+        perbio.append([b, bal, float(nd.mean()), float(nd.std()), p])
+    qv = bh(np.array([r[4] for r in perbio]))
+    for r, q in zip(perbio, qv):
+        r.append(float(q))
 
     # ============ FIGURE ============
     fig = plt.figure(figsize=(13.5, 5.8))
@@ -155,24 +167,33 @@ def main():
     for s in axR.spines.values(): s.set_color("#ccc")
     axR.spines["top"].set_visible(False); axR.spines["right"].set_visible(False)
 
-    # ---- Panel B: per-biome decodability ----
+    # ---- Panel B: per-biome decodability vs 200-shuffle null + FDR ----
     axC.set_facecolor("white")
     perbio_sorted = sorted(perbio, key=lambda r: r[1])
     yb = np.arange(len(perbio_sorted))
-    bals = [r[1] for r in perbio_sorted]; bal0 = [r[2] for r in perbio_sorted]
+    bals = [r[1] for r in perbio_sorted]
+    nmu = np.array([r[2] for r in perbio_sorted]); nsd = np.array([r[3] for r in perbio_sorted])
+    qvs = [r[5] for r in perbio_sorted]
     cols = [biome_color(r[0]) for r in perbio_sorted]
-    axC.barh(yb, bals, color=cols, edgecolor="#222", lw=0.4, label="probe (balanced acc.)")
-    axC.scatter(bal0, yb, c="#222", marker="|", s=110, lw=1.6, zorder=3,
-                label="label-shuffled null")
+    axC.barh(yb, bals, color=cols, edgecolor="#222", lw=0.4, zorder=2,
+             label="probe (balanced acc.)")
+    # null band: mean +/- 2 sd of the 200-shuffle null per biome
+    axC.errorbar(nmu, yb, xerr=2 * nsd, fmt="none", ecolor="#333", elinewidth=1.4,
+                 capsize=3, zorder=4, label=r"shuffled null (mean $\pm2$ sd)")
+    n_sig = int(sum(q < 0.05 for q in qvs))
+    for i, q in enumerate(qvs):
+        if q < 0.05:
+            axC.text(bals[i] + 0.004, yb[i], "$\\bigstar$", va="center", ha="left",
+                     fontsize=9, color="#b8860b")
     axC.axvline(0.5, color="#999", ls="--", lw=0.8)
     axC.set_yticks(yb); axC.set_yticklabels([short_biome(r[0]) for r in perbio_sorted],
                                             fontsize=9)
     axC.set_xlabel("balanced accuracy (one-vs-rest)", fontsize=10)
-    axC.set_xlim(0.45, max(bals) * 1.06)
-    axC.set_title("B  Every biome decodes above its null\n"
-                  f"mean balanced acc. {np.mean(bals):.2f} vs {np.mean(bal0):.2f}",
-                  fontsize=11.5, fontweight="bold", loc="left")
-    axC.legend(fontsize=9, loc="lower right", frameon=True)
+    axC.set_xlim(0.45, max(bals) * 1.07)
+    axC.set_title(f"B  Every biome decodes above its null ({n_sig}/{len(yb)} at FDR $q<.05$)\n"
+                  f"mean balanced acc. {np.mean(bals):.2f} vs {nmu.mean():.2f} "
+                  "(200-shuffle)", fontsize=11, fontweight="bold", loc="left")
+    axC.legend(fontsize=8.5, loc="lower right", frameon=True)
     for s in axC.spines.values(): s.set_color("#ccc")
     axC.spines["top"].set_visible(False); axC.spines["right"].set_visible(False)
 
