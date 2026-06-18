@@ -91,7 +91,7 @@ def main(proj_mu=None):
     data = {k: pd.read_csv(LAD / f"stats_{k}_matched_null_strat.csv").set_index("biome")
             for k, _ in nulls}
     biomes = list(data["joint"].index)
-    nsurv = {b: int(sum(float(data[k].loc[b, "p"]) < 0.05 for k, _ in nulls))
+    nsurv = {b: int(sum(float(data[k].loc[b, "q"]) < 0.05 for k, _ in nulls))
              for b in biomes}
     biomes.sort(key=lambda b: (-nsurv[b], -float(data["joint"].loc[b, "delta_obs"])))
     yrows = {"species": 3, "ethnonym": 2, "place": 1, "joint": 0}
@@ -99,7 +99,7 @@ def main(proj_mu=None):
         d = data[k]
         for xi, b in enumerate(biomes):
             r = d.loc[b]
-            surv = float(r["p"]) < 0.05
+            surv = float(r["q"]) < 0.05            # FDR q<.05
             dd = max(float(r["delta_obs"]) * 1000, 0.0)
             size = 45 + 470 * min(dd, 1.1) / 1.1
             if surv:
@@ -109,7 +109,7 @@ def main(proj_mu=None):
                 axB.scatter(xi, yrows[k], s=size, facecolors="none",
                             edgecolors="#c8c8c8", linewidths=1.1, zorder=2)
     axB.axhline(0.5, color="#888", lw=0.9, ls="--", zorder=1)   # set off the joint row
-    cnt = {k: int((data[k]["p"] < 0.05).sum()) for k, _ in nulls}
+    cnt = {k: int((data[k]["q"] < 0.05).sum()) for k, _ in nulls}
     axB.set_yticks([yrows[k] for k, _ in nulls])
     axB.set_yticklabels([f"{lab}\n{cnt[k]}/14 survive" for k, lab in nulls], fontsize=9)
     axB.set_xticks(range(len(biomes)))
@@ -117,7 +117,7 @@ def main(proj_mu=None):
                         fontsize=8.5)
     axB.set_ylim(-0.7, 3.7); axB.set_xlim(-0.7, len(biomes) - 0.3)
     axB.set_title("B  Which biomes stay significant after holding identity constant\n"
-                  r"filled $=$ survives the matched-permutation null ($p<.05$); "
+                  r"filled $=$ survives the matched null at FDR $q<.05$; "
                   r"marker size $\propto$ observed $\Delta$",
                   fontsize=10.5, fontweight="bold", loc="left")
     for s in axB.spines.values(): s.set_visible(False)

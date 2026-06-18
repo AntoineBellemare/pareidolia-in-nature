@@ -72,8 +72,15 @@ def strat_per(sims, bm, taxon, min_t=MIN_TAXON_IMGS):
     return np.mean(np.vstack(cols), axis=0)         # (n_motif,)
 
 
+def bh(pvals):
+    p = np.asarray(pvals, float); n = len(p); o = np.argsort(p); q = np.empty(n); prev = 1.0
+    for r in range(n - 1, -1, -1):
+        i = o[r]; prev = min(prev, p[i] * n / (r + 1)); q[i] = prev
+    return q
+
+
 def per_biome_delta(motif_emb, in_B, biomes, img_emb, img_biome, taxon,
-                    valid_mask, perm=N_PERMS, boot=N_BOOT):
+                    valid_mask, perm=N_PERMS, boot=N_BOOT, seed0=21000):
     """Stratified Delta per biome with permutation-p and bootstrap CI on muDelta."""
     sims = img_emb @ motif_emb.T
     sims = sims - sims.mean(0, keepdims=True)
@@ -92,11 +99,12 @@ def per_biome_delta(motif_emb, in_B, biomes, img_emb, img_biome, taxon,
         d = float(per[in_b].mean() - per[out_b].mean())
         idx = np.where(valid_mask)[0]
         lab = in_B[idx, j]
+        gen = np.random.default_rng(seed0 + j)            # independent per biome
         null = np.empty(perm)
         for k in range(perm):
-            sh = rng.permutation(lab)
+            sh = gen.permutation(lab)
             null[k] = per[idx[sh]].mean() - per[idx[~sh]].mean()
-        p = float((null >= d).mean())
+        p = (1 + int((null >= d).sum())) / (1 + perm)     # +1 smoothed
         rows.append({"biome": b, "delta": d, "p": p, "n_in": int(in_b.sum())})
     df = pd.DataFrame(rows)
     if len(df):
@@ -109,7 +117,7 @@ def per_biome_delta(motif_emb, in_B, biomes, img_emb, img_biome, taxon,
 
 
 def matched_null(full_emb, block_emb, in_B, biomes, img_emb, img_biome, taxon,
-                 valid, K=60, perm=N_PERMS):
+                 valid, K=60, perm=N_PERMS, seed0=30000):
     """Stratified Delta_full vs a null that shuffles biome only within
     identity-similarity K-means blocks."""
     from sklearn.cluster import KMeans
@@ -131,16 +139,17 @@ def matched_null(full_emb, block_emb, in_B, biomes, img_emb, img_biome, taxon,
         if lab.sum() < 5 or (~lab).sum() < 5:
             continue
         d = float(per[idx[lab]].mean() - per[idx[~lab]].mean())
+        gen = np.random.default_rng(seed0 + j)            # independent per biome
         null = np.empty(perm)
         for k in range(perm):
             sh = lab.copy()
             for bl in np.unique(block):
                 m = block == bl
-                sh[m] = rng.permutation(lab[m])
+                sh[m] = gen.permutation(lab[m])
             null[k] = per[idx[sh]].mean() - per[idx[~sh]].mean()
         rows.append({"biome": b, "delta_obs": d,
                      "null_mean": float(null.mean()),
-                     "p": float((null >= d).mean())})
+                     "p": (1 + int((null >= d).sum())) / (1 + perm)})
     return pd.DataFrame(rows)
 
 
@@ -195,17 +204,17 @@ def main():
     ]
     print("\n=== STRATIFIED matched-permutation nulls (Delta_full) ===", flush=True)
     summary = []
-    for name, blk, mask in tests:
+    for ti, (name, blk, mask) in enumerate(tests):
         df = matched_null(embs["full"], blk, in_B, biomes, img_emb, img_biome,
-                          taxon, mask)
+                          taxon, mask, seed0=30000 + 1000 * ti)
+        df["q"] = bh(df["p"].values)
         df.to_csv(LAD / f"stats_{name}_matched_null_strat.csv", index=False)
-        nsig = int((df["p"] < 0.05).sum())
+        nsig = int((df["p"] < 0.05).sum()); nq = int((df["q"] < 0.05).sum())
         print(f"  {name:9s} obs muDelta={df['delta_obs'].mean()*1000:+.3f}  "
-              f"null mu={df['null_mean'].mean()*1000:+.3f}  "
-              f"survive p<.05: {nsig}/{len(df)}", flush=True)
+              f"survive p<.05: {nsig}/{len(df)}  q<.05(FDR): {nq}/{len(df)}", flush=True)
         summary.append({"null": name, "obs": df["delta_obs"].mean() * 1000,
                         "null_mean": df["null_mean"].mean() * 1000,
-                        "n_sig": nsig, "n": len(df)})
+                        "n_sig": nsig, "n_sig_fdr": nq, "n": len(df)})
     pd.DataFrame(summary).to_csv(LAD / "stats_matched_null_summary_strat.csv",
                                  index=False)
 

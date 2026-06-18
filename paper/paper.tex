@@ -505,9 +505,9 @@ per-biome significance under each matched-permutation null. For
 each identity class, and for all three jointly, biome labels are
 shuffled only among motifs matched on that class's identity-bag
 embedding ($60$ K-means blocks); a filled marker means the biome's
-observed stratified $\Delta$ exceeds that null at $p<.05$, an open
-marker that it does not, and marker size is proportional to the
-observed $\Delta$. Six biomes --- the two tropical broadleaf-forest
+observed stratified $\Delta$ exceeds that null at Benjamini--Hochberg
+FDR $q<.05$, an open marker that it does not, and marker size is
+proportional to the observed $\Delta$. Six biomes --- the two tropical broadleaf-forest
 biomes, tropical grasslands and savannas, montane grasslands,
 boreal forest, and mangroves --- survive the joint null that holds
 species, place, and ethnonym constant simultaneously, and five of
@@ -1343,11 +1343,16 @@ $1{,}000$ permutations, shuffles biome labels only within a block,
 so identity content is held approximately constant while biome
 assignment is broken; the joint null concatenates the
 L2-normalised species, place, and ethnonym embeddings before
-blocking. The species-subspace projection removes the top $k$
-principal directions of the species-bag embeddings from the
-full-myth embeddings ($k = 5, 10, 20$) and recomputes the
-stratified $\Delta$. The extraction prompts, audit, and per-biome
-tables are released with the code.
+blocking. Each biome is tested with an independent random-number
+stream, permutation $p$-values are $(1+\#\{null \geq obs\})/(1+1000)$
+smoothed, and significance is reported after Benjamini--Hochberg FDR
+correction across the 14 biomes; the survivor counts in
+Figure~\ref{fig:fig-identity}B are at $q<.05$. The species-subspace
+projection removes the top $k$ principal directions of the
+species-bag embeddings from the full-myth embeddings
+($k = 5, 10, 20$) and recomputes the stratified $\Delta$. The
+extraction prompts, audit, and per-biome tables are released with
+the code.
 
 \subsection*{Statistical tests}
 
