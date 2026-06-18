@@ -186,6 +186,36 @@ python src/analysis/biome_recovery_figure.py
 cd paper && tectonic paper.tex
 ```
 
+## No-LLM convergence track (`*_nolll`)
+
+A parallel reanalysis that **does not anonymise the text at all**. It keeps
+the raw Russian myths and holds species + place + ethnonym identity constant
+*statistically* via a discrete matched-permutation null (shuffle biome only
+within K-means blocks of the concatenated identity embeddings). This is a
+complement to the LLM-strip main result, not a replacement.
+
+```bash
+python src/analysis/matched_null_figures.py perbiome     # per-biome, both corpora
+python src/analysis/matched_null_figures.py convergence  # matched null K=30/60/120/240
+python src/analysis/matched_null_figures.py breadth      # SpecA/Semi/Universal
+python src/analysis/matched_null_figures.py pertaxon     # per-(biome,taxon)
+python src/analysis/matched_null_figures.py crosstab     # {raw,resid}x{simple,matched} 2x2
+python src/analysis/matched_null_figures.py alphasweep   # continuous-control ridge sweep
+python src/analysis/matched_null_figures.py fdr          # BH q-values
+python src/figures/fig2_nolll.py   # per-biome convergence (LLM-strip vs matched)
+python src/figures/fig3_nolll.py   # earth-map convergence
+python src/figures/fig5_nolll.py   # breadth-gradient convergence
+python src/figures/fig6_nolll.py   # per-taxon convergence
+```
+
+Key findings (documented in the script + CSVs): the matched null is the one
+valid no-LLM identity control — iNat 6/14 stable across K=30–120, reproducing
+the ladder joint null, and converging with the LLM-strip result (Δ rank
+$\rho=0.75$ iNat, $0.90$ Places365). A continuous **subspace projection** is
+*inert* here: out-of-fold ridge residualisation shows the full-myth embedding
+is almost linearly independent of the identity embedding ($R^2\approx0.4\%$),
+so there is no linear identity component to remove (`crosstab`/`alphasweep`).
+
 ## Shared utilities at the project root
 
 `src/` scripts import four shared utility modules that live at the

@@ -1,0 +1,9 @@
+corpus,emb,null,muD,survive_p,survive_q,n
+inat,raw,simple,0.41324378980789334,10,10,14
+inat,raw,matched,0.41324378980789334,6,6,14
+inat,resid,simple,2.01157131544148,10,10,14
+inat,resid,matched,2.01157131544148,6,6,14
+p365,raw,simple,0.40602282520425925,7,7,11
+p365,raw,matched,0.40602282520425925,6,2,11
+p365,resid,simple,2.086205511163412,7,7,11
+p365,resid,matched,2.086205511163412,5,3,11
