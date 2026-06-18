@@ -149,8 +149,7 @@ def main():
     axR.set_xlabel("own biome within top-$k$ most-similar image biomes", fontsize=10)
     axR.set_ylabel("fraction of myths", fontsize=10)
     axR.set_title("A  Own-biome retrieval ranks above chance\n"
-                  f"mean percentile {mean_pct:.2f} vs 0.50 chance "
-                  f"($p<0.001$); top-1 {top1:.0%} vs {top1_chance:.0%}",
+                  f"mean percentile {mean_pct:.2f} vs 0.50 by chance ($p<0.001$)",
                   fontsize=11.5, fontweight="bold", loc="left")
     axR.legend(fontsize=9, loc="lower right", frameon=True)
     for s in axR.spines.values(): s.set_color("#ccc")
