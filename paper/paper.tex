@@ -525,7 +525,13 @@ removes the taxon confound, this route trusts no cleaning and, on
 the stratified statistic, removes it too --- is that the
 alignment on the un-anonymised myths is not reducible to the
 trivial channel by which a biome's mythology names its own
-species, places, and peoples.
+species, places, and peoples. Removing the names and holding them
+constant are not merely jointly significant in the aggregate: placed
+side by side, the two strategies recover the same biome geography,
+the same breadth gradient, and the same per-taxon structure
+(Spearman $\rho = +0.75$ on the per-biome $\Delta$;
+Section~\ref{sec:convergence},
+Figures~\ref{fig:figS-converge-map}--\ref{fig:figS-converge-taxon}).
 
 \begin{figure}[h!t]
 \centering
@@ -1514,10 +1520,13 @@ across four vision--language model architectures on the same
 LLM-clean text; (iv) two analyses directly addressing whether
 biome-correlated lexical content in the cleaned text could by
 itself explain the alignment (a high-tell versus low-tell split
-and a within-Glottolog-macroarea biome-swap null); and (v) an
+and a within-Glottolog-macroarea biome-swap null); (v) an
 analysis of the raw ecological composition of motif text per
 biome, which makes explicit what the anonymisation pipeline is
-removing. Throughout, the same statistical conventions apply as
+removing; and (vi) a direct convergence check confirming that the
+two anonymisation strategies---removing the names and holding them
+constant---recover the same biome geography, breadth gradient, and
+per-taxon structure. Throughout, the same statistical conventions apply as
 in the main text: sentence-pooled SigLIP-2 on the full LLM-clean
 corpus, residualised $\Delta$ with $1{,}000$ motif-to-biome
 permutations and Benjamini--Hochberg FDR within each panel, and
@@ -1794,6 +1803,103 @@ removes. The all-motifs version of the heatmap is dominated by
 universal motifs and therefore uniformly red across biomes; we omit
 it here and release the underlying counts in the data drop.}
 \label{fig:figS-species}
+\end{figure}
+
+\subsection*{S6. Convergence of the two anonymisation strategies}\label{sec:convergence}
+
+The headline analyses control for identity naming by removing it
+from the text before embedding (the LLM-anonymisation pipeline). A
+complementary control leaves the raw myths intact and instead holds
+identity constant statistically: the matched-permutation null of the
+main text (Figure~\ref{fig:fig-identity}) shuffles the biome label
+only among motifs that share the same species, place, and ethnonym
+content---grouped into $60$ K-means blocks of the concatenated,
+L2-normalised identity embeddings---and asks whether the observed
+within-iconic-taxon stratified $\Delta$ exceeds what identity alone
+determines. The two strategies rest on assumptions that do not
+overlap: one trusts the text anonymisation, the other trusts the
+identity matching and uses no cleaning at all. Placed side by side on
+iNaturalist species photographs, they recover the same
+biome--mythology coupling along all three of the axes the main text
+reports.
+
+Geographically (Figure~\ref{fig:figS-converge-map}), the LLM-strip
+stratified $\Delta$ marks $8$ of $14$ biomes at Benjamini--Hochberg
+$q<0.05$ and the raw-myth matched null marks $6$ of $14$, with five
+shared (Tropical \& Subtropical Moist Broadleaf Forests, Boreal
+Forests/Taiga, Tropical \& Subtropical Grasslands \& Savannas,
+Montane Grasslands \& Shrublands, and Tropical \& Subtropical Dry
+Broadleaf Forests). The per-biome $\Delta$ values rank-correlate at
+Spearman $\rho = +0.75$ across all $14$ biomes. The matched null is
+the more conservative of the two---it adds Mangroves but drops
+Deserts, Tundra, and Temperate Grasslands---and its survivor set is
+stable across the blocking resolution ($K = 30/60/120/240$ all give
+$5$--$6$ of $14$). The breadth gradient
+(Figure~\ref{fig:figS-converge-breadth}) replicates as well: both
+methods recover a monotone decay from biome-specific to universal
+motifs (LLM-strip $\mu\Delta^{\text{strat}} = +0.58 \rightarrow
++0.44 \rightarrow +0.12\times 10^{-3}$; raw matched null $+0.94
+\rightarrow +0.42 \rightarrow +0.26$). And the per-taxon structure
+(Figure~\ref{fig:figS-converge-taxon}) lines up cell for cell: the
+per-(biome $\times$ taxon) $\Delta$ matrices correlate at
+$r = +0.64$, with the same vertebrate-and-plant taxa carrying the
+signal under both controls. We read this convergence as evidence
+that the alignment is a property of the motifs' lexical--thematic
+content rather than an artefact of any single anonymisation choice:
+it is equally present whether the identity names are physically
+removed from the text or held constant under permutation. The
+convergence does not extend uniformly to the Places365 scene corpus,
+where the matched null is markedly more conservative (two of eleven
+shared biomes at FDR versus six for the LLM-strip marginal $\Delta$);
+we therefore read the matched null as a corroborating control that is
+strongest on the iNaturalist species channel.
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{fig3_nolll.png}
+\caption{\textbf{Same biome geography from two independent identity
+controls.} Per-biome alignment on iNaturalist, mapped onto the WWF
+ecoregions. \emph{Panel A} removes the names (LLM-strip
+within-iconic-taxon stratified $\Delta$, motif-to-biome permutation
+null); \emph{Panel B} holds the names constant (raw myths, discrete
+matched-permutation null). Each panel paints only the biomes that
+reach Benjamini--Hochberg $q<0.05$ with positive $\Delta$ ($8$ of
+$14$ and $6$ of $14$ respectively, five shared); one further
+matched-null biome (Mangroves) is significant but has fewer than ten
+traditions and is left grey. Warmer is stronger \emph{within} each
+panel; the colour scales are per-panel and not comparable across
+panels. Black dots mark tradition centroids.}
+\label{fig:figS-converge-map}
+\end{figure}
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=0.78\textwidth]{fig5_nolll.png}
+\caption{\textbf{Both strategies recover the breadth gradient.}
+Within-iconic-taxon stratified $\mu\Delta$ on iNaturalist by motif
+breadth (biome-specific Spec~A $\rightarrow$ semi-universal
+$\rightarrow$ universal), for the LLM-strip corpus (green) and the
+raw myths under the matched null (black, with $95\%$ bootstrap CIs).
+Both decay monotonically from specific to universal motifs. The raw
+track sits higher in magnitude because identity content is still
+present in the un-anonymised embedding, but the \emph{shape} of the
+gradient is shared.}
+\label{fig:figS-converge-breadth}
+\end{figure}
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{fig6_nolll.png}
+\caption{\textbf{Per-taxon alignment converges across strategies.}
+Per-(biome $\times$ iconic-taxon) $\Delta$ on iNaturalist.
+\emph{Panel A}: remove the names (LLM-strip, motif-to-biome
+permutation null; $49$ of $113$ cells nominally significant).
+\emph{Panel B}: hold the names constant (raw myths, matched null;
+$28$ of $101$ cells nominally significant, $16$ surviving
+Benjamini--Hochberg FDR). Stars mark significant cells. The two
+matrices correlate at $r=+0.64$, and the same vertebrate-and-plant
+taxa carry the signal under both controls.}
+\label{fig:figS-converge-taxon}
 \end{figure}
 
 \end{document}

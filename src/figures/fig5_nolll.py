@@ -34,11 +34,15 @@ def main():
     ax.errorbar(x, nm["mu"].values, yerr=[lo.values, hi.values], color="#222",
                 marker="s", ms=8, lw=2.6, capsize=4,
                 label="hold the names constant (raw myths)", zorder=3)
+    # green (LLM-strip) labels sit below their marker, black (matched) above,
+    # with a fixed pixel offset so they never collide where the lines cross
     for xi in x:
-        ax.text(xi, llm_mu.values[xi] + 0.04, f"{llm_mu.values[xi]:.2f}",
-                ha="center", va="bottom", fontsize=8.5, color="#3a7d44", fontweight="bold")
-        ax.text(xi, nm["mu"].values[xi] - 0.06, f"{nm['mu'].values[xi]:.2f}",
-                ha="center", va="top", fontsize=8.5, color="#222", fontweight="bold")
+        ax.annotate(f"{llm_mu.values[xi]:.2f}", (xi, llm_mu.values[xi]),
+                    textcoords="offset points", xytext=(0, -12), ha="center",
+                    va="top", fontsize=8.5, color="#3a7d44", fontweight="bold")
+        ax.annotate(f"{nm['mu'].values[xi]:.2f}", (xi, nm["mu"].values[xi]),
+                    textcoords="offset points", xytext=(0, 11), ha="center",
+                    va="bottom", fontsize=8.5, color="#222", fontweight="bold")
     ax.axhline(0, color="#888", lw=0.7, ls="--")
     ax.set_xticks(x); ax.set_xticklabels([LABEL[b] for b in ORDER], fontsize=10)
     ax.set_xlabel("motif breadth  (specific $\\rightarrow$ universal)", fontsize=10)
