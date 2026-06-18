@@ -1,0 +1,732 @@
+[
+ {
+  "motif_id": "k133",
+  "species": [
+   {"ru": "ослица", "en": "she-donkey"},
+   {"ru": "лиса", "en": "fox"},
+   {"ru": "медведь", "en": "bear"},
+   {"ru": "лошадь", "en": "horse"},
+   {"ru": "волк", "en": "wolf"},
+   {"ru": "петух", "en": "rooster"},
+   {"ru": "куры", "en": "hens"},
+   {"ru": "змей", "en": "serpent/dragon"},
+   {"ru": "жеребец", "en": "stallion"},
+   {"ru": "морская свинья", "en": "porpoise"},
+   {"ru": "конь", "en": "horse"}
+  ],
+  "places": [
+   {"ru": "Нижегородская область", "en": "Nizhny Novgorod region"},
+   {"ru": "Ветлужский край", "en": "Vetluga region"},
+   {"ru": "Россия", "en": "Russia"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k147a",
+  "species": [
+   {"ru": "змей", "en": "serpent/dragon"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "белый конь", "en": "white horse"},
+   {"ru": "вишня", "en": "cherry tree"},
+   {"ru": "птичка", "en": "little bird"},
+   {"ru": "синяя птичка", "en": "blue bird"},
+   {"ru": "дракон", "en": "dragon"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "яблоня", "en": "apple tree"},
+   {"ru": "утка", "en": "duck"},
+   {"ru": "роза", "en": "rose"}
+  ],
+  "places": [
+   {"ru": "Россия", "en": "Russia"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k25a3",
+  "species": [
+   {"ru": "гусыня", "en": "goose (female)"},
+   {"ru": "лосось", "en": "salmon"},
+   {"ru": "форель", "en": "trout"},
+   {"ru": "тюлень", "en": "seal"},
+   {"ru": "ива/ивняк", "en": "willow"},
+   {"ru": "кит", "en": "whale"},
+   {"ru": "каяк", "en": "kayak"}
+  ],
+  "places": [
+   {"ru": "залив Фокс", "en": "Foxe Basin"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k27v2",
+  "species": [
+   {"ru": "медведь белого цвета", "en": "white bear"},
+   {"ru": "муха", "en": "fly"},
+   {"ru": "лягушка", "en": "frog"},
+   {"ru": "форель", "en": "trout"},
+   {"ru": "лосось", "en": "salmon"},
+   {"ru": "тюлень", "en": "seal"},
+   {"ru": "утка", "en": "duck"},
+   {"ru": "голубая сойка", "en": "blue jay"},
+   {"ru": "золотой орёл", "en": "golden eagle"},
+   {"ru": "моллюск", "en": "mollusc"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k1d",
+  "species": [
+   {"ru": "тюлень", "en": "seal"},
+   {"ru": "ива", "en": "willow"},
+   {"ru": "кит", "en": "whale"},
+   {"ru": "касатка", "en": "killer whale"},
+   {"ru": "кедр", "en": "cedar"},
+   {"ru": "чайка", "en": "gull"},
+   {"ru": "морской лев", "en": "sea lion"},
+   {"ru": "пихта", "en": "fir"},
+   {"ru": "красный кедр", "en": "red cedar"},
+   {"ru": "тсуга", "en": "hemlock"},
+   {"ru": "жёлтый кедр", "en": "yellow cedar"},
+   {"ru": "гагара", "en": "loon"},
+   {"ru": "шиповник", "en": "wild rose"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "тагиш", "en": "Tagish"},
+   {"ru": "тлинкитка", "en": "Tlingit (woman)"}
+  ]
+ },
+ {
+  "motif_id": "k32c",
+  "species": [
+   {"ru": "сова", "en": "owl"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k140",
+  "species": [
+   {"ru": "кузнечик", "en": "grasshopper"},
+   {"ru": "ящерица", "en": "lizard"},
+   {"ru": "гриф", "en": "vulture"},
+   {"ru": "перец", "en": "pepper (plant)"},
+   {"ru": "ястреб", "en": "hawk/kite"},
+   {"ru": "саламандра", "en": "salamander"},
+   {"ru": "коршун", "en": "kite (bird of prey)"},
+   {"ru": "бык", "en": "bull"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "олень", "en": "deer"},
+   {"ru": "рис", "en": "rice"},
+   {"ru": "корова", "en": "cow"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k15",
+  "species": [
+   {"ru": "ласточка", "en": "swallow"},
+   {"ru": "дракон", "en": "dragon"},
+   {"ru": "сосна", "en": "pine"},
+   {"ru": "собака", "en": "dog"}
+  ],
+  "places": [
+   {"ru": "Ирландия", "en": "Ireland"}
+  ],
+  "ethnonyms": [
+   {"ru": "норвежские", "en": "Norwegian"}
+  ]
+ },
+ {
+  "motif_id": "k27z2",
+  "species": [
+   {"ru": "лебедь", "en": "swan"},
+   {"ru": "жемчуг", "en": "pearl"},
+   {"ru": "корова", "en": "cow"},
+   {"ru": "олень", "en": "deer"},
+   {"ru": "медведь", "en": "bear"},
+   {"ru": "тигр", "en": "tiger"},
+   {"ru": "сандаловое дерево", "en": "sandalwood"},
+   {"ru": "птица Бангома и Бангами", "en": "Bangoma and Bangami birds"}
+  ],
+  "places": [
+   {"ru": "Мультан", "en": "Multan"}
+  ],
+  "ethnonyms": [
+   {"ru": "сераики", "en": "Saraiki"}
+  ]
+ },
+ {
+  "motif_id": "k27h",
+  "species": [
+   {"ru": "стервятник", "en": "vulture"},
+   {"ru": "дятел", "en": "woodpecker"},
+   {"ru": "ящерица", "en": "lizard"},
+   {"ru": "муравей", "en": "ant"},
+   {"ru": "табак", "en": "tobacco"},
+   {"ru": "голубка", "en": "dove"},
+   {"ru": "пиранья", "en": "piranha"},
+   {"ru": "орёл", "en": "eagle"},
+   {"ru": "орёл-гарпия", "en": "harpy eagle"},
+   {"ru": "олень", "en": "deer"},
+   {"ru": "лиана", "en": "liana"},
+   {"ru": "червь", "en": "worm"},
+   {"ru": "caballito del diablo", "en": "damselfly (dragonfly)"}
+  ],
+  "places": [
+   {"ru": "Ориноко", "en": "Orinoco"},
+   {"ru": "Гайана", "en": "Guyana"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k25a2",
+  "species": [
+   {"ru": "сом", "en": "catfish"},
+   {"ru": "лиана", "en": "liana"},
+   {"ru": "змеи", "en": "snakes"},
+   {"ru": "пчёлы", "en": "bees"},
+   {"ru": "уточка", "en": "duck"},
+   {"ru": "лебедь", "en": "swan"},
+   {"ru": "гуси", "en": "geese"}
+  ],
+  "places": [
+   {"ru": "Трипура", "en": "Tripura"},
+   {"ru": "Архангельская", "en": "Arkhangelsk"},
+   {"ru": "Пинежский", "en": "Pinega district"},
+   {"ru": "Псковская", "en": "Pskov"},
+   {"ru": "Тверская", "en": "Tver"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k25c",
+  "species": [
+   {"ru": "тюлень", "en": "seal"},
+   {"ru": "пихта", "en": "fir"},
+   {"ru": "медведь", "en": "bear"},
+   {"ru": "форель", "en": "trout"},
+   {"ru": "палтус", "en": "halibut"},
+   {"ru": "крапивник", "en": "wren"},
+   {"ru": "голубая сойка", "en": "blue jay"},
+   {"ru": "дятел", "en": "woodpecker"},
+   {"ru": "моллюск", "en": "mollusc (clam)"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k27l1",
+  "species": [
+   {"ru": "звезда", "en": "star"},
+   {"ru": "липа", "en": "linden"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "нарты", "en": "Narts"},
+   {"ru": "абхазы", "en": "Abkhaz"}
+  ]
+ },
+ {
+  "motif_id": "k27z2e",
+  "species": [
+   {"ru": "верблюд", "en": "camel"},
+   {"ru": "кролик", "en": "rabbit"},
+   {"ru": "ослик", "en": "donkey"},
+   {"ru": "цветы", "en": "flowers"}
+  ],
+  "places": [
+   {"ru": "Мальорка", "en": "Mallorca"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k37c",
+  "species": [
+   {"ru": "корова", "en": "cow"},
+   {"ru": "обезьяна", "en": "monkey"},
+   {"ru": "бык", "en": "bull"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "апельсиновое дерево", "en": "orange tree"},
+   {"ru": "банан", "en": "banana"},
+   {"ru": "зимородок", "en": "kingfisher"},
+   {"ru": "кабан", "en": "boar"},
+   {"ru": "муха", "en": "fly"},
+   {"ru": "чирок", "en": "teal"},
+   {"ru": "попугай", "en": "parrot"},
+   {"ru": "воробей", "en": "sparrow"},
+   {"ru": "крылатый конь", "en": "winged horse"},
+   {"ru": "оса", "en": "wasp"},
+   {"ru": "жаворонок", "en": "lark"},
+   {"ru": "свинья", "en": "pig"},
+   {"ru": "чомга", "en": "great crested grebe"},
+   {"ru": "рис", "en": "rice"},
+   {"ru": "крокодил", "en": "crocodile"}
+  ],
+  "places": [
+   {"ru": "Мадагаскар", "en": "Madagascar"}
+  ],
+  "ethnonyms": [
+   {"ru": "сакалава", "en": "Sakalava"}
+  ]
+ },
+ {
+  "motif_id": "k27q1",
+  "species": [
+   {"ru": "щенки", "en": "puppies"},
+   {"ru": "львица", "en": "lioness"},
+   {"ru": "львёнок", "en": "lion cub"},
+   {"ru": "баран", "en": "ram"},
+   {"ru": "верблюд", "en": "camel"},
+   {"ru": "поющая золотая птица", "en": "golden singing bird"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "овца", "en": "sheep"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k30a",
+  "species": [
+   {"ru": "ягуар", "en": "jaguar"},
+   {"ru": "Pouteria ucuqui", "en": "ucuqui (Pouteria) tree"},
+   {"ru": "анаконда", "en": "anaconda"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "обезьяна", "en": "monkey"},
+   {"ru": "папоротник", "en": "fern"},
+   {"ru": "табак", "en": "tobacco"},
+   {"ru": "стервятник", "en": "vulture"},
+   {"ru": "древесная лягушка", "en": "tree frog"},
+   {"ru": "аист", "en": "stork"},
+   {"ru": "пиранья", "en": "piranha"},
+   {"ru": "ямс", "en": "yam"},
+   {"ru": "кока", "en": "coca"},
+   {"ru": "персиковая пальма", "en": "peach palm"},
+   {"ru": "орёл-гарпия", "en": "harpy eagle"},
+   {"ru": "маниок", "en": "manioc"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "маку", "en": "Maku"}
+  ]
+ },
+ {
+  "motif_id": "k27z2a",
+  "species": [
+   {"ru": "собачка", "en": "little dog"},
+   {"ru": "птица", "en": "bird"},
+   {"ru": "жемчуг", "en": "pearl"},
+   {"ru": "олень", "en": "deer"},
+   {"ru": "корова", "en": "cow"},
+   {"ru": "лебедь", "en": "swan"}
+  ],
+  "places": [
+   {"ru": "Мультан", "en": "Multan"}
+  ],
+  "ethnonyms": [
+   {"ru": "сераики", "en": "Saraiki"}
+  ]
+ },
+ {
+  "motif_id": "k35a2",
+  "species": [
+   {"ru": "корова", "en": "cow"},
+   {"ru": "слон", "en": "elephant"},
+   {"ru": "поющие деревья", "en": "singing trees"},
+   {"ru": "белый олень", "en": "white deer"},
+   {"ru": "лягушка", "en": "frog"},
+   {"ru": "змея", "en": "snake"},
+   {"ru": "овца", "en": "sheep"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "кобыла", "en": "mare"}
+  ],
+  "places": [
+   {"ru": "гора Цейлахан", "en": "Mount Tseylakhan"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k47d",
+  "species": [
+   {"ru": "пёс", "en": "dog"}
+  ],
+  "places": [
+   {"ru": "Хунань", "en": "Hunan"},
+   {"ru": "Чжэцзян", "en": "Zhejiang"},
+   {"ru": "Фуцзянь", "en": "Fujian"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k27v3",
+  "species": [
+   {"ru": "лебедь", "en": "swan"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "сайгак", "en": "saiga antelope"},
+   {"ru": "заяц", "en": "hare"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "армяне", "en": "Armenian"}
+  ]
+ },
+ {
+  "motif_id": "k32f",
+  "species": [
+   {"ru": "осьминог", "en": "octopus"},
+   {"ru": "ястреб", "en": "hawk"},
+   {"ru": "скопа", "en": "osprey"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "дюгонь", "en": "dugong"},
+   {"ru": "свинья", "en": "pig"},
+   {"ru": "собака", "en": "dog"},
+   {"ru": "манго", "en": "mango"},
+   {"ru": "таро", "en": "taro"},
+   {"ru": "ямс", "en": "yam"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k48a",
+  "species": [
+   {"ru": "журавль", "en": "crane"},
+   {"ru": "пума", "en": "puma"},
+   {"ru": "колибри", "en": "hummingbird"},
+   {"ru": "рысь", "en": "lynx"},
+   {"ru": "медведь", "en": "bear"},
+   {"ru": "индюк", "en": "turkey"},
+   {"ru": "жук", "en": "beetle"},
+   {"ru": "ястреб", "en": "hawk"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "скиди", "en": "Skidi"}
+  ]
+ },
+ {
+  "motif_id": "k47c",
+  "species": [
+   {"ru": "собака", "en": "dog"},
+   {"ru": "щенок", "en": "puppy"},
+   {"ru": "волк", "en": "wolf"},
+   {"ru": "ягуар", "en": "jaguar"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "мундуруку", "en": "Munduruku"}
+  ]
+ },
+ {
+  "motif_id": "k56a1",
+  "species": [],
+  "places": [
+   {"ru": "Казым", "en": "Kazym (river)"}
+  ],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k27v",
+  "species": [
+   {"ru": "рысь", "en": "lynx"},
+   {"ru": "сорока", "en": "magpie"},
+   {"ru": "сова", "en": "owl"},
+   {"ru": "гризли", "en": "grizzly bear"},
+   {"ru": "форель", "en": "trout"},
+   {"ru": "собачка", "en": "little dog"},
+   {"ru": "олень", "en": "deer"},
+   {"ru": "паук", "en": "spider"},
+   {"ru": "типтиптиэйя (птичка)", "en": "Tiptiptieya (little bird)"},
+   {"ru": "пёс", "en": "dog"},
+   {"ru": "орёл", "en": "eagle"},
+   {"ru": "ворон", "en": "raven"},
+   {"ru": "бизон", "en": "bison"},
+   {"ru": "бобр", "en": "beaver"},
+   {"ru": "змейка", "en": "small snake"},
+   {"ru": "койот", "en": "coyote"},
+   {"ru": "куропатка", "en": "partridge/ptarmigan"},
+   {"ru": "кролик", "en": "rabbit"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k27u2",
+  "species": [
+   {"ru": "телята", "en": "calves"},
+   {"ru": "корова", "en": "cow"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "лошадь", "en": "horse"},
+   {"ru": "перекати-поле", "en": "tumbleweed"},
+   {"ru": "кобыла", "en": "mare"},
+   {"ru": "жеребёнок", "en": "foal"},
+   {"ru": "коза", "en": "goat"},
+   {"ru": "баран", "en": "ram"},
+   {"ru": "овца", "en": "sheep"},
+   {"ru": "перепёлка", "en": "quail"},
+   {"ru": "ягнёнок", "en": "lamb"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k38f3",
+  "species": [
+   {"ru": "дракон", "en": "dragon"},
+   {"ru": "змей", "en": "serpent"},
+   {"ru": "синица", "en": "titmouse"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "черепаха", "en": "turtle"}
+  ],
+  "places": [
+   {"ru": "Гнитахейд", "en": "Gnitaheid"},
+   {"ru": "Норвегия", "en": "Norway"},
+   {"ru": "Исландия", "en": "Iceland"}
+  ],
+  "ethnonyms": [
+   {"ru": "исландец", "en": "Icelander"}
+  ]
+ },
+ {
+  "motif_id": "k27y1",
+  "species": [
+   {"ru": "рысь", "en": "lynx"},
+   {"ru": "медведь", "en": "bear"},
+   {"ru": "орёл", "en": "eagle"},
+   {"ru": "орлёнок", "en": "eaglet"},
+   {"ru": "куропатка", "en": "ptarmigan"},
+   {"ru": "кролик", "en": "rabbit"},
+   {"ru": "мышь", "en": "mouse"},
+   {"ru": "олень (moose)", "en": "moose"},
+   {"ru": "пихта", "en": "fir"},
+   {"ru": "лягушка", "en": "frog"},
+   {"ru": "лосось", "en": "salmon"},
+   {"ru": "бекас/кроншнеп (sandpiper)", "en": "sandpiper/curlew"},
+   {"ru": "берёза (береста)", "en": "birch (bark)"},
+   {"ru": "бобр", "en": "beaver"},
+   {"ru": "медведица", "en": "she-bear"},
+   {"ru": "рогатый змей", "en": "horned serpent"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k52b",
+  "species": [
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "Dog Fish", "en": "dogfish"},
+   {"ru": "гусыня", "en": "goose (female)"},
+   {"ru": "мышь", "en": "mouse"},
+   {"ru": "лосось", "en": "salmon"},
+   {"ru": "лосось-кижуч (Oncorhynchus kisutch)", "en": "coho salmon"},
+   {"ru": "ворон", "en": "raven"},
+   {"ru": "чайка", "en": "gull"},
+   {"ru": "калан", "en": "sea otter"},
+   {"ru": "кит", "en": "whale"},
+   {"ru": "касатка", "en": "killer whale"},
+   {"ru": "утка", "en": "duck"},
+   {"ru": "норка", "en": "mink"},
+   {"ru": "дюгонь", "en": "dugong"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k38b2",
+  "species": [
+   {"ru": "сокол", "en": "falcon"},
+   {"ru": "червь", "en": "worm"},
+   {"ru": "дракон", "en": "dragon"},
+   {"ru": "яблоня", "en": "apple tree"},
+   {"ru": "беркут", "en": "golden eagle"},
+   {"ru": "айдахар (дракон)", "en": "aydahar (dragon)"},
+   {"ru": "змей", "en": "serpent"},
+   {"ru": "громовая птица", "en": "thunderbird"},
+   {"ru": "черепаха", "en": "turtle"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k27zz2",
+  "species": [
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "крылатый конь", "en": "winged horse"},
+   {"ru": "буйвол", "en": "buffalo"},
+   {"ru": "рис", "en": "rice"},
+   {"ru": "цветы", "en": "flowers"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k52c1",
+  "species": [
+   {"ru": "щука", "en": "pike"},
+   {"ru": "утка", "en": "duck"},
+   {"ru": "омуль", "en": "omul"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "баран/баранина", "en": "mutton/sheep"}
+  ],
+  "places": [
+   {"ru": "Ольхонский край", "en": "Olkhon region"},
+   {"ru": "Забайкалье", "en": "Transbaikalia"},
+   {"ru": "Куда", "en": "Kuda"},
+   {"ru": "Иркутская губерния", "en": "Irkutsk governorate"},
+   {"ru": "Иркутск", "en": "Irkutsk"},
+   {"ru": "Хунта", "en": "Khunta"},
+   {"ru": "Топхой/Топхор", "en": "Topkhoy/Topkhor"},
+   {"ru": "верхоленская гора", "en": "Verkholensk mountain"},
+   {"ru": "Агинское", "en": "Aginskoye"},
+   {"ru": "Агинский Бурятский округ", "en": "Aginsky Buryat District"},
+   {"ru": "Забайкальский край", "en": "Zabaykalsky Krai"},
+   {"ru": "Байкал", "en": "Lake Baikal"}
+  ],
+  "ethnonyms": [
+   {"ru": "киргизы", "en": "Kyrgyz"},
+   {"ru": "якуты", "en": "Yakut"},
+   {"ru": "казахи", "en": "Kazakh"},
+   {"ru": "буряты", "en": "Buryat"},
+   {"ru": "русские", "en": "Russian"}
+  ]
+ },
+ {
+  "motif_id": "k51a",
+  "species": [
+   {"ru": "корова", "en": "cow"},
+   {"ru": "пчела", "en": "bee"},
+   {"ru": "птичка", "en": "little bird"},
+   {"ru": "крапива", "en": "nettle"},
+   {"ru": "рис", "en": "rice"},
+   {"ru": "рысь", "en": "lynx"},
+   {"ru": "бобр", "en": "beaver"},
+   {"ru": "росомаха", "en": "wolverine"},
+   {"ru": "волчица", "en": "she-wolf"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "эскимосы", "en": "Eskimo"}
+  ]
+ },
+ {
+  "motif_id": "k38b3",
+  "species": [
+   {"ru": "соколица", "en": "falcon (female)"},
+   {"ru": "голубка", "en": "dove"},
+   {"ru": "курица", "en": "hen"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "овца", "en": "sheep"},
+   {"ru": "вол", "en": "ox"},
+   {"ru": "собака", "en": "dog"},
+   {"ru": "бык", "en": "bull"},
+   {"ru": "яблоня", "en": "apple tree"},
+   {"ru": "орёл", "en": "eagle"},
+   {"ru": "осёл", "en": "donkey"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k37d",
+  "species": [
+   {"ru": "летучая лисица", "en": "flying fox"},
+   {"ru": "ямс", "en": "yam"},
+   {"ru": "птичка", "en": "little bird"},
+   {"ru": "баньян", "en": "banyan"},
+   {"ru": "крылан (летучая мышь)", "en": "fruit bat"},
+   {"ru": "голотурия", "en": "sea cucumber"},
+   {"ru": "банан", "en": "banana"},
+   {"ru": "свинья", "en": "pig"},
+   {"ru": "собака", "en": "dog"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k38b1",
+  "species": [
+   {"ru": "бобр/бобрёнок", "en": "beaver"},
+   {"ru": "бык", "en": "ox"},
+   {"ru": "марал", "en": "maral deer"},
+   {"ru": "кобылица", "en": "mare"},
+   {"ru": "птица Кан-Кереде", "en": "Kan-Kerede bird"},
+   {"ru": "берёза", "en": "birch"},
+   {"ru": "вороной жеребец", "en": "black stallion"},
+   {"ru": "тополь", "en": "poplar"},
+   {"ru": "семиглавая змея", "en": "seven-headed serpent"},
+   {"ru": "конь", "en": "horse"},
+   {"ru": "гусь", "en": "goose"},
+   {"ru": "верблюд", "en": "camel"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k7",
+  "species": [
+   {"ru": "орёл-гарпия", "en": "harpy eagle"},
+   {"ru": "лиана", "en": "liana"},
+   {"ru": "броненосец", "en": "armadillo"},
+   {"ru": "тапир", "en": "tapir"},
+   {"ru": "птица caracara", "en": "caracara"},
+   {"ru": "попугай", "en": "parrot"},
+   {"ru": "ягуар", "en": "jaguar"},
+   {"ru": "мако (ара)", "en": "macaw"},
+   {"ru": "нанду", "en": "rhea"},
+   {"ru": "олень", "en": "deer"},
+   {"ru": "лягушка", "en": "frog"},
+   {"ru": "тукан", "en": "toucan"},
+   {"ru": "кирикири", "en": "kirikiri (parakeet)"},
+   {"ru": "курассу (краке)", "en": "curassow"},
+   {"ru": "маниок", "en": "manioc"}
+  ],
+  "places": [],
+  "ethnonyms": [
+   {"ru": "бейсо-де-пау", "en": "Beiço-de-Pau"}
+  ]
+ },
+ {
+  "motif_id": "k43c",
+  "species": [
+   {"ru": "рябчик (Spruce Partridge)", "en": "spruce grouse"},
+   {"ru": "куропатка (Birch Partridge)", "en": "ruffed grouse"},
+   {"ru": "куница", "en": "marten"},
+   {"ru": "медведица", "en": "she-bear"},
+   {"ru": "собака", "en": "dog"},
+   {"ru": "ворона", "en": "crow"},
+   {"ru": "лось", "en": "moose"},
+   {"ru": "белый медведь (Большой Белый Медведь)", "en": "big white bear"},
+   {"ru": "рогатый змей", "en": "horned serpent"},
+   {"ru": "касатка", "en": "killer whale"},
+   {"ru": "бобр", "en": "beaver"},
+   {"ru": "бизон", "en": "bison"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ },
+ {
+  "motif_id": "k55",
+  "species": [
+   {"ru": "манго", "en": "mango"},
+   {"ru": "арековая пальма", "en": "areca palm"},
+   {"ru": "просо", "en": "millet"},
+   {"ru": "свинья", "en": "pig"},
+   {"ru": "ягуар", "en": "jaguar"},
+   {"ru": "жук", "en": "beetle"},
+   {"ru": "ящерица", "en": "lizard"},
+   {"ru": "анаконда", "en": "anaconda"},
+   {"ru": "тапир", "en": "tapir"},
+   {"ru": "водяная змея", "en": "water snake"},
+   {"ru": "выдра", "en": "otter"},
+   {"ru": "птица Sun grebe (Heliornis fulica)", "en": "sungrebe"},
+   {"ru": "обезьяна", "en": "monkey"},
+   {"ru": "белка", "en": "squirrel"},
+   {"ru": "рыба", "en": "fish"},
+   {"ru": "змея", "en": "snake"}
+  ],
+  "places": [],
+  "ethnonyms": []
+ }
+]

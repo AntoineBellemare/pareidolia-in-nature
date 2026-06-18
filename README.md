@@ -54,6 +54,7 @@ autocorrelation contribute to the alignment but do not exhaust it.
 | **Fig 2** — Two-corpus replication of biome × mythology alignment on iNaturalist (stratified) and Places365 (marginal). | ![fig2](paper/figures/fig2_biome_bars.png) |
 | **Fig 5** — Per-biome stratified Δ projected onto a world map, full LLM-clean corpus (A) and Spec A subset (B). | ![fig5](paper/figures/fig5_earth_map.png) |
 | **Fig 11** — Breadth gradient: stratified μΔ across biomes falls from +0.58 ×10⁻³ in biome-specific motifs to +0.12 ×10⁻³ in universals. | ![fig11](paper/figures/fig11_universals_analysis.png) |
+| **Fig (biome recovery)** — Biome structure recovered from the unsupervised myth×image affinity geometry without using biome labels: own-biome retrieval curve, taxon-stratified biome×biome matrix, per-biome decodability. | ![biome-recovery](paper/figures/fig_biome_recovery.png) |
 
 ---
 
@@ -81,6 +82,15 @@ python src/analysis/crossmodel.py
 python src/figures/make_v3_figures.py
 python src/figures/taxon_combined.py
 python src/figures/taxon_facets.py
+
+# Identity-naming decomposition (§S6) + unsupervised biome recovery (main text)
+python src/analysis/ladder_embed.py        # needs _entity_extraction/ + GPU
+python src/analysis/ladder_stats.py
+python src/analysis/ladder_stats_extra.py
+python src/analysis/ladder_figure.py
+python src/analysis/myth_image_umap.py
+python src/analysis/myth_image_umap2.py
+python src/analysis/biome_recovery_figure.py
 
 # Phase 6 — compile the PDF
 cd paper && tectonic paper.tex

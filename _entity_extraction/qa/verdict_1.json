@@ -1,0 +1,241 @@
+{
+  "per_motif": [
+    {
+      "motif_id": "m167a",
+      "n_text_species": 13,
+      "n_extracted": 13,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m100",
+      "n_text_species": 13,
+      "n_extracted": 13,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "b38c",
+      "n_text_species": 8,
+      "n_extracted": 8,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "g25",
+      "n_text_species": 5,
+      "n_extracted": 5,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "k16a",
+      "n_text_species": 16,
+      "n_extracted": 16,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "l33d",
+      "n_text_species": 9,
+      "n_extracted": 9,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "j51a",
+      "n_text_species": 5,
+      "n_extracted": 7,
+      "missed": [],
+      "false_positive": [
+        "кошка (cat) — text has only котята/kittens, no adult cat",
+        "рыба (fish) — generic class word, no species"
+      ]
+    },
+    {
+      "motif_id": "i74a",
+      "n_text_species": 2,
+      "n_extracted": 2,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "h23",
+      "n_text_species": 12,
+      "n_extracted": 12,
+      "missed": [
+        "летучая мышь (bat)"
+      ],
+      "false_positive": [
+        "курица (chicken) — not in text (only \"курдючный\" fat)"
+      ]
+    },
+    {
+      "motif_id": "f9f1",
+      "n_text_species": 2,
+      "n_extracted": 3,
+      "missed": [],
+      "false_positive": [
+        "норка (mink) — \"норки\" here means burrow (нора), not the animal"
+      ]
+    },
+    {
+      "motif_id": "f26",
+      "n_text_species": 5,
+      "n_extracted": 7,
+      "missed": [],
+      "false_positive": [
+        "табак (tobacco) — not in text (text has \"сигары\"/cigars)",
+        "кока (coca) — not in text"
+      ]
+    },
+    {
+      "motif_id": "k8b",
+      "n_text_species": 9,
+      "n_extracted": 9,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m103",
+      "n_text_species": 10,
+      "n_extracted": 10,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "c30a",
+      "n_text_species": 2,
+      "n_extracted": 2,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "k13d",
+      "n_text_species": 5,
+      "n_extracted": 5,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "b79",
+      "n_text_species": 10,
+      "n_extracted": 10,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "l110c",
+      "n_text_species": 6,
+      "n_extracted": 6,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m19",
+      "n_text_species": 8,
+      "n_extracted": 8,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "i82f",
+      "n_text_species": 1,
+      "n_extracted": 1,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m6",
+      "n_text_species": 8,
+      "n_extracted": 7,
+      "missed": [
+        "маниок (manioc/cassava)"
+      ],
+      "false_positive": []
+    },
+    {
+      "motif_id": "l29",
+      "n_text_species": 15,
+      "n_extracted": 13,
+      "missed": [
+        "енот (raccoon)",
+        "бамбук (bamboo)"
+      ],
+      "false_positive": []
+    },
+    {
+      "motif_id": "j12a",
+      "n_text_species": 10,
+      "n_extracted": 10,
+      "missed": [
+        "птица Ikiánchim (Ikianchim bird)"
+      ],
+      "false_positive": [
+        "рыба (fish) — generic, \"наловили рыбы\", no species"
+      ]
+    },
+    {
+      "motif_id": "m152c",
+      "n_text_species": 11,
+      "n_extracted": 11,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "g8e",
+      "n_text_species": 5,
+      "n_extracted": 5,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "d2",
+      "n_text_species": 6,
+      "n_extracted": 6,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "f87",
+      "n_text_species": 11,
+      "n_extracted": 11,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "k145",
+      "n_text_species": 15,
+      "n_extracted": 15,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m188",
+      "n_text_species": 16,
+      "n_extracted": 16,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "k26",
+      "n_text_species": 6,
+      "n_extracted": 6,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "f98",
+      "n_text_species": 5,
+      "n_extracted": 5,
+      "missed": [],
+      "false_positive": []
+    }
+  ],
+  "summary": {
+    "motifs": 30,
+    "total_text_species": 249,
+    "total_missed": 5,
+    "total_false_positive": 7
+  }
+}

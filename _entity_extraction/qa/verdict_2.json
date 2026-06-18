@@ -1,0 +1,220 @@
+{
+  "per_motif": [
+    {
+      "motif_id": "m27",
+      "n_text_species": 24,
+      "n_extracted": 25,
+      "missed": ["garter snake (подвязочная змея / garter snake)"],
+      "false_positive": ["колибри (hummingbird)", "светляк (firefly)"]
+    },
+    {
+      "motif_id": "m62c",
+      "n_text_species": 12,
+      "n_extracted": 12,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m157c",
+      "n_text_species": 7,
+      "n_extracted": 7,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m11b",
+      "n_text_species": 3,
+      "n_extracted": 3,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "b45",
+      "n_text_species": 0,
+      "n_extracted": 1,
+      "missed": [],
+      "false_positive": ["птичка (little bird) - generic, no species named in text"]
+    },
+    {
+      "motif_id": "g13a",
+      "n_text_species": 9,
+      "n_extracted": 9,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "l7b",
+      "n_text_species": 6,
+      "n_extracted": 7,
+      "missed": [],
+      "false_positive": ["птица (bird) - generic"]
+    },
+    {
+      "motif_id": "i4c",
+      "n_text_species": 4,
+      "n_extracted": 6,
+      "missed": [],
+      "false_positive": ["дракон (dragon) - mythical creature, not a real organism", "индиго (indigo) - refers to dye/colorant in text, not a named plant organism"]
+    },
+    {
+      "motif_id": "i81a1",
+      "n_text_species": 3,
+      "n_extracted": 3,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "f7",
+      "n_text_species": 5,
+      "n_extracted": 8,
+      "missed": [],
+      "false_positive": ["птица (bird) - generic", "леопард (leopard) - not present in text_ru", "петух (rooster) - not present in text_ru"]
+    },
+    {
+      "motif_id": "f38",
+      "n_text_species": 3,
+      "n_extracted": 3,
+      "missed": ["пальма (palm) - referenced via 'пальмовое вино'"],
+      "false_positive": ["орел (eagle) - not present in text_ru"]
+    },
+    {
+      "motif_id": "k18b",
+      "n_text_species": 3,
+      "n_extracted": 3,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m198",
+      "n_text_species": 8,
+      "n_extracted": 9,
+      "missed": [],
+      "false_positive": ["собачина (dog meat) - a food/meat term, not an organism; собака already listed"]
+    },
+    {
+      "motif_id": "g6a",
+      "n_text_species": 7,
+      "n_extracted": 6,
+      "missed": ["пшеница (wheat)"],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m38d3",
+      "n_text_species": 12,
+      "n_extracted": 12,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "i38",
+      "n_text_species": 8,
+      "n_extracted": 10,
+      "missed": [],
+      "false_positive": ["псоглавец (dog-headed creature) - mythical monster, not a real organism", "птичка (little bird) - generic"]
+    },
+    {
+      "motif_id": "g7",
+      "n_text_species": 7,
+      "n_extracted": 7,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "b89",
+      "n_text_species": 23,
+      "n_extracted": 23,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "i37g",
+      "n_text_species": 1,
+      "n_extracted": 1,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "j23",
+      "n_text_species": 5,
+      "n_extracted": 5,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "k52b",
+      "n_text_species": 13,
+      "n_extracted": 14,
+      "missed": [],
+      "false_positive": ["дюгонь (dugong) - not present in text_ru"]
+    },
+    {
+      "motif_id": "i85",
+      "n_text_species": 4,
+      "n_extracted": 4,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "l41",
+      "n_text_species": 12,
+      "n_extracted": 12,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m171c",
+      "n_text_species": 9,
+      "n_extracted": 9,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "b33a",
+      "n_text_species": 6,
+      "n_extracted": 6,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m78",
+      "n_text_species": 10,
+      "n_extracted": 10,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "k19f",
+      "n_text_species": 9,
+      "n_extracted": 9,
+      "missed": [],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m32a",
+      "n_text_species": 8,
+      "n_extracted": 7,
+      "missed": ["чикади (chickadee)"],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m91",
+      "n_text_species": 8,
+      "n_extracted": 7,
+      "missed": ["кабан (wild boar) - 'кабанью ногу'"],
+      "false_positive": []
+    },
+    {
+      "motif_id": "m60",
+      "n_text_species": 5,
+      "n_extracted": 4,
+      "missed": ["овца (sheep) - 'волк стал резать овец'"],
+      "false_positive": []
+    }
+  ],
+  "summary": {
+    "motifs": 30,
+    "total_text_species": 234,
+    "total_missed": 6,
+    "total_false_positive": 14
+  }
+}
