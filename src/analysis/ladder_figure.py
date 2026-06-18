@@ -28,12 +28,13 @@ PROJ = {"labels": ["0 (full)", "−5 dir", "−10 dir", "−20 dir"],
 
 
 def main(proj_mu=None):
-    fig = plt.figure(figsize=(16, 4.8))
-    gs = fig.add_gridspec(1, 3, width_ratios=[1.18, 1.05, 0.9], wspace=0.34)
+    fig = plt.figure(figsize=(15, 7.6))
+    gs = fig.add_gridspec(2, 2, height_ratios=[0.82, 1.18],
+                          width_ratios=[1.3, 0.78], hspace=0.62, wspace=0.32)
     fig.patch.set_facecolor("white")
-    axA = fig.add_subplot(gs[0])
-    axB = fig.add_subplot(gs[1])
-    axC = fig.add_subplot(gs[2])
+    axA = fig.add_subplot(gs[0, 0])
+    axC = fig.add_subplot(gs[0, 1])
+    axB = fig.add_subplot(gs[1, :])
 
     # ---- Panel A: channel summary (muDelta with 95% CI, per channel) ----
     axA.set_facecolor("white")
@@ -44,7 +45,6 @@ def main(proj_mu=None):
             "ethnonym": "ethnonym bag", "place": "place bag"}
     seqA = ["species", "ethnonym", "full", "place"]          # descending muDelta
     yA = np.arange(len(seqA))[::-1]
-    full_mu = float(chan.loc["full", "mu"])
     for i, ch in enumerate(seqA):
         r = chan.loc[ch]
         err = [[r["mu"] - r["ci_lo"]], [r["ci_hi"] - r["mu"]]]
@@ -53,43 +53,15 @@ def main(proj_mu=None):
                  zorder=2)
         axA.text(r["ci_hi"] + 0.04, yA[i], f"{int(r['n_sig'])}/{int(r['n'])} sig",
                  va="center", ha="left", fontsize=8.5, color="#333")
-    axA.axvline(full_mu, ls="--", color="#222", lw=1.0, alpha=0.45, zorder=1)
     axA.set_yticks(yA); axA.set_yticklabels([nice[c] for c in seqA], fontsize=9.5)
     axA.set_xlim(0, 1.55)
     axA.set_xlabel(r"stratified $\mu\Delta$ ($\times 10^{-3}$, raw-Russian frame)",
                    fontsize=9.5)
-    axA.set_title("A  Channels are biome-diagnostic\n"
+    axA.set_title("A  Each channel is biome-diagnostic\n"
                   r"species bag $>$ full myth",
                   fontsize=10.5, fontweight="bold", loc="left")
     for s in axA.spines.values(): s.set_color("#bbb")
     axA.spines["top"].set_visible(False); axA.spines["right"].set_visible(False)
-
-    # ---- Panel B: matched-null ladder ----
-    axB.set_facecolor("white")
-    summ = pd.read_csv(LAD / "stats_matched_null_summary_strat.csv")
-    o = {r["null"]: r for _, r in summ.iterrows()}
-    seq = [s for s in ["species", "ethnonym", "place", "joint"] if s in o]
-    x = np.arange(len(seq)); bw = 0.38
-    obs = [o[s]["obs"] for s in seq]
-    nul = [o[s]["null_mean"] for s in seq]
-    axB.bar(x - bw/2, obs, bw, color="#222222", edgecolor="#111", lw=0.4,
-            label=r"observed $\Delta_{\mathrm{full}}$", zorder=2)
-    axB.bar(x + bw/2, nul, bw, color="#c9a04a", edgecolor="#111", lw=0.4,
-            label="matched-null mean", zorder=2)
-    for i, s in enumerate(seq):
-        axB.text(i, max(obs[i], nul[i]) + 0.015,
-                 f"{int(o[s]['n_sig'])}/{int(o[s]['n'])}", ha="center",
-                 va="bottom", fontsize=9, fontweight="bold", color="#222")
-    axB.set_xticks(x)
-    axB.set_xticklabels([s.capitalize() for s in seq], fontsize=9.5)
-    axB.set_ylabel(r"$\mu\Delta$ ($\times 10^{-3}$)", fontsize=9.5)
-    axB.set_ylim(0, max(obs) * 1.45)
-    axB.set_title("B  Holding identity constant\n"
-                  r"biomes surviving the null ($p<.05$)",
-                  fontsize=10.5, fontweight="bold", loc="left")
-    axB.legend(fontsize=8.5, loc="upper right", frameon=True)
-    for s in axB.spines.values(): s.set_color("#bbb")
-    axB.spines["top"].set_visible(False); axB.spines["right"].set_visible(False)
 
     # ---- Panel C: species-subspace projection ----
     axC.set_facecolor("white")
@@ -111,6 +83,45 @@ def main(proj_mu=None):
                   fontsize=10.5, fontweight="bold", loc="left")
     for s in axC.spines.values(): s.set_color("#bbb")
     axC.spines["top"].set_visible(False); axC.spines["right"].set_visible(False)
+
+    # ---- Panel B: which biomes stay significant after holding identity constant ----
+    axB.set_facecolor("white")
+    nulls = [("species", "Species"), ("ethnonym", "Ethnonym"),
+             ("place", "Place"), ("joint", "Joint  (species+place+ethnonym)")]
+    data = {k: pd.read_csv(LAD / f"stats_{k}_matched_null_strat.csv").set_index("biome")
+            for k, _ in nulls}
+    biomes = list(data["joint"].index)
+    nsurv = {b: int(sum(float(data[k].loc[b, "p"]) < 0.05 for k, _ in nulls))
+             for b in biomes}
+    biomes.sort(key=lambda b: (-nsurv[b], -float(data["joint"].loc[b, "delta_obs"])))
+    yrows = {"species": 3, "ethnonym": 2, "place": 1, "joint": 0}
+    for k, _ in nulls:
+        d = data[k]
+        for xi, b in enumerate(biomes):
+            r = d.loc[b]
+            surv = float(r["p"]) < 0.05
+            dd = max(float(r["delta_obs"]) * 1000, 0.0)
+            size = 45 + 470 * min(dd, 1.1) / 1.1
+            if surv:
+                axB.scatter(xi, yrows[k], s=size, c=[biome_color(b)],
+                            edgecolors="#111", linewidths=0.9, zorder=3)
+            else:
+                axB.scatter(xi, yrows[k], s=size, facecolors="none",
+                            edgecolors="#c8c8c8", linewidths=1.1, zorder=2)
+    axB.axhline(0.5, color="#888", lw=0.9, ls="--", zorder=1)   # set off the joint row
+    cnt = {k: int((data[k]["p"] < 0.05).sum()) for k, _ in nulls}
+    axB.set_yticks([yrows[k] for k, _ in nulls])
+    axB.set_yticklabels([f"{lab}\n{cnt[k]}/14 survive" for k, lab in nulls], fontsize=9)
+    axB.set_xticks(range(len(biomes)))
+    axB.set_xticklabels([short_biome(b) for b in biomes], rotation=38, ha="right",
+                        fontsize=8.5)
+    axB.set_ylim(-0.7, 3.7); axB.set_xlim(-0.7, len(biomes) - 0.3)
+    axB.set_title("B  Which biomes stay significant after holding identity constant\n"
+                  r"filled $=$ survives the matched-permutation null ($p<.05$); "
+                  r"marker size $\propto$ observed $\Delta$",
+                  fontsize=10.5, fontweight="bold", loc="left")
+    for s in axB.spines.values(): s.set_visible(False)
+    axB.tick_params(length=0)
 
     fig.savefig(OUT, dpi=170, facecolor="white", bbox_inches="tight")
     plt.close(fig)

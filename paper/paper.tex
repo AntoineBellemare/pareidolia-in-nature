@@ -463,12 +463,17 @@ embedding ($60$ K-means blocks), holding identity approximately
 constant while breaking biome, and recomputes the stratified
 $\Delta$. Six of the fourteen biomes retain alignment above a joint
 null that holds species, place, and ethnonym constant
-simultaneously --- the same count that survives the Glottolog
-cultural-geographic swap, two stringent and unrelated controls
-leaving the same handful of biomes standing. (The place channel
-alone is near-circular, since biome is derived from the region
-metadata, so we read the joint and species-only nulls rather than
-place.) An independent embedding-space test
+simultaneously --- the two tropical broadleaf-forest biomes,
+tropical grasslands and savannas, montane grasslands, boreal
+forest, and mangroves, with five of these surviving every
+single-channel control as well (Figure~\ref{fig:fig-identity}B).
+This is the same count as survive the Glottolog cultural-geographic
+swap, with four of the six biomes shared between the two lists ---
+two stringent and unrelated controls leaving the same handful of
+biomes standing. (The place
+channel alone is near-circular, since biome is derived from the
+region metadata, so we read the joint and species-only nulls rather
+than place.) An independent embedding-space test
 (Figure~\ref{fig:fig-identity}C) projects the top species-subspace
 directions out of the full-myth embeddings and recomputes the
 stratified $\Delta$, which attenuates from $+0.42$ to
@@ -494,17 +499,21 @@ against iNaturalist images. \emph{Panel A}: mean $\Delta$ across
 the 14 biomes (with $95\%$ bootstrap CI and the count of
 individually significant biomes) for the full original myth and
 three separately-measured identity baselines (species, place,
-ethnonym bags); the dashed line marks the full-myth level. A
-species-only bag is more biome-diagnostic than the full myth, and
-this survives stratification. \emph{Panel B}: matched-permutation-null ladder ---
-for each identity class, and for all three jointly, biome labels
-are shuffled only among motifs matched on that class's
-identity-bag embedding ($60$ K-means blocks); bars give observed
-$\mu\Delta_{\text{full}}$ (black) versus the matched-null mean
-(gold), annotated with the count of biomes whose observed $\Delta$
-exceeds the null at $p<.05$. The place null is near-circular
-because biome is derived from the region metadata. \emph{Panel C}:
-independent embedding-space control --- the top $k$
+ethnonym bags). A species-only bag is more biome-diagnostic than
+the full myth, and this survives stratification. \emph{Panel B}:
+per-biome significance under each matched-permutation null. For
+each identity class, and for all three jointly, biome labels are
+shuffled only among motifs matched on that class's identity-bag
+embedding ($60$ K-means blocks); a filled marker means the biome's
+observed stratified $\Delta$ exceeds that null at $p<.05$, an open
+marker that it does not, and marker size is proportional to the
+observed $\Delta$. Six biomes --- the two tropical broadleaf-forest
+biomes, tropical grasslands and savannas, montane grasslands,
+boreal forest, and mangroves --- survive the joint null that holds
+species, place, and ethnonym constant simultaneously, and five of
+these survive every single-channel control. The place null is
+near-circular because biome is derived from the region metadata.
+\emph{Panel C}: independent embedding-space control --- the top $k$
 species-subspace directions are projected out of the full-myth
 embeddings and the stratified $\Delta$ recomputed ($k = 5, 10, 20$);
 $\mu\Delta$ attenuates but stays positive and significant in the
