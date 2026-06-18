@@ -97,7 +97,7 @@ def main():
         "Biome × Taxon — Mythology–imagery alignment   ·   full LLM-clean "
         "corpus, BH-FDR corrected\n"
         "Sentence-pooled SigLIP-2 (English-anonymised Berezkin abstracts).   "
-        "iNaturalist photos, n = 47,478."
+        "iNaturalist photos, n = 46,481."
     )
     make_facets_grid_white(df, taxa, biomes, suptitle, OUT)
 

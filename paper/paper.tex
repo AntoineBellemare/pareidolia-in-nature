@@ -253,12 +253,12 @@ covered.}
 independent image corpora.} Residualised $\Delta$ per WWF biome
 under sentence-pooled SigLIP-2 on the full LLM-clean Berezkin
 abstracts ($2{,}158$ motifs). \emph{Panel A}: iNaturalist species
-photographs ($n=47{,}478$ images), with $\Delta$ stratified within
+photographs ($n=46{,}481$ images), with $\Delta$ stratified within
 each iconic-taxon stratum and uniformly averaged across taxa to
 remove biome--by--iconic-taxon co-occurrence as a possible
 explanation; stratified $\mu\Delta = +0.406\times 10^{-3}$, 8/14
 biomes significant at $p<.05$. \emph{Panel B}: Places365
-strict-landscape scenes ($n=1{,}675$ images, 11 biomes); because
+strict-landscape scenes ($n=1{,}655$ images, 11 biomes); because
 Places365 has no iconic-taxon labels (it is scene-only imagery),
 we report the marginal residualised $\Delta$; marginal $\mu\Delta
 = +0.423\times 10^{-3}$, 6/11 biomes significant at $p<.05$.
@@ -266,7 +266,9 @@ Biomes are ordered top-to-bottom by descending iNat stratified
 $\Delta$; biomes Places365 does not cover are blanked. Each panel
 uses its own dynamic range. Gold bold asterisks denote
 significance after Benjamini--Hochberg FDR correction ($q<.05$);
-grey asterisks denote nominal $p<.05$. The two corpora agree on
+grey asterisks would denote biomes nominally significant at $p<.05$
+but not surviving FDR, of which there are none here (every marked
+biome survives FDR, iNat $8/8$ and Places365 $6/6$). The two corpora agree on
 the biomes that drive the effect (Tropical Moist Broadleaf,
 Deserts, Boreal/Taiga, Montane Grasslands, Tropical Grasslands),
 an independent landscape-channel replication of a signal first
@@ -354,7 +356,7 @@ Actinopterygii ($+1.39$) equal weight, the boreal $\Delta$
 emerges at $+0.65\times 10^{-3}$ ($p<.001$).
 
 The same pattern replicates on an independent image corpus. The
-Places365 strict-landscape comparison set, $1{,}675$ scene
+Places365 strict-landscape comparison set, $1{,}655$ scene
 photographs across 11 biomes drawn from Places365 scene categories
 that unambiguously match a single WWF biome and then
 SigLIP-filtered against humans, vehicles, buildings, and close-up
@@ -373,7 +375,14 @@ Places365 samples wide-shot terrain with no species or human
 subjects. The fact that anonymised mythology aligns above
 permutation chance with both channels of biome imagery,
 species-level and scene-level, means the alignment is not an
-artefact of one corpus's curatorial peculiarities. Projected onto
+artefact of one corpus's curatorial peculiarities. The per-biome
+pattern is likewise not an artefact of a single encoder: it
+correlates across four vision--language models (SigLIP-2, M-CLIP,
+and OpenCLIP under LAION-2B and OpenAI pretrainings), with
+across-model rank correlations of the per-biome $\Delta$ in the
+range $r=0.74$--$0.94$, though the two OpenCLIP variants carry a
+weaker overall mean (Supplementary Section~S3,
+Figure~\ref{fig:figS-crossmodel}). Projected onto
 a world map (Figure~\ref{fig:fig5earth}), the warmest cells
 concentrate in the Amazonian and Indo-Malay Tropical Moist
 Broadleaf rainforests, the Saharan and Australian deserts, the
@@ -445,10 +454,13 @@ Each identity channel is biome-diagnostic on its own
 stratified $\mu\Delta = +0.97\times 10^{-3}$ ($13/14$ biomes
 significant), an ethnonym-only bag $+0.73\times 10^{-3}$ ($14/14$),
 and a place-only bag $+0.36\times 10^{-3}$ ($14/14$). The full
-original myth gives $+0.42\times 10^{-3}$ ($10/14$), strikingly
-close to the $+0.41\times 10^{-3}$ the \emph{anonymised} corpus
-reaches on the same statistic --- two opposite roads, removing the
-names and keeping them, arriving at the same number. A bag of
+original myth gives $+0.42\times 10^{-3}$ ($10/14$), close to the
+$+0.41\times 10^{-3}$ the \emph{anonymised} corpus reaches on the
+same statistic --- two opposite roads, removing the names and
+keeping them, of comparable magnitude (the raw-Russian and
+English LLM-clean frames are not formally comparable, so we read
+the closeness as suggestive rather than identical; see
+\emph{Materials and Methods}). A bag of
 species names is in fact more biome-diagnostic than the full myth,
 which dilutes the species cue with narrative content, and this
 holds under stratification, so it is not an artefact of image-side
@@ -463,9 +475,9 @@ embedding ($60$ K-means blocks), holding identity approximately
 constant while breaking biome, and recomputes the stratified
 $\Delta$. Six of the fourteen biomes retain alignment above a joint
 null that holds species, place, and ethnonym constant
-simultaneously --- the two tropical broadleaf-forest biomes,
-tropical grasslands and savannas, montane grasslands, boreal
-forest, and mangroves, with five of these surviving every
+simultaneously --- Tropical Moist and Tropical Dry Broadleaf
+Forests, tropical grasslands and savannas, montane grasslands,
+boreal forest, and mangroves, with five of these surviving every
 single-channel control as well (Figure~\ref{fig:fig-identity}B).
 This is the same count as survive the Glottolog cultural-geographic
 swap, with four of the six biomes shared between the two lists ---
@@ -507,9 +519,9 @@ shuffled only among motifs matched on that class's identity-bag
 embedding ($60$ K-means blocks); a filled marker means the biome's
 observed stratified $\Delta$ exceeds that null at Benjamini--Hochberg
 FDR $q<.05$, an open marker that it does not, and marker size is
-proportional to the observed $\Delta$. Six biomes --- the two tropical broadleaf-forest
-biomes, tropical grasslands and savannas, montane grasslands,
-boreal forest, and mangroves --- survive the joint null that holds
+proportional to the observed $\Delta$. Six biomes --- Tropical Moist and Tropical Dry
+Broadleaf Forests, tropical grasslands and savannas, montane
+grasslands, boreal forest, and mangroves --- survive the joint null that holds
 species, place, and ethnonym constant simultaneously, and five of
 these survive every single-channel control. The place null is
 near-circular because biome is derived from the region metadata.
@@ -899,10 +911,12 @@ at the level of narrative structure. The alignment survives
 word-shuffling of each motif, so sentence-level composition is
 not where the residue lives; it disappears on synthetic
 encyclopedic paragraphs, so the residualised statistic does not
-manufacture a positive on biome-neutral content; it persists in
-motifs whose anonymised text alone provides minimal text-only
-biome predictability, so it is not reducible to a one-sided
-lexical artefact. What is doing the work, in other words, is the
+manufacture a positive on biome-neutral content (both in
+Supplementary Section~S1, Figure~\ref{fig:v2controls}); and it
+persists in motifs whose anonymised text alone provides minimal
+text-only biome predictability, so it is not reducible to a
+one-sided lexical artefact (Supplementary
+Section~\ref{sec:biome-tell}, Table~\ref{tab:biome-tell-split}). What is doing the work, in other words, is the
 distribution of generic landform vocabulary and biome-correlated
 activity schemas that the noun-targeted anonymisation pipeline
 retained by construction.
@@ -1084,11 +1098,18 @@ multi-paragraph Russian-language abstract aggregating the variants
 found across the traditions that carry the motif. Tradition centroids
 are joined to WWF Terrestrial
 Ecoregions~\citep{olson2001terrestrial} to assign each tradition, and
-through it each tradition--motif pair, to one of the 14 WWF biomes.
+through it each tradition--motif pair, to one of the 14 WWF biomes. Of
+the 2{,}564 catalogue motifs, the 2{,}158 analysed throughout are those
+with both a successfully scraped, anonymisable abstract and at least one
+tradition geocodable to a WWF biome; the remaining $406$ lack one of
+these. Most of the excluded motifs have no biome-codable tradition and
+so cannot enter a biome-level statistic by construction, and the
+abstract-scrape failures are indexed by motif identifier rather than by
+biome, so the exclusion is not biome-targeted.
 
 \subsection*{Image corpora}
 
-The iNaturalist component consists of $47{,}478$ images drawn from
+The iNaturalist component consists of $46{,}481$ images drawn from
 research-grade observations on iNaturalist Open
 Data~\citep{inaturalist2024} across the 14 WWF biomes. We apply an
 image-side sanity filter that drops obvious non-nature content via
@@ -1148,7 +1169,7 @@ sentence-pooled: each LLM-clean Berezkin abstract is split into
 sentences (regex on terminal punctuation, sentences of $<3$ words
 dropped, capped at $50$ sentences per motif), each sentence is
 embedded independently within SigLIP-2's $64$-token window
-(mean $23$ sentences per motif; $50{,}032$ unique sentences across
+(mean $23$ sentences per motif; $50{,}032$ sentences in total across
 $2{,}158$ motifs in total), and the per-motif vector is the
 mean-pooled, L2-renormalised sentence embedding. Sentence pooling
 matters because the raw English abstracts average $\sim 3{,}400$
@@ -1437,8 +1458,9 @@ abstracts are accessible at
 
 The supplementary materials below collect the analyses that probe
 the robustness of the headline finding from five complementary
-angles: (i) the headline robustness atlas summarised in the main
-Results, with the four panels shown at full size; (ii) a
+angles: (i) the headline robustness atlas (word-shuffle, encyclopedic-
+register null, and baseline controls), with the four panels shown at
+full size; (ii) a
 per-taxon decomposition that asks which iNaturalist taxonomic
 groups carry the alignment; (iii) a cross-model replication
 across four vision--language model architectures on the same

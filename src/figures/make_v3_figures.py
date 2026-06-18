@@ -107,7 +107,7 @@ def fig2_biome_bars():
     axL.set_xlabel(r"within-iconic-taxon stratified $\Delta$ ($\times 10^{-3}$)",
                    color="#222", fontsize=9.5)
     axL.set_title(
-        f"A. iNaturalist species photos  ·  47,478 imgs · 2,158 motifs\n"
+        f"A. iNaturalist species photos  ·  46,481 imgs · 2,158 motifs\n"
         f"stratified $\\mu\\Delta$ = "
         f"{inat['delta_main'].mean()*1000:+.3f} $\\times 10^{{-3}}$",
         color="#111", fontsize=10.5, loc="left", pad=14)
@@ -138,11 +138,12 @@ def fig2_biome_bars():
                      color="#b8860b" if fdr else "#888",
                      fontsize=10, fontweight="bold" if fdr else "normal",
                      va="center", ha="left" if x>=0 else "right")
-    axR.set_yticks(y); axR.set_yticklabels([])
+    axR.set_yticks(y)
+    axR.set_yticklabels([short_biome(b) for b in order], color="#222", fontsize=9)
     axR.set_xlabel(r"marginal residualised $\Delta$ ($\times 10^{-3}$)",
                    color="#222", fontsize=9.5)
     axR.set_title(
-        f"B. Places365 landscape scenes  ·  1,675 imgs · 2,158 motifs\n"
+        f"B. Places365 landscape scenes  ·  1,655 imgs · 2,158 motifs\n"
         f"marginal $\\mu\\Delta$ = "
         f"{p365['delta_main'].mean()*1000:+.3f} $\\times 10^{{-3}}$",
         color="#111", fontsize=10.5, loc="left", pad=14)
