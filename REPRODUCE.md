@@ -129,7 +129,7 @@ pipeline; the cleaned text is included in the dataset.
 | `src/figures/species_composition.py` + `species_composition_specA.py` | Supplementary fig S5 (raw ecological composition per biome, Spec A view). |
 | `src/figures/bulletproof_table.py` | Generate supplementary tables. |
 | `src/analysis/ladder_figure.py` | fig_identity_naming.png — identity-naming decomposition (main text), built from the **stratified** battery. Reads the `ladder/stats_*_strat.csv` tables; pass the stratified species-subspace projection μΔ values printed by `ladder_stats_stratified.py` as CLI args for panel C (e.g. `... 0.416 0.247 0.195 0.274`). |
-| `src/analysis/biome_recovery_figure.py` | fig_biome_recovery.png — unsupervised biome recovery (main text): own-biome retrieval curve, taxon-stratified biome×biome matrix, and per-biome decodability. Reads `umap_pca50.npy` (run `myth_image_umap2.py` first). |
+| `src/analysis/biome_recovery_figure.py` | fig_biome_recovery.png — unsupervised biome recovery (main text): own-biome retrieval curve and per-biome decodability vs a label-shuffled null. Reads `umap_pca50.npy` (run `myth_image_umap2.py` first). |
 
 ## Phase 6 — Paper compilation
 

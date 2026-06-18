@@ -490,11 +490,13 @@ species, places, and peoples.
 \caption{\textbf{The alignment on the original, un-anonymised myths
 is not reducible to identity naming.} All panels use the
 within-iconic-taxon stratified $\Delta$ in the raw-Russian frame
-against iNaturalist images. \emph{Panel A}: per-biome decomposition
-of the full original myth and three separately-measured identity
-baselines (species, place, ethnonym bags). A species-only bag is
-more biome-diagnostic than the full myth, and this survives
-stratification. \emph{Panel B}: matched-permutation-null ladder ---
+against iNaturalist images. \emph{Panel A}: mean $\Delta$ across
+the 14 biomes (with $95\%$ bootstrap CI and the count of
+individually significant biomes) for the full original myth and
+three separately-measured identity baselines (species, place,
+ethnonym bags); the dashed line marks the full-myth level. A
+species-only bag is more biome-diagnostic than the full myth, and
+this survives stratification. \emph{Panel B}: matched-permutation-null ladder ---
 for each identity class, and for all three jointly, biome labels
 are shuffled only among motifs matched on that class's
 identity-bag embedding ($60$ K-means blocks); bars give observed
@@ -711,7 +713,7 @@ where they are from, and a biome-coloured scatter shows no clean
 clustering.
 
 Biome is nonetheless present as a subdominant but reliable overlay,
-recoverable three ways without ever using biome labels to construct
+recoverable two ways without ever using biome labels to construct
 the affinity vectors (Figure~\ref{fig:fig-recovery}). First, for
 each motif we ranked the nine well-sampled biomes by the motif's
 taxon-stratified mean similarity to their images and asked where
@@ -719,20 +721,14 @@ the motif's own biome fell. Own biome lands at the $64$th
 percentile on average against a $50$th-percentile chance baseline
 ($p<.001$, $2{,}000$ label permutations) and is the single
 most-similar of the nine biomes $13.1\%$ of the time against an
-$11.1\%$ chance rate (Figure~\ref{fig:fig-recovery}A). Second, the
-taxon-stratified mean similarity of each biome's motifs to each
-biome's images, $z$-scored within row, places the own-biome cell
-above its row average for six of the nine biomes
-(Figure~\ref{fig:fig-recovery}B), the same Tundra, Desert, Boreal
-and grassland diagonal that drives the headline map. Third, a
+$11.1\%$ chance rate (Figure~\ref{fig:fig-recovery}A). Second, a
 five-fold one-versus-rest logistic probe on the PCA-reduced
 affinity vectors decodes each biome above its label-shuffled null,
 at a mean balanced accuracy of $0.66$ against $0.50$
-(Figure~\ref{fig:fig-recovery}C). The same ordering recurs
-throughout. The biome signal is real and recoverable from the
-model's image affinities alone, but it is a thin overlay on a
-representation that is mostly about the plants and animals the
-myths name and the scenes they describe.
+(Figure~\ref{fig:fig-recovery}B). The biome signal is real and
+recoverable from the model's image affinities alone, but it is a
+thin overlay on a representation that is mostly about the plants
+and animals the myths name and the scenes they describe.
 
 \begin{figure}[h!t]
 \centering
@@ -747,15 +743,13 @@ mean similarity to their images; the curve gives the fraction of
 motifs whose own biome falls within the top $k$ ranks (orange)
 against the chance diagonal (grey). Own biome reaches the $64$th
 percentile on average ($p<.001$, $2{,}000$ permutations).
-\textbf{(B)}~Biome$\,\times\,$biome alignment. Taxon-stratified mean
-similarity of each row-biome's motifs to each column-biome's
-images, $z$-scored within row; the boxed diagonal is above its row
-average in six of nine biomes. \textbf{(C)}~Per-biome decodability.
-Balanced accuracy of a five-fold one-versus-rest logistic probe on
-the PCA-50 affinity vectors (bars) against a label-shuffled null
-(ticks); every biome decodes above chance. Throughout, ``own
-biome'' is the biome contributing the most of a motif's traditions,
-and the affinity vectors are built without reference to it.}
+\textbf{(B)}~Per-biome decodability. Balanced accuracy of a
+five-fold one-versus-rest logistic probe on the PCA-50 affinity
+vectors (bars) against a label-shuffled null (ticks); every biome
+decodes above chance, at a mean of $0.66$ versus $0.50$.
+Throughout, ``own biome'' is the biome contributing the most of a
+motif's traditions, and the affinity vectors are built without
+reference to it.}
 \label{fig:fig-recovery}
 \end{figure}
 
@@ -1378,7 +1372,7 @@ similarity to all $46{,}481$ iNaturalist photographs, and reduced
 these affinity vectors to $50$ principal components. A motif's
 \emph{own biome} is the biome contributing the most of its Berezkin
 traditions; this label is used only to evaluate the geometry, never
-to build it. We report three diagnostics over the nine biomes with
+to build it. We report two diagnostics over the nine biomes with
 at least $50$ images and $20$ own-biome motifs. First, own-biome
 retrieval: for each motif we computed a taxon-stratified mean
 similarity to each biome (the mean over iconic taxa of the motif's
@@ -1386,12 +1380,10 @@ mean similarity to that biome's images of each taxon, requiring
 $\geq 20$ images per biome--taxon cell), ranked the biomes, and
 recorded the rank of the motif's own biome; the chance baseline and
 the reported $p$-value come from $2{,}000$ permutations that
-reassign each motif's own biome at random. Second, the
-biome$\times$biome matrix is the same taxon-stratified similarity
-averaged over each row-biome's motifs and $z$-scored within row.
-Third, per-biome decodability is the balanced accuracy of a
-five-fold one-versus-rest $\ell_2$-regularised logistic probe on
-the PCA-reduced vectors, compared against the same probe trained on
+reassign each motif's own biome at random. Second, per-biome
+decodability is the balanced accuracy of a five-fold
+one-versus-rest $\ell_2$-regularised logistic probe on the
+PCA-reduced vectors, compared against the same probe trained on
 shuffled labels. The unsupervised UMAP layout and its
 content, macro-area, and biome adjusted Rand indices use the same
 PCA-reduced vectors.

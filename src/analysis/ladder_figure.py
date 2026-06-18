@@ -28,92 +28,87 @@ PROJ = {"labels": ["0 (full)", "−5 dir", "−10 dir", "−20 dir"],
 
 
 def main(proj_mu=None):
-    dec = pd.read_csv(LAD / "stats_decomposition_strat.csv")
-    mn = pd.read_csv(LAD / "stats_species_matched_null_strat.csv")
-
-    order = dec.sort_values("delta_full", ascending=False)["biome"].tolist()
-    dec = dec.set_index("biome").reindex(order)
-    mn = mn.set_index("biome").reindex(order)
-
-    fig = plt.figure(figsize=(15, 9))
-    gs = fig.add_gridspec(2, 2, height_ratios=[1.2, 1.0],
-                          width_ratios=[1.6, 1.0], hspace=0.45, wspace=0.28)
+    fig = plt.figure(figsize=(16, 4.8))
+    gs = fig.add_gridspec(1, 3, width_ratios=[1.18, 1.05, 0.9], wspace=0.34)
     fig.patch.set_facecolor("white")
-    axA = fig.add_subplot(gs[0, :])
-    axB = fig.add_subplot(gs[1, 0])
-    axC = fig.add_subplot(gs[1, 1])
+    axA = fig.add_subplot(gs[0])
+    axB = fig.add_subplot(gs[1])
+    axC = fig.add_subplot(gs[2])
 
-    # ---- Panel A: decomposition grouped bars ----
+    # ---- Panel A: channel summary (muDelta with 95% CI, per channel) ----
     axA.set_facecolor("white")
-    y = np.arange(len(order)); bw = 0.2
+    chan = pd.read_csv(LAD / "stats_channel_summary_strat.csv").set_index("channel")
     cols = {"full": "#222222", "species": "#cf6f3f",
             "place": "#5b8db8", "ethnonym": "#7cbe5e"}
-    for k, name in enumerate(["full", "species", "place", "ethnonym"]):
-        vals = dec[f"delta_{name}"].values * 1000
-        axA.barh(y + (1.5 - k) * bw, vals, bw, label=name,
-                  color=cols[name], edgecolor="#222", lw=0.3)
-    axA.axvline(0, color="#666", lw=0.6)
-    axA.set_yticks(y); axA.set_yticklabels([short_biome(b) for b in order],
-                                            fontsize=8.5)
-    axA.invert_yaxis()
-    axA.set_xlabel(r"residualised within-taxon stratified $\Delta$ ($\times 10^{-3}$), raw-Russian frame",
+    nice = {"full": "full original myth", "species": "species bag",
+            "ethnonym": "ethnonym bag", "place": "place bag"}
+    seqA = ["species", "ethnonym", "full", "place"]          # descending muDelta
+    yA = np.arange(len(seqA))[::-1]
+    full_mu = float(chan.loc["full", "mu"])
+    for i, ch in enumerate(seqA):
+        r = chan.loc[ch]
+        err = [[r["mu"] - r["ci_lo"]], [r["ci_hi"] - r["mu"]]]
+        axA.barh(yA[i], r["mu"], height=0.62, color=cols[ch], edgecolor="#222",
+                 lw=0.5, xerr=err, error_kw=dict(ecolor="#555", lw=1.3, capsize=3),
+                 zorder=2)
+        axA.text(r["ci_hi"] + 0.04, yA[i], f"{int(r['n_sig'])}/{int(r['n'])} sig",
+                 va="center", ha="left", fontsize=8.5, color="#333")
+    axA.axvline(full_mu, ls="--", color="#222", lw=1.0, alpha=0.45, zorder=1)
+    axA.set_yticks(yA); axA.set_yticklabels([nice[c] for c in seqA], fontsize=9.5)
+    axA.set_xlim(0, 1.55)
+    axA.set_xlabel(r"stratified $\mu\Delta$ ($\times 10^{-3}$, raw-Russian frame)",
                    fontsize=9.5)
-    axA.set_title("A. Per-biome decomposition: full original myth vs three separated baselines",
-                   fontsize=11, fontweight="bold", loc="left")
-    axA.legend(fontsize=9, loc="lower right", ncol=4, frameon=True)
-    axA.tick_params(labelsize=8)
+    axA.set_title("A  Channels are biome-diagnostic\n"
+                  r"species bag $>$ full myth",
+                  fontsize=10.5, fontweight="bold", loc="left")
     for s in axA.spines.values(): s.set_color("#bbb")
     axA.spines["top"].set_visible(False); axA.spines["right"].set_visible(False)
 
-    # ---- Panel B: matched-null ladder summary ----
+    # ---- Panel B: matched-null ladder ----
     axB.set_facecolor("white")
     summ = pd.read_csv(LAD / "stats_matched_null_summary_strat.csv")
-    # order: species, ethnonym, place, joint
     o = {r["null"]: r for _, r in summ.iterrows()}
-    seq = ["species", "ethnonym", "place", "joint"]
-    seq = [s for s in seq if s in o]
+    seq = [s for s in ["species", "ethnonym", "place", "joint"] if s in o]
     x = np.arange(len(seq)); bw = 0.38
     obs = [o[s]["obs"] for s in seq]
     nul = [o[s]["null_mean"] for s in seq]
     axB.bar(x - bw/2, obs, bw, color="#222222", edgecolor="#111", lw=0.4,
-            label="observed Δ_full")
+            label=r"observed $\Delta_{\mathrm{full}}$", zorder=2)
     axB.bar(x + bw/2, nul, bw, color="#c9a04a", edgecolor="#111", lw=0.4,
-            label="matched-null mean")
+            label="matched-null mean", zorder=2)
     for i, s in enumerate(seq):
-        axB.text(i + bw/2, nul[i] + 0.01,
-                  f"{int(o[s]['n_sig'])}/{int(o[s]['n'])}\nsurvive",
-                  ha="center", va="bottom", fontsize=7.5, color="#333")
+        axB.text(i, max(obs[i], nul[i]) + 0.015,
+                 f"{int(o[s]['n_sig'])}/{int(o[s]['n'])}", ha="center",
+                 va="bottom", fontsize=9, fontweight="bold", color="#222")
     axB.set_xticks(x)
-    axB.set_xticklabels([s.capitalize() for s in seq], fontsize=9)
-    axB.set_ylabel(r"$\mu\Delta$ ($\times 10^{-3}$)", fontsize=9)
-    axB.set_ylim(0, max(obs) * 1.35)
-    axB.set_title("B. Matched-null ladder: hold each identity class "
-                   "(and all three jointly) constant",
-                   fontsize=10.5, fontweight="bold", loc="left")
-    axB.legend(fontsize=8, loc="upper right", frameon=True)
-    axB.tick_params(labelsize=8)
+    axB.set_xticklabels([s.capitalize() for s in seq], fontsize=9.5)
+    axB.set_ylabel(r"$\mu\Delta$ ($\times 10^{-3}$)", fontsize=9.5)
+    axB.set_ylim(0, max(obs) * 1.45)
+    axB.set_title("B  Holding identity constant\n"
+                  r"biomes surviving the null ($p<.05$)",
+                  fontsize=10.5, fontweight="bold", loc="left")
+    axB.legend(fontsize=8.5, loc="upper right", frameon=True)
     for s in axB.spines.values(): s.set_color("#bbb")
     axB.spines["top"].set_visible(False); axB.spines["right"].set_visible(False)
 
-    # ---- Panel C: projection triangulation ----
+    # ---- Panel C: species-subspace projection ----
     axC.set_facecolor("white")
     if proj_mu is not None:
-        labels = ["full", "−5 dir", "−10 dir", "−20 dir"]
+        labels = ["full", "$-5$", "$-10$", "$-20$"]
         x = np.arange(len(labels))
-        axC.bar(x, proj_mu, 0.6, color=["#222", "#b86a3f", "#cf8b5f", "#e0b090"],
-                edgecolor="#222", lw=0.4)
+        axC.bar(x, proj_mu, 0.62, color=["#222", "#b86a3f", "#cf8b5f", "#e0b090"],
+                edgecolor="#222", lw=0.4, zorder=2)
         for i, v in enumerate(proj_mu):
-            axC.text(i, v + 0.005, f"{v:+.2f}", ha="center", va="bottom",
-                     fontsize=9, fontweight="bold")
-        axC.set_xticks(x); axC.set_xticklabels(labels, fontsize=9)
+            axC.text(i, v + 0.008, f"{v:.2f}", ha="center", va="bottom",
+                     fontsize=9.5, fontweight="bold")
+        axC.set_xticks(x); axC.set_xticklabels(labels, fontsize=9.5)
+        axC.set_xlabel("species directions removed", fontsize=9)
         axC.axhline(0, color="#666", lw=0.5)
-        axC.set_ylabel(r"$\mu\Delta_{full}$ ($\times 10^{-3}$)", fontsize=9)
-    else:
-        axC.text(0.5, 0.5, "projection numbers\npending", ha="center",
-                  va="center", transform=axC.transAxes, color="#999")
-    axC.set_title("C. Species-subspace projection\n(remove species axis, recompute Δ_full)",
-                   fontsize=10.5, fontweight="bold", loc="left")
-    axC.tick_params(labelsize=8)
+        axC.set_ylim(0, max(proj_mu) * 1.2)
+        axC.set_ylabel(r"$\mu\Delta_{\mathrm{full}}$ ($\times 10^{-3}$)", fontsize=9.5)
+    axC.set_title("C  Removing the species axis\n"
+                  "attenuates but persists",
+                  fontsize=10.5, fontweight="bold", loc="left")
     for s in axC.spines.values(): s.set_color("#bbb")
     axC.spines["top"].set_visible(False); axC.spines["right"].set_visible(False)
 

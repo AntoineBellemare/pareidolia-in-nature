@@ -165,13 +165,18 @@ def main():
     # 1+2. Base stratified Delta per text set + decomposition
     print("\n=== Base STRATIFIED Delta per text set ===", flush=True)
     base = {}
+    chan_rows = []
     for n in ["full", "species", "place", "ethnonym"]:
         df, ci = per_biome_delta(embs[n], in_B, biomes, img_emb, img_biome,
                                  taxon, valids[n])
         base[n] = df.set_index("biome")
+        chan_rows.append({"channel": n, "mu": df["delta"].mean() * 1000,
+                          "ci_lo": ci[0] * 1000, "ci_hi": ci[1] * 1000,
+                          "n_sig": int((df["p"] < 0.05).sum()), "n": len(df)})
         print(f"  {n:9s} muDelta={df['delta'].mean()*1000:+.3f}e-3  "
               f"95%CI[{ci[0]*1000:+.3f},{ci[1]*1000:+.3f}]  "
               f"sig {int((df['p']<0.05).sum())}/{len(df)}", flush=True)
+    pd.DataFrame(chan_rows).to_csv(LAD / "stats_channel_summary_strat.csv", index=False)
     tab = base["full"][["delta"]].rename(columns={"delta": "delta_full"})
     for n in ["species", "place", "ethnonym"]:
         tab = tab.join(base[n][["delta"]].rename(columns={"delta": f"delta_{n}"}))
