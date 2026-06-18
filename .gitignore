@@ -101,3 +101,6 @@ paper/*.fls
 paper/*.synctex.gz
 paper/*.toc
 paper/*.out
+
+# Scratch figure crops/zooms (review-agent inspection artifacts)
+paper/figures/_*.png
