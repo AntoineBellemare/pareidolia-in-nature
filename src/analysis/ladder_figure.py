@@ -18,7 +18,7 @@ _sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # repo root for s
 ROOT = Path(__file__).resolve().parents[2]
 EMB = ROOT / "dataset/imagery/embeddings/siglip2-large"
 LAD = EMB / "ladder"
-OUT = ROOT / "paper/figures/figS_ladder_decomposition.png"
+OUT = ROOT / "paper/figures/fig_identity_naming.png"
 
 from make_phase2_figures import short_biome, biome_color
 
@@ -28,8 +28,8 @@ PROJ = {"labels": ["0 (full)", "−5 dir", "−10 dir", "−20 dir"],
 
 
 def main(proj_mu=None):
-    dec = pd.read_csv(LAD / "stats_decomposition.csv")
-    mn = pd.read_csv(LAD / "stats_species_matched_null.csv")
+    dec = pd.read_csv(LAD / "stats_decomposition_strat.csv")
+    mn = pd.read_csv(LAD / "stats_species_matched_null_strat.csv")
 
     order = dec.sort_values("delta_full", ascending=False)["biome"].tolist()
     dec = dec.set_index("biome").reindex(order)
@@ -56,7 +56,7 @@ def main(proj_mu=None):
     axA.set_yticks(y); axA.set_yticklabels([short_biome(b) for b in order],
                                             fontsize=8.5)
     axA.invert_yaxis()
-    axA.set_xlabel(r"residualised marginal $\Delta$ ($\times 10^{-3}$), raw-Russian frame",
+    axA.set_xlabel(r"residualised within-taxon stratified $\Delta$ ($\times 10^{-3}$), raw-Russian frame",
                    fontsize=9.5)
     axA.set_title("A. Per-biome decomposition: full original myth vs three separated baselines",
                    fontsize=11, fontweight="bold", loc="left")
@@ -67,7 +67,7 @@ def main(proj_mu=None):
 
     # ---- Panel B: matched-null ladder summary ----
     axB.set_facecolor("white")
-    summ = pd.read_csv(LAD / "stats_matched_null_summary.csv")
+    summ = pd.read_csv(LAD / "stats_matched_null_summary_strat.csv")
     # order: species, ethnonym, place, joint
     o = {r["null"]: r for _, r in summ.iterrows()}
     seq = ["species", "ethnonym", "place", "joint"]

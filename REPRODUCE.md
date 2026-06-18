@@ -111,7 +111,8 @@ pipeline; the cleaned text is included in the dataset.
 | `src/analysis/glottolog_swap.py` | Within-Glottolog-macroarea biome-swap null (used in the main-text "Cultural-geographic autocorrelation" subsection). |
 | `src/analysis/ladder_embed.py` | Identity-naming decomposition (paper §S6): embed the full raw-Russian myth and three *separated* baselines — species, place, and ethnonym bags read from `_entity_extraction/full/` — sentence-pooled with SigLIP-2. Writes `ladder/emb_*.npy` + `ladder/manifest.parquet`. Requires a GPU. |
 | `src/analysis/ladder_stats.py` | Per-biome decomposition (full vs each baseline), species-matched permutation null (K-means blocks on the species embedding), and species-subspace projection. Writes `ladder/stats_decomposition.csv` and `ladder/stats_species_matched_null.csv`. |
-| `src/analysis/ladder_stats_extra.py` | Place-, ethnonym-, and joint (species+place+ethnonym)-matched permutation nulls on Δ_full. Writes the remaining `ladder/stats_*_matched_null.csv` and `ladder/stats_matched_null_summary.csv`. |
+| `src/analysis/ladder_stats_extra.py` | Place-, ethnonym-, and joint (species+place+ethnonym)-matched permutation nulls on the marginal Δ_full. Writes the remaining `ladder/stats_*_matched_null.csv` and `ladder/stats_matched_null_summary.csv`. |
+| `src/analysis/ladder_stats_stratified.py` | The **headline** ladder battery: the entire decomposition + all four matched-permutation nulls + species-subspace projection recomputed on the **within-iconic-taxon stratified** Δ (not the marginal). This is what the main-text identity-naming subsection reports. Writes `ladder/stats_*_strat.csv`. |
 | `src/analysis/myth_image_umap.py` | Unsupervised biome-recovery geometry: residualised myth×image cosine (2,158 × 46,481) → PCA-50 → UMAP. Writes `umap_pca50.npy`, `umap_xy.npy`, `umap_biome_retrievability.csv`, and `figS_myth_image_umap.png`. |
 | `src/analysis/myth_image_umap2.py` | Three-way characterisation (biome / cultural macro-area / content-taxon) of the same geometry via kNN + linear probe vs a shuffled null. Writes `umap_retrievability3.csv` and `figS_myth_umap_3way.png`. |
 | `src/analysis/n_confound_figure.py` | Sampling-size robustness check for the earth map: per-biome marginal vs stratified Δ against the number of traditions per biome. Writes `paper/figures/figS_n_confound.png`. |
@@ -127,7 +128,7 @@ pipeline; the cleaned text is included in the dataset.
 | `src/figures/crossmodel_corr.py` | Cross-model correlation helper. |
 | `src/figures/species_composition.py` + `species_composition_specA.py` | Supplementary fig S5 (raw ecological composition per biome, Spec A view). |
 | `src/figures/bulletproof_table.py` | Generate supplementary tables. |
-| `src/analysis/ladder_figure.py` | figS_ladder_decomposition.png — identity-naming decomposition (paper §S6). Pass the species-subspace projection μΔ values printed by `ladder_stats.py` as CLI args for panel C. |
+| `src/analysis/ladder_figure.py` | fig_identity_naming.png — identity-naming decomposition (main text), built from the **stratified** battery. Reads the `ladder/stats_*_strat.csv` tables; pass the stratified species-subspace projection μΔ values printed by `ladder_stats_stratified.py` as CLI args for panel C (e.g. `... 0.416 0.247 0.195 0.274`). |
 | `src/analysis/biome_recovery_figure.py` | fig_biome_recovery.png — unsupervised biome recovery (main text): own-biome retrieval curve, taxon-stratified biome×biome matrix, and per-biome decodability. Reads `umap_pca50.npy` (run `myth_image_umap2.py` first). |
 
 ## Phase 6 — Paper compilation
@@ -167,12 +168,13 @@ python src/figures/make_v3_figures.py
 python src/figures/taxon_combined.py
 python src/figures/taxon_facets.py
 
-# Identity-naming decomposition (paper §S6) — needs the entity extractions
-# in _entity_extraction/full/ (shipped with the repo) and a GPU for the embed step
+# Identity-naming decomposition (main-text fig_identity_naming.png) — needs the
+# entity extractions in _entity_extraction/full/ (shipped) and a GPU for the embed
 python src/analysis/ladder_embed.py
-python src/analysis/ladder_stats.py
+python src/analysis/ladder_stats.py             # marginal-frame battery (context)
 python src/analysis/ladder_stats_extra.py
-python src/analysis/ladder_figure.py
+python src/analysis/ladder_stats_stratified.py  # headline stratified battery
+python src/analysis/ladder_figure.py 0.416 0.247 0.195 0.274
 
 # Unsupervised biome recovery (main-text fig_biome_recovery.png)
 python src/analysis/myth_image_umap.py

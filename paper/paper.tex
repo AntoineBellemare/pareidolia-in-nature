@@ -422,6 +422,94 @@ effect but do not exhaust it: the biome content of the motif
 text carries information beyond within-macroarea cultural-region
 membership.
 
+\subsection*{The alignment is not reducible to identity naming}
+
+The most direct objection to the headline is that a biome's
+mythology simply names that biome's species, places, and peoples,
+and the encoder reads the alignment off those names. The
+anonymisation pipeline answers this by \emph{removing} the names.
+A complementary strategy keeps the original myths intact and
+instead \emph{holds the names constant} statistically, on the same
+within-iconic-taxon stratified $\Delta$ as the headline so the two
+are directly comparable. We extract three identity classes per
+motif from the raw Russian text and keep them separate: the species
+named in the myth (LLM extraction, adversarial audit $96.7\%$
+recall and $95.3\%$ precision), the WWF-codable geographic regions
+from Berezkin's metadata, and the ethnolinguistic groups that carry
+the motif. Each is embedded as a bag of its entities with the same
+sentence-pooled SigLIP-2 pipeline and scored against the same
+iNaturalist images (Figure~\ref{fig:fig-identity}).
+
+Each identity channel is biome-diagnostic on its own
+(Figure~\ref{fig:fig-identity}A). A species-only bag gives
+stratified $\mu\Delta = +0.97\times 10^{-3}$ ($13/14$ biomes
+significant), an ethnonym-only bag $+0.73\times 10^{-3}$ ($14/14$),
+and a place-only bag $+0.36\times 10^{-3}$ ($14/14$). The full
+original myth gives $+0.42\times 10^{-3}$ ($10/14$), strikingly
+close to the $+0.41\times 10^{-3}$ the \emph{anonymised} corpus
+reaches on the same statistic --- two opposite roads, removing the
+names and keeping them, arriving at the same number. A bag of
+species names is in fact more biome-diagnostic than the full myth,
+which dilutes the species cue with narrative content, and this
+holds under stratification, so it is not an artefact of image-side
+taxon composition. Species naming is therefore a genuinely strong
+biome channel, exactly the concern.
+
+We test whether the full-myth alignment exceeds what that naming
+determines, in two independent ways. A matched-permutation null
+(Figure~\ref{fig:fig-identity}B) shuffles biome labels only among
+motifs that are nearest neighbours in the relevant identity-bag
+embedding ($60$ K-means blocks), holding identity approximately
+constant while breaking biome, and recomputes the stratified
+$\Delta$. Six of the fourteen biomes retain alignment above a joint
+null that holds species, place, and ethnonym constant
+simultaneously --- the same count that survives the Glottolog
+cultural-geographic swap, two stringent and unrelated controls
+leaving the same handful of biomes standing. (The place channel
+alone is near-circular, since biome is derived from the region
+metadata, so we read the joint and species-only nulls rather than
+place.) An independent embedding-space test
+(Figure~\ref{fig:fig-identity}C) projects the top species-subspace
+directions out of the full-myth embeddings and recomputes the
+stratified $\Delta$, which attenuates from $+0.42$ to
+$+0.20$--$0.27\times 10^{-3}$ but stays significant in $8$ to $12$
+of $14$ biomes across $5$, $10$, and $20$ removed directions.
+Neither the matched-permutation null nor the linear projection is
+an exact control, and both attenuate the effect. What they jointly
+establish, from assumptions that do not overlap with the
+anonymisation --- the anonymisation route trusts the cleaning but
+removes the taxon confound, this route trusts no cleaning and, on
+the stratified statistic, removes it too --- is that the
+alignment on the un-anonymised myths is not reducible to the
+trivial channel by which a biome's mythology names its own
+species, places, and peoples.
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{fig_identity_naming.png}
+\caption{\textbf{The alignment on the original, un-anonymised myths
+is not reducible to identity naming.} All panels use the
+within-iconic-taxon stratified $\Delta$ in the raw-Russian frame
+against iNaturalist images. \emph{Panel A}: per-biome decomposition
+of the full original myth and three separately-measured identity
+baselines (species, place, ethnonym bags). A species-only bag is
+more biome-diagnostic than the full myth, and this survives
+stratification. \emph{Panel B}: matched-permutation-null ladder ---
+for each identity class, and for all three jointly, biome labels
+are shuffled only among motifs matched on that class's
+identity-bag embedding ($60$ K-means blocks); bars give observed
+$\mu\Delta_{\text{full}}$ (black) versus the matched-null mean
+(gold), annotated with the count of biomes whose observed $\Delta$
+exceeds the null at $p<.05$. The place null is near-circular
+because biome is derived from the region metadata. \emph{Panel C}:
+independent embedding-space control --- the top $k$
+species-subspace directions are projected out of the full-myth
+embeddings and the stratified $\Delta$ recomputed ($k = 5, 10, 20$);
+$\mu\Delta$ attenuates but stays positive and significant in the
+majority of biomes.}
+\label{fig:fig-identity}
+\end{figure}
+
 \subsection*{Breadth gradient}
 
 \begin{figure}[h!t]
@@ -883,29 +971,23 @@ records something of its biome beyond the names of what lives
 there.
 
 The anonymisation pipeline and the class-word collapse both make
-this point by \emph{removing} naming from the text. A
-complementary analysis on the original, un-anonymised myths
-reaches the same conclusion by instead holding the naming
-constant statistically (Supplementary
-Section~\ref{sec:ladder}). Keeping the raw Russian myths intact,
-we measure three identity-naming channels separately --- the
-species named in the text, the geographic regions, and the
-ethnolinguistic groups --- and test whether the full-myth
-alignment survives matched-permutation nulls that shuffle biome
-only among motifs with the same naming content. Each channel is
-biome-diagnostic on its own (a bag of species names is in fact
-\emph{more} biome-diagnostic than the full myth), and naming
-accounts for roughly $40$ to $70\%$ of the alignment depending on
-the channel. But $11$ of $14$ biomes retain a significant
-alignment under a joint null that holds species, place, and
-ethnonym constant simultaneously, and an independent
-embedding-space projection of the species axis attenuates the
-effect from $+0.47$ to $+0.29$--$0.35\times 10^{-3}$ while leaving
-it significant in $11$--$13$ biomes. The two strategies,
-removing the names and holding the names constant, converge: the
-biome--mythology alignment is not reducible to the trivial
-channel by which a biome's mythology names that biome's species,
-places, and peoples.
+this point by \emph{removing} naming from the text. The
+identity-naming analysis (Figure~\ref{fig:fig-identity}) reaches
+the same conclusion from the opposite direction, keeping the
+original myths intact and instead holding the species, place, and
+ethnonym channels constant statistically on the same stratified
+statistic. On that statistic the un-anonymised full myth aligns
+almost exactly as strongly as the anonymised one, and a bag of
+species names is more biome-diagnostic than the full myth, yet the
+alignment still persists in roughly half the biomes once all three
+naming channels are held constant and under a projection that
+removes the species axis from the embeddings. The two strategies
+rest on assumptions that do not overlap --- one trusts the
+cleaning and removes the taxon confound, the other trusts no
+cleaning and removes the confound through stratification --- and
+they converge: the biome--mythology alignment is not reducible to
+the trivial channel by which a biome's mythology names that
+biome's species, places, and peoples.
 
 \subsection*{Toward a falsifiable enactivist mythography}
 
@@ -1227,6 +1309,36 @@ each of them and the across-biome ranking is preserved, ruling out
 the interpretation that any particular vocabulary anchor is doing
 the work. The LLM-mediated pipeline described above is the
 strictest in the family and the one we use for the headline.
+
+\subsection*{Identity-naming controls}
+
+To test the alignment on the un-anonymised myths while controlling
+for biome-correlated naming, we extracted three identity classes
+per motif from the raw Russian Berezkin abstracts and kept them
+separate. Species (every specifically named organism, fauna and
+flora) were extracted by an LLM reading the Russian text; a
+held-out adversarial audit of $120$ motifs estimated $96.7\%$
+recall and $95.3\%$ precision against the source. Places are the
+WWF-codable regions in Berezkin's metadata, and ethnonyms are the
+tradition names that carry each motif. Each class was rendered as a
+bag of its entities, embedded with the same sentence-pooled
+SigLIP-2 pipeline as the full myth in the raw-Russian frame, and
+scored against the same iNaturalist images on the within-iconic-
+taxon stratified $\Delta$. Because this is a self-contained
+raw-Russian decomposition, its absolute magnitudes are not
+formally comparable to the English LLM-clean headline, although the
+full-myth stratified $\Delta$ coincides closely with it. The
+matched-permutation null partitions motifs into $60$ K-means blocks
+in the relevant identity-bag embedding space and, for each of
+$1{,}000$ permutations, shuffles biome labels only within a block,
+so identity content is held approximately constant while biome
+assignment is broken; the joint null concatenates the
+L2-normalised species, place, and ethnonym embeddings before
+blocking. The species-subspace projection removes the top $k$
+principal directions of the species-bag embeddings from the
+full-myth embeddings ($k = 5, 10, 20$) and recomputes the
+stratified $\Delta$. The extraction prompts, audit, and per-biome
+tables are released with the code.
 
 \subsection*{Statistical tests}
 
@@ -1593,97 +1705,6 @@ removes. The all-motifs version of the heatmap is dominated by
 universal motifs and therefore uniformly red across biomes; we omit
 it here and release the underlying counts in the data drop.}
 \label{fig:figS-species}
-\end{figure}
-
-\subsection*{S6. Identity-naming decomposition on the original
-myths}\label{sec:ladder}
-
-The anonymisation pipeline addresses the concern that the alignment
-reflects only biome-correlated naming by \emph{removing} species,
-place, and biome vocabulary from the text. A complementary strategy
-is to \emph{keep} the original myths intact and instead control for
-the naming channels statistically. This supplementary analysis does
-that, on the raw (un-anonymised) Russian Berezkin abstracts, and
-decomposes the alignment into three separately-measured
-identity-naming components.
-
-We extract three identity classes per motif and keep them separate.
-\emph{Species}: every specific named organism (fauna and flora) in
-the myth, extracted by an LLM reading the Russian text; an
-independent adversarial audit of 120 motifs estimates $96.7\%$
-recall and $95.3\%$ precision against the source text. \emph{Place}:
-the WWF-codable geographic regions associated with each motif in
-Berezkin's metadata. \emph{Ethnonym}: the ethnolinguistic groups
-(tradition names) that carry each motif in the catalogue. Each
-class is rendered as a bag of its entities and embedded with the
-same sentence-pooled SigLIP-2 pipeline as the full myth, in the
-raw-Russian frame, and compared against the same iNaturalist
-images. This is a self-contained decomposition in the
-raw-Russian frame; its absolute magnitudes are not directly
-comparable to the English LLM-clean headline.
-
-On its own, each identity channel is biome-diagnostic
-(Figure~\ref{fig:figS-ladder}, Panel A): the full original myth
-gives residualised marginal $\mu\Delta = +0.47\times 10^{-3}$
-(12/14 biomes significant), a species-only bag gives
-$+0.75\times 10^{-3}$ (14/14), an ethnonym-only bag
-$+0.69\times 10^{-3}$ (14/14), and a place-only bag
-$+0.26\times 10^{-3}$ (9/14). A pure bag of species names is in
-fact \emph{more} biome-diagnostic than the full myth, which dilutes
-the species cue with narrative content. Species naming is therefore
-a genuinely strong channel, exactly the concern.
-
-We test whether the full-myth alignment survives controlling for
-each channel with a matched-permutation null
-(Figure~\ref{fig:figS-ladder}, Panel B): biome labels are shuffled
-only among motifs that are nearest neighbours in the relevant
-identity-bag embedding space ($60$ K-means blocks), so the identity
-content is held approximately constant while biome assignment is
-broken. Under the species-matched null, the null reproduces $38\%$
-of the observed $\Delta_{\text{full}}$ but $11$ of $14$ biomes
-retain observed $\Delta$ above the null at $p<.05$. Under the
-ethnonym-matched null, $10/14$ survive; under the place-matched
-null, $7/14$ (the place null is near-circular, since each biome is
-\emph{derived} from the WWF region assignment, so holding place
-constant nearly holds biome constant). Under a joint null that
-blocks on all three identity classes simultaneously, $11/14$ biomes
-still survive. An independent embedding-space test
-(Figure~\ref{fig:figS-ladder}, Panel C) projects the top species
-directions out of the full-myth embeddings and recomputes
-$\Delta$: $\mu\Delta$ falls from $+0.47$ to $+0.29$--$0.35\times
-10^{-3}$ but remains significant in $11$--$13$ of $14$ biomes
-across $5$, $10$, and $20$ removed directions.
-
-The two independent methods converge. Identity naming (species,
-place, and peoples) accounts for a substantial fraction of the
-biome--mythology alignment on the original myths, roughly $40$ to
-$70\%$ depending on the channel, but the majority of biomes retain
-a significant alignment after that naming is held constant. The
-effect measured on the un-anonymised myths is therefore not
-reducible to the trivial channel by which biome-$b$ mythology names
-biome-$b$ species, places, and peoples --- consistent with, and
-independent of, the anonymisation-based evidence in the main text.
-
-\begin{figure}[h!t]
-\centering
-\includegraphics[width=\textwidth]{figS_ladder_decomposition.png}
-\caption{\textbf{Identity-naming decomposition on the original
-(un-anonymised) Russian myths.} \emph{Panel A}: per-biome
-residualised marginal $\Delta$ for the full original myth and for
-three separately-measured identity baselines (species, place,
-ethnonym), raw-Russian frame, iNaturalist images. \emph{Panel B}:
-matched-permutation-null ladder. For each identity class, and for
-all three jointly, biome labels are shuffled only among motifs
-matched on that class's identity-bag embedding (60 K-means blocks);
-bars show observed $\mu\Delta_{\text{full}}$ (black) versus the
-matched-null mean (gold), with the count of biomes whose observed
-$\Delta$ exceeds the null at $p<.05$. The place null is
-near-circular because biome is derived from the region metadata.
-\emph{Panel C}: independent embedding-space control --- the top
-$k$ species-subspace directions are projected out of the full-myth
-embeddings and $\Delta$ is recomputed ($k = 5, 10, 20$); $\mu\Delta$
-attenuates but stays positive and significant.}
-\label{fig:figS-ladder}
 \end{figure}
 
 \end{document}

@@ -55,6 +55,7 @@ autocorrelation contribute to the alignment but do not exhaust it.
 | **Fig 5** — Per-biome stratified Δ projected onto a world map, full LLM-clean corpus (A) and Spec A subset (B). | ![fig5](paper/figures/fig5_earth_map.png) |
 | **Fig 11** — Breadth gradient: stratified μΔ across biomes falls from +0.58 ×10⁻³ in biome-specific motifs to +0.12 ×10⁻³ in universals. | ![fig11](paper/figures/fig11_universals_analysis.png) |
 | **Fig (biome recovery)** — Biome structure recovered from the unsupervised myth×image affinity geometry without using biome labels: own-biome retrieval curve, taxon-stratified biome×biome matrix, per-biome decodability. | ![biome-recovery](paper/figures/fig_biome_recovery.png) |
+| **Fig (identity naming)** — The alignment on the original, un-anonymised myths is not reducible to identity naming: per-biome decomposition (species/place/ethnonym bags), matched-permutation-null ladder (joint null 6/14 survive), and species-subspace projection — all on the stratified Δ. | ![identity-naming](paper/figures/fig_identity_naming.png) |
 
 ---
 
@@ -83,11 +84,12 @@ python src/figures/make_v3_figures.py
 python src/figures/taxon_combined.py
 python src/figures/taxon_facets.py
 
-# Identity-naming decomposition (§S6) + unsupervised biome recovery (main text)
-python src/analysis/ladder_embed.py        # needs _entity_extraction/ + GPU
-python src/analysis/ladder_stats.py
+# Identity-naming decomposition + unsupervised biome recovery (both main text)
+python src/analysis/ladder_embed.py             # needs _entity_extraction/ + GPU
+python src/analysis/ladder_stats.py             # marginal-frame battery (context)
 python src/analysis/ladder_stats_extra.py
-python src/analysis/ladder_figure.py
+python src/analysis/ladder_stats_stratified.py  # headline stratified battery
+python src/analysis/ladder_figure.py 0.416 0.247 0.195 0.274
 python src/analysis/myth_image_umap.py
 python src/analysis/myth_image_umap2.py
 python src/analysis/biome_recovery_figure.py
