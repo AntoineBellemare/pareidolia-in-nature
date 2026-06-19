@@ -69,7 +69,7 @@ def main():
             ha="center", va="center", fontsize=12.5, fontweight="bold", color="#111")
     ax.text(0.5, 0.906, "2,158 Berezkin folk-motifs over 14 WWF biomes, aligned to",
             ha="center", va="center", fontsize=8.7, color="#333")
-    ax.text(0.5, 0.879, "iNaturalist photos and Places365 scenes (sentence-pooled SigLIP-2)",
+    ax.text(0.5, 0.879, "46,481 iNaturalist species photos (sentence-pooled SigLIP-2)",
             ha="center", va="center", fontsize=8.7, color="#333")
 
     cols = [(0.035, "#2e7d54", "#dcefe4"), (0.365, "#c4632e", "#f6e2d4"),
@@ -86,7 +86,7 @@ def main():
         "1  ·  Remove the names", "Figs 3, 4, 6, 7",
         "Strip every species, place, and people from the myth, then "
         "re-score what remains with the stratified Δ.",
-        "Anonymised myth still aligns: 8/14 biomes (FDR), two corpora, "
+        "Anonymised myth still aligns: 8/14 biomes (FDR), iNat + Places365, "
         "four models.")
     box(ax, cols[1][0], ytop, w, h, cols[1][1], cols[1][2],
         "2  ·  Hold the names constant", "Fig 5  ·  S6",
