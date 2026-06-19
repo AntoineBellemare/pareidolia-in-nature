@@ -74,7 +74,7 @@ def main():
 
     cols = [(0.035, "#2e7d54", "#dcefe4"), (0.365, "#c4632e", "#f6e2d4"),
             (0.695, "#5a4b9c", "#e6e0f2")]
-    w, h, ytop = 0.27, 0.50, 0.315
+    w, h, ytop = 0.27, 0.41, 0.315
 
     # arrows: input -> each lane
     for x0, accent, _ in cols:
@@ -84,8 +84,8 @@ def main():
 
     box(ax, cols[0][0], ytop, w, h, cols[0][1], cols[0][2],
         "1  ·  Remove the names", "Figs 3, 4, 6, 7",
-        "Strip every species, place, and people from the myth, leaving "
-        "only generic language; re-score with the stratified $\\Delta$.",
+        "Strip every species, place, and people from the myth, then "
+        "re-score what remains with the stratified Δ.",
         "Anonymised myth still aligns: 8/14 biomes (FDR), two corpora, "
         "four models.")
     box(ax, cols[1][0], ytop, w, h, cols[1][1], cols[1][2],
