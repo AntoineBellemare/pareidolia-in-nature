@@ -415,7 +415,7 @@ artefact of one corpus's curatorial peculiarities. The per-biome
 pattern is likewise not an artefact of a single encoder: it
 correlates across four vision--language models (SigLIP-2, M-CLIP,
 and OpenCLIP under LAION-2B and OpenAI pretrainings), with
-across-model rank correlations of the per-biome $\Delta$ in the
+across-model Pearson correlations of the per-biome $\Delta$ in the
 range $r=0.74$--$0.94$, though the two OpenCLIP variants carry a
 weaker overall mean (Supplementary Section~S3,
 Figure~\ref{fig:figS-crossmodel}). Projected onto
@@ -622,7 +622,10 @@ biome cells are individually significant under within-taxon
 stratification, against seven of fourteen for semi-universals and
 two of fourteen for universals; the Spec~A subset carries a much
 larger per-biome effect with proportionally similar significance
-density. The signature is present where an ecological-affordance reading
+density. The raw, pre-anonymisation ecological composition of the
+Spec~A motif text per biome --- which taxonomic and botanical
+categories each biome's biome-specific motifs actually name --- is
+given in Supplementary Figure~\ref{fig:figS-species}. The signature is present where an ecological-affordance reading
 would locate it, attenuated where breadth dilutes the
 environmental tie, and essentially absent where motifs have
 propagated across $\geq 8$ biomes.
@@ -694,7 +697,9 @@ therefore not a separate analysis from the headline but its
 building blocks.
 
 Reading the per-biome × per-taxon matrix (Figure~\ref{fig:fig10},
-Panel A) row by row reveals that every biome's strongest cells
+Panel A; a per-taxon small-multiples rendering is given in
+Supplementary Figure~\ref{fig:figS-taxonfacets}) row by row reveals
+that every biome's strongest cells
 fall in the taxa ecologically characteristic of it. Boreal
 Forests/Taiga is carried by Mammalia, Aves, and Actinopterygii
 (bears, owls, salmon); Tundra by Mammalia and Aves; Montane
@@ -1258,11 +1263,12 @@ The headline model is SigLIP-2-large
 a multilingual vision--language model with native Russian support.
 Images use the standard $384\times 384$ preprocessing. Text is
 sentence-pooled: each LLM-clean Berezkin abstract is split into
-sentences (regex on terminal punctuation, sentences of $<3$ words
-dropped, capped at $50$ sentences per motif), each sentence is
-embedded independently within SigLIP-2's $64$-token window
-(mean $23$ sentences per motif; $50{,}032$ sentences in total across
-$2{,}158$ motifs in total), and the per-motif vector is the
+sentences (NLTK Punkt sentence tokenizer, with a terminal-punctuation
+regex fallback; sentences of $<3$ words dropped, capped at $50$
+sentences per motif), each sentence is embedded independently within
+SigLIP-2's $64$-token window (mean $23$ sentences per motif;
+$50{,}032$ sentences across all $2{,}158$ motifs), and the per-motif
+vector is the
 mean-pooled, L2-renormalised sentence embedding. Sentence pooling
 matters because the raw English abstracts average $\sim 3{,}400$
 tokens, of which a $64$-token truncation captures only the first
@@ -1487,13 +1493,14 @@ the residualised marginal $\Delta$ at the biome level. The
 headline iNat statistic is the within-iconic-taxon stratified
 version $\Delta^{\text{strat}}_b$ defined above. Significance is
 assessed by $1{,}000$ permutations of the motif-to-biome
-assignment (each biome drawn from an independent random stream and
-the stratified statistic recomputed under each permutation), with
-permutation $p = (1 + \#\{\text{null} \geq \text{obs}\}) / (1 + 1000)$
-and FDR control across biomes via the Benjamini--Hochberg
-procedure~\citep{benjamini1995controlling}; the same $+1$ smoothing
-and independent per-test seeding are used by the matched-permutation
-and unsupervised-recovery nulls below.
+assignment (the stratified statistic recomputed under each
+permutation), with permutation $p = \#\{\text{null} \geq
+\text{obs}\}/1000$ and FDR control across biomes via the
+Benjamini--Hochberg procedure~\citep{benjamini1995controlling}. The
+matched-permutation and unsupervised-recovery nulls below
+additionally use $+1$-smoothed $p$-values, $p = (1 + \#\{\text{null}
+\geq \text{obs}\})/(1 + n_{\text{perm}})$, and an independent
+random-number stream per biome.
 For all main-figure panels we apply a display threshold of
 $\geq 50$ in-biome images, $\geq 5$ in-biome motifs, and
 $\geq 20$ images per biome--taxon stratum; biome--taxon cells
@@ -1508,8 +1515,9 @@ tradition's motifs are reassigned to a different biome that is also
 represented within its own macro-area, and the stratified $\Delta$ is
 recomputed. A biome is taken to carry signal beyond within-macro-area
 cultural regularity when its observed $\Delta$ exceeds the $95$th
-percentile of this swap distribution (with Benjamini--Hochberg FDR
-across biomes). The null is defined once here and applied in the
+percentile of this swap distribution (a one-sided $95$th-percentile
+threshold; $p$-values are unadjusted across biomes). The null is
+defined once here and applied in the
 Results and in Supplementary Section~\ref{sec:biome-tell}.
 
 \subsection*{Unsupervised biome recovery}
@@ -1543,7 +1551,13 @@ PCA-reduced vectors. As a text-side control against the taxon
 channel, both diagnostics are recomputed on the class-word-collapsed
 embeddings (every animal-kingdom class word mapped to ``animal'' and
 every plant-kingdom class word to ``plant''; see \emph{Controls
-against biome cues}).
+against biome cues}). The same two diagnostics are repeated on the
+$1{,}655$ Places365 scenes; because the scenes carry no iconic-taxon
+labels, own-biome retrieval there uses the marginal rather than
+taxon-stratified similarity, and the PCA-$50$ is taken of the
+myth\,$\times$\,Places365 similarity matrix, over the seven biomes
+with $\geq 50$ scenes and $\geq 20$ own-biome motifs
+(Figure~\ref{fig:fig-recovery-p365}).
 
 % =============================================================================
 \section*{Data and code availability}
@@ -1567,10 +1581,10 @@ abstracts are accessible at
 \section*{Supplementary materials}\label{app:supp}
 
 The supplementary materials below collect the analyses that probe
-the robustness of the headline finding from five complementary
-angles: (i) the headline robustness atlas (word-shuffle, encyclopedic-
-register null, and baseline controls), with the four panels shown at
-full size; (ii) a
+the robustness of the headline finding from six complementary
+angles: (i) the headline robustness atlas, a four-panel figure
+(word-shuffle, encyclopedic-register null, cross-corpus replication,
+and cross-model); (ii) a
 per-taxon decomposition that asks which iNaturalist taxonomic
 groups carry the alignment; (iii) a cross-model replication
 across four vision--language model architectures on the same
@@ -1581,7 +1595,7 @@ and a within-Glottolog-macroarea biome-swap null); (v) an
 analysis of the raw ecological composition of motif text per
 biome, which makes explicit what the anonymisation pipeline is
 removing; and (vi) a direct convergence check confirming that the
-two anonymisation strategies---removing the names and holding them
+two name-control strategies---removing the names and holding them
 constant---recover the same biome geography, breadth gradient, and
 per-taxon structure. Throughout, the same statistical conventions apply as
 in the main text: sentence-pooled SigLIP-2 on the full LLM-clean
@@ -1599,11 +1613,18 @@ structure. Replacing the motifs with synthetic
 encyclopedic-register paragraphs of comparable length collapses
 $\mu\Delta$ to near zero, ruling out the possibility that the
 residualised statistic produces a positive bias on biome-neutral
-text. The per-biome $\Delta$ also replicates across all four
+text. The per-biome stratified $\Delta$ on iNaturalist species
+photographs also tracks the marginal $\Delta$ on the entirely
+disjoint Places365 landscape corpus (Panel B; Pearson $r = +0.36$
+across the $11$ shared biomes, both means positive), an independent
+cross-channel replication on images that share no content type.
+Finally, the per-biome $\Delta$ replicates across all four
 vision--language model architectures we tested (SigLIP-2 sentence-
 pooled, M-CLIP, OpenCLIP-LAION-2B, OpenCLIP-OpenAI) with
 across-model Pearson correlations between $+0.74$ and $+0.94$,
-ruling out a SigLIP-specific training-distribution artefact.
+ruling out a SigLIP-specific training-distribution artefact (the
+full pairwise cross-model agreement is shown in S3,
+Figure~\ref{fig:figS-crossmodel}).
 Finally, a held-out audit of 200 random anonymised motifs
 confirms a strict-clean rate of $96.5\%$ against species, place,
 and biome vocabulary; the categories that remain by construction
@@ -1615,7 +1636,7 @@ main text Discussion.
 \centering
 \includegraphics[width=\textwidth]{fig_v2_controls.png}
 \caption{\textbf{Robustness atlas referenced in the main
-Results.} \emph{Panel A}: per-biome stratified $\Delta$ on
+text.} \emph{Panel A}: per-biome stratified $\Delta$ on
 iNaturalist under three conditions that modify the text input.
 The original sentence-pooled embedding (dark blue) is essentially
 identical to its word-shuffled version (light blue) at every
@@ -1645,7 +1666,7 @@ SigLIP-2 to $+0.74\times 10^{-3}$ on OpenCLIP-LAION-2B.}
 \label{fig:v2controls}
 \end{figure}
 
-\subsection*{S2. Per-taxon decomposition (small-multiples view)}
+\subsection*{S2. Per-taxon decomposition}
 
 Figure~\ref{fig:figS-taxonfacets} re-renders the per-taxon
 decomposition of the headline result as small-multiple bar panels,
@@ -1670,16 +1691,6 @@ BH-$q < 0.05$ within the panel. Complements
 Figure~\ref{fig:fig10}.}
 \label{fig:figS-taxonfacets}
 \end{figure}
-
-% S2. Anonymisation-progression robustness ladders removed
-% (Fig 8 + Fig 9 in earlier numbering). The naming-progression ladders
-% compared the LLM-mediated headline pipeline against earlier
-% rule-based hypernym maps (v3 / v4 / v6 / v7 / v8). The progression
-% was useful as evidence that the effect is not specific to one
-% anonymisation choice, but presenting it alongside the LLM headline
-% invites the reader to weigh methods that were subsequently
-% superseded. The robustness claim is preserved verbally in the
-% Methods section.
 
 \subsection*{S3. Cross-model replication}
 
@@ -1741,7 +1752,10 @@ recoverable above chance) gives $\mu\Delta^{\text{strat}} =
 the low-tell half (motifs whose anonymised text alone is
 \emph{least} biome-recoverable) still gives $\mu\Delta^{
 \text{strat}} = +0.21\times 10^{-3}$ with 7 of 14 biomes
-significant at $p<.05$. Text-only biome predictability therefore
+significant at $p<.05$ (its marginal $\Delta$ is slightly negative,
+$-0.41\times 10^{-3}$, so the within-taxon stratification is what
+isolates the positive signal for this half). Text-only biome
+predictability therefore
 contributes to the alignment (the high-tell half is about $2.5
 \times$ the low-tell half), but the low-tell half on its own is
 not zero. That motifs whose text alone provides minimal biome
@@ -1823,14 +1837,15 @@ information beyond within-macro-area cultural autocorrelation.}
 \label{fig:figS-biome-tell}
 \end{figure}
 
-\subsection*{S5. Raw ecological composition per biome (Spec~A view)}
+\subsection*{S5. Raw ecological composition per biome}
 
 Figure~\ref{fig:figS-species} reports the raw ecological composition
 of motif text per biome, before anonymisation. For each WWF biome
 (rows) and each of fourteen taxonomic and botanical categories
 (columns), the left panel of the heatmap shows the percentage of
-Spec~A motifs whose raw Russian abstract mentions at least one
-species or plant of that category. The right panel shows the
+Spec~A motifs (those touching $\leq 3$ biomes, with $\geq 3$
+traditions in the biome) whose raw Russian abstract mentions at
+least one species or plant of that category. The right panel shows the
 difference between the Spec~A subset and the all-in-biome pool: a
 positive cell means the category is over-represented in
 biome-specific motifs relative to the universal-dominated full
@@ -1898,13 +1913,17 @@ stable across the blocking resolution ($K = 30/60/120/240$ all give
 $5$--$6$ of $14$). The breadth gradient
 (Figure~\ref{fig:figS-converge-breadth}) replicates as well: both
 methods recover a monotone decay from biome-specific to universal
-motifs (LLM-strip $\mu\Delta^{\text{strat}} = +0.58 \rightarrow
-+0.44 \rightarrow +0.12\times 10^{-3}$; raw matched null $+0.94
-\rightarrow +0.42 \rightarrow +0.26$). And the per-taxon structure
-(Figure~\ref{fig:figS-converge-taxon}) lines up cell for cell: the
-per-(biome $\times$ taxon) $\Delta$ matrices correlate at
-$r = +0.64$, with the same vertebrate-and-plant taxa carrying the
-signal under both controls. We read this convergence as evidence
+motifs (the LLM-strip track here reproduces the main-text breadth
+gradient of Figure~\ref{fig:fig11univ}, overlaid against the raw
+matched-null track --- LLM-strip $\mu\Delta^{\text{strat}} = +0.58
+\rightarrow +0.44 \rightarrow +0.12\times 10^{-3}$; raw matched null
+$+0.94 \rightarrow +0.42 \rightarrow +0.26$). And the per-taxon
+structure (Figure~\ref{fig:figS-converge-taxon}) lines up cell for
+cell: the per-(biome $\times$ taxon) $\Delta$ matrices correlate at
+$r = +0.64$ ($49$ of $113$ cells nominally significant under the
+LLM-strip permutation null, $28$ of $101$ under the matched null with
+$16$ surviving FDR), with the same vertebrate-and-plant taxa carrying
+the signal under both controls. We read this convergence as evidence
 that the alignment is a property of the motifs' lexical--thematic
 content rather than an artefact of any single anonymisation choice:
 it is equally present whether the identity names are physically
