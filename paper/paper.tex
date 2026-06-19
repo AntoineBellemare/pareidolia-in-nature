@@ -65,8 +65,9 @@ biomes and aligned via sentence-pooled SigLIP-2 to iNaturalist
 species photographs and Places365 landscape scenes after an LLM
 pipeline strips species, place, ethnonym, and biome-word
 vocabulary from the motif text. The alignment survives on both
-image corpora, replicates across four vision--language models,
-and decays monotonically with motif breadth, strongest in
+image corpora and, on the species-photo channel, replicates
+across four vision--language models, and decays monotonically
+with motif breadth, strongest in
 biome-specific motifs and fading toward zero in universals. The
 pattern is consistent with perceptual coupling at the
 lexical-thematic level. The residue mythology carries of its
@@ -82,9 +83,10 @@ Biome-specific motifs stabilised in encounter with a particular
 ecology and carry that encounter forward into their narrative
 substance, while universal motifs propagated only by detaching
 from any single biome and stabilising on cross-cultural
-structures, so the coupling fades in them precisely as the
-lineage from Schelling and Bateson through contemporary 4E
-cognitive science would predict. Mythology, on the reading the
+structures, so the coupling fades in them --- the gradient
+following more naturally from a coupling reading in the lineage
+from Schelling and Bateson through contemporary 4E cognitive
+science than from a projection account. Mythology, on the reading the
 data support, is one of the long instruments humans have used to
 keep the coupling between cognition and environment articulate
 across generations. We advance this stabilisation-over-generations
@@ -210,12 +212,20 @@ preferentially aligns with images of its own biome, and whether
 that alignment is concentrated in biome-specific motifs in the
 way an ecological-affordance reading would predict.
 
-We report below that such a residue is detectable. After stripping
-every overt environmental and cultural anchor from the text, the embedding of a tradition's mythology
-preferentially aligns with images of its own biome on two
-independent image corpora and across four vision--language model
-architectures, in both Russian and English. The alignment is
-graded with motif breadth in the way an ecological-affordance
+We report below that such a residue is detectable, and that it
+survives three independent tests whose assumptions do not overlap
+(Figure~\ref{fig:fig-roadmap}): removing the identity names from the
+text before embedding, holding them statistically constant under a
+matched-permutation null on the raw myths, and recovering biome
+structure from the unsupervised myth--image geometry without ever
+using biome labels. The three converge on the same biomes. After
+stripping every overt environmental and cultural anchor from the
+text, the embedding of a tradition's mythology preferentially aligns
+with images of its own biome on two independent image corpora and,
+on the iNaturalist species channel, across four vision--language
+model architectures; the matched-permutation control reproduces the
+alignment on the original, un-anonymised Russian text. The alignment
+is graded with motif breadth in the way an ecological-affordance
 reading would predict, strongest in motifs that did not propagate
 beyond a single biome and attenuating in motifs shared across
 many. We take this pattern to be more naturally accommodated by a
@@ -808,6 +818,21 @@ real and recoverable from the model's image affinities alone, but
 it is a thin overlay on a geometry that is otherwise organised by
 the kinds of plants, animals, and scenes the myths describe.
 
+The same recovery succeeds on the scene corpus. Repeating both
+diagnostics on the $1{,}655$ Places365 landscape photographs ---
+marginal rather than taxon-stratified, since the scenes carry no
+iconic-taxon labels --- recovers biome from the myth--scene affinity
+geometry just as cleanly: across the seven biomes with sufficient
+scene and motif support, own biome lands at the $61$st percentile
+($p=0.0005$, $2{,}000$ permutations) and all seven decode above their
+label-shuffled null at Benjamini--Hochberg FDR ($q<.05$; mean balanced
+accuracy $0.68$ versus $0.50$; Figure~\ref{fig:fig-recovery-p365}).
+That the unsupervised geometry yields biome on two image corpora with
+no shared photographs and no shared visual content type --- close-up
+species portraits versus wide-shot terrain --- indicates the recovered
+structure is a property of the myths rather than of any one image
+distribution.
+
 \begin{figure}[h!t]
 \centering
 \includegraphics[width=\textwidth]{fig_biome_recovery.png}
@@ -830,6 +855,24 @@ Throughout, ``own biome'' is the biome contributing the most of a
 motif's traditions, and the affinity vectors are built without
 reference to it.}
 \label{fig:fig-recovery}
+\end{figure}
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{fig_biome_recovery_p365.png}
+\caption{\textbf{The unsupervised biome recovery replicates on
+Places365 scene imagery.} As Figure~\ref{fig:fig-recovery}, but each
+motif is represented by its similarity profile across the $1{,}655$
+Places365 landscape photographs; because these scenes carry no
+iconic-taxon labels, own-biome retrieval uses the marginal per-biome
+similarity rather than the taxon-stratified one. \textbf{(A)}~Over the
+seven biomes with sufficient scene and motif support, own biome
+reaches the $61$st percentile on average ($p=0.0005$, $2{,}000$
+permutations). \textbf{(B)}~All seven biomes decode above their
+$200$-shuffle label-permuted null at Benjamini--Hochberg FDR $q<.05$,
+at a mean balanced accuracy of $0.68$ versus $0.50$. Biome labels are
+never used to build the affinity geometry.}
+\label{fig:fig-recovery-p365}
 \end{figure}
 
 % =============================================================================
@@ -1054,15 +1097,35 @@ ethnonym channels constant statistically on the same stratified
 statistic. On that statistic the un-anonymised full myth aligns
 almost exactly as strongly as the anonymised one, and a bag of
 species names is more biome-diagnostic than the full myth, yet the
-alignment still persists in roughly half the biomes once all three
-naming channels are held constant and under a projection that
-removes the species axis from the embeddings. The two strategies
-rest on assumptions that do not overlap --- one trusts the
-cleaning and removes the taxon confound, the other trusts no
-cleaning and removes the confound through stratification --- and
-they converge: the biome--mythology alignment is not reducible to
-the trivial channel by which a biome's mythology names that
-biome's species, places, and peoples.
+alignment still persists in six of the fourteen biomes once all
+three naming channels are held constant, and in eight to twelve
+under a projection that removes the species axis from the
+embeddings. These two strategies rest on assumptions that do not
+overlap --- one trusts the cleaning and removes the taxon confound,
+the other trusts no cleaning and removes the confound through
+stratification --- and they converge on the same biomes. A third
+strategy reaches them from a third disjoint assumption: reading
+biome directly off the unsupervised myth--image affinity geometry,
+without ever using biome labels to build the representation,
+recovers each motif's own biome at the $64$th percentile against a
+$50$th-percentile baseline and decodes all nine well-sampled biomes
+above their label-shuffled null (Figure~\ref{fig:fig-recovery}), and
+this recovery replicates on the Places365 scene corpus
+(Figure~\ref{fig:fig-recovery-p365}). Removing the names, holding
+them constant, and reading them off the geometry are three
+independent routes to the same biomes (Figure~\ref{fig:fig-roadmap}),
+and it is their convergence --- methods with non-overlapping failure
+modes agreeing --- rather than any single test that licenses reading
+the alignment as a property of the mythology rather than an artefact
+of how it was measured. The three routes do not all carry equally
+onto the scene corpus: there the conservative matched-permutation
+control retains only two of eleven biomes against six on the species
+channel (Supplementary Section~\ref{sec:convergence}), so we read
+that control as strongest on iNaturalist, while the anonymised
+alignment and the unsupervised recovery both hold on scenes as well.
+The biome--mythology alignment is, on all three readings, not
+reducible to the trivial channel by which a biome's mythology names
+that biome's species, places, and peoples.
 
 \subsection*{Toward a falsifiable enactivist mythography}
 
@@ -1203,7 +1266,8 @@ people''}) are encoded by SigLIP-2 and compared against each
 image's embedding. The strict-landscape score is
 $\mathrm{mean}(\text{positives}) - \max(\text{negatives})$; an
 image is dropped if its $\max(\text{negatives}) > 0.18$, and the
-remaining top-$K$ images per biome are kept. The Places365 filter
+remaining top-$K$ images per biome are kept, yielding $1{,}655$ scene
+photographs across the $11$ biomes Places365 covers. The Places365 filter
 is intentionally stricter than the iNaturalist filter, in
 particular it removes single-species close-ups, because the
 Places365 panel functions as a scene-only robustness check on
@@ -1446,14 +1510,30 @@ the residualised marginal $\Delta$ at the biome level. The
 headline iNat statistic is the within-iconic-taxon stratified
 version $\Delta^{\text{strat}}_b$ defined above. Significance is
 assessed by $1{,}000$ permutations of the motif-to-biome
-assignment (with the stratified statistic recomputed under each
-permutation), with FDR control across biomes via the
-Benjamini--Hochberg procedure~\citep{benjamini1995controlling}.
+assignment (each biome drawn from an independent random stream and
+the stratified statistic recomputed under each permutation), with
+permutation $p = (1 + \#\{\text{null} \geq \text{obs}\}) / (1 + 1000)$
+and FDR control across biomes via the Benjamini--Hochberg
+procedure~\citep{benjamini1995controlling}; the same $+1$ smoothing
+and independent per-test seeding are used by the matched-permutation
+and unsupervised-recovery nulls below.
 For all main-figure panels we apply a display threshold of
 $\geq 50$ in-biome images, $\geq 5$ in-biome motifs, and
 $\geq 20$ images per biome--taxon stratum; biome--taxon cells
 with fewer than $10$ images appear as missing in the per-taxon
 decomposition (Figure~\ref{fig:fig10}).
+
+A fourth control, used in the cultural-geographic autocorrelation
+analysis, is the within-Glottolog-macroarea biome-swap null. Each
+tradition is assigned to one of six Glottolog macro-areas by its
+geographic centroid; under each of $1{,}000$ permutations every
+tradition's motifs are reassigned to a different biome that is also
+represented within its own macro-area, and the stratified $\Delta$ is
+recomputed. A biome is taken to carry signal beyond within-macro-area
+cultural regularity when its observed $\Delta$ exceeds the $95$th
+percentile of this swap distribution (with Benjamini--Hochberg FDR
+across biomes). The null is defined once here and applied in the
+Results and in Supplementary Section~\ref{sec:biome-tell}.
 
 \subsection*{Unsupervised biome recovery}
 
@@ -1805,7 +1885,7 @@ it here and release the underlying counts in the data drop.}
 \label{fig:figS-species}
 \end{figure}
 
-\subsection*{S6. Convergence of the two anonymisation strategies}\label{sec:convergence}
+\subsection*{S6. Convergence of the two name-control strategies}\label{sec:convergence}
 
 The headline analyses control for identity naming by removing it
 from the text before embedding (the LLM-anonymisation pipeline). A
@@ -1820,8 +1900,12 @@ determines. The two strategies rest on assumptions that do not
 overlap: one trusts the text anonymisation, the other trusts the
 identity matching and uses no cleaning at all. Placed side by side on
 iNaturalist species photographs, they recover the same
-biome--mythology coupling along all three of the axes the main text
-reports.
+biome--mythology coupling along the geography, breadth, and per-taxon
+axes the main text reports. (The paper's third strategy --- unsupervised
+recovery of biome from the myth--image geometry without ever using
+biome labels --- is reported in the main text and reaches the same
+biomes by a further independent route, on iNaturalist and on Places365
+scenes alike; Figures~\ref{fig:fig-recovery}--\ref{fig:fig-recovery-p365}.)
 
 Geographically (Figure~\ref{fig:figS-converge-map}), the LLM-strip
 stratified $\Delta$ marks $8$ of $14$ biomes at Benjamini--Hochberg
