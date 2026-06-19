@@ -61,15 +61,16 @@ def main():
     ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
 
     # shared input
-    ax.add_patch(FancyBboxPatch((0.20, 0.875), 0.60, 0.095,
+    ax.add_patch(FancyBboxPatch((0.14, 0.850), 0.72, 0.125,
                                 boxstyle="round,pad=0.010,rounding_size=0.018",
                                 linewidth=1.5, edgecolor="#444", facecolor="#f2f4f6",
                                 zorder=2))
-    ax.text(0.5, 0.926, "Cross-cultural mythology meets biome imagery",
+    ax.text(0.5, 0.943, "Cross-cultural mythology meets biome imagery",
             ha="center", va="center", fontsize=12.5, fontweight="bold", color="#111")
-    ax.text(0.5, 0.893, "2,158 Berezkin folk-motifs over 14 WWF biomes, aligned to "
-            "iNaturalist photos and Places365 scenes (sentence-pooled SigLIP-2)",
-            ha="center", va="center", fontsize=8.6, color="#333")
+    ax.text(0.5, 0.906, "2,158 Berezkin folk-motifs over 14 WWF biomes, aligned to",
+            ha="center", va="center", fontsize=8.7, color="#333")
+    ax.text(0.5, 0.879, "iNaturalist photos and Places365 scenes (sentence-pooled SigLIP-2)",
+            ha="center", va="center", fontsize=8.7, color="#333")
 
     cols = [(0.035, "#2e7d54", "#dcefe4"), (0.365, "#c4632e", "#f6e2d4"),
             (0.695, "#5a4b9c", "#e6e0f2")]
@@ -77,7 +78,7 @@ def main():
 
     # arrows: input -> each lane
     for x0, accent, _ in cols:
-        ax.add_patch(FancyArrowPatch((0.5, 0.873), (x0 + w / 2, ytop + h + 0.004),
+        ax.add_patch(FancyArrowPatch((0.5, 0.848), (x0 + w / 2, ytop + h + 0.004),
                                      arrowstyle="-|>", mutation_scale=15,
                                      linewidth=1.3, color="#999", zorder=1))
 
