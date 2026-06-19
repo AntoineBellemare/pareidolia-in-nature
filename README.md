@@ -3,47 +3,66 @@
 ### Mythology as the Cultural Recording Layer of Perceptual Coupling
 
 A study testing whether the mythologies of cultures inhabiting different
-biomes carry a recoverable visual signature of those biomes, **even after
-every species name, place name, ethnonym, and biome word is stripped from
-the text**.
+biomes carry a recoverable visual signature of those biomes — a signature
+that holds when the species, places, and peoples a myth names are controlled
+for, shown by **three independent methods that converge on the same biomes**.
 
 The pattern is consistent with perceptual coupling at the lexical-thematic
-level: the residue mythology carries of its biome is not a catalogue of
-names but the schemas of attention, activity, and form that the biome
-made available to imagination.
+level: the trace a mythology carries of its biome is not a catalogue of
+names but the schemas of attention, activity, and form that a place makes
+available to imagination.
 
 ---
 
 ## What the study finds
 
-Anonymised motif text from Berezkin's catalogue of 958 cross-cultural
-folk traditions aligns above shuffle-permutation chance with images of
-the biomes those traditions inhabit, on two independent visual corpora
-(iNaturalist species photographs and Places365 landscape scenes) and
-across four vision–language model architectures (SigLIP-2, M-CLIP,
-OpenCLIP-LAION-2B, OpenCLIP-OpenAI). The alignment **decays monotonically
-with motif breadth** — strongest where the mythology is biome-specific,
-fading toward zero where it has propagated across most of the world.
+Each motif in Berezkin's catalogue of **958 cross-cultural folk traditions**
+(geocoded to the 14 WWF terrestrial biomes) is embedded with sentence-pooled
+SigLIP-2 and aligned to images of its biome, on two independent visual
+corpora — **46,481 iNaturalist species photographs** and **1,655 Places365
+landscape scenes**. A tradition's mythology aligns above chance with its own
+biome's imagery, and **this alignment is not reducible to the species,
+places, or peoples a myth happens to name**. Three independent controls,
+with non-overlapping assumptions, converge on the same biomes:
 
-The breadth gradient is the load-bearing signature. Biome-specific motifs
-stabilised in encounter with a particular ecology and carry that
-encounter forward in their narrative substance. Universal motifs
-propagated only by detaching from any single biome, and the coupling
-fades in them precisely as a lineage from Schelling and Bateson through
-contemporary 4E cognitive science would predict.
+1. **Remove the names.** After an LLM pipeline strips species, place,
+   ethnonym, and biome-word vocabulary from the text, the within-iconic-taxon
+   stratified Δ is positive in **8 of 14 biomes** at Benjamini–Hochberg FDR,
+   on both image corpora and across four vision–language models (SigLIP-2,
+   M-CLIP, OpenCLIP-LAION-2B, OpenCLIP-OpenAI).
+2. **Hold the names constant.** On the *raw* myths, a matched-permutation
+   null that shuffles biome only among motifs with the same
+   species/place/ethnonym identity content leaves **6 of 14 biomes**
+   significant (FDR), converging with strategy 1 (Spearman ρ = 0.75 on the
+   per-biome Δ).
+3. **Read it off the geometry.** Describing each myth by its similarity
+   profile across all images, and never using biome labels to build the
+   space, biome is recoverable unsupervised: own biome ranks in the **64th
+   percentile** (iNaturalist) and **61st** (Places365), and **9/9 and 7/7
+   well-sampled biomes decode above a label-shuffled null** at FDR.
 
-A class-word collapse control — in which every animal-kingdom class word
-in the cleaned text is further reduced to `animal` and every
-plant-kingdom word to `plant` — attenuates the per-taxon alignment for
-mammals, reptiles, and amphibians (whose mythological presence is built
-mostly from naming) but leaves the alignment for plants, fungi, birds,
-and insects largely intact (their mythological presence is built more
-from activities and contexts than from names).
+The alignment **decays monotonically with motif breadth** — strongest where
+the mythology is biome-specific, fading toward zero where it has propagated
+across most of the world. This breadth gradient is the load-bearing
+signature: biome-specific motifs stabilised in encounter with a particular
+ecology and carry that encounter forward in their narrative substance, while
+universal motifs propagated by detaching from any single biome — a gradient
+more naturally expected under a coupling reading (in the lineage from
+Schelling and Bateson through contemporary 4E cognitive science) than under
+a projection account.
 
-A within-Glottolog-macroarea biome-swap null, holding cultural region
-constant while shuffling biome assignment, attenuates the effect by
-roughly half but does not eliminate it. Geographic and cultural
-autocorrelation contribute to the alignment but do not exhaust it.
+Two further controls bound where the signal lives:
+
+- A **class-word collapse** — reducing every animal-kingdom word in the
+  cleaned text to `animal` and every plant word to `plant` — attenuates the
+  per-taxon alignment for mammals, reptiles, and amphibians (whose
+  mythological presence is built mostly from naming) but leaves plants,
+  fungi, birds, and insects largely intact (built more from activities and
+  contexts than from names).
+- A **within-Glottolog-macroarea biome-swap null**, holding cultural region
+  constant while shuffling biome assignment, leaves **6 of 14 biomes** above
+  the 95th percentile of the swap distribution. Cultural autocorrelation
+  contributes to the alignment but does not exhaust it.
 
 ---
 
@@ -51,67 +70,73 @@ autocorrelation contribute to the alignment but do not exhaust it.
 
 | | |
 |---|---|
-| **Fig 2** — Two-corpus replication of biome × mythology alignment on iNaturalist (stratified) and Places365 (marginal). | ![fig2](paper/figures/fig2_biome_bars.png) |
-| **Fig 5** — Per-biome stratified Δ projected onto a world map, full LLM-clean corpus (A) and Spec A subset (B). | ![fig5](paper/figures/fig5_earth_map.png) |
-| **Fig 11** — Breadth gradient: stratified μΔ across biomes falls from +0.58 ×10⁻³ in biome-specific motifs to +0.12 ×10⁻³ in universals. | ![fig11](paper/figures/fig11_universals_analysis.png) |
-| **Fig (biome recovery)** — Biome structure recovered from the unsupervised myth×image affinity geometry without using biome labels: own-biome retrieval curve and per-biome decodability vs a label-shuffled null. | ![biome-recovery](paper/figures/fig_biome_recovery.png) |
-| **Fig (identity naming)** — The alignment on the original, un-anonymised myths is not reducible to identity naming: per-biome decomposition (species/place/ethnonym bags), matched-permutation-null ladder (joint null 6/14 survive), and species-subspace projection — all on the stratified Δ. | ![identity-naming](paper/figures/fig_identity_naming.png) |
+| **Fig 1 — Roadmap.** The three independent strategies that locate the biome–mythology coupling and converge on the same biomes. | ![roadmap](paper/figures/fig_roadmap.png) |
+| **Fig 3 — Two-corpus alignment.** Biome × mythology alignment on iNaturalist (stratified Δ) and Places365 (marginal Δ). | ![bars](paper/figures/fig2_biome_bars.png) |
+| **Fig 4 — Geography.** Per-biome stratified Δ projected onto a world map: full corpus (A) and biome-specific Spec A subset (B). | ![earth](paper/figures/fig5_earth_map.png) |
+| **Fig 5 — Hold the names constant.** The alignment on the raw, un-anonymised myths is not reducible to identity naming: a matched-permutation null (6/14 survive the joint identity control) and a species-subspace projection. | ![identity](paper/figures/fig_identity_naming.png) |
+| **Fig 6 — Breadth gradient.** Stratified μΔ falls from +0.58 ×10⁻³ in biome-specific motifs to +0.12 ×10⁻³ in universals. | ![breadth](paper/figures/fig11_universals_analysis.png) |
+| **Figs 8–9 — Read it off the geometry.** Biome recovered from the unsupervised myth × image affinity geometry, without biome labels, on iNaturalist (Fig 8) and Places365 scenes (Fig 9). | ![recovery](paper/figures/fig_biome_recovery.png) |
 
 ---
 
 ## How to reproduce
 
-The full pipeline runs in six phases, documented in
-[`REPRODUCE.md`](REPRODUCE.md). The minimum end-to-end reproduction
-from the shipped cleaned text and image embeddings is:
+The full pipeline is documented in [`REPRODUCE.md`](REPRODUCE.md). The
+minimum end-to-end reproduction from the shipped cleaned text and image
+embeddings:
 
 ```bash
-# Phase 3 — sentence-pool the motif text, plus the class-word collapse re-embed
+# Embed the motif text (LLM-clean, sentence-pooled) + class-word-collapse re-embed
 python src/embedding/sentence_pooled_siglip.py
 python src/embedding/class_word_collapse.py
 
-# Phase 4 — Δ analyses
+# Strategy 1 — remove the names: stratified Δ + controls
 python src/analysis/recompute_all.py
 python src/analysis/per_taxon.py
 python src/analysis/stratified_baselines.py
-python src/analysis/biome_tell.py
-python src/analysis/glottolog_swap.py
 python src/analysis/word_shuffle.py
 python src/analysis/crossmodel.py
+python src/analysis/biome_tell.py
+python src/analysis/glottolog_swap.py
 
-# Phase 5 — all paper figures
+# Strategy 2 — hold the names constant: identity decomposition + matched-permutation null
+python src/analysis/ladder_embed.py             # needs _entity_extraction/ + GPU
+python src/analysis/ladder_stats_stratified.py
+python src/analysis/ladder_figure.py 0.416 0.247 0.195 0.274
+python src/analysis/matched_null_figures.py     # discrete matched null (S6 convergence)
+
+# Strategy 3 — read it off the geometry: unsupervised biome recovery
+python src/analysis/myth_image_umap2.py
+python src/analysis/biome_recovery_figure.py            # iNaturalist
+python src/analysis/biome_recovery_places365.py         # Places365 scenes
+
+# Figures
+python src/figures/fig_roadmap.py
 python src/figures/make_v3_figures.py
 python src/figures/taxon_combined.py
 python src/figures/taxon_facets.py
+python src/figures/fig3_nolll.py    # \
+python src/figures/fig5_nolll.py    #  } S6 two-method convergence figures
+python src/figures/fig6_nolll.py    # /
 
-# Identity-naming decomposition + unsupervised biome recovery (both main text)
-python src/analysis/ladder_embed.py             # needs _entity_extraction/ + GPU
-python src/analysis/ladder_stats.py             # marginal-frame battery (context)
-python src/analysis/ladder_stats_extra.py
-python src/analysis/ladder_stats_stratified.py  # headline stratified battery
-python src/analysis/ladder_figure.py 0.416 0.247 0.195 0.274
-python src/analysis/myth_image_umap.py
-python src/analysis/myth_image_umap2.py
-python src/analysis/biome_recovery_figure.py
-
-# Phase 6 — compile the PDF
+# Compile the PDF (paper.pdf is the canonical manuscript)
 cd paper && tectonic paper.tex
 ```
 
-If you want to reproduce from scratch (no cleaned text, no embeddings),
-run the data acquisition scripts under `src/acquisition/` and the
-build-spine + unified-manifest scripts under `src/pipeline/` first.
+To reproduce from scratch (no cleaned text, no embeddings), run the
+acquisition scripts under `src/acquisition/` and the build-spine /
+unified-manifest scripts under `src/pipeline/` first.
 
 ---
 
 ## Repository layout
 
 ```
-pareidolia_mythology_project/
+pareidolia-in-nature/
 ├── README.md              ← you are here
 ├── REPRODUCE.md           ← step-by-step pipeline
 │
-├── paper/                 ← LaTeX manuscript + figures + PDF
+├── paper/                 ← LaTeX manuscript (paper.tex / paper.pdf) + figures
 ├── dataset/               ← canonical data spine + embeddings + manifests
 ├── raw_downloads/         ← Berezkin HTML cache, WWF Ecoregions shapefile
 │
@@ -119,33 +144,33 @@ pareidolia_mythology_project/
 │   ├── acquisition/       ← Berezkin scraper, iNat / YFCC / Places365 downloaders, WWF join
 │   ├── pipeline/          ← spine + unified image manifest construction
 │   ├── embedding/         ← sentence-pooled SigLIP-2, cross-model, class-word collapse
-│   ├── analysis/          ← Δ tests, breadth, per-taxon, biome-tell, swap null
-│   └── figures/           ← paper figure generators
+│   ├── analysis/          ← Δ tests, matched-permutation null, breadth, per-taxon,
+│   │                        biome-tell, Glottolog swap null, unsupervised geometry recovery
+│   └── figures/           ← paper figure generators (roadmap, convergence figures, …)
 │
-├── motif_specificity_controls.py   ← shared utility modules at root
-├── make_phase2_figures.py          ←   imported by 30+ scripts in src/
-├── specA_paper_runs.py             ←   under their original names
-├── make_effect_maps_v2.py          ←   to keep the import surface stable
+├── motif_specificity_controls.py   ← shared utility modules at the project root,
+├── make_phase2_figures.py          ←   imported by 30+ scripts under src/
+├── specA_paper_runs.py             ←   under their original names, so the
+├── make_effect_maps_v2.py          ←   import surface stays stable
 │
 └── _archive/              ← legacy / superseded scripts kept locally, .gitignored
 ```
 
-The four shared utility modules live at the project root because they
-are imported by 30+ scripts under `src/`. Each `src/` script begins with
-a small `sys.path` bootstrap that inserts the project root onto the
-import path, so `from motif_specificity_controls import ...` resolves
-unchanged.
+The four shared utility modules live at the project root because they are
+imported by 30+ scripts under `src/`. Each `src/` script begins with a small
+`sys.path` bootstrap that inserts the project root onto the import path, so
+`from motif_specificity_controls import ...` resolves unchanged.
 
 ---
 
 ## Heavy data and the .gitignore
 
-The image-side embeddings (`dataset/imagery/embeddings/*.npy`), iNat /
+The image-side embeddings (`dataset/imagery/embeddings/*.npy`), the iNat /
 YFCC / Places365 image binaries, the Berezkin HTML cache, and the WWF
-Ecoregions shapefile are not version-controlled. See `.gitignore` for
-the precise exclusions. The canonical motif text
-(`dataset/analysis/llm_rewrite_specA_gemini_pass2.csv`) and the
-tradition / motif spine parquets (`dataset/mapping_v2/`) are tracked.
+Ecoregions shapefile are not version-controlled. See `.gitignore` for the
+precise exclusions. The canonical motif text
+(`dataset/analysis/llm_rewrite_specA_gemini_pass2.csv`) and the tradition /
+motif spine parquets (`dataset/mapping_v2/`) are tracked.
 
 ---
 
@@ -163,6 +188,5 @@ tradition / motif spine parquets (`dataset/mapping_v2/`) are tracked.
 ## Acknowledgement
 
 This project uses Yu. E. Berezkin's *Analytical Catalogue of World
-Mythology and Folklore* (ruthenia.ru), the WWF Terrestrial Ecoregions
-of the World, iNaturalist Open Data, Places365, and the YFCC100M
-dataset.
+Mythology and Folklore* (ruthenia.ru), the WWF Terrestrial Ecoregions of
+the World, iNaturalist Open Data, Places365, and the YFCC100M dataset.
