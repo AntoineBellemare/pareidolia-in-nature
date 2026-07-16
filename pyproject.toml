@@ -8,18 +8,20 @@ requires-python = ">=3.11"
 # Analysis + figures. This is what the Delta tests, matched-permutation null,
 # breadth/per-taxon analyses, unsupervised recovery, and all figure scripts need.
 dependencies = [
-    "numpy",
-    "pandas",
-    "pyarrow",        # parquet engine for the dataset/mapping spine
-    "scikit-learn",   # matched null, unsupervised probes, text-only classifier (A1)
-    "scipy",
-    "matplotlib",
-    "geopandas",      # WWF ecoregion world maps
+    # Pinned to the numpy-1.x / pandas-2.1 stack the analysis code was written
+    # against (numpy 2.x and pandas 3.0 changed enough APIs to risk breakage).
+    "numpy>=1.24,<2",
+    "pandas>=2.0,<2.2",
+    "pyarrow",              # parquet engine for the dataset/mapping spine
+    "scikit-learn>=1.3,<1.6",  # matched null, unsupervised probes, text-only classifier (A1)
+    "scipy>=1.10,<1.14",
+    "matplotlib>=3.7,<3.10",
+    "geopandas",            # WWF ecoregion world maps
     "shapely",
     "pillow",
     "requests",
     "tqdm",
-    "nltk",           # Punkt sentence tokenizer for sentence pooling
+    "nltk",                 # Punkt sentence tokenizer for sentence pooling
     "pypdf",
 ]
 
