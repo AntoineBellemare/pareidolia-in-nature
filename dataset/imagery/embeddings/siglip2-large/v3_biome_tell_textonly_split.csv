@@ -1,0 +1,29 @@
+biome,n_imgs,n_motifs_in_biome,delta_marg,delta_strat,p_strat,half
+Boreal Forests/Taiga,2423,358,0.0002703927457332611,0.0008845939883030951,0.0,low_tell_textonly
+Deserts & Xeric Shrublands,3510,390,0.0005371916340664029,0.0006162467179819942,0.013,low_tell_textonly
+Flooded Grasslands & Savannas,538,83,-0.0003060172311961651,0.0005899391835555434,0.096,low_tell_textonly
+Mangroves,216,41,-0.0008205820340663195,-0.00024010558263398707,0.692,low_tell_textonly
+"Mediterranean Forests, Woodlands & Scrub",1789,212,0.0005872051697224379,-0.00037411798257380724,0.871,low_tell_textonly
+Montane Grasslands & Shrublands,1402,194,0.0006529974052682519,0.0011293987045064569,0.002,low_tell_textonly
+Temperate Broadleaf & Mixed Forests,5030,512,0.00034987274557352066,0.0001337200083071366,0.281,low_tell_textonly
+Temperate Conifer Forests,3144,400,0.00019703060388565063,-9.156916348729283e-05,0.64,low_tell_textonly
+"Temperate Grasslands, Savannas & Shrublands",2940,411,6.633822340518236e-05,0.00015533503028564155,0.256,low_tell_textonly
+Tropical & Subtropical Coniferous Forests,1085,106,-0.00011829895811388269,-5.115929525345564e-05,0.578,low_tell_textonly
+Tropical & Subtropical Dry Broadleaf Forests,2048,183,0.000447950791567564,0.0006836924003437161,0.034,low_tell_textonly
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5333,283,0.0003738086670637131,0.00022705996525473893,0.199,low_tell_textonly
+Tropical & Subtropical Moist Broadleaf Forests,12376,460,0.0007894746959209442,0.0011251316173002124,0.0,low_tell_textonly
+Tundra,1623,227,0.00106734037399292,0.0008315705927088857,0.0,low_tell_textonly
+Boreal Forests/Taiga,2423,482,4.4504180550575256e-05,0.0010426852386444807,0.0,high_tell_textonly
+Deserts & Xeric Shrublands,3510,535,0.000473101157695055,0.0006953674601390958,0.002,high_tell_textonly
+Flooded Grasslands & Savannas,538,197,-0.00021554389968514442,-5.489110480993986e-05,0.586,high_tell_textonly
+Mangroves,216,61,0.0003847437910735607,0.000593070057220757,0.029,high_tell_textonly
+"Mediterranean Forests, Woodlands & Scrub",1789,386,0.0007369497325271368,0.0001924693788168952,0.196,high_tell_textonly
+Montane Grasslands & Shrublands,1402,285,0.0006869331700727344,0.0014706411166116595,0.0,high_tell_textonly
+Temperate Broadleaf & Mixed Forests,5030,709,0.0011010378366336226,0.0005175731494091451,0.023,high_tell_textonly
+Temperate Conifer Forests,3144,463,-0.00030481768772006035,-5.58819147045142e-06,0.49,high_tell_textonly
+"Temperate Grasslands, Savannas & Shrublands",2940,513,0.0004425822990015149,0.0005989325582049787,0.0,high_tell_textonly
+Tropical & Subtropical Coniferous Forests,1085,154,-4.449444168130867e-05,2.0789244445040822e-05,0.455,high_tell_textonly
+Tropical & Subtropical Dry Broadleaf Forests,2048,276,0.00010520662181079388,0.0002864808775484562,0.145,high_tell_textonly
+"Tropical & Subtropical Grasslands, Savannas & Shrublands",5333,345,0.0004973628092557192,0.0014966237358748913,0.0,high_tell_textonly
+Tropical & Subtropical Moist Broadleaf Forests,12376,570,0.0007280788850039244,0.000982001656666398,0.0,high_tell_textonly
+Tundra,1623,288,-0.00030135875567793846,0.000638700439594686,0.001,high_tell_textonly

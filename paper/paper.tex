@@ -925,6 +925,28 @@ substrate kept selecting for the same coupling, while the motifs
 that spread are the ones whose stabilisation was no longer
 biome-dependent.
 
+These readings sit on a spectrum, and the present data do not span
+it. A pure projection account, in which biome supplies only
+interchangeable narrative material, is the one reading the breadth
+gradient makes uncomfortable. But between it and the strong coupling
+claim --- that imagination is a perceptual organ jointly disclosing
+environmental form --- lies a widely held middle position: that
+ecology constrains subsistence, attention, and the vocabulary a
+culture elaborates, and so the stories assembled from them, without
+imagination being anything so ambitious. Our measurement does not
+adjudicate between this middle position and the stronger coupling
+reading; both anticipate the ecological signature we find. It is
+therefore worth stating plainly what the data support, at three
+decreasing levels of strength. They \emph{strongly} support that
+mythological texts carry ecological signatures beyond the explicit
+naming of species and places. They \emph{more cautiously} support
+reading those signatures as the trace of a long-term perceptual and
+cultural coupling between communities and their environments. And they
+\emph{do not decisively} establish that a coupling account explains
+the alignment where a cultural-projection account could not --- an
+adjudication that would need the diachronic and cross-modal evidence
+sketched in the closing section.
+
 \subsection*{A cognitive ecology of imagination}
 
 The lineage that makes this reading philosophically articulate was
@@ -981,10 +1003,12 @@ not where the residue lives; it disappears on synthetic
 encyclopedic paragraphs, so the residualised statistic does not
 manufacture a positive on biome-neutral content (both in
 Supplementary Section~S1, Figure~\ref{fig:v2controls}); and it
-persists in motifs whose anonymised text alone provides minimal
-text-only biome predictability, so it is not reducible to a
-one-sided lexical artefact (Supplementary
-Section~\ref{sec:biome-tell}, Table~\ref{tab:biome-tell-split}). What is doing the work, in other words, is the
+persists in motifs whose biome an independent, image-free text
+classifier cannot predict (a low-tell $\mu\Delta^{\text{strat}}$ of
+$+0.40\times 10^{-3}$, essentially the full-corpus headline), so it
+is not reducible to a one-sided lexical artefact (Supplementary
+Section~\ref{sec:biome-tell},
+Figure~\ref{fig:figS-textonly-tell}, Table~\ref{tab:biome-tell-split}). What is doing the work, in other words, is the
 distribution of generic landform vocabulary and biome-correlated
 activity schemas that the noun-targeted anonymisation pipeline
 retained by construction.
@@ -1766,22 +1790,66 @@ imagery indicates that the headline signal is not fully
 explained by biome-correlated lexical content recoverable from
 text alone.
 
+\paragraph*{An image-free predictability split.} The tell
+$z$-score above is computed from the vision model itself (the
+motif's SigLIP embedding against per-biome image prototypes), so
+the split variable and the alignment share SigLIP. As a fully
+independent check we replace it with a purely text-side predictor
+that never sees an image: a TF-IDF plus logistic-regression
+classifier trained to predict a motif's biome from its anonymised
+English text alone, evaluated out-of-fold (balanced accuracy
+$0.37$ over the $10$ well-populated biomes against a $0.10$ chance
+baseline, so biome \emph{is} partly predictable from the cleaned
+text). Splitting motifs at the median of this text-only
+predictability margin and recomputing the stratified $\Delta$
+(Figure~\ref{fig:figS-textonly-tell}), the high-tell half gives
+$\mu\Delta^{\text{strat}} = +0.61\times 10^{-3}$ ($9$ of $14$ biomes
+significant) and the low-tell half --- motifs whose biome a text
+classifier cannot guess --- still gives $+0.40\times 10^{-3}$ ($6$
+of $14$ significant), essentially the full-corpus headline of
+$+0.41\times 10^{-3}$. Because this split is built with no reference
+to the image model, it rules out the reading on which the alignment
+is only the image side re-reading the same biome-correlated
+vocabulary a text model can already exploit.
+
 \begin{table}[h!]
 \centering
-\caption{High-tell versus low-tell split. Median-split of motifs
-on the biome-tell $z$-score (text-only biome predictability),
-with the within-iconic-taxon stratified $\Delta$ test recomputed
-on each half on iNaturalist images. Both halves carry a positive
-across-biome mean $\Delta$.}\label{tab:biome-tell-split}
+\caption{High-tell versus low-tell split under two predictability
+measures. Motifs are median-split by biome-tell and the
+within-iconic-taxon stratified $\Delta$ is recomputed on each half on
+iNaturalist images. The \emph{vision} tell scores a motif by its
+SigLIP similarity to per-biome image prototypes; the
+\emph{text-only} tell scores it by an out-of-fold TF-IDF plus
+logistic-regression biome classifier that never sees an image. Under
+both measures the low-tell half stays positive, and the text-only
+low-tell half is essentially the full-corpus headline.}\label{tab:biome-tell-split}
 \begin{tabular}{lrrr}
 \hline
 Subset & $\mu\Delta^{\text{strat}}$ ($\times 10^{-3}$) & $\mu\Delta^{\text{marg}}$ ($\times 10^{-3}$) & Sig $p<.05$ \\
 \hline
-Low-tell half  & $+0.21$ & $-0.41$ & 7/14 \\
-High-tell half & $+0.54$ & $+0.78$ & 7/14 \\
+Low-tell half (vision)     & $+0.21$ & $-0.41$ & 7/14 \\
+High-tell half (vision)    & $+0.54$ & $+0.78$ & 7/14 \\
+\hline
+Low-tell half (text-only)  & $+0.40$ & $+0.29$ & 6/14 \\
+High-tell half (text-only) & $+0.61$ & $+0.31$ & 9/14 \\
 \hline
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=0.72\textwidth]{figS_textonly_tell.png}
+\caption{\textbf{The biome alignment survives where biome is least
+predictable from the text alone.} Within-iconic-taxon stratified
+$\mu\Delta$ on the low- and high-tell halves under two median splits:
+the vision-model tell (SigLIP myth-to-image-prototype similarity) and
+a fully image-free text-only tell (an out-of-fold TF-IDF plus
+logistic-regression biome classifier). Both low-tell halves stay
+positive; the text-only low-tell half reaches the full-corpus headline
+(dashed line, $+0.41\times 10^{-3}$), so the alignment is not reducible
+to biome-correlated vocabulary a text model can exploit.}
+\label{fig:figS-textonly-tell}
+\end{figure}
 
 \paragraph*{Within-Glottolog-macroarea biome-swap null.} A
 stronger version of the macro-area block-permutation null is to
