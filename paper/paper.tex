@@ -457,7 +457,16 @@ statistical purchase across all 14 biomes. Geographic and
 cultural autocorrelation therefore contribute to the headline
 effect but do not exhaust it: the biome content of the motif
 text carries information beyond within-macroarea cultural-region
-membership.
+membership. Nor is the alignment reducible to biome-correlated
+vocabulary the text makes directly predictable: when motifs are
+split by an independent, image-free classifier that predicts biome
+from the anonymised text alone (a simple bag-of-words TF--IDF model,
+evaluated out-of-fold), the half whose biome that classifier cannot
+guess still aligns at $+0.40\times 10^{-3}$, essentially the
+full-corpus headline. The signal is thus carried by
+lexical--thematic content beyond the biome-diagnostic words a text
+model can exploit (Supplementary Section~\ref{sec:biome-tell},
+Figure~\ref{fig:figS-textonly-tell}).
 
 \subsection*{The alignment is not reducible to identity naming}
 
