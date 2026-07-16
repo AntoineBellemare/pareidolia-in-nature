@@ -1,0 +1,39 @@
+[project]
+name = "pareidolia-in-nature"
+version = "0.1.0"
+description = "The Imagination of Nature: aligning anonymised cross-cultural mythology with biome imagery via sentence-pooled SigLIP-2."
+readme = "README.md"
+requires-python = ">=3.11"
+
+# Analysis + figures. This is what the Delta tests, matched-permutation null,
+# breadth/per-taxon analyses, unsupervised recovery, and all figure scripts need.
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",        # parquet engine for the dataset/mapping spine
+    "scikit-learn",   # matched null, unsupervised probes, text-only classifier (A1)
+    "scipy",
+    "matplotlib",
+    "geopandas",      # WWF ecoregion world maps
+    "shapely",
+    "pillow",
+    "requests",
+    "tqdm",
+    "nltk",           # Punkt sentence tokenizer for sentence pooling
+    "pypdf",
+]
+
+[project.optional-dependencies]
+# Only needed to (re-)embed text/images with the vision-language models.
+# torch here resolves to a CPU build; for CUDA install against the PyTorch
+# index, e.g.:  uv sync --extra embed --index https://download.pytorch.org/whl/cu121
+embed = [
+    "torch",
+    "transformers",
+    "open-clip-torch",
+]
+
+[tool.uv]
+# This repo is a collection of scripts, not an installable package, so uv
+# should manage the environment without trying to build/install the project.
+package = false

@@ -104,3 +104,6 @@ paper/*.out
 
 # Scratch figure crops/zooms (review-agent inspection artifacts)
 paper/figures/_*.png
+
+# uv virtual environment
+.venv/

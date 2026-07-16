@@ -79,6 +79,25 @@ Two further controls bound where the signal lives:
 
 ---
 
+## Setup
+
+Python dependencies are managed with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync                 # .venv with the analysis + figure dependencies
+uv sync --extra embed   # adds torch / transformers / open-clip-torch (only needed to
+                        #   re-embed; for CUDA add --index https://download.pytorch.org/whl/cu121)
+```
+
+Run any script inside that environment with `uv run python <script>` (as below).
+
+The PDF is built with **tectonic**, a standalone binary rather than a Python
+package, so install it separately — e.g. `scoop install tectonic`,
+`cargo install tectonic`, or the prebuilt binary from the
+[tectonic site](https://tectonic-typesetting.github.io/en-US/install.html).
+
+---
+
 ## How to reproduce
 
 The full pipeline is documented in [`REPRODUCE.md`](REPRODUCE.md). The
@@ -87,37 +106,37 @@ embeddings:
 
 ```bash
 # Embed the motif text (LLM-clean, sentence-pooled) + class-word-collapse re-embed
-python src/embedding/sentence_pooled_siglip.py
-python src/embedding/class_word_collapse.py
+uv run python src/embedding/sentence_pooled_siglip.py
+uv run python src/embedding/class_word_collapse.py
 
 # Strategy 1 — remove the names: stratified Δ + controls
-python src/analysis/recompute_all.py
-python src/analysis/per_taxon.py
-python src/analysis/stratified_baselines.py
-python src/analysis/word_shuffle.py
-python src/analysis/crossmodel.py
-python src/analysis/biome_tell.py
-python src/analysis/glottolog_swap.py
+uv run python src/analysis/recompute_all.py
+uv run python src/analysis/per_taxon.py
+uv run python src/analysis/stratified_baselines.py
+uv run python src/analysis/word_shuffle.py
+uv run python src/analysis/crossmodel.py
+uv run python src/analysis/biome_tell.py
+uv run python src/analysis/glottolog_swap.py
 
 # Strategy 2 — hold the names constant: identity decomposition + matched-permutation null
-python src/analysis/ladder_embed.py             # needs _entity_extraction/ + GPU
-python src/analysis/ladder_stats_stratified.py
-python src/analysis/ladder_figure.py 0.416 0.247 0.195 0.274
-python src/analysis/matched_null_figures.py     # discrete matched null (S6 convergence)
+uv run python src/analysis/ladder_embed.py             # needs _entity_extraction/ + GPU
+uv run python src/analysis/ladder_stats_stratified.py
+uv run python src/analysis/ladder_figure.py 0.416 0.247 0.195 0.274
+uv run python src/analysis/matched_null_figures.py     # discrete matched null (S6 convergence)
 
 # Strategy 3 — read it off the geometry: unsupervised biome recovery
-python src/analysis/myth_image_umap2.py
-python src/analysis/biome_recovery_figure.py            # iNaturalist
-python src/analysis/biome_recovery_places365.py         # Places365 scenes
+uv run python src/analysis/myth_image_umap2.py
+uv run python src/analysis/biome_recovery_figure.py            # iNaturalist
+uv run python src/analysis/biome_recovery_places365.py         # Places365 scenes
 
 # Figures
-python src/figures/fig_roadmap.py
-python src/figures/make_v3_figures.py
-python src/figures/taxon_combined.py
-python src/figures/taxon_facets.py
-python src/figures/fig3_nolll.py    # \
-python src/figures/fig5_nolll.py    #  } S6 two-method convergence figures
-python src/figures/fig6_nolll.py    # /
+uv run python src/figures/fig_roadmap.py
+uv run python src/figures/make_v3_figures.py
+uv run python src/figures/taxon_combined.py
+uv run python src/figures/taxon_facets.py
+uv run python src/figures/fig3_nolll.py    # \
+uv run python src/figures/fig5_nolll.py    #  } S6 two-method convergence figures
+uv run python src/figures/fig6_nolll.py    # /
 
 # Compile the PDF (paper.pdf is the canonical manuscript)
 cd paper && tectonic paper.tex
