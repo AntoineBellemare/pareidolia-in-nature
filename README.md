@@ -22,8 +22,8 @@ SigLIP-2 and aligned to images of its biome, on two independent visual
 corpora — **46,481 iNaturalist species photographs** and **1,655 Places365
 landscape scenes**. A tradition's mythology aligns above chance with its own
 biome's imagery, and **this alignment is not reducible to the species,
-places, or peoples a myth happens to name**. Three independent controls,
-with non-overlapping assumptions, converge on the same biomes:
+places, or peoples a myth happens to name**. Three convergent analytical
+strategies, with non-overlapping assumptions, agree on the same biomes:
 
 1. **Remove the names.** After an LLM pipeline strips species, place,
    ethnonym, and biome-word vocabulary from the text, the within-iconic-taxon

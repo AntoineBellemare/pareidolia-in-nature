@@ -69,8 +69,8 @@ and this alignment is not reducible to the species, places, or
 peoples a myth happens to name: it holds whether that identity
 vocabulary is removed from the text before embedding, held constant
 under a matched-permutation null, or read off the unsupervised
-myth-image geometry without biome labels at all, three independent
-controls converging on the same biomes. The alignment decays
+myth-image geometry without biome labels at all, three convergent
+analytical strategies that agree on the same biomes. The alignment decays
 monotonically with motif breadth, strongest in biome-specific motifs
 and fading toward zero in cross-culturally universal ones; this
 breadth gradient is the load-bearing signature. The trace a mythology
@@ -468,7 +468,7 @@ Subtropical Grasslands \& Savannas ($+0.76$ vs $+0.45$,
 $p=.019$), and Temperate Grasslands, Savannas \& Shrublands
 ($+0.33$ vs $+0.02$, $p=.022$). The full per-biome table and
 the visualised swap-null distributions are reported in
-Supplementary Section~\ref{sec:biome-tell} and
+Supplementary Section~S4 and
 Figure~\ref{fig:figS-biome-tell}. We do not separately preserve
 language family in this null because many language families in
 Berezkin's catalogue touch only one or two biomes and admit no
@@ -485,7 +485,7 @@ evaluated out-of-fold), the half whose biome that classifier cannot
 guess still aligns at $+0.40\times 10^{-3}$, essentially the
 full-corpus headline. The signal is thus carried by
 lexical--thematic content beyond the biome-diagnostic words a text
-model can exploit (Supplementary Section~\ref{sec:biome-tell},
+model can exploit (Supplementary Section~S4,
 Figure~\ref{fig:figS-textonly-tell}).
 
 \subsection*{The alignment is not reducible to identity naming}
@@ -495,9 +495,9 @@ mythology simply names that biome's species, places, and peoples,
 and the encoder reads the alignment off those names. The
 anonymisation pipeline answers this by \emph{removing} the names.
 A complementary strategy keeps the original myths intact and
-instead \emph{holds the names constant} statistically, on the same
-within-iconic-taxon stratified $\Delta$ as the headline so the two
-are directly comparable. We extract three identity classes per
+instead \emph{holds the names constant}: a statistical control
+applied on the same within-iconic-taxon stratified $\Delta$ as the
+headline, so the two are directly comparable. We extract three identity classes per
 motif from the raw Russian text and keep them separate: the species
 named in the myth (LLM extraction, adversarial audit $96.7\%$
 recall and $95.3\%$ precision), the WWF-codable geographic regions
@@ -561,7 +561,7 @@ constant are not merely jointly significant in the aggregate: placed
 side by side, the two strategies recover the same biome geography,
 the same breadth gradient, and the same per-taxon structure
 (Spearman $\rho = +0.75$ on the per-biome $\Delta$;
-Section~\ref{sec:convergence},
+Section~S6,
 Figures~\ref{fig:figS-converge-map}--\ref{fig:figS-converge-taxon}).
 
 \begin{figure}[h!t]
@@ -1036,7 +1036,7 @@ persists in motifs whose biome an independent, image-free text
 classifier cannot predict (a low-tell $\mu\Delta^{\text{strat}}$ of
 $+0.40\times 10^{-3}$, essentially the full-corpus headline), so it
 is not reducible to a one-sided lexical artefact (Supplementary
-Section~\ref{sec:biome-tell},
+Section~S4,
 Figure~\ref{fig:figS-textonly-tell}, Table~\ref{tab:biome-tell-split}). What is doing the work, in other words, is the
 distribution of generic landform vocabulary and biome-correlated
 activity schemas that the noun-targeted anonymisation pipeline
@@ -1147,7 +1147,7 @@ the alignment as a property of the mythology rather than an artefact
 of how it was measured. The three routes do not all carry equally
 onto the scene corpus: there the conservative matched-permutation
 control retains only two of eleven biomes against six on the species
-channel (Supplementary Section~\ref{sec:convergence}), so we read
+channel (Supplementary Section~S6), so we read
 that control as strongest on iNaturalist, while the anonymised
 alignment and the unsupervised recovery both hold on scenes as well.
 The biome--mythology alignment is, on all three readings, not
@@ -1573,7 +1573,7 @@ cultural regularity when its observed $\Delta$ exceeds the $95$th
 percentile of this swap distribution (a one-sided $95$th-percentile
 threshold; $p$-values are unadjusted across biomes). The null is
 defined once here and applied in the
-Results and in Supplementary Section~\ref{sec:biome-tell}.
+Results and in Supplementary Section~S4.
 
 \subsection*{Unsupervised biome recovery}
 
