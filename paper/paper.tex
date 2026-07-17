@@ -215,9 +215,10 @@ centroids~\citep{berezkin2024catalogue}, which we have joined to the
 WWF Ecoregions classification of 14 terrestrial
 biomes~\citep{olson2001terrestrial}. The second is the development of
 frontier vision--language models such as
-SigLIP-2~\citep{tschannen2024siglip2}, which embed text and image in a
-shared metric space learned from billions of image--text pairs sampled
-from the internet. The combination lets us ask whether, after
+SigLIP-2~\citep{tschannen2024siglip2}, which extends the sigmoid
+image--text objective of SigLIP~\citep{zhai2023siglip} and embeds text
+and image in a shared metric space learned from billions of
+image--text pairs sampled from the internet. The combination lets us ask whether, after
 stripping every species name, every place name, every biome word, and
 every tradition label, the embedding of a tradition's mythology
 preferentially aligns with images of its own biome, and whether
@@ -445,10 +446,10 @@ historically clustered. A biome effect could in principle
 reflect macroarea, language family, colonial documentation
 history, or cultural phylogeny rather than ecological coupling.
 To probe this we ran a within-Glottolog-macroarea biome-swap
-null. Each Berezkin tradition was assigned to one of six
-Glottolog macro-areas (Africa, Australia, Eurasia, North
-America, Papunesia, South America) based on its centroid
-coordinates. For each of $1{,}000$ permutations, every
+null. Each Berezkin tradition was assigned to one of the six
+Glottolog macro-areas~\citep{hammarstrom2024glottolog} (Africa,
+Australia, Eurasia, North America, Papunesia, South America) based on
+its centroid coordinates. For each of $1{,}000$ permutations, every
 tradition's motifs were randomly reassigned to a \emph{different}
 biome from among those represented in its own macro-area: the
 tradition's macro-area was preserved and its biome label
@@ -812,7 +813,8 @@ similarities to all $46{,}481$ iNaturalist photographs (per-motif
 centred, as in the headline $\Delta$). Two motifs are neighbours in
 this space when the same images draw them in and push them away,
 whatever those images depict. An unsupervised embedding of the
-geometry (PCA to 50 dimensions, then UMAP) is organised first by
+geometry (PCA to 50 dimensions, then
+UMAP~\citep{mcinnes2018umap}) is organised first by
 depicted \emph{content}: colouring the map by each motif's dominant
 taxon recovers more structure (adjusted Rand index $0.08$) than
 colouring it by cultural macro-area ($0.04$) or by biome ($0.02$).
@@ -1318,7 +1320,8 @@ The headline model is SigLIP-2-large
 a multilingual vision--language model with native Russian support.
 Images use the standard $384\times 384$ preprocessing. Text is
 sentence-pooled: each LLM-clean Berezkin abstract is split into
-sentences (NLTK Punkt sentence tokenizer, with a terminal-punctuation
+sentences (NLTK Punkt sentence
+tokenizer~\citep{kiss2006punkt}, with a terminal-punctuation
 regex fallback; sentences of $<3$ words dropped, capped at $50$
 sentences per motif), each sentence is embedded independently within
 SigLIP-2's $64$-token window (mean $23$ sentences per motif;
@@ -1331,8 +1334,9 @@ $\sim 2\%$; the sentence-pooling pass embeds the full anonymised
 abstract instead. For cross-model robustness we additionally embed
 with M-CLIP (\texttt{XLM-Roberta-Large + CLIP-ViT-L/14})~\citep{carlsson2022mclip}
 on the Russian abstracts (M-CLIP's $512$-token window covers most
-abstracts in a single forward pass) and with OpenCLIP-ViT-L/14
-(LAION-2B and OpenAI pretrainings) on English motif oneliners
+abstracts in a single forward pass) and with OpenCLIP-ViT-L/14 under
+two pretrainings, LAION-2B~\citep{schuhmann2022laion} and
+OpenAI~\citep{radford2021clip}, on English motif oneliners
 (see Supplementary Figure~\ref{fig:figS-crossmodel}). Image and
 text features are L2-normalised and similarity is the inner
 product.
@@ -1564,8 +1568,10 @@ decomposition (Figure~\ref{fig:fig10}).
 
 A fourth control, used in the cultural-geographic autocorrelation
 analysis, is the within-Glottolog-macroarea biome-swap null. Each
-tradition is assigned to one of six Glottolog macro-areas by its
-geographic centroid; under each of $1{,}000$ permutations every
+tradition is assigned to one of the six Glottolog
+macro-areas~\citep{hammarstrom2024glottolog} by a coordinate rule
+applied to its geographic centroid, rather than by a database lookup;
+under each of $1{,}000$ permutations every
 tradition's motifs are reassigned to a different biome that is also
 represented within its own macro-area, and the stratified $\Delta$ is
 recomputed. A biome is taken to carry signal beyond within-macro-area
