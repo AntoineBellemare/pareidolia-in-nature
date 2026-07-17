@@ -76,36 +76,24 @@ figures and references)
 \begin{abstract}\noindent
 Does a people's mythology carry a recoverable trace of the biome it
 grew up in, or is its symbolic content a matter of mind and culture
-alone? Mythography has mostly treated the imagery of myth as a
-product of mind and culture, with the environment supplying raw
-material but not form; a counter-tradition treats imagination
-instead as a coupling between perceiver and place, on which a
-mythology should bear the mark of its ecology. We test this with
-Berezkin's catalogue of folk-motifs from 958 traditions, each
-geocoded to one of the 14 WWF terrestrial biomes, embedding every
-motif's text with sentence-pooled SigLIP-2 and aligning it to imagery
-of its biome (iNaturalist species photographs and Places365 landscape
-scenes). A tradition's mythology aligns with its own biome's imagery,
-and this alignment is not reducible to the species, places, or
-peoples a myth happens to name: it holds whether that identity
-vocabulary is removed from the text before embedding, held constant
-under a matched-permutation null, or read off the unsupervised
-myth-image geometry without biome labels at all, three convergent
-analytical strategies that agree on the same biomes. The alignment decays
-monotonically with motif breadth, strongest in biome-specific motifs
-and fading toward zero in cross-culturally universal ones; this
-breadth gradient is the load-bearing signature. The trace a mythology
-carries of its biome lives in the schemas of attention, activity, and
-form that a place makes available to imagination: the creatures a
-landscape rewards attention to, the activities it affords, and the
-shapes that recur in it until they settle into narrative. We read
-mythology as a cultural recording layer of this coupling between
-people and place, the medium through which a tradition keeps its long
-engagement with its environment legible across generations. A
-computational mythology that can now read such records at scale,
-tracing how motifs travel between cultures and shift through time,
-could test directly whether this coupling stabilised over
-generations, as the present snapshot suggests.
+alone? Recent theories of culture recast this as a question of how
+heavily ecology weights the forms a tradition settles into. We measure
+that weight across Berezkin's folk-motifs from 958 traditions, each
+geocoded to one of the 14 WWF biomes, embedding each motif's text with
+sentence-pooled SigLIP-2 and aligning it to imagery of that biome
+(iNaturalist photographs and Places365 scenes). A
+tradition's mythology aligns with its own biome's imagery, and the
+alignment survives the names a myth uses: it holds whether that
+vocabulary is removed before embedding, held constant under a
+matched-permutation null, or read off the unsupervised myth-image
+geometry without biome labels, three convergent strategies that agree
+on the same biomes. The alignment decays monotonically with motif
+breadth, strongest in biome-specific motifs and fading toward zero in
+universal ones; this gradient is the load-bearing signature. What a
+mythology carries of its biome lives in the schemas of attention,
+activity, and form a place makes available to imagination. Mythology
+records that coupling, and its ecological weight is now measurable at
+scale.
 \end{abstract}
 
 \vspace{0.4em}
@@ -339,53 +327,35 @@ biome, so the exclusion is not biome-targeted.
 
 The iNaturalist component consists of $46{,}481$ images drawn from
 research-grade observations on iNaturalist Open
-Data~\citep{inaturalist2024} across the 14 WWF biomes. We apply an
-image-side sanity filter that drops obvious non-nature content via
-SigLIP-2 zero-shot scoring against twelve negative prompts
-(\emph{``a person in the photo''}, \emph{``a portrait of a human''},
-\emph{``people holding something''}, \emph{``an angler holding
-fish''}, \emph{``an indoor scene''}, \emph{``a kitchen or
-laboratory''}, \emph{``a city skyline or street''}, \emph{``a car
-or vehicle''}, \emph{``a road sign''}, \emph{``a black or
-all-white image''}, \emph{``a museum specimen on a white
-background''}, \emph{``a screenshot or document''}). An image is
-dropped if its maximum cosine similarity to any of the twelve
-negative prompts exceeds $0.08$. The threshold is lenient
-(removing only obvious cases) so that species-in-habitat
-close-ups and natural outdoor scenes are retained, which is the
-content iNaturalist is biased toward by design. For the curated landscape comparison, the Places365
-component~\citep{zhou2018places} is drawn from scene categories
-whose semantic interpretation unambiguously corresponds to a
-single WWF biome (e.g.\ \emph{tundra} $\to$ arctic tundra;
-\emph{rainforest} $\to$ tropical moist broadleaf;
-\emph{forest/broadleaf} $\to$ temperate or tropical dry
-broadleaf; \emph{snowfield/mountain\_snowy} $\to$ boreal/taiga;
-\emph{lagoon/swamp/creek/coast} $\to$ mangroves); categories that
-mix biomes were excluded. Each candidate image is then passed
-through a strict-landscape SigLIP-2 filter that drops anything
-that is not a wide-shot natural scene: five positive prompts
-(\emph{``a wide-shot natural landscape with no people''},
-\emph{``a panoramic photograph of natural scenery''}, \emph{``an
-empty natural habitat photographed from a distance''}, \emph{``a
-landscape photo of natural terrain showing vegetation and
-horizon''}, \emph{``a wild ecosystem with no human-made
-structures''}) and eleven negative prompts (\emph{``a person in
-the photograph''}, \emph{``a portrait of one or more humans''},
-\emph{``a close-up photo of a single animal''}, \emph{``a single
-bird filling the frame''}, \emph{``a car or vehicle''}, \emph{``a
-boat''}, \emph{``a road or street''}, \emph{``a man-made structure
-or building''}, \emph{``an indoor scene''}, \emph{``a person
-riding a horse or animal''}, \emph{``a tourist photograph with
-people''}) are encoded by SigLIP-2 and compared against each
-image's embedding. The strict-landscape score is
-$\mathrm{mean}(\text{positives}) - \max(\text{negatives})$; an
-image is dropped if its $\max(\text{negatives}) > 0.18$, and the
-remaining top-$K$ images per biome are kept, yielding $1{,}655$ scene
-photographs across the $11$ biomes Places365 covers. The Places365 filter
-is intentionally stricter than the iNaturalist filter, in
-particular it removes single-species close-ups, because the
-Places365 panel functions as a scene-only robustness check on
-biome-character imagery, complementary to iNaturalist's
+Data~\citep{inaturalist2024} across the 14 WWF biomes. An image-side
+sanity filter drops obvious non-nature content by SigLIP-2 zero-shot
+scoring against twelve negative prompts covering people, indoor
+scenes, vehicles, documents and museum specimens (verbatim prompts in
+Supplementary Section~S7): an image is dropped if its maximum cosine
+similarity to any negative exceeds $0.08$. The threshold is lenient,
+removing only obvious cases, so that species-in-habitat close-ups and
+natural outdoor scenes are retained, which is the content iNaturalist
+is biased toward by design.
+
+For the curated landscape comparison, the Places365
+component~\citep{zhou2018places} is drawn from scene categories whose
+semantic interpretation unambiguously corresponds to a single WWF
+biome (e.g.\ \emph{tundra} $\to$ arctic tundra; \emph{rainforest}
+$\to$ tropical moist broadleaf; \emph{forest/broadleaf} $\to$
+temperate or tropical dry broadleaf; \emph{snowfield/mountain\_snowy}
+$\to$ boreal/taiga; \emph{lagoon/swamp/creek/coast} $\to$ mangroves);
+categories that mix biomes were excluded. Each candidate is then
+passed through a strict-landscape SigLIP-2 filter built from five
+positive and eleven negative prompts (Supplementary Section~S7), which
+drops anything that is not a wide-shot natural scene. The
+strict-landscape score is $\mathrm{mean}(\text{positives}) -
+\max(\text{negatives})$; an image is dropped if its
+$\max(\text{negatives}) > 0.18$, and the remaining top-$K$ images per
+biome are kept, yielding $1{,}655$ scene photographs across the $11$
+biomes Places365 covers. This filter is intentionally stricter than
+the iNaturalist one, in particular removing single-species close-ups,
+because the Places365 panel functions as a scene-only robustness check
+on biome-character imagery, complementary to iNaturalist's
 species-in-habitat coverage.
 
 \subsection*{Vision--language embedding}
@@ -2168,5 +2138,43 @@ matrices correlate at $r=+0.64$, and the same vertebrate-and-plant
 taxa carry the signal under both controls.}
 \label{fig:figS-converge-taxon}
 \end{figure}
+
+% =============================================================================
+\subsection*{S7. Image-filter prompts}\label{sec:filter-prompts}
+
+The two image corpora are filtered by SigLIP-2 zero-shot scoring
+against the prompt sets below (\emph{Image corpora}). They are
+reproduced verbatim so the filters can be reimplemented exactly.
+
+\paragraph{iNaturalist sanity filter.} An image is dropped if its
+maximum cosine similarity to any of these twelve negative prompts
+exceeds $0.08$:
+\emph{``a person in the photo''}, \emph{``a portrait of a human''},
+\emph{``people holding something''}, \emph{``an angler holding
+fish''}, \emph{``an indoor scene''}, \emph{``a kitchen or
+laboratory''}, \emph{``a city skyline or street''}, \emph{``a car or
+vehicle''}, \emph{``a road sign''}, \emph{``a black or all-white
+image''}, \emph{``a museum specimen on a white background''},
+\emph{``a screenshot or document''}.
+
+\paragraph{Places365 strict-landscape filter.} The score is
+$\mathrm{mean}(\text{positives}) - \max(\text{negatives})$, and an
+image is dropped if $\max(\text{negatives}) > 0.18$.
+
+\emph{Five positive prompts:}
+\emph{``a wide-shot natural landscape with no people''},
+\emph{``a panoramic photograph of natural scenery''},
+\emph{``an empty natural habitat photographed from a distance''},
+\emph{``a landscape photo of natural terrain showing vegetation and
+horizon''}, \emph{``a wild ecosystem with no human-made structures''}.
+
+\emph{Eleven negative prompts:}
+\emph{``a person in the photograph''}, \emph{``a portrait of one or
+more humans''}, \emph{``a close-up photo of a single animal''},
+\emph{``a single bird filling the frame''}, \emph{``a car or
+vehicle''}, \emph{``a boat''}, \emph{``a road or street''}, \emph{``a
+man-made structure or building''}, \emph{``an indoor scene''},
+\emph{``a person riding a horse or animal''}, \emph{``a tourist
+photograph with people''}.
 
 \end{document}
