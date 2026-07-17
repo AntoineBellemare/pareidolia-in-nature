@@ -1,0 +1,513 @@
+<title>Where to send The Imagination of Nature</title>
+<style>
+  :root {
+    --paper:      #FAFAF9;
+    --raised:     #FFFFFF;
+    --ink:        #171C1A;
+    --muted:      #626C67;
+    --faint:      #8A938E;
+    --rule:       #E2E6E2;
+    --accent:     #1F4E46;
+    --accent-sft: #EAF1EE;
+    --free:       #2C6E49;
+    --free-bg:    #E7F1EA;
+    --paid:       #A9531C;
+    --paid-bg:    #F8EDE4;
+    --blocked:    #8C2F39;
+    --blocked-bg: #F7E9EA;
+    --warn:       #7E6412;
+    --warn-bg:    #F6F0DC;
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "Consolas", "Liberation Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:      #0E1211;
+      --raised:     #161B19;
+      --ink:        #E7EDEA;
+      --muted:      #9AA5A0;
+      --faint:      #6E7975;
+      --rule:       #262E2B;
+      --accent:     #77B7A8;
+      --accent-sft: #172422;
+      --free:       #6FBF8E;
+      --free-bg:    #14241B;
+      --paid:       #E0915C;
+      --paid-bg:    #26190F;
+      --blocked:    #DE8189;
+      --blocked-bg: #251316;
+      --warn:       #D3B65A;
+      --warn-bg:    #221D0E;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:      #0E1211;
+    --raised:     #161B19;
+    --ink:        #E7EDEA;
+    --muted:      #9AA5A0;
+    --faint:      #6E7975;
+    --rule:       #262E2B;
+    --accent:     #77B7A8;
+    --accent-sft: #172422;
+    --free:       #6FBF8E;
+    --free-bg:    #14241B;
+    --paid:       #E0915C;
+    --paid-bg:    #26190F;
+    --blocked:    #DE8189;
+    --blocked-bg: #251316;
+    --warn:       #D3B65A;
+    --warn-bg:    #221D0E;
+  }
+  :root[data-theme="light"] {
+    --paper:      #FAFAF9;
+    --raised:     #FFFFFF;
+    --ink:        #171C1A;
+    --muted:      #626C67;
+    --faint:      #8A938E;
+    --rule:       #E2E6E2;
+    --accent:     #1F4E46;
+    --accent-sft: #EAF1EE;
+    --free:       #2C6E49;
+    --free-bg:    #E7F1EA;
+    --paid:       #A9531C;
+    --paid-bg:    #F8EDE4;
+    --blocked:    #8C2F39;
+    --blocked-bg: #F7E9EA;
+    --warn:       #7E6412;
+    --warn-bg:    #F6F0DC;
+  }
+
+  * { box-sizing: border-box; }
+
+  .wrap {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+    padding: clamp(20px, 4vw, 52px) clamp(16px, 4vw, 40px) 72px;
+    max-width: 1020px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 12px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(28px, 4.4vw, 42px);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 14px;
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  .standfirst {
+    font-family: var(--serif);
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 1.5;
+    color: var(--muted);
+    max-width: 62ch;
+    margin: 0 0 28px;
+    text-wrap: pretty;
+  }
+
+  /* ---- deadline bar ---- */
+  .deadline {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px;
+    border-left: 3px solid var(--warn);
+    background: var(--warn-bg);
+    padding: 11px 15px;
+    border-radius: 0 5px 5px 0;
+    margin: 0 0 36px;
+    font-size: 14px;
+  }
+  .deadline strong { color: var(--warn); font-weight: 650; }
+  .deadline span { color: var(--muted); }
+
+  /* ---- ruler strip ---- */
+  .ruler-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 4px 14px; margin-bottom: 12px;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 21px; font-weight: 600; letter-spacing: -0.01em;
+    margin: 0; color: var(--ink);
+  }
+  .note { font-size: 13px; color: var(--faint); }
+
+  .ruler {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+  .metric { background: var(--raised); padding: 14px 15px; }
+  .metric .k {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--faint); display: block; margin-bottom: 5px;
+  }
+  .metric .v {
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+    font-size: 22px; font-weight: 600; color: var(--ink); letter-spacing: -0.02em;
+  }
+  .metric .v small { font-size: 12px; font-weight: 400; color: var(--faint); letter-spacing: 0; }
+
+  .correction {
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    background: var(--accent-sft);
+    border-radius: 0 6px 6px 0;
+    padding: 13px 16px;
+    font-size: 14px;
+    color: var(--ink);
+    margin-bottom: 42px;
+  }
+  .correction b { color: var(--accent); font-weight: 650; }
+
+  /* ---- ranked rows ---- */
+  .rows { display: flex; flex-direction: column; gap: 1px; background: var(--rule);
+          border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+  .row { background: var(--raised); padding: 18px clamp(14px, 2.4vw, 20px);
+         display: grid; grid-template-columns: 34px 1fr; gap: 4px 14px; }
+  .row.blocked-row { background: color-mix(in srgb, var(--blocked-bg) 45%, var(--raised)); }
+
+  .rank {
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+    font-size: 15px; font-weight: 600; color: var(--accent);
+    padding-top: 2px; grid-row: 1 / span 3;
+  }
+  .row.blocked-row .rank { color: var(--blocked); }
+
+  .jname { font-family: var(--serif); font-size: 18.5px; font-weight: 600;
+           letter-spacing: -0.01em; margin: 0 0 2px; line-height: 1.25; }
+  .jpub { font-size: 12.5px; color: var(--faint); margin: 0 0 9px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin-bottom: 10px; }
+  .chip {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em;
+    text-transform: uppercase; font-weight: 600;
+    padding: 3.5px 8px; border-radius: 4px; white-space: nowrap;
+  }
+  .c-free    { color: var(--free);    background: var(--free-bg); }
+  .c-paid    { color: var(--paid);    background: var(--paid-bg); }
+  .c-blocked { color: var(--blocked); background: var(--blocked-bg); }
+  .c-impact  { color: var(--muted);   background: color-mix(in srgb, var(--rule) 55%, transparent); }
+
+  /* rework meter: encodes surgery cost in form, not just words */
+  .meter { display: inline-flex; align-items: center; gap: 6px; }
+  .meter .segs { display: inline-flex; gap: 2px; }
+  .meter i {
+    width: 13px; height: 5px; border-radius: 1px;
+    background: color-mix(in srgb, var(--rule) 80%, transparent);
+    display: block;
+  }
+  .meter i.on { background: var(--accent); }
+  .meter.m-heavy i.on { background: var(--paid); }
+  .meter.m-total i.on { background: var(--blocked); }
+  .meter .lbl {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--muted); font-weight: 600;
+  }
+
+  .why { font-size: 14.5px; color: var(--ink); margin: 0 0 6px; max-width: 68ch; text-wrap: pretty; }
+  .cost { font-size: 13.5px; color: var(--muted); margin: 0; max-width: 68ch; text-wrap: pretty; }
+  .cost b { color: var(--ink); font-weight: 600; }
+  .why b  { font-weight: 650; }
+  .verdict-tag {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+    font-weight: 700; color: var(--blocked); background: var(--blocked-bg);
+    padding: 2px 6px; border-radius: 3px; margin-right: 6px;
+  }
+
+  /* ---- lower sections ---- */
+  .section { margin-top: 46px; }
+  .rejects { display: grid; grid-template-columns: repeat(auto-fit, minmax(228px, 1fr)); gap: 1px;
+             background: var(--rule); border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; }
+  .rej { background: var(--raised); padding: 14px 15px; }
+  .rej h3 { font-family: var(--serif); font-size: 15.5px; font-weight: 600; margin: 0 0 5px; }
+  .rej p { font-size: 13px; color: var(--muted); margin: 0; text-wrap: pretty; }
+
+  .verify { border: 1px solid var(--rule); border-radius: 7px; padding: 16px 18px; background: var(--raised); }
+  .verify ul { margin: 8px 0 0; padding-left: 18px; }
+  .verify li { font-size: 14px; color: var(--muted); margin-bottom: 6px; text-wrap: pretty; }
+  .verify li b { color: var(--ink); font-weight: 600; }
+  .tick { color: var(--free); font-weight: 700; }
+  .cross { color: var(--paid); font-weight: 700; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  @media (max-width: 520px) {
+    .row { grid-template-columns: 26px 1fr; gap: 4px 10px; }
+    .rank { grid-row: 1 / span 3; font-size: 13px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <p class="eyebrow">Submission decision · 16 July 2026</p>
+  <h1>Where to send <em>The Imagination of Nature</em></h1>
+  <p class="standfirst">
+    Ten venues ranked by impact against how much surgery the paper actually needs.
+    Every “free” claim below was verified against the publisher, not the spreadsheet —
+    because the spreadsheet is wrong about seven of its rows.
+  </p>
+
+  <div class="deadline">
+    <strong>Five months of runway.</strong>
+    <span>Every CRKN agreement expires 31 Dec 2026, and coverage attaches at <em>acceptance</em>, not submission. This argues for fastest realistic acceptance over highest prestige.</span>
+  </div>
+
+  <div class="ruler-head">
+    <h2>The ruler: what your paper actually is</h2>
+    <span class="note">measured from paper.tex + paper.pdf</span>
+  </div>
+  <div class="ruler">
+    <div class="metric"><span class="k">Main text</span><span class="v">9,359 <small>words</small></span></div>
+    <div class="metric"><span class="k">Refs cited</span><span class="v">40</span></div>
+    <div class="metric"><span class="k">Main figures</span><span class="v">10</span></div>
+    <div class="metric"><span class="k">Abstract</span><span class="v">323 <small>words</small></span></div>
+    <div class="metric"><span class="k">Total pages</span><span class="v">32</span></div>
+  </div>
+  <div class="correction">
+    <b>One correction worth money.</b> The research claimed EHS’s 75-reference cap “forces the humanities lineage out — roughly a 40% cut to the theoretical apparatus.”
+    You cite <b>40</b>. The cap isn’t binding, and that cost is imaginary. EHS is a far cheaper move than it first appeared.
+  </div>
+
+  <div class="section">
+    <div class="ruler-head">
+      <h2>The ten</h2>
+      <span class="note">ranked by impact × minimal change</span>
+    </div>
+
+    <div class="rows">
+
+      <div class="row">
+        <div class="rank">01</div>
+        <div>
+          <p class="jname">Royal Society Open Science</p>
+          <p class="jpub">The Royal Society</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · High</span>
+            <span class="chip c-paid">≈ £1,400 — not free</span>
+            <span class="meter"><span class="segs"><i class="on"></i><i></i><i></i><i></i></span><span class="lbl">Rework · Light</span></span>
+          </div>
+          <p class="why">The precedent is almost uncomfortably exact: <b>Shibasaki, Nakadai &amp; Nakawake (2024, RSOS 11(5):231577)</b> used <b>Berezkin’s catalogue, geocoded, against 93M GBIF records</b>, concluding ecology constrains folklore. Same corpus, same architecture, adjacent thesis — already through review here. No word limit, so your 9,359 words and 10 figures go as they stand. Soundness-only review would interrogate your control stack rather than gatekeep on register.</p>
+          <p class="cost"><b>Costs you:</b> a retitle and a presubmission enquiry citing 231577 by name. <b>The catch:</b> RSOS is born-gold and explicitly excluded from Subscribe-to-Open — the one Royal Society venue that fits best is the one that isn’t free.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">02</div>
+        <div>
+          <p class="jname">Evolutionary Human Sciences</p>
+          <p class="jpub">Cambridge University Press</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · High</span>
+            <span class="chip c-free">Free — verified</span>
+            <span class="meter"><span class="segs"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="lbl">Rework · Moderate</span></span>
+          </div>
+          <p class="why">The only venue that is simultaneously open to unsolicited empirical work, staffed with reviewers who can evaluate a matched-permutation null, and <b>verifiably free</b>: CRKN–Cambridge covers “all Cambridge hybrid <em>and gold</em> journals” — decisive, since EHS is fully gold (list APC USD 3,450).</p>
+          <p class="cost"><b>Costs you:</b> trim 9,359 → 8,000 words (−15%), 10 → 8 display items, abstract 323 → 200, APA restyle. References are <b>fine at 40 &lt; 75</b>. Reframe the breadth gradient in cultural-evolutionary terms (it already <em>is</em> a differential-retention result) and cite Bromham &amp; Yaxley (2023) — the Galton’s-problem standard your Glottolog swap-null already meets.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">03</div>
+        <div>
+          <p class="jname">Cognitive Science</p>
+          <p class="jpub">Wiley · Cognitive Science Society</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · Med–High</span>
+            <span class="chip c-free">Free — hybrid</span>
+            <span class="meter"><span class="segs"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="lbl">Rework · Moderate</span></span>
+          </div>
+          <p class="why">The desk is unusually sympathetic, and that is worth real money: the Gibson / 4E / cognitive-ecology framing lands with a friendly reader rather than a puzzled one. The “no human subjects” worry is refuted by the journal’s own recent output — participant-free corpus analyses of symbolic material are a live genre here.</p>
+          <p class="cost"><b>Costs you:</b> a front-matter reframe toward an individual-level question (“what does transmission strip out, and what makes a motif portable?”), submitted as an <b>Extended Article</b>. <b>Verify first:</b> the Society, not Wiley, holds copyright — email <a href="mailto:licensing@crkn.ca">licensing@crkn.ca</a> before relying on the waiver.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">04</div>
+        <div>
+          <p class="jname">Journal of the Royal Society Interface</p>
+          <p class="jpub">The Royal Society</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · High</span>
+            <span class="chip c-free">Free via S2O 2026</span>
+            <span class="meter m-heavy"><span class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="lbl">Rework · Heavy</span></span>
+          </div>
+          <p class="why">Your own citation lives here — <b>Constant et al. (2018, RSIF 15(141):20170685)</b> — inside a Friston-adjacent cluster, so the niche-construction framing is native rather than imported. Free for any author in 2026, but by Subscribe-to-Open, <em>not</em> by any agreement your universities hold.</p>
+          <p class="cost"><b>Costs you:</b> an 8,000-word cap that <b>includes references and acknowledgements</b>, counted mechanically by staff before an editor reads a sentence. Every RSIF culture paper also carries a physical-science credential — a generative model, or scale as the contribution. Promoting the breadth gradient to a dose-response ordering is the cheapest way to qualify.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">05</div>
+        <div>
+          <p class="jname">Cross-Cultural Research</p>
+          <p class="jpub">SAGE · HRAF-sponsored — <em>not on your sheet</em></p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · Low–Med</span>
+            <span class="chip c-free">Free — SAGE hybrid</span>
+            <span class="meter"><span class="segs"><i></i><i></i><i></i><i></i></span><span class="lbl">Rework · None</span></span>
+          </div>
+          <p class="why">The venue that takes this artifact <b>as written, today, with no new analysis</b>. Its scope explicitly names “human ecology,” and its only constitutive demand is that measured differences among cultures be linked to other measured differences among cultures — which is exactly what biome and myth–image alignment are.</p>
+          <p class="cost"><b>Costs you:</b> nothing but ceiling. This is the floor of the list, and the right answer only if the reframing budget runs out. Worth your own 20 minutes of verification before ranking it.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">06</div>
+        <div>
+          <p class="jname">Proceedings of the Royal Society B</p>
+          <p class="jpub">The Royal Society</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · Very High</span>
+            <span class="chip c-free">Free via S2O 2026</span>
+            <span class="meter m-heavy"><span class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="lbl">Rework · Heavy</span></span>
+          </div>
+          <p class="why">Ross, Greenhill &amp; Atkinson’s folktale population-structure paper sits here (280:1756), so subject matter isn’t the constraint — <b>inference machinery is</b>. Proc B takes human-culture papers when the inference is biological in kind: AMOVA, Bayesian ancestral-state reconstruction.</p>
+          <p class="cost"><b>Costs you:</b> genuinely new analysis — inverting the biome-swap null into a phylogenetic comparative model (Pagel’s λ, ancestral-state) on Glottolog. Telling detail: the trickster paper carried 93M occurrence records and still went to RSOS, not here. <b>Don’t spend the shot on this draft.</b></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">07</div>
+        <div>
+          <p class="jname">Journal of Cross-Cultural Psychology</p>
+          <p class="jpub">SAGE</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · Med</span>
+            <span class="chip c-free">Free — hybrid</span>
+            <span class="meter m-heavy"><span class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="lbl">Rework · Heavy</span></span>
+          </div>
+          <p class="why">The question is native; the artifact is not. Berry’s ecocultural framework runs <em>ecology → cultural adaptation → individual behaviour</em>. You deliver links one and two and stop precisely where JCCP begins.</p>
+          <p class="cost"><b>Costs you:</b> a psychological dependent variable you don’t have — every non-participant precedent keeps a construct at one pole (Hofstede individualism, WVS values). Your poles are biome and embedding geometry; neither is psychological. Downgrade your “High confidence” here. Corroborating: the flagship Berezkin paper (Michalopoulos &amp; Xue) went to <em>economics</em>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="rank">08</div>
+        <div>
+          <p class="jname">Behavioral and Brain Sciences</p>
+          <p class="jpub">Cambridge University Press</p>
+          <div class="chips">
+            <span class="chip c-impact">Impact · Very High</span>
+            <span class="chip c-paid">$0 but green-only — no gold OA</span>
+            <span class="meter m-total"><span class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="lbl">Rework · A different paper</span></span>
+          </div>
+          <p class="why">The leverage is real and personal: <b>Veissière, Constant, Ramstead, Friston &amp; Kirmayer (BBS 43, 2020)</b> is your introduction’s backbone, and three of those authors are <b>McGill</b> — your co-author’s own community. BBS rationale (8) — placing a field “into an evolutionary or ecological perspective” — nearly describes your ambition.</p>
+          <p class="cost"><b>Costs you:</b> the wrong order. BBS takes empirical reports “rarely,” and rewards systematizing a body of research — you are the <em>first</em> result, the exact profile it routes elsewhere. <b>Do it after publication</b>, via a 1,000–2,000-word Target Article Proposal. Note it offers no gold or hybrid OA at all.</p>
+        </div>
+      </div>
+
+      <div class="row blocked-row">
+        <div class="rank">09</div>
+        <div>
+          <p class="jname">Topics in Cognitive Science</p>
+          <p class="jpub">Wiley</p>
+          <div class="chips">
+            <span class="chip c-blocked">No door</span>
+            <span class="chip c-impact">Impact · High</span>
+          </div>
+          <p class="why"><span class="verdict-tag">Reverse your rating</span> “Unsolicited stand-alone submissions will not be considered.” Topic-proposal model only. You rated this A-tier / High-confidence <b>because Hutchins published “Cognitive Ecology” here</b> — a genuine signal about intellectual home, and <b>zero</b> signal about submission route.</p>
+          <p class="cost"><b>Cheapest way in:</b> present at CogSci and aim for an invited Topic — the conference→Topic pathway demonstrably works. Ironic footnote: the CRKN waiver requires a research or review article, so the only unsolicited types here (Letter, Commentary) are exactly the ones the waiver excludes.</p>
+        </div>
+      </div>
+
+      <div class="row blocked-row">
+        <div class="rank">10</div>
+        <div>
+          <p class="jname">Philosophical Transactions of the Royal Society B</p>
+          <p class="jpub">The Royal Society</p>
+          <div class="chips">
+            <span class="chip c-blocked">No door</span>
+            <span class="chip c-impact">Impact · Very High</span>
+          </div>
+          <p class="why"><span class="verdict-tag">Aspiration, not a step</span> “Does not consider unsolicited submissions.” Theme issues only, all commissioned. This is the <b>best intellectual home on your entire list</b> — Claidière, Scott-Phillips &amp; Sperber’s canonical cultural-attraction statement, which your introduction is now built on, is literally here — <b>and there is no door.</b></p>
+          <p class="cost"><b>Reality:</b> publication here is a downstream consequence of becoming visible in the cultural-attraction community, not a move available with this manuscript. Guest-editing a theme issue is a 1–3 year, normally senior-led project with &lt;50% acceptance.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="ruler-head">
+      <h2>Ruled out, with cause</h2>
+      <span class="note">high on the sheet, wrong in practice</span>
+    </div>
+    <div class="rejects">
+      <div class="rej">
+        <h3>Cognition</h3>
+        <p>Gate is “bearing on the functioning of the mind.” Its corpus precedents model cognition — anchored in human free-association norms. SigLIP-2 is your <em>instrument</em>; nobody claims its geometry resembles human representation. Zero folklore and zero vision-language precedent in its entire record.</p>
+      </div>
+      <div class="rej">
+        <h3>BioScience</h3>
+        <p>“Does not publish primary research articles.” Your paper is nothing but new data. Plus a mandatory <b>$1,500 publication fee</b> — not an APC, so no read-and-publish agreement covers it. Right publisher, wrong title.</p>
+      </div>
+      <div class="rej">
+        <h3>Biology Letters</h3>
+        <p>Strictly dominated. 3,500 words <em>with figure legends counted</em>, against a paper whose whole credibility is its control architecture. Strip the controls, get rejected for lacking them. Proc B has identical S2O coverage and no such cap.</p>
+      </div>
+      <div class="rej">
+        <h3>Adaptive Behavior</h3>
+        <p>Walks into its one pre-committed desk-return rule: machine-learning submissions returned without review. Worse, it’s Q4 in experimental psychology — the breadth gradient would never meet a referee who could test it. Acceptance would be burial.</p>
+      </div>
+      <div class="rej">
+        <h3>Interface Focus</h3>
+        <p>Stricter than your sheet suspects: invitation-only <em>within</em> theme issues; the system offers only “submit an invited paper.” Scope fit is weak regardless.</p>
+      </div>
+      <div class="rej">
+        <h3>Constructivist Foundations</h3>
+        <p>Written rule you meet 0%: in-depth discussion of constructivism is mandatory, and your lineage contains no von Glasersfeld, Maturana, or von Foerster. But note “perceptual coupling” is <em>Maturana and Varela’s own term</em> — your breadth gradient is what von Glasersfeld’s <em>viability</em> predicts. A strong companion piece, not a home.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>What was verified, and what wasn’t</h2>
+    <div class="verify" style="margin-top:12px;">
+      <ul>
+        <li><span class="tick">✓</span> <b>CRKN’s partner list</b> — Cambridge, Canadian Science Publishing, Elsevier, IOP, OUP, PLOS, Royal Society <em>of Chemistry</em>, SAGE, Wiley. <b>The Royal Society is not on it.</b> Your seven Royal Society rows inherit a publisher name collision.</li>
+        <li><span class="tick">✓</span> <b>Subscribe-to-Open 2026</b> — eight Royal Society journals free for any author (Proc A/B, RSIF, Biology Letters, Interface Focus, Phil Trans A/B, Notes &amp; Records). Right answer in your sheet, wrong reason.</li>
+        <li><span class="tick">✓</span> <b>RSOS and Open Biology excluded</b> from S2O — still gold, still charging.</li>
+        <li><span class="tick">✓</span> <b>CRKN–Cambridge covers gold</b>, which is what makes EHS actually free. Wiley covers hybrid only (gold gets 10% off); SAGE hybrid (gold 40% off).</li>
+        <li><span class="tick">✓</span> <b>Shibasaki et al. 2024</b> exists and is what it claims to be.</li>
+        <li><span class="cross">○</span> <b>Not re-checked:</b> per-journal word limits, editor identities, and the other cited precedents. Strong leads from the agent research — confirm before you act on any single one.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="verify" style="border-left:3px solid var(--accent);">
+      <h2 style="margin-bottom:8px;">The sequence</h2>
+      <p style="font-size:14.5px; margin:0 0 8px; color:var(--ink); max-width:68ch;">
+        <b>EHS now</b> — free, verifiably, with the right referees, and the reference cap turned out not to bind.
+        <b>Then RSOS</b> if £1,400 is payable, since its precedent is near-exact and its review would engage your controls rather than your register;
+        <b>or Cognitive Science</b> if it isn’t.
+        <b>Then BBS</b> — propose the target article once the result is published and citable, using the McGill connection.
+      </p>
+      <p style="font-size:13.5px; margin:0; color:var(--muted); max-width:68ch;">
+        Decide one thing first, because it reorders everything above: is your constraint <b>“spend no money”</b> — trivially satisfied almost everywhere, since you can publish subscription-side and green self-archive — or <b>“CC-BY gold OA at no cost”</b>? Those are very different lists.
+      </p>
+    </div>
+  </div>
+
+</div>
