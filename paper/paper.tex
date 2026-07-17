@@ -278,9 +278,8 @@ perceptual coupling between cognition and environment, the
 recoverable trace in transmitted narrative of a living engagement
 that the narrative itself does not exhaust.
 
-% =============================================================================
-\section*{Results}
-
+% The roadmap sits at the end of the Introduction, where it is first
+% cited, so that it remains Figure 1 now that Methods precedes Results.
 \begin{figure}[h!t]
 \centering
 \includegraphics[width=\textwidth]{fig_roadmap.png}
@@ -300,9 +299,425 @@ image set and recover biome structure without ever using biome
 labels to build the representation. The three strategies converge
 on the same biome--mythology coupling, carried by lexical-thematic
 content rather than by the species a myth happens to name. The
-figure pointers index the Results subsections that follow.}
+figure pointers index the Results subsections.}
 \label{fig:fig-roadmap}
 \end{figure}
+
+% =============================================================================
+\section*{Materials and Methods}
+
+Every analysis rests on one measurement --- the alignment between a
+motif's sentence-pooled SigLIP-2 embedding and images of its biome ---
+established three independent ways, the three strategies of
+Figure~\ref{fig:fig-roadmap}: removing the identity vocabulary from the
+text before embedding (\emph{Controls against biome cues}), holding it
+constant on the raw myths (\emph{Identity-naming controls}), and
+recovering biome from the unsupervised myth--image geometry without
+biome labels (\emph{Unsupervised biome recovery}). The corpus, image
+sets, and embedding described next are shared across all three.
+
+\subsection*{Corpus and biome assignment}
+
+We use Yu.\ E.\ Berezkin's \emph{Analytical Catalogue of World
+Mythology and Folklore}~\citep{berezkin2024catalogue}, scraped from
+\texttt{ruthenia.ru} in May 2024. The catalogue provides 2{,}564 motif
+entries indexed across 958 traditions; each motif has a
+multi-paragraph Russian-language abstract aggregating the variants
+found across the traditions that carry the motif. Tradition centroids
+are joined to WWF Terrestrial
+Ecoregions~\citep{olson2001terrestrial} to assign each tradition, and
+through it each tradition--motif pair, to one of the 14 WWF biomes. Of
+the 2{,}564 catalogue motifs, the 2{,}158 analysed throughout are those
+with both a successfully scraped, anonymisable abstract and at least one
+tradition geocodable to a WWF biome; the remaining $406$ lack one of
+these. Most of the excluded motifs have no biome-codable tradition and
+so cannot enter a biome-level statistic by construction, and the
+abstract-scrape failures are indexed by motif identifier rather than by
+biome, so the exclusion is not biome-targeted.
+
+\subsection*{Image corpora}
+
+The iNaturalist component consists of $46{,}481$ images drawn from
+research-grade observations on iNaturalist Open
+Data~\citep{inaturalist2024} across the 14 WWF biomes. We apply an
+image-side sanity filter that drops obvious non-nature content via
+SigLIP-2 zero-shot scoring against twelve negative prompts
+(\emph{``a person in the photo''}, \emph{``a portrait of a human''},
+\emph{``people holding something''}, \emph{``an angler holding
+fish''}, \emph{``an indoor scene''}, \emph{``a kitchen or
+laboratory''}, \emph{``a city skyline or street''}, \emph{``a car
+or vehicle''}, \emph{``a road sign''}, \emph{``a black or
+all-white image''}, \emph{``a museum specimen on a white
+background''}, \emph{``a screenshot or document''}). An image is
+dropped if its maximum cosine similarity to any of the twelve
+negative prompts exceeds $0.08$. The threshold is lenient
+(removing only obvious cases) so that species-in-habitat
+close-ups and natural outdoor scenes are retained, which is the
+content iNaturalist is biased toward by design. For the curated landscape comparison, the Places365
+component~\citep{zhou2018places} is drawn from scene categories
+whose semantic interpretation unambiguously corresponds to a
+single WWF biome (e.g.\ \emph{tundra} $\to$ arctic tundra;
+\emph{rainforest} $\to$ tropical moist broadleaf;
+\emph{forest/broadleaf} $\to$ temperate or tropical dry
+broadleaf; \emph{snowfield/mountain\_snowy} $\to$ boreal/taiga;
+\emph{lagoon/swamp/creek/coast} $\to$ mangroves); categories that
+mix biomes were excluded. Each candidate image is then passed
+through a strict-landscape SigLIP-2 filter that drops anything
+that is not a wide-shot natural scene: five positive prompts
+(\emph{``a wide-shot natural landscape with no people''},
+\emph{``a panoramic photograph of natural scenery''}, \emph{``an
+empty natural habitat photographed from a distance''}, \emph{``a
+landscape photo of natural terrain showing vegetation and
+horizon''}, \emph{``a wild ecosystem with no human-made
+structures''}) and eleven negative prompts (\emph{``a person in
+the photograph''}, \emph{``a portrait of one or more humans''},
+\emph{``a close-up photo of a single animal''}, \emph{``a single
+bird filling the frame''}, \emph{``a car or vehicle''}, \emph{``a
+boat''}, \emph{``a road or street''}, \emph{``a man-made structure
+or building''}, \emph{``an indoor scene''}, \emph{``a person
+riding a horse or animal''}, \emph{``a tourist photograph with
+people''}) are encoded by SigLIP-2 and compared against each
+image's embedding. The strict-landscape score is
+$\mathrm{mean}(\text{positives}) - \max(\text{negatives})$; an
+image is dropped if its $\max(\text{negatives}) > 0.18$, and the
+remaining top-$K$ images per biome are kept, yielding $1{,}655$ scene
+photographs across the $11$ biomes Places365 covers. The Places365 filter
+is intentionally stricter than the iNaturalist filter, in
+particular it removes single-species close-ups, because the
+Places365 panel functions as a scene-only robustness check on
+biome-character imagery, complementary to iNaturalist's
+species-in-habitat coverage.
+
+\subsection*{Vision--language embedding}
+
+The headline model is SigLIP-2-large
+(\texttt{google/siglip2-large-patch16-384})~\citep{tschannen2024siglip2},
+a multilingual vision--language model with native Russian support.
+Images use the standard $384\times 384$ preprocessing. Text is
+sentence-pooled: each LLM-clean Berezkin abstract is split into
+sentences (NLTK Punkt sentence tokenizer, with a terminal-punctuation
+regex fallback; sentences of $<3$ words dropped, capped at $50$
+sentences per motif), each sentence is embedded independently within
+SigLIP-2's $64$-token window (mean $23$ sentences per motif;
+$50{,}032$ sentences across all $2{,}158$ motifs), and the per-motif
+vector is the
+mean-pooled, L2-renormalised sentence embedding. Sentence pooling
+matters because the raw English abstracts average $\sim 3{,}400$
+tokens, of which a $64$-token truncation captures only the first
+$\sim 2\%$; the sentence-pooling pass embeds the full anonymised
+abstract instead. For cross-model robustness we additionally embed
+with M-CLIP (\texttt{XLM-Roberta-Large + CLIP-ViT-L/14})~\citep{carlsson2022mclip}
+on the Russian abstracts (M-CLIP's $512$-token window covers most
+abstracts in a single forward pass) and with OpenCLIP-ViT-L/14
+(LAION-2B and OpenAI pretrainings) on English motif oneliners
+(see Supplementary Figure~\ref{fig:figS-crossmodel}). Image and
+text features are L2-normalised and similarity is the inner
+product.
+
+\subsection*{Controls against biome cues}
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{methods.png}
+\caption{\textbf{Pipeline schematic: anonymisation, sentence-
+pooled embedding, and image-side stratification.} An example
+Berezkin motif (Mackenzie-region tradition, Boreal/Taiga) is
+threaded through the five stages of the analysis pipeline so the
+reader can trace one token's journey from raw Russian to the
+final per-taxon $\Delta$. \emph{Stage 0 (Raw input).} The
+Russian motif from Berezkin's catalogue, with biome-anchoring
+tokens highlighted in red: the species name ``медвежий''
+(\emph{bear}), the cultural anchor ``шамана'' (\emph{shaman}), and
+the ethnonym ``Маккензи'' (\emph{Mackenzie}). \emph{Stage 1 (Class word + placeholder).} An
+LLM pass translates the text into English and applies seven
+noun-targeted anonymisation rules; specific species names become
+their class word (bear $\to$ \texttt{mammal}), ethnonyms become
+\texttt{[people]}, biome words are dropped. Replaced tokens are
+shown in blue. \emph{Stage 2 (Cultural anchors $\to$ generic).}
+A second LLM pass refines long-tail cultural anchors that
+survived Stage 1 (\texttt{shaman} $\to$ \texttt{healer},
+shown in purple); held-out audit on $200$ random motifs confirms
+$96.5\%$ strict-clean rate against species, place, and biome
+vocabulary. \emph{Stage 3 (Sentence-pooled SigLIP-2 embedding).}
+The cleaned abstract is split into sentences, each sentence is
+embedded independently within SigLIP-2's $64$-token window
+(mean $23$ sentences per motif; $50{,}032$ total across $2{,}158$
+motifs), and the per-motif vector is the mean-pooled,
+L2-renormalised sentence embedding. \emph{Stage 4 ($\Delta$ per
+taxon $\to$ uniform mean).} On the image side, iNaturalist
+photographs of biome $b$ are partitioned by iconic taxon
+(Mammalia, Aves, Plantae, Reptilia, Amphibia, \ldots). The
+motif vector's residualised $\Delta$ is computed within each
+taxon stratum and averaged uniformly across taxa, removing
+biome-by-taxon co-occurrence on the image side as a possible
+explanation of alignment.}
+\label{fig:methods-controls}
+\end{figure}
+
+The motif text fed to the encoder is anonymised against every
+category of biome-anchoring vocabulary we could identify, by an
+LLM-mediated translation and refinement pass followed by a single
+exclusion filter. For each motif we send the raw Russian Berezkin
+abstract together with the original English oneliner to
+gemini-3.5-flash (Google's frontier flash model, accessed 1 June
+2026)~\citep{googlegemini2026} with a structured prompt that asks
+it to produce a faithful English translation under the following
+rules:
+
+\begin{itemize}\itemsep1pt\parsep0pt
+\item Every specific species name $\to$ its class word: one of
+  \texttt{mammal} / \texttt{bird} / \texttt{fish} / \texttt{reptile}
+  / \texttt{amphibian} / \texttt{insect} / \texttt{mollusc} /
+  \texttt{crustacean} / \texttt{arachnid} / \texttt{tree} /
+  \texttt{flower} / \texttt{plant} / \texttt{fungus} /
+  \texttt{animal}.
+\item Every country, region, river, mountain, lake, sea, ocean, or
+  city name $\to$ the literal string \texttt{[place]}.
+\item Every tribe, ethnic group, nation, or ethno-religious
+  community name $\to$ \texttt{[people]}.
+\item Every biome word (tundra, taiga, savanna, jungle, rainforest,
+  prairie, desert, steppe, swamp, marsh, oasis, glacier, veldt,
+  mangrove, mediterranean, etc.) dropped.
+\item Every cultivated crop (rice, corn, beans, peanuts, millet,
+  quinoa, cassava, cotton, indigo, tobacco, etc.) $\to$
+  \texttt{plant}.
+\item Every biome-coded cultural artefact (sledge, kayak, harpoon,
+  igloo, yurt, blowgun, snowshoes, kachina, calabash) $\to$ a
+  generic equivalent (tool, boat, shelter, vessel).
+\item Latin binomials dropped.
+\end{itemize}
+
+A second Gemini pass applied to the first-pass output catches the
+long tail and additionally:
+
+\begin{itemize}\itemsep1pt\parsep0pt
+\item Cultural-religious titles (sultan / padishah / shah / kadi /
+  mullah / dervish / brahmin / bai / lama / raja / khan / tsar)
+  $\to$ neutral ``ruler'' or ``holy person'' or ``wealthy person''
+ , explicitly \emph{not} the Western-coded ``king'' / ``queen''
+  / ``priest'' / ``monk''.
+\item Tradition-specific named characters (Baba~Yaga, Kivioq,
+  Coyote-as-character, Nach Ak Yum, Quetzalcoatl, Khevki,
+  Mitoshka, etc.) $\to$ ``character''.
+\end{itemize}
+
+Kept by design as cross-cultural anchors: cross-cultural religious
+figures (Christ, Buddha, Adam, Eve, Allah, God, Satan, named
+saints, Krishna, Rama, Sita), universal personifications (Sun,
+Moon, Wind, Sky, Earth, Sea, Thunder, Lightning, Star), all
+astronomical references (Pleiades, Orion, Big Dipper, Sirius,
+Venus, Milky Way, named constellations), all class words, cardinal
+directions, and generic universal vocabulary (forest, mountain,
+river, village, house, person, woman, man, child, day, night,
+fire, water). The narrative content of each motif, transformations,
+family relationships, magical events, plot, is preserved.
+
+A held-out audit of $200$ random LLM-anonymised motifs (criteria
+itemised in the Results panel C) finds $0\%$ explicit biome
+words, $0.5\%$ place or ethnonym residues, and $3.0\%$ specific
+species residues, giving a composite strict-clean rate of
+$96.5\%$ against species, place, and biome vocabulary. Generic
+landform vocabulary (forest, mountain, river, snow, sand,
+$92.5\%$ of motifs) and biome-correlated activity verbs (gather,
+hunt, fish, herd, $93.5\%$ of motifs) are retained by
+construction: the anonymisation pipeline is \emph{noun-targeted},
+stripping species, place, biome, and cultural-artefact nouns
+while leaving narrative structure and activity predicates intact.
+A residual narrative such as ``gathers fruit, steps in mammal
+dung'' therefore retains activity-level biome correlates
+(gathering fruit is more frequent in temperate and boreal forest
+descriptions than in desert ones). We treat this retained
+content as the substrate over which the alignment is measured
+rather than as contamination, and return to the
+morphology-versus-activity-priming question in the Discussion.
+
+\subsubsection*{Within-taxon image-side stratification.}
+Because iNaturalist observations are taxonomically structured, some
+biomes are disproportionately rich in particular iconic taxa
+(boreal/tundra/conifer forests are $55$--$66\%$ Plantae; mangroves
+only $11\%$). A motif whose anonymised text emphasises one taxon
+class will therefore score high in any biome whose iNat image pool
+emphasises the same taxon class, even when the biome's specific
+visual character contributes nothing. To remove this biome-by-taxon
+co-occurrence as a possible explanation for the alignment, we
+recompute $\Delta_b$ stratified by the iNaturalist iconic-taxon
+label. For each biome $b$ and taxon stratum $t$ with at least $20$
+images, we compute the within-stratum
+$\Delta_{b,t} = \overline{S_{i,\mathcal{M}_b}}_{i\in b\cap t}
+              - \overline{S_{i,\mathcal{M}_{\overline{b}}}}_{i\in b\cap t}$,
+and report the uniform across-strata mean as
+$\Delta^{\text{strat}}_b = (1/T_b)\sum_t \Delta_{b,t}$. The
+permutation null is the same scrambled-motif null applied within
+strata. The headline iNaturalist statistic reported throughout the
+main text and main figures is stratified
+($\mu\Delta^{\text{strat}} = +0.406\times 10^{-3}$ across the 14
+biomes), with the marginal $\mu\Delta^{\text{marg}} = +0.244\times
+10^{-3}$ reported alongside in robustness panels (where the
+input rather than the statistic is being varied) and on the
+Places365 panel of Figure~\ref{fig:fig2} (Places365 has no
+iconic-taxon labels and therefore admits no further
+stratification). Per-text-taxon decompositions
+(Figure~\ref{fig:fig10}) report the per-cell marginal value at
+each biome--taxon cell, since each cell already conditions on a
+single taxon; the stratified $\Delta$ is, mechanically, the
+uniform mean of those per-cell marginals.
+
+We separately explored simpler rule-based anonymisation pipelines
+(genus-level hypernymisation; a hand-curated class-level Russian
+hypernym map of roughly $3{,}500$ entries; an audit-extended map
+of $6{,}300$ entries) and found that the effect is positive under
+each of them and the across-biome ranking is preserved, ruling out
+the interpretation that any particular vocabulary anchor is doing
+the work. The LLM-mediated pipeline described above is the
+strictest in the family and the one we use for the headline.
+
+\subsection*{Identity-naming controls}
+
+To test the alignment on the un-anonymised myths while controlling
+for biome-correlated naming, we extracted three identity classes
+per motif from the raw Russian Berezkin abstracts and kept them
+separate. Species (every specifically named organism, fauna and
+flora) were extracted by an LLM reading the Russian text; a
+held-out adversarial audit of $120$ motifs estimated $96.7\%$
+recall and $95.3\%$ precision against the source. Places are the
+WWF-codable regions in Berezkin's metadata, and ethnonyms are the
+tradition names that carry each motif. Each class was rendered as a
+bag of its entities, embedded with the same sentence-pooled
+SigLIP-2 pipeline as the full myth in the raw-Russian frame, and
+scored against the same iNaturalist images on the within-iconic-
+taxon stratified $\Delta$. Because this is a self-contained
+raw-Russian decomposition, its absolute magnitudes are not
+formally comparable to the English LLM-clean headline, although the
+full-myth stratified $\Delta$ coincides closely with it. The
+matched-permutation null partitions motifs into $60$ K-means blocks
+in the relevant identity-bag embedding space and, for each of
+$1{,}000$ permutations, shuffles biome labels only within a block,
+so identity content is held approximately constant while biome
+assignment is broken; the joint null concatenates the
+L2-normalised species, place, and ethnonym embeddings before
+blocking. Each biome is tested with an independent random-number
+stream, permutation $p$-values are $(1+\#\{null \geq obs\})/(1+1000)$
+smoothed, and significance is reported after Benjamini--Hochberg FDR
+correction across the 14 biomes; the survivor counts in
+Figure~\ref{fig:fig-identity}B are at $q<.05$. The species-subspace
+projection removes the top $k$ principal directions of the
+species-bag embeddings from the full-myth embeddings
+($k = 5, 10, 20$) and recomputes the stratified $\Delta$. The
+extraction prompts, audit, and per-biome tables are released with
+the code.
+
+\subsection*{Statistical tests}
+
+Image--motif similarities form an
+$n_{\text{img}} \times n_{\text{motif}}$ matrix~$\mathbf{S}$.
+Per-motif residualisation (subtracting the motif grand mean)
+eliminates the contribution of generic motif valence to per-biome
+aggregates. For each biome $b$ with $n_b$ images and motif
+partition $(\mathcal{M}_b, \mathcal{M}_{\overline{b}})$ where
+$\mathcal{M}_b$ is the set of motifs whose Berezkin tradition set
+includes at least one tradition assigned to biome $b$, we report
+\[
+\Delta_b \;=\; \frac{1}{n_b}\sum_{i \in \text{imgs}(b)}
+        \Bigl[\,\overline{S_{i,\mathcal{M}_b}}
+            - \overline{S_{i,\mathcal{M}_{\overline{b}}}}\,\Bigr],
+\]
+the residualised marginal $\Delta$ at the biome level. The
+headline iNat statistic is the within-iconic-taxon stratified
+version $\Delta^{\text{strat}}_b$ defined above. Significance is
+assessed by $1{,}000$ permutations of the motif-to-biome
+assignment (the stratified statistic recomputed under each
+permutation), with permutation $p = \#\{\text{null} \geq
+\text{obs}\}/1000$ and FDR control across biomes via the
+Benjamini--Hochberg procedure~\citep{benjamini1995controlling}. The
+matched-permutation and unsupervised-recovery nulls below
+additionally use $+1$-smoothed $p$-values, $p = (1 + \#\{\text{null}
+\geq \text{obs}\})/(1 + n_{\text{perm}})$, and an independent
+random-number stream per biome.
+For all main-figure panels we apply a display threshold of
+$\geq 50$ in-biome images, $\geq 5$ in-biome motifs, and
+$\geq 20$ images per biome--taxon stratum; biome--taxon cells
+with fewer than $10$ images appear as missing in the per-taxon
+decomposition (Figure~\ref{fig:fig10}).
+
+A fourth control, used in the cultural-geographic autocorrelation
+analysis, is the within-Glottolog-macroarea biome-swap null. Each
+tradition is assigned to one of six Glottolog macro-areas by its
+geographic centroid; under each of $1{,}000$ permutations every
+tradition's motifs are reassigned to a different biome that is also
+represented within its own macro-area, and the stratified $\Delta$ is
+recomputed. A biome is taken to carry signal beyond within-macro-area
+cultural regularity when its observed $\Delta$ exceeds the $95$th
+percentile of this swap distribution (a one-sided $95$th-percentile
+threshold; $p$-values are unadjusted across biomes). The null is
+defined once here and applied in the
+Results and in Supplementary Section~S4.
+
+\subsection*{Unsupervised biome recovery}
+
+To test whether biome structure is present in the model's image
+affinities without supervision, we represented each of the
+$2{,}158$ valid motifs by its row of the residualised similarity
+matrix $\mathbf{S}$, that is, its per-motif-centred cosine
+similarity to all $46{,}481$ iNaturalist photographs, and reduced
+these affinity vectors to $50$ principal components. A motif's
+\emph{own biome} is the biome contributing the most of its Berezkin
+traditions; this label is used only to evaluate the geometry, never
+to build it. We report two diagnostics over the nine biomes with
+at least $50$ images and $20$ own-biome motifs. First, own-biome
+retrieval: for each motif we computed a taxon-stratified mean
+similarity to each biome (the mean over iconic taxa of the motif's
+mean similarity to that biome's images of each taxon, requiring
+$\geq 20$ images per biome--taxon cell), ranked the biomes, and
+recorded the rank of the motif's own biome; the chance baseline and
+the reported $p$-value come from $2{,}000$ permutations that
+reassign each motif's own biome at random. Second, per-biome
+decodability is the balanced accuracy of a five-fold
+one-versus-rest $\ell_2$-regularised logistic probe on the
+PCA-reduced vectors, compared against a null of $200$ such probes
+trained on permuted labels (each biome with an independent stream),
+with per-biome $p$-values smoothed as
+$(1+\#\{null\geq obs\})/(1+200)$ and Benjamini--Hochberg FDR
+correction across the nine biomes. The unsupervised UMAP layout and its
+content, macro-area, and biome adjusted Rand indices use the same
+PCA-reduced vectors. As a text-side control against the taxon
+channel, both diagnostics are recomputed on the class-word-collapsed
+embeddings (every animal-kingdom class word mapped to ``animal'' and
+every plant-kingdom class word to ``plant''; see \emph{Controls
+against biome cues}). The same two diagnostics are repeated on the
+$1{,}655$ Places365 scenes; because the scenes carry no iconic-taxon
+labels, own-biome retrieval there uses the marginal rather than
+taxon-stratified similarity, and the PCA-$50$ is taken of the
+myth\,$\times$\,Places365 similarity matrix, over the seven biomes
+with $\geq 50$ scenes and $\geq 20$ own-biome motifs
+(Figure~\ref{fig:fig-recovery}C--D).
+
+\subsection*{Use of AI tools}
+Two classes of AI tool were used to analyse data in this study, and both
+are described in full above; we consolidate the declaration here.
+\emph{(1)~Text anonymisation.} The identity vocabulary was removed from
+the Berezkin abstracts by \texttt{gemini-3.5-flash} (Google), accessed
+via the Gemini API on 1 June 2026~\citep{googlegemini2026}, in the
+two-pass procedure and under the verbatim prompt rules set out in
+\emph{Controls against biome cues}. The pipeline is deterministic given
+its inputs and prompts, both of which are released with the code; the
+resulting LLM-clean corpus is released rather than regenerated, so the
+analyses can be reproduced without API access. Its residual error rate
+is quantified by the held-out $200$-motif audit reported above rather
+than assumed. \emph{(2)~Embedding.} Motif text and imagery were encoded
+with sentence-pooled SigLIP-2-large, and replicated across M-CLIP,
+OpenCLIP-LAION-2B and OpenCLIP-OpenAI; all are open-weight models
+obtained from public checkpoints. Source text is Berezkin's catalogue,
+cited throughout. No AI tool is credited as an author.
+% TODO(authors): EHS also requires declaring AI tools used to *generate
+% text in the manuscript* (as you would a language-editing service),
+% in the Acknowledgements. Decide what to state here and add it there.
+
+% =============================================================================
+% EHS requires these five statements, in this order, at the end of the
+% manuscript and before the References section.
+% =============================================================================
+
+\section*{Results}
 
 \subsection*{Biome-specific mythology aligns with biome imagery}
 
@@ -1233,419 +1648,6 @@ used to keep the coupling articulate. The work of making the
 coupling reading testable has only begun.
 
 % =============================================================================
-\section*{Materials and Methods}
-
-Every analysis rests on one measurement --- the alignment between a
-motif's sentence-pooled SigLIP-2 embedding and images of its biome ---
-established three independent ways, the three strategies of
-Figure~\ref{fig:fig-roadmap}: removing the identity vocabulary from the
-text before embedding (\emph{Controls against biome cues}), holding it
-constant on the raw myths (\emph{Identity-naming controls}), and
-recovering biome from the unsupervised myth--image geometry without
-biome labels (\emph{Unsupervised biome recovery}). The corpus, image
-sets, and embedding described next are shared across all three.
-
-\subsection*{Corpus and biome assignment}
-
-We use Yu.\ E.\ Berezkin's \emph{Analytical Catalogue of World
-Mythology and Folklore}~\citep{berezkin2024catalogue}, scraped from
-\texttt{ruthenia.ru} in May 2024. The catalogue provides 2{,}564 motif
-entries indexed across 958 traditions; each motif has a
-multi-paragraph Russian-language abstract aggregating the variants
-found across the traditions that carry the motif. Tradition centroids
-are joined to WWF Terrestrial
-Ecoregions~\citep{olson2001terrestrial} to assign each tradition, and
-through it each tradition--motif pair, to one of the 14 WWF biomes. Of
-the 2{,}564 catalogue motifs, the 2{,}158 analysed throughout are those
-with both a successfully scraped, anonymisable abstract and at least one
-tradition geocodable to a WWF biome; the remaining $406$ lack one of
-these. Most of the excluded motifs have no biome-codable tradition and
-so cannot enter a biome-level statistic by construction, and the
-abstract-scrape failures are indexed by motif identifier rather than by
-biome, so the exclusion is not biome-targeted.
-
-\subsection*{Image corpora}
-
-The iNaturalist component consists of $46{,}481$ images drawn from
-research-grade observations on iNaturalist Open
-Data~\citep{inaturalist2024} across the 14 WWF biomes. We apply an
-image-side sanity filter that drops obvious non-nature content via
-SigLIP-2 zero-shot scoring against twelve negative prompts
-(\emph{``a person in the photo''}, \emph{``a portrait of a human''},
-\emph{``people holding something''}, \emph{``an angler holding
-fish''}, \emph{``an indoor scene''}, \emph{``a kitchen or
-laboratory''}, \emph{``a city skyline or street''}, \emph{``a car
-or vehicle''}, \emph{``a road sign''}, \emph{``a black or
-all-white image''}, \emph{``a museum specimen on a white
-background''}, \emph{``a screenshot or document''}). An image is
-dropped if its maximum cosine similarity to any of the twelve
-negative prompts exceeds $0.08$. The threshold is lenient
-(removing only obvious cases) so that species-in-habitat
-close-ups and natural outdoor scenes are retained, which is the
-content iNaturalist is biased toward by design. For the curated landscape comparison, the Places365
-component~\citep{zhou2018places} is drawn from scene categories
-whose semantic interpretation unambiguously corresponds to a
-single WWF biome (e.g.\ \emph{tundra} $\to$ arctic tundra;
-\emph{rainforest} $\to$ tropical moist broadleaf;
-\emph{forest/broadleaf} $\to$ temperate or tropical dry
-broadleaf; \emph{snowfield/mountain\_snowy} $\to$ boreal/taiga;
-\emph{lagoon/swamp/creek/coast} $\to$ mangroves); categories that
-mix biomes were excluded. Each candidate image is then passed
-through a strict-landscape SigLIP-2 filter that drops anything
-that is not a wide-shot natural scene: five positive prompts
-(\emph{``a wide-shot natural landscape with no people''},
-\emph{``a panoramic photograph of natural scenery''}, \emph{``an
-empty natural habitat photographed from a distance''}, \emph{``a
-landscape photo of natural terrain showing vegetation and
-horizon''}, \emph{``a wild ecosystem with no human-made
-structures''}) and eleven negative prompts (\emph{``a person in
-the photograph''}, \emph{``a portrait of one or more humans''},
-\emph{``a close-up photo of a single animal''}, \emph{``a single
-bird filling the frame''}, \emph{``a car or vehicle''}, \emph{``a
-boat''}, \emph{``a road or street''}, \emph{``a man-made structure
-or building''}, \emph{``an indoor scene''}, \emph{``a person
-riding a horse or animal''}, \emph{``a tourist photograph with
-people''}) are encoded by SigLIP-2 and compared against each
-image's embedding. The strict-landscape score is
-$\mathrm{mean}(\text{positives}) - \max(\text{negatives})$; an
-image is dropped if its $\max(\text{negatives}) > 0.18$, and the
-remaining top-$K$ images per biome are kept, yielding $1{,}655$ scene
-photographs across the $11$ biomes Places365 covers. The Places365 filter
-is intentionally stricter than the iNaturalist filter, in
-particular it removes single-species close-ups, because the
-Places365 panel functions as a scene-only robustness check on
-biome-character imagery, complementary to iNaturalist's
-species-in-habitat coverage.
-
-\subsection*{Vision--language embedding}
-
-The headline model is SigLIP-2-large
-(\texttt{google/siglip2-large-patch16-384})~\citep{tschannen2024siglip2},
-a multilingual vision--language model with native Russian support.
-Images use the standard $384\times 384$ preprocessing. Text is
-sentence-pooled: each LLM-clean Berezkin abstract is split into
-sentences (NLTK Punkt sentence tokenizer, with a terminal-punctuation
-regex fallback; sentences of $<3$ words dropped, capped at $50$
-sentences per motif), each sentence is embedded independently within
-SigLIP-2's $64$-token window (mean $23$ sentences per motif;
-$50{,}032$ sentences across all $2{,}158$ motifs), and the per-motif
-vector is the
-mean-pooled, L2-renormalised sentence embedding. Sentence pooling
-matters because the raw English abstracts average $\sim 3{,}400$
-tokens, of which a $64$-token truncation captures only the first
-$\sim 2\%$; the sentence-pooling pass embeds the full anonymised
-abstract instead. For cross-model robustness we additionally embed
-with M-CLIP (\texttt{XLM-Roberta-Large + CLIP-ViT-L/14})~\citep{carlsson2022mclip}
-on the Russian abstracts (M-CLIP's $512$-token window covers most
-abstracts in a single forward pass) and with OpenCLIP-ViT-L/14
-(LAION-2B and OpenAI pretrainings) on English motif oneliners
-(see Supplementary Figure~\ref{fig:figS-crossmodel}). Image and
-text features are L2-normalised and similarity is the inner
-product.
-
-\subsection*{Controls against biome cues}
-
-\begin{figure}[h!t]
-\centering
-\includegraphics[width=\textwidth]{methods.png}
-\caption{\textbf{Pipeline schematic: anonymisation, sentence-
-pooled embedding, and image-side stratification.} An example
-Berezkin motif (Mackenzie-region tradition, Boreal/Taiga) is
-threaded through the five stages of the analysis pipeline so the
-reader can trace one token's journey from raw Russian to the
-final per-taxon $\Delta$. \emph{Stage 0 (Raw input).} The
-Russian motif from Berezkin's catalogue, with biome-anchoring
-tokens highlighted in red: the species name ``медвежий''
-(\emph{bear}), the cultural anchor ``шамана'' (\emph{shaman}), and
-the ethnonym ``Маккензи'' (\emph{Mackenzie}). \emph{Stage 1 (Class word + placeholder).} An
-LLM pass translates the text into English and applies seven
-noun-targeted anonymisation rules; specific species names become
-their class word (bear $\to$ \texttt{mammal}), ethnonyms become
-\texttt{[people]}, biome words are dropped. Replaced tokens are
-shown in blue. \emph{Stage 2 (Cultural anchors $\to$ generic).}
-A second LLM pass refines long-tail cultural anchors that
-survived Stage 1 (\texttt{shaman} $\to$ \texttt{healer},
-shown in purple); held-out audit on $200$ random motifs confirms
-$96.5\%$ strict-clean rate against species, place, and biome
-vocabulary. \emph{Stage 3 (Sentence-pooled SigLIP-2 embedding).}
-The cleaned abstract is split into sentences, each sentence is
-embedded independently within SigLIP-2's $64$-token window
-(mean $23$ sentences per motif; $50{,}032$ total across $2{,}158$
-motifs), and the per-motif vector is the mean-pooled,
-L2-renormalised sentence embedding. \emph{Stage 4 ($\Delta$ per
-taxon $\to$ uniform mean).} On the image side, iNaturalist
-photographs of biome $b$ are partitioned by iconic taxon
-(Mammalia, Aves, Plantae, Reptilia, Amphibia, \ldots). The
-motif vector's residualised $\Delta$ is computed within each
-taxon stratum and averaged uniformly across taxa, removing
-biome-by-taxon co-occurrence on the image side as a possible
-explanation of alignment.}
-\label{fig:methods-controls}
-\end{figure}
-
-The motif text fed to the encoder is anonymised against every
-category of biome-anchoring vocabulary we could identify, by an
-LLM-mediated translation and refinement pass followed by a single
-exclusion filter. For each motif we send the raw Russian Berezkin
-abstract together with the original English oneliner to
-gemini-3.5-flash (Google's frontier flash model, accessed 1 June
-2026)~\citep{googlegemini2026} with a structured prompt that asks
-it to produce a faithful English translation under the following
-rules:
-
-\begin{itemize}\itemsep1pt\parsep0pt
-\item Every specific species name $\to$ its class word: one of
-  \texttt{mammal} / \texttt{bird} / \texttt{fish} / \texttt{reptile}
-  / \texttt{amphibian} / \texttt{insect} / \texttt{mollusc} /
-  \texttt{crustacean} / \texttt{arachnid} / \texttt{tree} /
-  \texttt{flower} / \texttt{plant} / \texttt{fungus} /
-  \texttt{animal}.
-\item Every country, region, river, mountain, lake, sea, ocean, or
-  city name $\to$ the literal string \texttt{[place]}.
-\item Every tribe, ethnic group, nation, or ethno-religious
-  community name $\to$ \texttt{[people]}.
-\item Every biome word (tundra, taiga, savanna, jungle, rainforest,
-  prairie, desert, steppe, swamp, marsh, oasis, glacier, veldt,
-  mangrove, mediterranean, etc.) dropped.
-\item Every cultivated crop (rice, corn, beans, peanuts, millet,
-  quinoa, cassava, cotton, indigo, tobacco, etc.) $\to$
-  \texttt{plant}.
-\item Every biome-coded cultural artefact (sledge, kayak, harpoon,
-  igloo, yurt, blowgun, snowshoes, kachina, calabash) $\to$ a
-  generic equivalent (tool, boat, shelter, vessel).
-\item Latin binomials dropped.
-\end{itemize}
-
-A second Gemini pass applied to the first-pass output catches the
-long tail and additionally:
-
-\begin{itemize}\itemsep1pt\parsep0pt
-\item Cultural-religious titles (sultan / padishah / shah / kadi /
-  mullah / dervish / brahmin / bai / lama / raja / khan / tsar)
-  $\to$ neutral ``ruler'' or ``holy person'' or ``wealthy person''
- , explicitly \emph{not} the Western-coded ``king'' / ``queen''
-  / ``priest'' / ``monk''.
-\item Tradition-specific named characters (Baba~Yaga, Kivioq,
-  Coyote-as-character, Nach Ak Yum, Quetzalcoatl, Khevki,
-  Mitoshka, etc.) $\to$ ``character''.
-\end{itemize}
-
-Kept by design as cross-cultural anchors: cross-cultural religious
-figures (Christ, Buddha, Adam, Eve, Allah, God, Satan, named
-saints, Krishna, Rama, Sita), universal personifications (Sun,
-Moon, Wind, Sky, Earth, Sea, Thunder, Lightning, Star), all
-astronomical references (Pleiades, Orion, Big Dipper, Sirius,
-Venus, Milky Way, named constellations), all class words, cardinal
-directions, and generic universal vocabulary (forest, mountain,
-river, village, house, person, woman, man, child, day, night,
-fire, water). The narrative content of each motif, transformations,
-family relationships, magical events, plot, is preserved.
-
-A held-out audit of $200$ random LLM-anonymised motifs (criteria
-itemised in the Results panel C) finds $0\%$ explicit biome
-words, $0.5\%$ place or ethnonym residues, and $3.0\%$ specific
-species residues, giving a composite strict-clean rate of
-$96.5\%$ against species, place, and biome vocabulary. Generic
-landform vocabulary (forest, mountain, river, snow, sand,
-$92.5\%$ of motifs) and biome-correlated activity verbs (gather,
-hunt, fish, herd, $93.5\%$ of motifs) are retained by
-construction: the anonymisation pipeline is \emph{noun-targeted},
-stripping species, place, biome, and cultural-artefact nouns
-while leaving narrative structure and activity predicates intact.
-A residual narrative such as ``gathers fruit, steps in mammal
-dung'' therefore retains activity-level biome correlates
-(gathering fruit is more frequent in temperate and boreal forest
-descriptions than in desert ones). We treat this retained
-content as the substrate over which the alignment is measured
-rather than as contamination, and return to the
-morphology-versus-activity-priming question in the Discussion.
-
-\subsubsection*{Within-taxon image-side stratification.}
-Because iNaturalist observations are taxonomically structured, some
-biomes are disproportionately rich in particular iconic taxa
-(boreal/tundra/conifer forests are $55$--$66\%$ Plantae; mangroves
-only $11\%$). A motif whose anonymised text emphasises one taxon
-class will therefore score high in any biome whose iNat image pool
-emphasises the same taxon class, even when the biome's specific
-visual character contributes nothing. To remove this biome-by-taxon
-co-occurrence as a possible explanation for the alignment, we
-recompute $\Delta_b$ stratified by the iNaturalist iconic-taxon
-label. For each biome $b$ and taxon stratum $t$ with at least $20$
-images, we compute the within-stratum
-$\Delta_{b,t} = \overline{S_{i,\mathcal{M}_b}}_{i\in b\cap t}
-              - \overline{S_{i,\mathcal{M}_{\overline{b}}}}_{i\in b\cap t}$,
-and report the uniform across-strata mean as
-$\Delta^{\text{strat}}_b = (1/T_b)\sum_t \Delta_{b,t}$. The
-permutation null is the same scrambled-motif null applied within
-strata. The headline iNaturalist statistic reported throughout the
-main text and main figures is stratified
-($\mu\Delta^{\text{strat}} = +0.406\times 10^{-3}$ across the 14
-biomes), with the marginal $\mu\Delta^{\text{marg}} = +0.244\times
-10^{-3}$ reported alongside in robustness panels (where the
-input rather than the statistic is being varied) and on the
-Places365 panel of Figure~\ref{fig:fig2} (Places365 has no
-iconic-taxon labels and therefore admits no further
-stratification). Per-text-taxon decompositions
-(Figure~\ref{fig:fig10}) report the per-cell marginal value at
-each biome--taxon cell, since each cell already conditions on a
-single taxon; the stratified $\Delta$ is, mechanically, the
-uniform mean of those per-cell marginals.
-
-We separately explored simpler rule-based anonymisation pipelines
-(genus-level hypernymisation; a hand-curated class-level Russian
-hypernym map of roughly $3{,}500$ entries; an audit-extended map
-of $6{,}300$ entries) and found that the effect is positive under
-each of them and the across-biome ranking is preserved, ruling out
-the interpretation that any particular vocabulary anchor is doing
-the work. The LLM-mediated pipeline described above is the
-strictest in the family and the one we use for the headline.
-
-\subsection*{Identity-naming controls}
-
-To test the alignment on the un-anonymised myths while controlling
-for biome-correlated naming, we extracted three identity classes
-per motif from the raw Russian Berezkin abstracts and kept them
-separate. Species (every specifically named organism, fauna and
-flora) were extracted by an LLM reading the Russian text; a
-held-out adversarial audit of $120$ motifs estimated $96.7\%$
-recall and $95.3\%$ precision against the source. Places are the
-WWF-codable regions in Berezkin's metadata, and ethnonyms are the
-tradition names that carry each motif. Each class was rendered as a
-bag of its entities, embedded with the same sentence-pooled
-SigLIP-2 pipeline as the full myth in the raw-Russian frame, and
-scored against the same iNaturalist images on the within-iconic-
-taxon stratified $\Delta$. Because this is a self-contained
-raw-Russian decomposition, its absolute magnitudes are not
-formally comparable to the English LLM-clean headline, although the
-full-myth stratified $\Delta$ coincides closely with it. The
-matched-permutation null partitions motifs into $60$ K-means blocks
-in the relevant identity-bag embedding space and, for each of
-$1{,}000$ permutations, shuffles biome labels only within a block,
-so identity content is held approximately constant while biome
-assignment is broken; the joint null concatenates the
-L2-normalised species, place, and ethnonym embeddings before
-blocking. Each biome is tested with an independent random-number
-stream, permutation $p$-values are $(1+\#\{null \geq obs\})/(1+1000)$
-smoothed, and significance is reported after Benjamini--Hochberg FDR
-correction across the 14 biomes; the survivor counts in
-Figure~\ref{fig:fig-identity}B are at $q<.05$. The species-subspace
-projection removes the top $k$ principal directions of the
-species-bag embeddings from the full-myth embeddings
-($k = 5, 10, 20$) and recomputes the stratified $\Delta$. The
-extraction prompts, audit, and per-biome tables are released with
-the code.
-
-\subsection*{Statistical tests}
-
-Image--motif similarities form an
-$n_{\text{img}} \times n_{\text{motif}}$ matrix~$\mathbf{S}$.
-Per-motif residualisation (subtracting the motif grand mean)
-eliminates the contribution of generic motif valence to per-biome
-aggregates. For each biome $b$ with $n_b$ images and motif
-partition $(\mathcal{M}_b, \mathcal{M}_{\overline{b}})$ where
-$\mathcal{M}_b$ is the set of motifs whose Berezkin tradition set
-includes at least one tradition assigned to biome $b$, we report
-\[
-\Delta_b \;=\; \frac{1}{n_b}\sum_{i \in \text{imgs}(b)}
-        \Bigl[\,\overline{S_{i,\mathcal{M}_b}}
-            - \overline{S_{i,\mathcal{M}_{\overline{b}}}}\,\Bigr],
-\]
-the residualised marginal $\Delta$ at the biome level. The
-headline iNat statistic is the within-iconic-taxon stratified
-version $\Delta^{\text{strat}}_b$ defined above. Significance is
-assessed by $1{,}000$ permutations of the motif-to-biome
-assignment (the stratified statistic recomputed under each
-permutation), with permutation $p = \#\{\text{null} \geq
-\text{obs}\}/1000$ and FDR control across biomes via the
-Benjamini--Hochberg procedure~\citep{benjamini1995controlling}. The
-matched-permutation and unsupervised-recovery nulls below
-additionally use $+1$-smoothed $p$-values, $p = (1 + \#\{\text{null}
-\geq \text{obs}\})/(1 + n_{\text{perm}})$, and an independent
-random-number stream per biome.
-For all main-figure panels we apply a display threshold of
-$\geq 50$ in-biome images, $\geq 5$ in-biome motifs, and
-$\geq 20$ images per biome--taxon stratum; biome--taxon cells
-with fewer than $10$ images appear as missing in the per-taxon
-decomposition (Figure~\ref{fig:fig10}).
-
-A fourth control, used in the cultural-geographic autocorrelation
-analysis, is the within-Glottolog-macroarea biome-swap null. Each
-tradition is assigned to one of six Glottolog macro-areas by its
-geographic centroid; under each of $1{,}000$ permutations every
-tradition's motifs are reassigned to a different biome that is also
-represented within its own macro-area, and the stratified $\Delta$ is
-recomputed. A biome is taken to carry signal beyond within-macro-area
-cultural regularity when its observed $\Delta$ exceeds the $95$th
-percentile of this swap distribution (a one-sided $95$th-percentile
-threshold; $p$-values are unadjusted across biomes). The null is
-defined once here and applied in the
-Results and in Supplementary Section~S4.
-
-\subsection*{Unsupervised biome recovery}
-
-To test whether biome structure is present in the model's image
-affinities without supervision, we represented each of the
-$2{,}158$ valid motifs by its row of the residualised similarity
-matrix $\mathbf{S}$, that is, its per-motif-centred cosine
-similarity to all $46{,}481$ iNaturalist photographs, and reduced
-these affinity vectors to $50$ principal components. A motif's
-\emph{own biome} is the biome contributing the most of its Berezkin
-traditions; this label is used only to evaluate the geometry, never
-to build it. We report two diagnostics over the nine biomes with
-at least $50$ images and $20$ own-biome motifs. First, own-biome
-retrieval: for each motif we computed a taxon-stratified mean
-similarity to each biome (the mean over iconic taxa of the motif's
-mean similarity to that biome's images of each taxon, requiring
-$\geq 20$ images per biome--taxon cell), ranked the biomes, and
-recorded the rank of the motif's own biome; the chance baseline and
-the reported $p$-value come from $2{,}000$ permutations that
-reassign each motif's own biome at random. Second, per-biome
-decodability is the balanced accuracy of a five-fold
-one-versus-rest $\ell_2$-regularised logistic probe on the
-PCA-reduced vectors, compared against a null of $200$ such probes
-trained on permuted labels (each biome with an independent stream),
-with per-biome $p$-values smoothed as
-$(1+\#\{null\geq obs\})/(1+200)$ and Benjamini--Hochberg FDR
-correction across the nine biomes. The unsupervised UMAP layout and its
-content, macro-area, and biome adjusted Rand indices use the same
-PCA-reduced vectors. As a text-side control against the taxon
-channel, both diagnostics are recomputed on the class-word-collapsed
-embeddings (every animal-kingdom class word mapped to ``animal'' and
-every plant-kingdom class word to ``plant''; see \emph{Controls
-against biome cues}). The same two diagnostics are repeated on the
-$1{,}655$ Places365 scenes; because the scenes carry no iconic-taxon
-labels, own-biome retrieval there uses the marginal rather than
-taxon-stratified similarity, and the PCA-$50$ is taken of the
-myth\,$\times$\,Places365 similarity matrix, over the seven biomes
-with $\geq 50$ scenes and $\geq 20$ own-biome motifs
-(Figure~\ref{fig:fig-recovery}C--D).
-
-\subsection*{Use of AI tools}
-Two classes of AI tool were used to analyse data in this study, and both
-are described in full above; we consolidate the declaration here.
-\emph{(1)~Text anonymisation.} The identity vocabulary was removed from
-the Berezkin abstracts by \texttt{gemini-3.5-flash} (Google), accessed
-via the Gemini API on 1 June 2026~\citep{googlegemini2026}, in the
-two-pass procedure and under the verbatim prompt rules set out in
-\emph{Controls against biome cues}. The pipeline is deterministic given
-its inputs and prompts, both of which are released with the code; the
-resulting LLM-clean corpus is released rather than regenerated, so the
-analyses can be reproduced without API access. Its residual error rate
-is quantified by the held-out $200$-motif audit reported above rather
-than assumed. \emph{(2)~Embedding.} Motif text and imagery were encoded
-with sentence-pooled SigLIP-2-large, and replicated across M-CLIP,
-OpenCLIP-LAION-2B and OpenCLIP-OpenAI; all are open-weight models
-obtained from public checkpoints. Source text is Berezkin's catalogue,
-cited throughout. No AI tool is credited as an author.
-% TODO(authors): EHS also requires declaring AI tools used to *generate
-% text in the manuscript* (as you would a language-editing service),
-% in the Acknowledgements. Decide what to state here and add it there.
-
-% =============================================================================
-% EHS requires these five statements, in this order, at the end of the
-% manuscript and before the References section.
-% =============================================================================
-
 \section*{Acknowledgements}
 This project uses Yu.~E. Berezkin's \emph{Analytical Catalogue of World
 Mythology and Folklore}; we thank him for making the catalogue and its
