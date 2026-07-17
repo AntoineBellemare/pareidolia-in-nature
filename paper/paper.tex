@@ -308,24 +308,6 @@ figure pointers index the Results subsections that follow.}
 
 \begin{figure}[h!t]
 \centering
-\includegraphics[width=\textwidth]{fig1_world_traditions.png}
-\caption{\textbf{Cross-cultural sample of mythology over the world's
-biome geography.} World map of the 958 Berezkin traditions plotted as
-dots over the underlying WWF Ecoregions polygons, both coloured by the
-same biome palette: continents in semi-transparent biome fills (the
-Saharan and Australian deserts in tan, the Amazonian and Indo-Malay
-rainforests in dark green, the Boreal belt across northern Eurasia and
-Canada in muted blue, Mediterranean basins in red, etc.), tradition
-centroids as opaque dots in the same palette. The overlay shows how
-densely each biome's actual extent is sampled by Berezkin's corpus.
-Eurasian and North American traditions are relatively dense; some
-biomes (Mangroves, Flooded Grasslands and Savannas) are sparsely
-covered.}
-\label{fig:fig1}
-\end{figure}
-
-\begin{figure}[h!t]
-\centering
 \includegraphics[width=\textwidth]{fig2_biome_bars.png}
 \caption{\textbf{The headline coupling signature, replicated on two
 independent image corpora.} Residualised $\Delta$ per WWF biome
@@ -384,7 +366,8 @@ Spec A panel where breadth dilution is removed.}
 \end{figure}
 
 The Berezkin corpus distributes 958 traditions across the 14 WWF
-biomes (Figure~\ref{fig:fig1}). After the full anonymisation
+biomes (Supplementary Figure~\ref{fig:figS-corpus}). After the full
+anonymisation
 pipeline described in \emph{Materials and Methods}, the
 LLM-mediated translation and double-pass refinement that replaces
 every species with a class word, every place and ethnonym with a
@@ -882,53 +865,46 @@ geometry just as cleanly: across the seven biomes with sufficient
 scene and motif support, own biome lands at the $61$st percentile
 ($p=0.0005$, $2{,}000$ permutations) and all seven decode above their
 label-shuffled null at Benjamini--Hochberg FDR ($q<.05$; mean balanced
-accuracy $0.68$ versus $0.50$; Figure~\ref{fig:fig-recovery-p365}).
+accuracy $0.68$ versus $0.50$; Figure~\ref{fig:fig-recovery}C--D).
 That the unsupervised geometry yields biome on two image corpora with
 no shared photographs and no shared visual content type --- close-up
 species portraits versus wide-shot terrain --- indicates the recovered
 structure is a property of the myths rather than of any one image
 distribution.
 
+% EHS caps display items at 8. The iNaturalist and Places365 recovery
+% panels are merged into a single figure so the scene-corpus replication
+% stays in the main text rather than being cut for a slot.
 \begin{figure}[h!t]
 \centering
-\includegraphics[width=\textwidth]{fig_biome_recovery.png}
+\includegraphics[width=\textwidth]{fig_biome_recovery.png}\\[0.6em]
+\includegraphics[width=\textwidth]{fig_biome_recovery_p365.png}
 \caption{\textbf{Biome structure is recoverable from the
 unsupervised myth--image affinity geometry, without using biome
-labels.} Each motif is represented by its residualised
-cosine-similarity profile across all $46{,}481$ iNaturalist
-photographs. \textbf{(A)}~Own-biome retrieval. For each motif the
-nine well-sampled biomes are ranked by the motif's taxon-stratified
-mean similarity to their images; the curve gives the fraction of
-motifs whose own biome falls within the top $k$ ranks (orange)
-against the chance diagonal (grey). Own biome reaches the $64$th
-percentile on average ($p<.001$, $2{,}000$ permutations).
-\textbf{(B)}~Per-biome decodability. Balanced accuracy of a
-five-fold one-versus-rest logistic probe on the PCA-50 affinity
-vectors (bars) against a $200$-shuffle label-permuted null (mean
-$\pm 2$ sd); all nine biomes decode above chance at
+labels, on both image corpora.} Each motif is represented by its
+residualised cosine-similarity profile across an image corpus; biome
+labels are never used to build the affinity geometry, and ``own biome''
+is the biome contributing the most of a motif's traditions.
+\emph{Top row, iNaturalist} ($46{,}481$ species photographs).
+\textbf{(A)}~Own-biome retrieval: the nine well-sampled biomes are
+ranked by each motif's taxon-stratified mean similarity to their
+images; the curve gives the fraction of motifs whose own biome falls
+within the top $k$ ranks (orange) against the chance diagonal (grey).
+Own biome reaches the $64$th percentile on average ($p<.001$,
+$2{,}000$ permutations). \textbf{(B)}~Per-biome decodability: balanced
+accuracy of a five-fold one-versus-rest logistic probe on the PCA-50
+affinity vectors (bars) against a $200$-shuffle label-permuted null
+(mean $\pm 2$ sd); all nine biomes decode above chance at
 Benjamini--Hochberg FDR $q<.05$, at a mean of $0.66$ versus $0.50$.
-Throughout, ``own biome'' is the biome contributing the most of a
-motif's traditions, and the affinity vectors are built without
-reference to it.}
+\emph{Bottom row, Places365} ($1{,}655$ landscape scenes). Because
+these scenes carry no iconic-taxon labels, own-biome retrieval uses
+the marginal per-biome similarity rather than the taxon-stratified
+one. \textbf{(C)}~Over the seven biomes with sufficient scene and
+motif support, own biome reaches the $61$st percentile on average
+($p=0.0005$, $2{,}000$ permutations). \textbf{(D)}~All seven biomes
+decode above their $200$-shuffle null at FDR $q<.05$, at a mean
+balanced accuracy of $0.68$ versus $0.50$.}
 \label{fig:fig-recovery}
-\end{figure}
-
-\begin{figure}[h!t]
-\centering
-\includegraphics[width=\textwidth]{fig_biome_recovery_p365.png}
-\caption{\textbf{The unsupervised biome recovery replicates on
-Places365 scene imagery.} As Figure~\ref{fig:fig-recovery}, but each
-motif is represented by its similarity profile across the $1{,}655$
-Places365 landscape photographs; because these scenes carry no
-iconic-taxon labels, own-biome retrieval uses the marginal per-biome
-similarity rather than the taxon-stratified one. \textbf{(A)}~Over the
-seven biomes with sufficient scene and motif support, own biome
-reaches the $61$st percentile on average ($p=0.0005$, $2{,}000$
-permutations). \textbf{(B)}~All seven biomes decode above their
-$200$-shuffle label-permuted null at Benjamini--Hochberg FDR $q<.05$,
-at a mean balanced accuracy of $0.68$ versus $0.50$. Biome labels are
-never used to build the affinity geometry.}
-\label{fig:fig-recovery-p365}
 \end{figure}
 
 % =============================================================================
@@ -1166,9 +1142,9 @@ biome directly off the unsupervised myth--image affinity geometry,
 without ever using biome labels to build the representation,
 recovers each motif's own biome at the $64$th percentile against a
 $50$th-percentile baseline and decodes all nine well-sampled biomes
-above their label-shuffled null (Figure~\ref{fig:fig-recovery}), and
-this recovery replicates on the Places365 scene corpus
-(Figure~\ref{fig:fig-recovery-p365}). Removing the names, holding
+above their label-shuffled null (Figure~\ref{fig:fig-recovery}A--B),
+and this recovery replicates on the Places365 scene corpus
+(Figure~\ref{fig:fig-recovery}C--D). Removing the names, holding
 them constant, and reading them off the geometry are three
 independent routes to the same biomes (Figure~\ref{fig:fig-roadmap}),
 and it is their convergence --- methods with non-overlapping failure
@@ -1642,7 +1618,7 @@ labels, own-biome retrieval there uses the marginal rather than
 taxon-stratified similarity, and the PCA-$50$ is taken of the
 myth\,$\times$\,Places365 similarity matrix, over the seven biomes
 with $\geq 50$ scenes and $\geq 20$ own-biome motifs
-(Figure~\ref{fig:fig-recovery-p365}).
+(Figure~\ref{fig:fig-recovery}C--D).
 
 \subsection*{Use of AI tools}
 Two classes of AI tool were used to analyse data in this study, and both
@@ -1742,6 +1718,31 @@ in the main text: sentence-pooled SigLIP-2 on the full LLM-clean
 corpus, residualised $\Delta$ with $1{,}000$ motif-to-biome
 permutations and Benjamini--Hochberg FDR within each panel, and
 gold marks for $q < 0.05$.
+
+\subsection*{S0. Corpus coverage}
+
+Figure~\ref{fig:figS-corpus} maps the sample against the biome
+geography it is drawn from. It is descriptive: no claim in the main
+text rests on it, which is why it sits here rather than among the
+eight main display items.
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{fig1_world_traditions.png}
+\caption{\textbf{Cross-cultural sample of mythology over the world's
+biome geography.} World map of the 958 Berezkin traditions plotted as
+dots over the underlying WWF Ecoregions polygons, both coloured by the
+same biome palette: continents in semi-transparent biome fills (the
+Saharan and Australian deserts in tan, the Amazonian and Indo-Malay
+rainforests in dark green, the Boreal belt across northern Eurasia and
+Canada in muted blue, Mediterranean basins in red, etc.), tradition
+centroids as opaque dots in the same palette. The overlay shows how
+densely each biome's actual extent is sampled by Berezkin's corpus.
+Eurasian and North American traditions are relatively dense; some
+biomes (Mangroves, Flooded Grasslands and Savannas) are sparsely
+covered.}
+\label{fig:figS-corpus}
+\end{figure}
 
 \subsection*{S1. Robustness atlas}
 
@@ -2081,7 +2082,7 @@ axes the main text reports. (The paper's third strategy --- unsupervised
 recovery of biome from the myth--image geometry without ever using
 biome labels --- is reported in the main text and reaches the same
 biomes by a further independent route, on iNaturalist and on Places365
-scenes alike; Figures~\ref{fig:fig-recovery}--\ref{fig:fig-recovery-p365}.)
+scenes alike; Figure~\ref{fig:fig-recovery}.)
 
 Geographically (Figure~\ref{fig:figS-converge-map}), the LLM-strip
 stratified $\Delta$ marks $8$ of $14$ biomes at Benjamini--Hochberg
