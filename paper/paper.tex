@@ -28,7 +28,18 @@
 \usepackage{caption}
 \captionsetup{font=small, labelfont=bf, labelsep=period}
 \usepackage{natbib}
+% EHS asks for APA. natbib+plainnat already yields APA's in-text form --
+% (Smith, 2012), (Smith and Wright, 2013), (Smith et al.) -- and sorts the
+% reference list alphabetically by first author surname. Reference-list
+% micro-formatting is explicitly "not grounds for rejection at the
+% submitting phase"; finish the APA conversion at revision.
 \bibliographystyle{plainnat}
+% EHS: "Please include continuous line numbers."
+% Pin the line-number font to the main (Times) face: lineno's default is
+% \normalfont\tiny\sffamily, which pulls in a font xdvipdfmx cannot
+% resolve to a physical font under this fontspec setup.
+% EHS: "Please include continuous line numbers."
+\usepackage{lineno}
 \usepackage{titlesec}
 \titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
 \titlespacing*{\section}{0pt}{1.5em plus 0.4em minus 0.2em}{0.8em plus 0.2em}
@@ -39,18 +50,28 @@
 
 \graphicspath{{figures/}}
 
+% EHS: title "should be short (preferably up to 12 words)". This is 12.
 \title{\bfseries The Imagination of Nature:\\
-\large Mythology as the Cultural Recording Layer of Perceptual Coupling}
+\large Mythology as a Recording Layer of Perceptual Coupling}
 
-\author[1]{Antoine Bellemare-Pepin}
+\author[1,*]{Antoine Bellemare-Pepin}
 \author[2]{Mar Estarellas}
-\affil[1]{Department of Psychology, Université de Montréal}
-\affil[2]{Department of Psychiatry, McGill University}
+\affil[1]{Department of Psychology, Université de Montréal, Montréal, Canada}
+\affil[2]{Department of Psychiatry, McGill University, Montréal, Canada}
+\affil[*]{Corresponding author. Email: \texttt{antoine.bellemare9@gmail.com}}
 \date{\today}
 
 \begin{document}
 
 \maketitle
+\linenumbers
+
+% EHS title page requires a word count "including all text but excluding
+% tables, figures and references".
+\begin{center}
+\small\textbf{Word count:} 7{,}9XX (main text; excludes abstract, tables,
+figures and references)
+\end{center}
 
 \begin{abstract}\noindent
 Does a people's mythology carry a recoverable trace of the biome it
@@ -86,6 +107,15 @@ tracing how motifs travel between cultures and shift through time,
 could test directly whether this coupling stabilised over
 generations, as the present snapshot suggests.
 \end{abstract}
+
+\vspace{0.4em}
+
+% EHS: "you will be asked to include a minimum of three keywords."
+% NB: keep \small inside the group -- an unbraced \small here leaks into the
+% rest of the document and drags nested math down to 5pt scriptscript,
+% which needs cmmi5 and breaks the PDF stage.
+{\noindent\small\textbf{Keywords:} cultural evolution; cultural attraction;
+human ecology; folklore; vision--language models\par}
 
 \vspace{0.6em}
 
@@ -1349,9 +1379,9 @@ threaded through the five stages of the analysis pipeline so the
 reader can trace one token's journey from raw Russian to the
 final per-taxon $\Delta$. \emph{Stage 0 (Raw input).} The
 Russian motif from Berezkin's catalogue, with biome-anchoring
-tokens highlighted in red (the species name ``медвежий'' bear,
-the cultural anchor ``шамана'' shaman, the ethnonym
-``Маккензи''). \emph{Stage 1 (Class word + placeholder).} An
+tokens highlighted in red: the species name ``медвежий''
+(\emph{bear}), the cultural anchor ``шамана'' (\emph{shaman}), and
+the ethnonym ``Маккензи'' (\emph{Mackenzie}). \emph{Stage 1 (Class word + placeholder).} An
 LLM pass translates the text into English and applies seven
 noun-targeted anonymisation rules; specific species names become
 their class word (bear $\to$ \texttt{mammal}), ethnonyms become
@@ -1614,19 +1644,74 @@ myth\,$\times$\,Places365 similarity matrix, over the seven biomes
 with $\geq 50$ scenes and $\geq 20$ own-biome motifs
 (Figure~\ref{fig:fig-recovery-p365}).
 
+\subsection*{Use of AI tools}
+Two classes of AI tool were used to analyse data in this study, and both
+are described in full above; we consolidate the declaration here.
+\emph{(1)~Text anonymisation.} The identity vocabulary was removed from
+the Berezkin abstracts by \texttt{gemini-3.5-flash} (Google), accessed
+via the Gemini API on 1 June 2026~\citep{googlegemini2026}, in the
+two-pass procedure and under the verbatim prompt rules set out in
+\emph{Controls against biome cues}. The pipeline is deterministic given
+its inputs and prompts, both of which are released with the code; the
+resulting LLM-clean corpus is released rather than regenerated, so the
+analyses can be reproduced without API access. Its residual error rate
+is quantified by the held-out $200$-motif audit reported above rather
+than assumed. \emph{(2)~Embedding.} Motif text and imagery were encoded
+with sentence-pooled SigLIP-2-large, and replicated across M-CLIP,
+OpenCLIP-LAION-2B and OpenCLIP-OpenAI; all are open-weight models
+obtained from public checkpoints. Source text is Berezkin's catalogue,
+cited throughout. No AI tool is credited as an author.
+% TODO(authors): EHS also requires declaring AI tools used to *generate
+% text in the manuscript* (as you would a language-editing service),
+% in the Acknowledgements. Decide what to state here and add it there.
+
 % =============================================================================
-\section*{Data and code availability}
-All code, sentence-pooled SigLIP-2 embeddings, the LLM-clean motif
-texts (Gemini-3.5-Flash output), the held-out anonymisation audit
-(the per-criterion coding of the 200 audited motifs is released as
-\texttt{anonymisation\_audit\_200motif.csv}), and the earlier
-rule-based hypernym maps released for completeness are available at
-[repository URL placeholder]. The Berezkin
-abstracts are accessible at
-\url{http://www.ruthenia.ru/folklore/berezkin/}.
+% EHS requires these five statements, in this order, at the end of the
+% manuscript and before the References section.
+% =============================================================================
 
 \section*{Acknowledgements}
-[Placeholders.]
+This project uses Yu.~E. Berezkin's \emph{Analytical Catalogue of World
+Mythology and Folklore}; we thank him for making the catalogue and its
+geographic coding publicly available. We also acknowledge the WWF
+Terrestrial Ecoregions of the World, iNaturalist Open Data, Places365,
+and the YFCC100M dataset.
+% TODO(authors): add any individuals or organisations that gave advice or
+% non-financial support. Financial support belongs in the next section.
+
+\section*{Author Contributions}
+% TODO(authors): CONFIRM BEFORE SUBMISSION -- this is a draft, not a record.
+% EHS wants a short statement of how each author contributed.
+ABP conceived and designed the study, built the data pipeline, performed
+the analyses, and wrote the article. ME contributed to the interpretation
+of the results and to revising the article. Both authors approved the
+final manuscript.
+
+\section*{Financial Support}
+% TODO(authors): CHOOSE ONE. If any grant supported this work, replace the
+% sentence below with e.g. "This work was supported by the Fonds de
+% recherche du Quebec (A.B.P., grant number XXXX)."
+% The wording below is EHS's prescribed text for unfunded research.
+This research received no specific grant from any funding agency,
+commercial or not-for-profit sectors.
+
+\section*{Conflicts of Interest}
+% TODO(authors): confirm this is accurate for both authors.
+Antoine Bellemare-Pepin and Mar Estarellas declare none.
+
+\section*{Research Transparency and Reproducibility}
+All code, the sentence-pooled SigLIP-2 embeddings, the LLM-clean motif
+texts, the held-out anonymisation audit (the per-criterion coding of the
+200 audited motifs, released as
+\texttt{anonymisation\_audit\_200motif.csv}), and the earlier rule-based
+hypernym maps retained for completeness are available at
+\url{https://github.com/AntoineBellemare/pareidolia-in-nature}. The
+Berezkin catalogue is accessible at
+\url{http://www.ruthenia.ru/folklore/berezkin/}. The WWF Terrestrial
+Ecoregions shapefile, the iNaturalist Open Data photographs, and the
+Places365 scenes are redistributed by their originators under their own
+terms and are not mirrored here; the manifests needed to reconstruct
+the exact image sets are included in the repository.
 
 % =============================================================================
 \bibliography{references}
