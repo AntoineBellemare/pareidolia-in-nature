@@ -1,0 +1,288 @@
+\begin{thebibliography}{48}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abram(1996)]{abram1996spell}
+David Abram.
+\newblock \emph{The Spell of the Sensuous: Perception and Language in a
+  More-Than-Human World}.
+\newblock Pantheon Books, 1996.
+
+\bibitem[Barfield(1957)]{barfield1957saving}
+Owen Barfield.
+\newblock \emph{Saving the Appearances: A Study in Idolatry}.
+\newblock Faber and Faber, 1957.
+
+\bibitem[Bateson(1972)]{bateson1972steps}
+Gregory Bateson.
+\newblock \emph{Steps to an Ecology of Mind}.
+\newblock Ballantine Books, 1972.
+
+\bibitem[Bateson(1979)]{bateson1979mind}
+Gregory Bateson.
+\newblock \emph{Mind and Nature: A Necessary Unity}.
+\newblock Dutton, 1979.
+
+\bibitem[Benjamini and Hochberg(1995)]{benjamini1995controlling}
+Yoav Benjamini and Yosef Hochberg.
+\newblock Controlling the false discovery rate: A practical and powerful
+  approach to multiple testing.
+\newblock \emph{Journal of the Royal Statistical Society B}, 57\penalty0
+  (1):\penalty0 289--300, 1995.
+
+\bibitem[Berezkin(2024)]{berezkin2024catalogue}
+Yuri~E. Berezkin.
+\newblock Analytical catalogue of world mythology and folklore.
+\newblock \url{http://www.ruthenia.ru/folklore/berezkin/}, 2024.
+
+\bibitem[Bortolini et~al.(2017)]{bortolini2017inferring}
+Eugenio Bortolini et~al.
+\newblock Inferring patterns of folktale diffusion using genomic data.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 114\penalty0
+  (34):\penalty0 9140--9145, 2017.
+
+\bibitem[Carlsson et~al.(2022)]{carlsson2022mclip}
+Fredrik Carlsson et~al.
+\newblock Cross-lingual and multilingual {CLIP}.
+\newblock arXiv preprint arXiv:2207.07551, 2022.
+
+\bibitem[Claidi\`ere et~al.(2014)Claidi\`ere, Scott-Phillips, and
+  Sperber]{claidiere2014darwinian}
+Nicolas Claidi\`ere, Thomas~C. Scott-Phillips, and Dan Sperber.
+\newblock How {D}arwinian is cultural evolution?
+\newblock \emph{Philosophical Transactions of the Royal Society B},
+  369\penalty0 (1642):\penalty0 20130368, 2014.
+\newblock \doi{10.1098/rstb.2013.0368}.
+
+\bibitem[Clark(2016)]{clark2016surfing}
+Andy Clark.
+\newblock \emph{Surfing Uncertainty: Prediction, Action, and the Embodied
+  Mind}.
+\newblock Oxford University Press, 2016.
+
+\bibitem[Clark and Chalmers(1998)]{clark1998extended}
+Andy Clark and David Chalmers.
+\newblock The extended mind.
+\newblock \emph{Analysis}, 58\penalty0 (1):\penalty0 7--19, 1998.
+
+\bibitem[Constant et~al.(2018)Constant, Ramstead, Veissi\`ere, Campbell, and
+  Friston]{constant2018variational}
+Axel Constant, Maxwell J.~D. Ramstead, Samuel P.~L. Veissi\`ere, John~O.
+  Campbell, and Karl~J. Friston.
+\newblock A variational approach to niche construction.
+\newblock \emph{Journal of the Royal Society Interface}, 15\penalty0
+  (141):\penalty0 20170685, 2018.
+\newblock \doi{10.1098/rsif.2017.0685}.
+
+\bibitem[Corbin(1972)]{corbin1972mundus}
+Henry Corbin.
+\newblock Mundus imaginalis, or the imaginary and the imaginal.
+\newblock \emph{Spring}, pages 1--19, 1972.
+
+\bibitem[Descola(2013)]{descola2013beyond}
+Philippe Descola.
+\newblock \emph{Beyond Nature and Culture}.
+\newblock University of Chicago Press, Chicago, 2013.
+\newblock Translated by Janet Lloyd.
+
+\bibitem[d'Huy and Tehrani(2016)]{dhuy2016phylogenetic}
+Julien d'Huy and Jamshid~J. Tehrani.
+\newblock Quantitative approaches to folklore: Phylogenetic trees of folktales.
+\newblock \emph{The Retrospective Methods Network Newsletter}, 2016.
+
+\bibitem[d'Huy et~al.(2018)d'Huy, Berezkin, Le~Quellec, and
+  Thuillard]{dhuy2018large}
+Julien d'Huy, Yuri~E. Berezkin, Jean-Lo\"{\i}c Le~Quellec, and Marc Thuillard.
+\newblock A large-scale study of world myths.
+\newblock \emph{Trames}, 22\penalty0 (4):\penalty0 407--424, 2018.
+\newblock \doi{10.3176/tr.2018.4.06}.
+
+\bibitem[Friston(2010)]{friston2010free}
+Karl Friston.
+\newblock The free-energy principle: A unified brain theory?
+\newblock \emph{Nature Reviews Neuroscience}, 11:\penalty0 127--138, 2010.
+
+\bibitem[Gibson(1979)]{gibson1979ecological}
+James~J. Gibson.
+\newblock \emph{The Ecological Approach to Visual Perception}.
+\newblock Houghton Mifflin, 1979.
+
+\bibitem[Goff(2019)]{goff2019galileo}
+Philip Goff.
+\newblock \emph{Galileo's Error: Foundations for a New Science of
+  Consciousness}.
+\newblock Pantheon Books, 2019.
+
+\bibitem[{Google DeepMind}(2026)]{googlegemini2026}
+{Google DeepMind}.
+\newblock {Gemini} 3.5 {Flash}.
+\newblock Large language model (API), 2026.
+\newblock Accessed 1 June 2026; used for LLM-mediated translation and
+  anonymisation of motif text.
+
+\bibitem[Hammarstr\"om et~al.(2024)Hammarstr\"om, Forkel, Haspelmath, and
+  Bank]{hammarstrom2024glottolog}
+Harald Hammarstr\"om, Robert Forkel, Martin Haspelmath, and Sebastian Bank.
+\newblock Glottolog 5.0.
+\newblock \url{https://glottolog.org}, 2024.
+
+\bibitem[Hillman(1975)]{hillman1975revisioning}
+James Hillman.
+\newblock \emph{Re-Visioning Psychology}.
+\newblock Harper \& Row, 1975.
+
+\bibitem[Hillman(1981)]{hillman1981thought}
+James Hillman.
+\newblock \emph{The Thought of the Heart and the Soul of the World}.
+\newblock Spring Publications, 1981.
+
+\bibitem[Hohwy(2013)]{hohwy2013predictive}
+Jakob Hohwy.
+\newblock \emph{The Predictive Mind}.
+\newblock Oxford University Press, 2013.
+
+\bibitem[Hutchins(2010)]{hutchins2010cognitive}
+Edwin Hutchins.
+\newblock Cognitive ecology.
+\newblock \emph{Topics in Cognitive Science}, 2\penalty0 (4):\penalty0
+  705--715, 2010.
+\newblock \doi{10.1111/j.1756-8765.2010.01089.x}.
+
+\bibitem[{iNaturalist}(2024)]{inaturalist2024}
+{iNaturalist}.
+\newblock {iNaturalist} {O}pen {D}ata on {AWS}.
+\newblock \url{https://github.com/inaturalist/inaturalist-open-data}, 2024.
+
+\bibitem[Ingold(2000)]{ingold2000perception}
+Tim Ingold.
+\newblock \emph{The Perception of the Environment}.
+\newblock Routledge, 2000.
+
+\bibitem[Jung(1959)]{jung1959archetypes}
+Carl~Gustav Jung.
+\newblock \emph{The Archetypes and the Collective Unconscious}.
+\newblock Collected Works of C. G. Jung, Vol.\ 9, Part 1. Princeton University
+  Press, 1959.
+
+\bibitem[Kiss and Strunk(2006)]{kiss2006punkt}
+Tibor Kiss and Jan Strunk.
+\newblock Unsupervised multilingual sentence boundary detection.
+\newblock \emph{Computational Linguistics}, 32\penalty0 (4):\penalty0 485--525,
+  2006.
+
+\bibitem[McInnes et~al.(2018)McInnes, Healy, and Melville]{mcinnes2018umap}
+Leland McInnes, John Healy, and James Melville.
+\newblock {UMAP}: Uniform manifold approximation and projection for dimension
+  reduction.
+\newblock arXiv preprint arXiv:1802.03426, 2018.
+
+\bibitem[Merleau-Ponty(1945)]{merleauponty1945phenomenology}
+Maurice Merleau-Ponty.
+\newblock \emph{Phenomenology of Perception}.
+\newblock Routledge, 1945.
+\newblock English ed.\ 2012, trans.\ Donald A.\ Landes.
+
+\bibitem[Morin(2016)]{morin2016traditions}
+Olivier Morin.
+\newblock \emph{How Traditions Live and Die}.
+\newblock Oxford University Press, New York, 2016.
+
+\bibitem[No{\"e}(2004)]{noe2004action}
+Alva No{\"e}.
+\newblock \emph{Action in Perception}.
+\newblock MIT Press, 2004.
+
+\bibitem[Odling-Smee et~al.(2003)Odling-Smee, Laland, and
+  Feldman]{odlingsmee2003niche}
+F.\~John Odling-Smee, Kevin~N.\ Laland, and Marcus~W. Feldman.
+\newblock \emph{Niche Construction: The Neglected Process in Evolution}.
+\newblock Princeton University Press, 2003.
+
+\bibitem[Olson et~al.(2001)]{olson2001terrestrial}
+David~M.\ Olson et~al.
+\newblock Terrestrial ecoregions of the world: A new map of life on earth.
+\newblock \emph{BioScience}, 51\penalty0 (11):\penalty0 933--938, 2001.
+
+\bibitem[Radford et~al.(2021)]{radford2021clip}
+Alec Radford et~al.
+\newblock Learning transferable visual models from natural language
+  supervision.
+\newblock In \emph{Proceedings of the 38th International Conference on Machine
+  Learning (ICML)}, 2021.
+
+\bibitem[Ramstead et~al.(2016)Ramstead, Veissi\`ere, and
+  Kirmayer]{ramstead2016cultural}
+Maxwell J.~D. Ramstead, Samuel P.~L. Veissi\`ere, and Laurence~J. Kirmayer.
+\newblock Cultural affordances: Scaffolding local worlds through shared
+  intentionality and regimes of attention.
+\newblock \emph{Frontiers in Psychology}, 7:\penalty0 1090, 2016.
+\newblock \doi{10.3389/fpsyg.2016.01090}.
+
+\bibitem[Schelling(1797)]{schelling1797ideas}
+Friedrich Wilhelm~Joseph Schelling.
+\newblock \emph{Ideas for a Philosophy of Nature}.
+\newblock Cambridge University Press, 1797.
+\newblock English ed.\ 1988, trans.\ Errol E.\ Harris and Peter Heath.
+
+\bibitem[Schelling(1799)]{schelling1799outline}
+Friedrich Wilhelm~Joseph Schelling.
+\newblock \emph{First Outline of a System of the Philosophy of Nature}.
+\newblock State University of New York Press, 1799.
+\newblock English ed.\ 2004, trans.\ Keith R.\ Peterson.
+
+\bibitem[Schuhmann et~al.(2022)]{schuhmann2022laion}
+Christoph Schuhmann et~al.
+\newblock {LAION-5B}: An open large-scale dataset for training next generation
+  image--text models.
+\newblock arXiv preprint arXiv:2210.08402, 2022.
+
+\bibitem[Sperber(1996)]{sperber1996explaining}
+Dan Sperber.
+\newblock \emph{Explaining Culture: A Naturalistic Approach}.
+\newblock Blackwell, Oxford, 1996.
+
+\bibitem[Strawson(2006)]{strawson2006realistic}
+Galen Strawson.
+\newblock Realistic monism: Why physicalism entails panpsychism.
+\newblock \emph{Journal of Consciousness Studies}, 13\penalty0
+  (10--11):\penalty0 3--31, 2006.
+
+\bibitem[Tehrani(2013)]{tehrani2013phylogeny}
+Jamshid~J. Tehrani.
+\newblock The phylogeny of little red riding hood.
+\newblock \emph{PLoS ONE}, 8\penalty0 (11):\penalty0 e78871, 2013.
+
+\bibitem[Tschannen et~al.(2025)]{tschannen2024siglip2}
+Michael Tschannen et~al.
+\newblock Siglip 2: Multilingual vision--language encoders with improved
+  semantic understanding, localization, and dense features.
+\newblock arXiv preprint arXiv:2502.14786, 2025.
+
+\bibitem[Varela et~al.(1991)Varela, Thompson, and Rosch]{varela1991embodied}
+Francisco~J. Varela, Evan Thompson, and Eleanor Rosch.
+\newblock \emph{The Embodied Mind: Cognitive Science and Human Experience}.
+\newblock MIT Press, 1991.
+
+\bibitem[Whitehead(1929)]{whitehead1929process}
+Alfred~North Whitehead.
+\newblock \emph{Process and Reality}.
+\newblock Free Press, 1929.
+\newblock Corrected ed.\ 1978.
+
+\bibitem[Zhai et~al.(2023)Zhai, Mustafa, Kolesnikov, and Beyer]{zhai2023siglip}
+Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov, and Lucas Beyer.
+\newblock Sigmoid loss for language image pre-training.
+\newblock \emph{Proceedings of the International Conference on Computer Vision
+  (ICCV)}, 2023.
+
+\bibitem[Zhou et~al.(2018)Zhou, Lapedriza, Khosla, Oliva, and
+  Torralba]{zhou2018places}
+Bolei Zhou, Agata Lapedriza, Aditya Khosla, Aude Oliva, and Antonio Torralba.
+\newblock Places: A 10 million image database for scene recognition.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 40\penalty0 (6):\penalty0 1452--1464, 2018.
+
+\end{thebibliography}
