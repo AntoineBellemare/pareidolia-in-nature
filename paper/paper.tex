@@ -1,18 +1,24 @@
-%!TEX program = xelatex
+% !TeX program = xelatex
 % =============================================================================
 %   paper.tex - PNAS-style draft
 %   "The Imagination of Nature: Mythology as the Cultural Recording
 %    Layer of Perceptual Coupling"
 % =============================================================================
+% REQUIRES XeLaTeX (or LuaLaTeX) -- it uses fontspec. On Overleaf set
+% Menu > Settings > Compiler to "XeLaTeX"; the default pdfLaTeX will fail.
 \documentclass[11pt,a4paper]{article}
 
 % Modern Unicode setup (xelatex/lualatex via tectonic).
 % Times New Roman has full Cyrillic coverage so the Russian examples
-% (медведь, тундра, млекопитающее, etc.) render natively.
+% (медведь, тундра, млекопитающее, etc.) render natively. Times New
+% Roman / Arial / Consolas are Microsoft fonts and are NOT installed on
+% Overleaf's servers, so we fall back to the metric-compatible Liberation
+% family (also Cyrillic-capable) wherever they are absent. Local builds
+% with the Microsoft fonts installed are unchanged.
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
-\setsansfont{Arial}
-\setmonofont{Consolas}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{Liberation Serif}}
+\IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{Liberation Sans}}
+\IfFontExistsTF{Consolas}{\setmonofont{Consolas}}{\setmonofont{Liberation Mono}}
 \usepackage[english]{babel}
 \usepackage{geometry}
 \geometry{margin=1in}
