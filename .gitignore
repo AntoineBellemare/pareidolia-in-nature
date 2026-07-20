@@ -95,9 +95,6 @@ paper/paper_v3.tex
 paper/paper_v3.pdf
 paper/*.aux
 paper/*.bbl
-# paper.bbl is tracked on purpose: precompiled bibliography shipped so
-# Overleaf builds without BibTeX (comment must be on its own line).
-!paper/paper.bbl
 paper/*.blg
 paper/*.fdb_latexmk
 paper/*.fls

@@ -1653,15 +1653,7 @@ abstracts are accessible at
 [Placeholders.]
 
 % =============================================================================
-% Bibliography. To keep Overleaf's free-plan compile inside the timeout we
-% ship a precompiled bibliography (paper.bbl) and \input it directly, so
-% BibTeX never runs: the build is 2 fast LaTeX passes instead of 4. If
-% paper.bbl is absent the guard falls back to the normal \bibliography +
-% BibTeX path, so nothing breaks.
-% TO REGENERATE after editing references.bib: delete paper.bbl, then
-% compile once (locally: tectonic paper.tex). This reruns BibTeX from
-% references.bib + \bibliographystyle{plainnat} and rewrites paper.bbl.
-\IfFileExists{paper.bbl}{\input{paper.bbl}}{\bibliography{references}}
+\bibliography{references}
 
 % =============================================================================
 \appendix
