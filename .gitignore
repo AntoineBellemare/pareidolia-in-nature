@@ -107,3 +107,6 @@ paper/figures/_*.png
 
 # uv virtual environment
 .venv/
+
+# Word export for collaborative review (regenerate with paper/to_docx.py)
+paper/*.docx
