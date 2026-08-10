@@ -96,7 +96,7 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
                 ax.add_patch(plt.Rectangle((j-0.5, i-0.5), 1, 1,
                                             facecolor="#e5e7ea",
                                             edgecolor="white", lw=0.4))
-                ax.text(j, i, "—", color="#888", fontsize=6.5,
+                ax.text(j, i, "—", color="#888", fontsize=6.8,
                          ha="center", va="center"); continue
             r2, g2, b2, _ = cmap(norm(d))
             luma = 0.299 * r2 + 0.587 * g2 + 0.114 * b2
@@ -104,17 +104,18 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
             s = sig_stars(p) if not np.isnan(p) else ""
             fdr = (not np.isnan(q)) and (q < 0.05)
             label = f"{d*1000:+.2f}{s}" if s else f"{d*1000:+.2f}"
-            ax.text(j, i, label, color=tc, fontsize=6.5,
+            ax.text(j, i, label, color=tc, fontsize=6.8,
                      ha="center", va="center",
                      fontweight="bold" if (s and fdr) else "normal")
     ax.set_xticks(range(len(taxa)))
-    ax.set_xticklabels(taxa, color="#222", fontsize=8.5, rotation=0)
+    ax.set_xticklabels(taxa, color="#222", fontsize=9, rotation=45,
+                       ha="left", rotation_mode="anchor")
     ax.tick_params(axis="x", which="both", length=0, pad=4, top=True,
                     labeltop=True, bottom=False, labelbottom=False)
     if label_yticks:
         ax.set_yticks(range(len(biomes)))
         ax.set_yticklabels([short_biome(b) for b in biomes],
-                            color="#222", fontsize=8.5)
+                            color="#222", fontsize=9)
     else:
         ax.set_yticks([]); ax.set_yticklabels([])
     ax.set_xlim(-0.5, len(taxa) - 0.5)
@@ -130,8 +131,8 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
     if ax_cb is not None:
         cb = plt.colorbar(im, cax=ax_cb)
         cb.set_label(r"$\Delta$ × $10^{-3}$", color="#222",
-                      labelpad=6, fontsize=9)
-        cb.ax.yaxis.set_tick_params(color="#444", labelsize=8)
+                      labelpad=6, fontsize=10)
+        cb.ax.yaxis.set_tick_params(color="#444", labelsize=9)
         cb.outline.set_edgecolor("#888")
         plt.setp(cb.ax.get_yticklabels(), color="#222")
 
@@ -194,22 +195,23 @@ def render_double_violin(ax, df_pres, df_coll, taxa):
         ax.annotate(
             f"$\\mu_P$={np.mean(vals_p)*1:+.2f}\n"
             f"$\\mu_C$={np.mean(vals_c)*1:+.2f}\n{pstr}",
-            xy=(i, ax.get_ylim()[0]), xytext=(i, -2.6),
-            ha="center", va="top", fontsize=7, color="#222",
+            xy=(i, ax.get_ylim()[0]), xytext=(i, -3.5),
+            ha="center", va="top", fontsize=5.6, color="#222",
             annotation_clip=False)
 
     ax.axhline(0, color="#666", lw=0.6, ls="--")
     ax.set_xticks(positions)
-    ax.set_xticklabels(taxa_sorted, color="#222", fontsize=9, rotation=0)
+    ax.set_xticklabels(taxa_sorted, color="#222", fontsize=9, rotation=30,
+                       ha="right", rotation_mode="anchor")
     ax.set_xlim(-0.6, len(taxa_sorted) - 0.4)
     ax.set_ylabel(r"per-biome $\Delta$ ($\times 10^{-3}$)",
-                  color="#222", fontsize=9.5)
-    ax.tick_params(colors="#222", labelsize=8)
+                  color="#222", fontsize=10.5)
+    ax.tick_params(colors="#222", labelsize=9)
     for sp in ax.spines.values(): sp.set_color("#bbb")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.set_title(
-        "C. Distribution shift under class-word collapse, per taxon "
+        "C. Distribution shift under class-word collapse, per taxon\n"
         "(faded = preserved, solid = collapsed)",
         color="#111", fontsize=11, fontweight="bold", loc="left", pad=10)
 
@@ -219,7 +221,7 @@ def render_double_violin(ax, df_pres, df_coll, taxa):
         Patch(facecolor="#888", alpha=0.25, label="preserved (Panel A)"),
         Patch(facecolor="#888", alpha=0.85, label="collapsed (Panel B)"),
     ]
-    ax.legend(handles=legend, loc="upper right", fontsize=8.5,
+    ax.legend(handles=legend, loc="upper right", fontsize=9.5,
                frameon=True)
 
 
@@ -233,41 +235,53 @@ def main():
     vmax = float(np.nanpercentile(np.abs(np.concatenate(
         [d_l.ravel(), d_r.ravel()])), 99))
 
-    # Layout: 2 rows (heatmaps top, violin bottom). Top row has 3 cols
-    # (heatmap, heatmap, colorbar). Bottom row is a single full-width
-    # violin panel.
-    fig = plt.figure(figsize=(
-        0.85 * (len(taxa_l) * 2) + 5,
-        0.50 * len(biomes) + 6.5
-    ))
+    # Layout: 3 rows (heatmap A, heatmap B, violin), each full width,
+    # with a shared colorbar spanning the two heatmap rows.
+    #
+    # The panels are STACKED rather than side by side. Side by side put
+    # 24 columns across \textwidth, giving each cell ~13pt of width, so
+    # the largest font that fit a "+0.82**" label was ~3.4pt. Stacking
+    # halves the column count and doubles the per-cell width, which is
+    # what makes the cell values legible at print size. The canvas is
+    # also sized close to its final display width (~6.3in) so that
+    # nominal font sizes survive to the page instead of being scaled
+    # down 4x.
+    # Sized so that width x aspect fits the 6.3 x 9.7in text block: at
+    # \textwidth the page scale is ~0.83, so nominal font sizes survive
+    # nearly intact instead of being quartered.
+    fig = plt.figure(figsize=(7.6, 9.0), constrained_layout=True)
     fig.patch.set_facecolor("white")
     gs = fig.add_gridspec(
-        2, 3,
-        height_ratios=[0.50 * len(biomes) + 1.5, 5.0],
-        width_ratios=[len(taxa_l), len(taxa_r), 0.6],
-        hspace=0.32, wspace=0.04,
+        3, 2,
+        height_ratios=[0.30 * len(biomes) + 0.9,
+                       0.30 * len(biomes) + 0.9,
+                       3.4],
+        width_ratios=[1.0, 0.035],
     )
     axA = fig.add_subplot(gs[0, 0])
-    axB = fig.add_subplot(gs[0, 1])
-    ax_cb = fig.add_subplot(gs[0, 2])
-    axC = fig.add_subplot(gs[1, :])
+    axB = fig.add_subplot(gs[1, 0])
+    ax_cb = fig.add_subplot(gs[0:2, 1])
+    axC = fig.add_subplot(gs[2, :])
 
     render_heatmap(axA, d_l, p_l, q_l, biomes, taxa_l, vmax,
-                    "A. Class words preserved   "
-                    "(mammal, bird, fish, plant, …)",
+                    "A. Class words preserved (mammal, bird, plant, …)",
                     label_yticks=True, ax_cb=None)
     render_heatmap(axB, d_r, p_r, q_r, biomes, taxa_r, vmax,
-                    "B. Class words collapsed   "
-                    "(animal, plant)",
-                    label_yticks=False, ax_cb=ax_cb)
+                    "B. Class words collapsed (animal, plant)",
+                    label_yticks=True, ax_cb=ax_cb)
 
     # Intersection of taxa across both encodings (drop any taxon only
     # in one), so the violin compares matched distributions.
     taxa_both = [t for t in taxa_l if t in taxa_r]
     render_double_violin(axC, df_l, df_r, taxa_both)
 
-    fig.subplots_adjust(top=0.94, bottom=0.10, left=0.10, right=0.96)
-    fig.savefig(OUT, dpi=180, facecolor="white", bbox_inches="tight")
+    # Explicit margins with room for the biome row labels, and NO
+    # bbox_inches="tight": tight expands the canvas to swallow any
+    # artist overflowing the axes (the long biome names did exactly
+    # that, inflating 7.6in to 12.6in and shrinking every font on the
+    # page by a further 40%). Fixing the margins keeps the saved size
+    # equal to figsize.
+    fig.savefig(OUT, dpi=200, facecolor="white")
     plt.close(fig)
     print(f"wrote {OUT}")
 
