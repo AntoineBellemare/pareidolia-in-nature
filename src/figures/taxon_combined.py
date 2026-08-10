@@ -96,7 +96,7 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
                 ax.add_patch(plt.Rectangle((j-0.5, i-0.5), 1, 1,
                                             facecolor="#e5e7ea",
                                             edgecolor="white", lw=0.4))
-                ax.text(j, i, "—", color="#888", fontsize=5.9,
+                ax.text(j, i, "—", color="#888", fontsize=4.3,
                          ha="center", va="center"); continue
             r2, g2, b2, _ = cmap(norm(d))
             luma = 0.299 * r2 + 0.587 * g2 + 0.114 * b2
@@ -104,7 +104,7 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
             s = sig_stars(p) if not np.isnan(p) else ""
             fdr = (not np.isnan(q)) and (q < 0.05)
             label = f"{d*1000:+.2f}{s}" if s else f"{d*1000:+.2f}"
-            ax.text(j, i, label, color=tc, fontsize=5.9,
+            ax.text(j, i, label, color=tc, fontsize=4.3,
                      ha="center", va="center",
                      fontweight="bold" if (s and fdr) else "normal")
     ax.set_xticks(range(len(taxa)))
