@@ -96,7 +96,7 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
                 ax.add_patch(plt.Rectangle((j-0.5, i-0.5), 1, 1,
                                             facecolor="#e5e7ea",
                                             edgecolor="white", lw=0.4))
-                ax.text(j, i, "—", color="#888", fontsize=6.8,
+                ax.text(j, i, "—", color="#888", fontsize=5.9,
                          ha="center", va="center"); continue
             r2, g2, b2, _ = cmap(norm(d))
             luma = 0.299 * r2 + 0.587 * g2 + 0.114 * b2
@@ -104,7 +104,7 @@ def render_heatmap(ax, delta, pval, qval, biomes, taxa, vmax, title,
             s = sig_stars(p) if not np.isnan(p) else ""
             fdr = (not np.isnan(q)) and (q < 0.05)
             label = f"{d*1000:+.2f}{s}" if s else f"{d*1000:+.2f}"
-            ax.text(j, i, label, color=tc, fontsize=6.8,
+            ax.text(j, i, label, color=tc, fontsize=5.9,
                      ha="center", va="center",
                      fontweight="bold" if (s and fdr) else "normal")
     ax.set_xticks(range(len(taxa)))
@@ -182,23 +182,24 @@ def render_double_violin(ax, df_pres, df_coll, taxa):
         ax.scatter([i + 0.05], [np.mean(vals_c)] if len(vals_c) else [],
                     s=70, marker="_", color="#111", lw=2.4, zorder=5)
 
-        # Per-taxon Wilcoxon p (collapsed vs 0)
+        # Per-taxon Wilcoxon (collapsed vs 0). Mark significance with
+        # stars only; the per-taxon means and exact p-values crowded the
+        # axis and are recoverable from the panel itself.
         if len(vals_c) >= 4:
             try:
                 _, p_w = stats.wilcoxon(vals_c, alternative="greater")
-                pstr = f"p={p_w:.2f}"
+                star = sig_stars(p_w)
             except Exception:
-                pstr = ""
+                star = ""
         else:
-            pstr = ""
-        # Annotate mean & p below
-        ax.annotate(
-            f"$\\mu_P$={np.mean(vals_p)*1:+.2f}\n"
-            f"$\\mu_C$={np.mean(vals_c)*1:+.2f}\n{pstr}",
-            xy=(i, ax.get_ylim()[0]), xytext=(i, -3.5),
-            ha="center", va="top", fontsize=5.6, color="#222",
-            annotation_clip=False)
+            star = ""
+        if star:
+            top = max(list(vals_p) + list(vals_c)) if (
+                len(vals_p) or len(vals_c)) else 0.0
+            ax.text(i, top + 0.18, star, ha="center", va="bottom",
+                    fontsize=11, color="#111", fontweight="bold")
 
+    ax.margins(y=0.12)
     ax.axhline(0, color="#666", lw=0.6, ls="--")
     ax.set_xticks(positions)
     ax.set_xticklabels(taxa_sorted, color="#222", fontsize=9, rotation=30,
